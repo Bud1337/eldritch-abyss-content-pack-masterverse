@@ -1,0 +1,11 @@
+Planeten:
+- Adarion (pc_g_star)
+- Eternia (pc_mystic), Brightmoon & Darkmoon
+- Phantos (pc_continental)
+- 2 Astorid belts
+- 3 big Asteroids
+
+Nachbar-Systeme:
+- Trannis
+- Robotica
+- Kylax

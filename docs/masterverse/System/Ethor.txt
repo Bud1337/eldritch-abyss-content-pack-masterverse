@@ -13,12 +13,14 @@ CrystalWorld  | MiniComic / S02E26 - Das Bienenvolk
 Antares       | S01E32 - Der kleine Ausreisser
 Argon         | S02E24 - Der große Knall
 
-Völker mit Trigger:
-- Menschen              https://he-man.fandom.com/wiki/Humans
+Völker Standard:
+- Menschen            ✓ https://he-man.fandom.com/wiki/Humans
 - Twiggets              https://he-man.fandom.com/wiki/Twiggets
 - Kon-Seals             https://he-man.fandom.com/wiki/Kon-Seals
-- Trolls                https://he-man.fandom.com/wiki/Trolls
+- Trolls              ✓ https://he-man.fandom.com/wiki/Trolls
 - Selkies               https://he-man.fandom.com/wiki/Selkies
+
+Völker mit Trigger:
 - Rock People           https://he-man.fandom.com/wiki/Rock_People
 - Peredhil
 

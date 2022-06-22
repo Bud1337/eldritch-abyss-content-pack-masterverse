@@ -1,0 +1,32 @@
+Völker Standard
+- Menschen (Eternia)  ✓ https://he-man.fandom.com/wiki/Humans               ideal_planet_class = pc_continental trait_adaptive, trait_talented, trait_conservational, trait_unruly
+- Qadians               https://he-man.fandom.com/wiki/Qadians              ideal_planet_class = pc_tropical    trait_adaptable, trait_strong, trait_sedentary
+- Andreeniden         ✓ https://he-man.fandom.com/wiki/Andreenids           ideal_planet_class = pc_savannah    trait_rapid_breeders, trait_communal, trait_nonadaptive
+- Avionier              https://he-man.fandom.com/wiki/Avionians            ideal_planet_class = pc_arid        trait_talented, trait_communal, trait_resilient, trait_slow_breeders, trait_quarrelsome
+- Kulataks            ✓ https://he-man.fandom.com/wiki/Kulataks             ideal_planet_class = pc_arctic
+
+Völker mit Trigger:
+- Menschen (Phantos)  ✓ https://he-man.fandom.com/wiki/Humans               ideal_planet_class = pc_continental trait_adaptive, trait_nomadic, trait_natural_engineers, trait_wasteful, trait_unruly
+- Gar                 ✓ https://he-man.fandom.com/wiki/Gar                  ideal_planet_class = pc_ocean       trait_potential_psionic, trait_venerable, trait_slow_breeders, trait_unruly
+- Aquaticaner           https://he-man.fandom.com/wiki/Aquaticans           ideal_planet_class = pc_ocean       trait_thrifty, trait_adaptive, trait_sedentary
+- Widgets               https://he-man.fandom.com/wiki/Widgets              ideal_planet_class = pc_tropical    trait_industrious, trait_communal, trait_slow_breeders, trait_weak
+- Speleaner             https://he-man.fandom.com/wiki/Speleans             ideal_planet_class = pc_arid
+- Caligaren             https://he-man.fandom.com/wiki/Caligars             ideal_planet_class = pc_arid        
+- Reptons             ✓                                                     ideal_planet_class = pc_arid
+
+Völker ohne Trigger:
+- Torg                  https://he-man.fandom.com/wiki/Torg                 (Es gibt genug Menschen)
+- Cave Dweller          https://he-man.fandom.com/wiki/Cave_Dwellers        (Es gibt genug Menschen)
+- Thenurian                                                                 (Nennung möglich)
+- Baum-Leute            https://he-man.fandom.com/wiki/Tree_People          (Nennung möglich, zu geringe Relevanz)
+- Reptile Men           https://he-man.fandom.com/wiki/Reptile_Men          (Nennung möglich, zu geringe Relevanz)
+- Gargons               https://he-man.fandom.com/wiki/Gargons              (Nennung möglich, zu geringe Relevanz)
+- Tycons                https://he-man.fandom.com/wiki/Tycons               (Nennung möglich, zu geringe Relevanz)
+- Feuervolk             https://he-man.fandom.com/wiki/Fire_People          (Nennung möglich, zu geringe Relevanz)
+- Karikoni              https://he-man.fandom.com/wiki/Karikoni             (Nennung möglich, zu geringe Relevanz)
+- Orks                  https://he-man.fandom.com/wiki/Orks                 (Nennung möglich, zu geringe Relevanz)
+- Eistrolle             https://he-man.fandom.com/wiki/Ice_Troll            (Nennung möglich, zu geringe Relevanz)
+- Pelleezeans           https://he-man.fandom.com/wiki/Pelleezeans          (Zu wenig Infos, zu geringe Relevanz)
+- Arachna                                                                   (Zu wenig Infos, zu geringe Relevanz)
+- Kobolde               https://he-man.fandom.com/wiki/Kobolds              (Nur Horde wilder Kreaturen?)
+- Ilkorts               https://he-man.fandom.com/wiki/Ilkorts              (Nur Horde wilder Kreaturen?)

@@ -1,14 +1,4 @@
-Planeten:
-- Adarion (pc_g_star)
-- Eternia (pc_mystic), Brightmoon & Darkmoon
-- Phantos (pc_continental)
-- 2 Astorid belts
-- 3 big Asteroids
 
-Nachbar-Systeme:
-- Trannis
-- Robotica
-- Kylax
 
 Geschichte:
 
@@ -29,77 +19,19 @@ Name: Vereinigten Königreiche von Eternia
 Titel: Großkönig*in
 Erben-Titel: Prinz/-essin
 
-Story-Quests:
-
-Step 1 - 4: Geschichte & Ausgrabung | Project 1
-=> 3 Grabungen, erzähle obige Geschichte
-
-Step 5: Kontakt Phantos
-=> Projekt: Beitritt von Phantos zu den VKE | SSC_PROJECT_ETERNIA_PEOPLE_1
-=> Projekt: Legierungs-Veredelung durch Photanium | SSC_PROJECT_ETERNIA_STORY_2
-
-Step 6: Suche nach Eternium | SSC_PROJECT_ETERNIA_STORY_3
-=> Deposit auf Eternia
-
-Step 7: Aufsteig von Anwat Gar
-=> Projekt: Beitritt der Gar zu den VKE | SSC_PROJECT_ETERNIA_PEOPLE_2
-
-Step 8: Die Suche nach dem Kordit-Kristall | SSC_PROJECT_ETERNIA_STORY_4
-=> Nur Forschungs-Projekt, das sagt wo
-
-Step 9: Verlassenes Fort der Widgets | SSC_PROJECT_ETERNIA_STORY_5
-=> Direkt Sprung zu Event 10
-
-Step 10: Die Jagd nach dem Kordit-Kristall |
-=> Projekt: Beitritt Widgets zu VKE | SSC_PROJECT_ETERNIA_PEOPLE_3.
-=> Die Widgets sind von der Suche nicht begeistert, verraten jedoch, dass das Koridit zerstört wurde, es aber noch ein gestohlenes Vorkommen in der Harmony Sea geben könnte.
-
-Step 11: Die Jagd nach dem Kordit-Kristall | Project 9
-=> Forschungs-Projekt | SSC_PROJECT_ETERNIA_STORY_7
-=> Nach Abschluss Projekt: Beitritt Aquaticaner zu VKE | SSC_PROJECT_ETERNIA_PEOPLE_4.
-=> Pre Trigger: Karikoni
-
-Step 12: Subternia
-=> Pre Trigger Speleaner, Caligaren
-
-Step 13: Die mystischen Berge
-=> Pre Trigger Andreeniden, Avionier
-
-Step 14: Die immer grünenden Wälder
-=> Stadt der Urahnen
-=> Artefakte
-=> Pre Trigger Qadians, Tree People
-
-Step 15: Die Ebene der Ewigkeit
-=> Artefakte
-=> Pre Trigger Tycons, Pelleezeans
-=> Deposit: Castle Grayskull ( +5 Einigkeit )
-
-Step 16: Ein uraltes Schlachtfeld
-=> Artefakte
-=> Deposit: Uraltes Schlachtfeld (Irgendwas)
-
-Step 17: Die Wüste der Zeit
-=> Artefakte
-
-Step 18: Die dunkle Hemisphäre
-=> Deposit: Snake Mountain ( -5 Einigkeit )
-
-Step 19: Eternia
-
 Völker mit Trigger:
-- Menschen (Eternia)    https://he-man.fandom.com/wiki/Humans               ideal_planet_class = pc_continental trait_adaptive, trait_talented, trait_conservational, trait_unruly
-- Menschen (Phantos)    https://he-man.fandom.com/wiki/Humans               ideal_planet_class = pc_continental trait_adaptive, trait_nomadic, trait_natural_engineers, trait_wasteful, trait_unruly
-- Gar                   https://he-man.fandom.com/wiki/Gar                  ideal_planet_class = pc_ocean       trait_potential_psionic, trait_venerable, trait_slow_breeders, trait_unruly
+- Menschen (Eternia) ✓  https://he-man.fandom.com/wiki/Humans               ideal_planet_class = pc_continental trait_adaptive, trait_talented, trait_conservational, trait_unruly
+- Menschen (Phantos) ✓  https://he-man.fandom.com/wiki/Humans               ideal_planet_class = pc_continental trait_adaptive, trait_nomadic, trait_natural_engineers, trait_wasteful, trait_unruly
+- Gar                ✓  https://he-man.fandom.com/wiki/Gar                  ideal_planet_class = pc_ocean       trait_potential_psionic, trait_venerable, trait_slow_breeders, trait_unruly
 - Aquaticaner           https://he-man.fandom.com/wiki/Aquaticans           ideal_planet_class = pc_ocean       trait_thrifty, trait_adaptive, trait_sedentary
 - Widgets               https://he-man.fandom.com/wiki/Widgets              ideal_planet_class = pc_tropical    trait_industrious, trait_communal, trait_slow_breeders, trait_weak
 - Qadians               https://he-man.fandom.com/wiki/Qadians              ideal_planet_class = pc_tropical    trait_adaptable, trait_strong, trait_sedentary
-- Andreeniden           https://he-man.fandom.com/wiki/Andreenids           ideal_planet_class = pc_savannah    trait_rapid_breeders, trait_communal, trait_nonadaptive
+- Andreeniden        ✓  https://he-man.fandom.com/wiki/Andreenids           ideal_planet_class = pc_savannah    trait_rapid_breeders, trait_communal, trait_nonadaptive
 - Avionier              https://he-man.fandom.com/wiki/Avionians            ideal_planet_class = pc_arid        trait_talented, trait_communal, trait_resilient, trait_slow_breeders, trait_quarrelsome
 - Speleaner             https://he-man.fandom.com/wiki/Speleans             ideal_planet_class = pc_arid        
 - Caligaren             https://he-man.fandom.com/wiki/Caligars             ideal_planet_class = pc_arid        
-- Reptons                                                                   ideal_planet_class = pc_arid        
-- Kulataks              https://he-man.fandom.com/wiki/Kulataks             ideal_planet_class = pc_arctic        
+- Reptons            ✓                                                      ideal_planet_class = pc_arid
+- Kulataks           ✓  https://he-man.fandom.com/wiki/Kulataks             ideal_planet_class = pc_arctic
 
 Völker ohne Trigger:
 - Torg                  https://he-man.fandom.com/wiki/Torg                 (Es gibt genug Menschen)
@@ -150,14 +82,3 @@ menaced by King Hiss and the Snake Men until the Ancients imprisoned them in ano
 
 The oldest being still alive on Eternia is an enormous sentient tree named Skytree. The second oldest is Granamyr,
 ruler of the Dragons of Darksmoke, who has always envied the tree's status.
-
-Crisis Event (Base):
-
-original/events/crisis_events_3.txt
-############################
-#
-# Crisis Events III
-#
-# Written by Henrik Thyrwall and Miranda van den Brink
-#
-############################
