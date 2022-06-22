@@ -1,0 +1,34 @@
+Planeten:
+- Adarion (pc_g_star)
+- Etheria (pc_mystic), One Moon
+- Lastor (pc_molten / pc_toxic)
+- Infinita (pc_barren, terraformable(?)), One Moon
+- Eldar (pc_gas_giant)
+- 2 Astorid belts
+- 3 big Asteroids
+
+Nachbar-Systeme:
+
+CrystalWorld  | MiniComic / S02E26 - Das Bienenvolk
+Antares       | S01E32 - Der kleine Ausreisser
+Argon         | S02E24 - Der große Knall
+
+Völker mit Trigger:
+- Menschen              https://he-man.fandom.com/wiki/Humans
+- Twiggets              https://he-man.fandom.com/wiki/Twiggets
+- Kon-Seals             https://he-man.fandom.com/wiki/Kon-Seals
+- Trolls                https://he-man.fandom.com/wiki/Trolls
+- Selkies               https://he-man.fandom.com/wiki/Selkies
+- Rock People           https://he-man.fandom.com/wiki/Rock_People
+- Peredhil
+
+Völker ohne Trigger:
+- Harpies               https://he-man.fandom.com/wiki/Harpies        (Nennung möglich)
+- Sea Elves             https://he-man.fandom.com/wiki/Sea_Elves      (Nennung möglich)
+- Sea Fairy             https://he-man.fandom.com/wiki/Sea_Fairy      (Nennung möglich)
+- Wooble                https://he-man.fandom.com/wiki/Wooble         (Nennung möglich)
+- Magicat               https://he-man.fandom.com/wiki/Magicat        (Nennung möglich)
+- Manchines             https://he-man.fandom.com/wiki/Manchines      (Nennung möglich, aber peinlich)
+- Monstroids            https://he-man.fandom.com/wiki/Monstroids     (Nennung möglich, aber peinlich)
+- Bibbets               https://he-man.fandom.com/wiki/Bibbets        (Nennung möglich, aber peinlich)
+- Mer-Folk              (Menschen? Können ja nur wegen der Perle unter Wasser rum turnen)

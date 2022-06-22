@@ -1,0 +1,763 @@
+#################
+# Eternia Story #
+#################
+
+#########################################
+# Refers: Eternia Story #1              #
+# Project #1: Study the younger history #
+#########################################
+special_project = {
+	key = "SSC_PROJECT_ETERNIA_STORY_1"
+#	event_chain = "SSC_event_chain_eternia_story"
+	cost = 0
+    days_to_research = 90
+    # days_to_research = 1
+	tech_department = society_technology
+	picture = MASTERVERSE_GFX_evt_eternia_planet
+	timelimit = -1
+
+	requirements = {
+        shipclass_science_ship = 1
+        leader = scientist
+    }
+
+    # set new event scope
+    event_scope = ship_event
+
+	on_success = {
+	    owner = {
+            set_country_flag = eternia_story_arc_site_1
+        }
+	}
+
+	on_fail = {
+	    end_event_chain = "SSC_event_chain_eternia_story"
+	}
+}
+
+special_project = {
+	key = "SSC_PROJECT_ETERNIA_STORY_1_B"
+#	event_chain = "SSC_event_chain_eternia_story"
+	cost = 0
+    days_to_research = 30
+    # days_to_research = 1
+	tech_department = society_technology
+	picture = MASTERVERSE_GFX_evt_eternia_planet
+
+	event_scope = ship_event
+
+	requirements = {
+        shipclass_science_ship = 1
+        leader = scientist
+    }
+
+	on_success = {
+		owner = {
+        	country_event = { id = MASTERVERSE_eternia_story.5 days = 0 }
+		}
+	}
+
+	on_fail = {
+	    end_event_chain = "SSC_event_chain_eternia_story"
+	}
+}
+
+################################
+# Refers: Eternia Story #5     #
+# Project #2: Photanium alloys #
+################################
+special_project = {
+	key = "SSC_PROJECT_ETERNIA_STORY_2"
+#	event_chain = "SSC_event_chain_eternia_story"
+
+	picture = MASTERVERSE_GFX_evt_eternia_phantos
+	timelimit = -1
+
+	# department cost settings
+	tech_department = engineering_technology
+	# cost = 300
+	days_to_research = 120
+	# days_to_research = 1
+
+    # set new event scope
+    event_scope = ship_event
+
+	requirements = {
+	 	shipclass_science_ship = 1
+	 	leader = scientist
+	}
+
+	on_success = {
+		owner = {
+			set_country_flag = eternia_photanium_alloy
+			MASTERVERSE_phantos_add_deposit_photanium_alloys = yes
+			MASTERVERSE_eternia_give_photanium_alloy_tech_option_effect = yes
+		}
+		hidden_effect = { ship_event = { id = MASTERVERSE_eternia_story.6 days = 30 } }
+		# hidden_effect = { ship_event = { id = MASTERVERSE_eternia_story.6 days = 1 } }
+	}
+}
+
+#######################################
+# Refers: Eternia Story #6            #
+# Project #3: The search for Eternium #
+#######################################
+special_project = {
+	key = "SSC_PROJECT_ETERNIA_STORY_3"
+#	event_chain = "SSC_event_chain_eternia_story"
+	picture = MASTERVERSE_GFX_evt_eternia_eternium_crystals
+	timelimit = -1
+
+	# department cost settings
+	# cost = 1500
+	tech_department = engineering_technology
+
+    # set new event scope
+    event_scope = ship_event
+
+	# ship cost settings 
+	cost = 0
+	days_to_research = 180
+	# days_to_research = 1
+	requirements = {
+	 	shipclass_science_ship = 1
+	 	leader = scientist
+	}
+
+	on_success = {
+        MASTERVERSE_eternia_add_deposit_eternium_plant = yes
+        hidden_effect = { 
+			owner = { 
+				country_event = { 
+					id = MASTERVERSE_eternia_story.7 days = 30 
+				} 
+			} 
+		}
+        # hidden_effect = { country_event = { id = MASTERVERSE_eternia_story.7 days = 1 } }
+    }
+}
+
+#######################################
+# Refers: Eternia Story #8           #
+# Project #4: The search for coridite #
+#######################################
+special_project = {
+	key = "SSC_PROJECT_ETERNIA_STORY_4"
+#	event_chain = "SSC_event_chain_eternia_story"
+	picture = MASTERVERSE_GFX_evt_eternia_coridite_mine
+	timelimit = -1
+
+	# department cost settings
+	# cost = 1200
+	tech_department = physics_technology
+
+	# ship cost settings 
+	cost = 0
+	days_to_research = 210
+	# days_to_research = 1
+	requirements = {
+	 	shipclass_science_ship = 1
+	 	leader = scientist
+	}
+
+    # set new event scope
+    event_scope = ship_event
+
+	on_success = {
+        hidden_effect = { ship_event = { id = MASTERVERSE_eternia_story.9 days = 30 } }
+        # hidden_effect = { country_event = { id = MASTERVERSE_eternia_story.9 days = 1 } }
+	}
+}
+
+########################################
+# Refers: Eternia Story #9            #
+# Project #5: The lost widget fortress #
+########################################
+special_project = {
+	key = "SSC_PROJECT_ETERNIA_STORY_5"
+#	event_chain = "SSC_event_chain_eternia_story"
+	picture = MASTERVERSE_GFX_evt_eternia_widget_fortress
+	timelimit = -1
+
+	# department cost settings
+	# cost = 1400
+	tech_department = society_technology
+
+	# ship cost settings 
+	cost = 0
+	days_to_research = 210
+	# days_to_research = 1
+	requirements = {
+	 	shipclass_science_ship = 1
+	 	leader = scientist
+	}
+
+    # set new event scope
+    event_scope = ship_event
+
+	on_success = {
+        hidden_effect = { 
+			owner = { 
+				country_event = {
+					id = MASTERVERSE_eternia_story.10 days = 30 
+				}
+				event_target:planet_eternia = {
+					add_deposit = d_eternia_widget_mines
+				}
+			} 
+		}
+        # hidden_effect = { country_event = { id = MASTERVERSE_eternia_story.10 days = 1 } }
+	}
+}
+
+##########################################
+# Refers: Eternia Story #11              #
+# Project #6: The city under the sea - 1 #
+##########################################
+special_project = {
+	key = "SSC_PROJECT_ETERNIA_STORY_6"
+#	event_chain = "SSC_event_chain_eternia_story"
+    picture = MASTERVERSE_GFX_evt_eternia_aquatica
+    timelimit = -1
+
+	# department cost settings
+	# cost = 1400
+	tech_department = society_technology
+
+	# ship cost settings 
+	cost = 0
+	days_to_research = 210
+	# days_to_research = 1
+	requirements = {
+	 	shipclass_science_ship = 1
+	 	leader = scientist
+	}
+
+    # set new event scope
+    event_scope = ship_event
+
+    on_success = {
+        hidden_effect = { ship_event = { id = MASTERVERSE_eternia_story.12 days = 30 } }
+        # hidden_effect = { ship_event = { id = MASTERVERSE_eternia_story.12 days = 1 } }
+    }
+}
+
+#############################
+# Refers: Eternia Story #12 #
+# Project #7: Subternia     #
+#############################
+special_project = {
+	key = "SSC_PROJECT_ETERNIA_STORY_7"
+#	event_chain = "SSC_event_chain_eternia_story"
+    picture = MASTERVERSE_GFX_evt_eternia_subternia_reptons
+    timelimit = -1
+
+	# department cost settings (available research on game start: 20 per month)
+	tech_department = society_technology
+	cost = 0
+	days_to_research = 120
+	# days_to_research = 1
+
+	requirements = {
+	 	shipclass_science_ship = 1
+	 	leader = scientist
+	}
+
+    # set new event scope
+    event_scope = ship_event
+
+    on_success = {
+        # hidden_effect = { country_event = { id = MASTERVERSE_eternia_story.13 days = 30 } }
+        hidden_effect = { 
+			ship_event = { id = MASTERVERSE_eternia_story.13 days = 1 } 
+			enable_special_project = {
+				name = "SSC_PROJECT_ETERNIA_PEOPLE_4"
+				location = event_target:planet_eternia
+				owner = root
+			}
+		}
+    }
+}
+
+####################################
+# Refers: Eternia Story #13        #
+# Project #8: The Mystic Mountains #
+####################################
+special_project = {
+	key = "SSC_PROJECT_ETERNIA_STORY_8"
+#	event_chain = "SSC_event_chain_eternia_story"
+    picture = MASTERVERSE_GFX_evt_eternia_valley_of_power
+    timelimit = -1
+
+	# department cost settings
+	# cost = 1400
+	tech_department = society_technology
+
+	# ship cost settings 
+	cost = 0
+	days_to_research = 120
+	# days_to_research = 1
+	requirements = {
+	 	shipclass_science_ship = 1
+	 	leader = scientist
+	}
+
+    # set new event scope
+    event_scope = ship_event
+
+    on_success = {
+        hidden_effect = { ship_event = { id = MASTERVERSE_eternia_story.14 days = 30 } }
+        # hidden_effect = { ship_event = { id = MASTERVERSE_eternia_story.14 days = 1 } }
+    }
+}
+
+######################################
+# Refers: Eternia Story #14          #
+# Project #9: The Evergreen Forrests #
+######################################
+special_project = {
+	key = "SSC_PROJECT_ETERNIA_STORY_9"
+#	event_chain = "SSC_event_chain_eternia_story"
+    picture = MASTERVERSE_GFX_evt_eternia_ancient_city
+    timelimit = -1
+
+	# department cost settings
+	# cost = 1400
+	tech_department = society_technology
+
+	# ship cost settings 
+	cost = 0
+	days_to_research = 210
+	# days_to_research = 1
+	requirements = {
+	 	shipclass_science_ship = 1
+	 	leader = scientist
+	}
+
+    # set new event scope
+    event_scope = ship_event
+
+    on_success = {
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+		}
+        hidden_effect = { ship_event = { id = MASTERVERSE_eternia_story.15 days = 30 } }
+        # hidden_effect = { country_event = { id = MASTERVERSE_eternia_story.15 days = 1 } }
+    }
+}
+
+#############################
+# Refers: Eternia Story #15 #
+# Project #10: The plains   #
+#############################
+special_project = {
+	key = "SSC_PROJECT_ETERNIA_STORY_10"
+#	event_chain = "SSC_event_chain_eternia_story"
+    picture = MASTERVERSE_GFX_evt_eternia_plains
+    timelimit = -1
+
+	# department cost settings
+	# cost = 1400
+	tech_department = society_technology
+
+	# ship cost settings 
+	cost = 0
+	days_to_research = 210
+	# days_to_research = 1
+	requirements = {
+	 	shipclass_science_ship = 1
+	 	leader = scientist
+	}
+
+    # set new event scope
+    event_scope = ship_event
+
+    on_success = {
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+		}
+        hidden_effect = { 
+			MASTERVERSE_eternia_add_deposit_castle_grayskull = yes
+			# country_event = { id = MASTERVERSE_eternia_story.16 days = 1 } 
+			ship_event = { id = MASTERVERSE_eternia_story.16 days = 30 } 
+			owner = {
+				set_country_flag = eternia_relics_arc_site_1
+			}
+		}
+    }
+}
+
+########################################
+# Refers: Eternia Story #16            #
+# Project #11: An ancient battleground #
+########################################
+special_project = {
+	key = "SSC_PROJECT_ETERNIA_STORY_11"
+#	event_chain = "SSC_event_chain_eternia_story"
+    picture = MASTERVERSE_GFX_evt_eternia_three_towers
+    timelimit = -1
+
+	# department cost settings
+	# cost = 1400
+	tech_department = society_technology
+
+	# ship cost settings 
+	cost = 0
+	days_to_research = 150
+	# days_to_research = 1
+	requirements = {
+	 	shipclass_science_ship = 1
+	 	leader = scientist
+	}
+
+    # set new event scope
+    event_scope = ship_event
+
+    on_success = {
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+		}
+        hidden_effect = { 
+			# country_event = { id = MASTERVERSE_eternia_story.17 days = 1 }
+			ship_event = { id = MASTERVERSE_eternia_story.17 days = 30 }
+			owner = {
+				MASTERVERSE_eternia_add_deposit_three_towers = yes
+			}
+		}
+    }
+}
+
+##################################
+# Refers: Eternia Story #17      #
+# Project #12: The Sands of Time #
+##################################
+special_project = {
+	key = "SSC_PROJECT_ETERNIA_STORY_12"
+#	event_chain = "SSC_event_chain_eternia_story"
+    picture = MASTERVERSE_GFX_evt_eternia_ancient_ruins
+    timelimit = -1
+
+	# department cost settings
+	# cost = 1400
+	tech_department = society_technology
+
+	# ship cost settings 
+	cost = 0
+	days_to_research = 210
+	# days_to_research = 1
+	requirements = {
+	 	shipclass_science_ship = 1
+	 	leader = scientist
+	}
+
+    # set new event scope
+    event_scope = ship_event
+
+    on_success = {
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+		}
+        hidden_effect = { 
+			ship_event = { id = MASTERVERSE_eternia_story.18 days = 30 } 
+		}
+        # hidden_effect = { country_event = { id = MASTERVERSE_eternia_story.18 days = 1 } }
+    }
+}
+
+####################################
+# Refers: Eternia Story #18        #
+# Project #13: The Dark hemisphere #
+####################################
+special_project = {
+	key = "SSC_PROJECT_ETERNIA_STORY_13"
+#	event_chain = "SSC_event_chain_eternia_story"
+    picture = MASTERVERSE_GFX_evt_eternia_snake_mountain
+    timelimit = -1
+
+	# department cost settings
+	# cost = 1400
+	tech_department = society_technology
+
+	# ship cost settings 
+	cost = 0
+	days_to_research = 210
+	# days_to_research = 1
+	requirements = {
+	 	shipclass_science_ship = 1
+	 	leader = scientist
+	}
+
+    # set new event scope
+    event_scope = ship_event
+
+    on_success = {
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+		}
+        hidden_effect = { 
+			# country_event = { id = MASTERVERSE_eternia_story.19 days = 1 } 
+			ship_event = { id = MASTERVERSE_eternia_story.19 days = 30 } 
+			owner = {
+				MASTERVERSE_eternia_add_deposit_snake_mountain = yes
+			}
+		}
+    }
+}
+
+###########################
+# Eternia People Projects #
+###########################
+
+#################################
+# Refers: Eternia Story #5      #
+# Project #1: Old Alliances     #
+#################################
+special_project = {
+	key = "SSC_PROJECT_ETERNIA_PEOPLE_1"
+#	event_chain = "SSC_event_chain_eternia_people"
+	cost = 750
+	# cost = 1
+	tech_department = society_technology
+	picture = MASTERVERSE_GFX_evt_eternia_phantos
+	timelimit = -1
+
+	event_scope = country_event
+
+	on_success = {
+        MASTERVERSE_eternia_create_colony_on_phantos = yes
+	}
+}
+
+#################################
+# Refers: Eternia Story #9      #
+# Project #2: Rise of Anwat Gar #
+#################################
+special_project = {
+	key = "SSC_PROJECT_ETERNIA_PEOPLE_2"
+#	event_chain = "SSC_event_chain_eternia_people"
+	cost = 1250
+	# cost = 1
+	tech_department = society_technology
+	picture = MASTERVERSE_GFX_evt_eternia_anwat_gar_citadel
+	timelimit = -1
+
+	event_scope = country_event
+
+	on_success = {
+        MASTERVERSE_eternia_create_species_gar = yes
+	}
+}
+
+######################################
+# Refers: Eternia Story #11          #
+# Project #3: The lost widget people #
+######################################
+special_project = {
+	key = "SSC_PROJECT_ETERNIA_PEOPLE_3"
+#	event_chain = "SSC_event_chain_eternia_people"
+	cost = 1750
+	# cost = 1
+	tech_department = society_technology
+	picture = MASTERVERSE_GFX_evt_eternia_widget_fortress
+	timelimit = -1
+
+	event_scope = country_event
+
+	on_success = {
+		MASTERVERSE_eternia_create_species_widgets = yes
+	}
+
+	on_fail = {
+	}
+}
+
+##########################################
+# Refers: Eternia Story #12              #
+# Project #4: The city under the sea - 2 #
+##########################################
+special_project = {
+	key = "SSC_PROJECT_ETERNIA_PEOPLE_4"
+#	event_chain = "SSC_event_chain_eternia_people"
+	cost = 5000
+	# cost = 1
+	tech_department = society_technology
+	picture = MASTERVERSE_GFX_evt_eternia_aquatica
+	timelimit = -1
+
+	event_scope = country_event
+
+	on_success = {
+		MASTERVERSE_eternia_create_species_aquaticans = yes
+	}
+
+	on_fail = {
+	}
+}
+
+###########################################
+# Refers: Eternia People #2               #
+# Project #8: Reptons                     #
+###########################################
+special_project = {
+	key = "SSC_PROJECT_ETERNIA_PEOPLE_8"
+#	event_chain = "SSC_event_chain_eternia_people"
+	cost = 3500
+	# cost = 1
+	tech_department = society_technology
+	#picture = GFX_evt_ocean_planet
+	picture = MASTERVERSE_GFX_evt_eternia_subternia_reptons
+	timelimit = -1
+
+	event_scope = country_event
+
+	on_success = {
+		MASTERVERSE_eternia_create_species_reptons = yes
+	}
+
+	on_fail = {
+	}
+}
+
+###########################################
+# Refers: Eternia People #1               #
+# Project #9: Speleans                    #
+###########################################
+special_project = {
+	key = "SSC_PROJECT_ETERNIA_PEOPLE_9"
+#	event_chain = "SSC_event_chain_eternia_people"
+	cost = 3500
+	# cost = 1
+
+	tech_department = society_technology
+
+	picture = MASTERVERSE_GFX_evt_eternia_subternia_speleans
+	timelimit = -1
+
+	event_scope = country_event
+
+	on_success = {
+		MASTERVERSE_eternia_create_species_speleans = yes
+	}
+
+	on_fail = {
+	}
+}
+
+############################################
+# Refers: Eternia People #3                #
+# Project #10: Caligars                    #
+############################################
+special_project = {
+	key = "SSC_PROJECT_ETERNIA_PEOPLE_10"
+#	event_chain = "SSC_event_chain_eternia_people"
+	cost = 3500
+	# cost = 1
+	tech_department = society_technology
+	picture = MASTERVERSE_GFX_evt_eternia_subternia_1
+	timelimit = -1
+
+	event_scope = country_event
+
+	on_success = {
+		MASTERVERSE_eternia_create_species_caligars = yes
+	}
+
+	on_fail = {
+	}
+}
+
+############################################
+# Refers: Eternia Relics #1                #
+# Project #1: Sword of Power               #
+############################################
+special_project = {
+	key = "SSC_PROJECT_ETERNIA_RELICS_1"
+	
+#	event_chain = "SSC_event_chain_eternia_relics"
+
+	cost = 0
+	days_to_research = 210
+
+	picture = MASTERVERSE_GFX_evt_eternia_castle_grayskull
+	timelimit = -1
+
+	requirements = {
+        shipclass_science_ship = 1
+        leader = scientist
+    }
+
+	event_scope = ship_event
+
+	on_success = {
+		owner = {
+			add_relic = r_eternia_sword_of_power
+		}
+	}
+
+	on_fail = {
+	}
+}
+
+############################################
+# Refers: Eternia Relics #2                #
+# Project #2: Havoc Staff                  #
+############################################
+#special_project = {
+#	key = "SSC_PROJECT_ETERNIA_RELICS_2"
+#
+#	#event_chain = "SSC_event_chain_eternia_relics"
+#
+#	cost = 0
+#	days_to_research = 210
+#
+#	picture = MASTERVERSE_GFX_evt_eternia_snake_mountain
+#	timelimit = -1
+#
+#	requirements = {
+#       shipclass_science_ship = 1
+#       leader = scientist
+#   }
+#
+#	event_scope = ship_event
+#
+#	on_success = {
+#		owner = {
+#			add_relic = r_eternia_havoc_staff
+#		}
+#	}
+#
+#	on_fail = {
+#	}
+#}
+
+############################################
+# Refers: Eternia Relics #3                #
+# Project #3: Cosmic Key                   #
+############################################
+special_project = {
+	key = "SSC_PROJECT_ETERNIA_RELICS_3"
+
+#	event_chain = "SSC_event_chain_eternia_relics"
+
+	cost = 0
+	days_to_research = 210
+
+	requirements = {
+        shipclass_science_ship = 1
+        leader = scientist
+    }
+
+	picture = MASTERVERSE_GFX_evt_eternia_cosmic_key_1
+	timelimit = -1
+
+	event_scope = ship_event
+
+	on_success = {
+		owner = {
+			add_relic = r_eternia_cosmic_key
+		}
+	}
+
+	on_fail = {
+	}
+}

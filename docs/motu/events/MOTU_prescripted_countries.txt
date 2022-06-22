@@ -1,0 +1,137 @@
+# United Kingdoms of Eternia
+EternianKingdoms={
+	ship_prefix="PRESCRIPTED_ship_prefix_EternianKingdoms"
+    species = {
+        class = "HUM"
+        portrait = "human"
+        name = "PRESCRIPTED_species_name_EternianKingdoms"
+        plural = "PRESCRIPTED_species_plural_EternianKingdoms"
+        adjective = "PRESCRIPTED_species_adjective_EternianKingdoms"
+        name_list="SSC_PRESCRIPTED_ETERNIA_HUMANS"
+		gender=male
+        bio = "EternianKingdoms_desc"
+        ideal_planet_class = pc_continental
+        trait = trait_adaptive 
+  	    trait = trait_talented
+        trait = trait_conservational
+	    trait = trait_unruly
+    }
+	name="EternianKingdoms"
+	adjective="PRESCRIPTED_adjective_EternianKingdoms"
+	authority="auth_imperial"
+	civics={
+		"civic_aristocratic_elite"
+		"civic_memorialist"
+	}
+	government="gov_theocratic_monarchy"
+	ethic="ethic_fanatic_xenophile"
+	ethic="ethic_spiritualist"
+	advisor_voice_type="l_egalitarian"
+	flags={ eternia custom_start_screen }
+	planet_name="NAME_Eternia"
+	planet_class="pc_continental"
+	system_name="NAME_Adarion"
+    initializer="adarion_system_initializer"
+	graphical_culture="humanoid_01"
+	city_graphical_culture="reptilian_01"
+	empire_flag={
+		icon={
+			category="motu"
+			file="heroic.dds"
+		}
+		background={
+			category="backgrounds"
+			file="rounded_middle.dds"
+		}
+		colors={
+			"blue"
+			"red"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="PRESCRIPTED_ruler_name_EternianKingdoms"
+		portrait="human"
+		texture=0
+		hair=7
+		clothes=0
+		ruler_title="RT_HIGH_KING"
+		heir_title="HT_PRINCE"
+		ruler_title_female="RT_HIGH_QUEEN"
+		heir_title_female="HT_PRINCESS"
+		leader_class="ruler"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="personality_decadent_hierarchy_room"
+	spawn_enabled=yes
+	origin="EA_origin_mystic"
+}
+
+"Etherianische Allianz"
+={
+	key="Etherianische Allianz"
+	ship_prefix="EAS"
+	species={
+		class="HUM"
+		portrait="human"
+		name="Mensch"
+		plural="Menschen"
+		adjective="menschlich"
+		name_list="AQUATIC4"
+		gender=female
+		trait="trait_nomadic"
+		trait="trait_adaptive"
+		trait="trait_potential_psionic"
+		trait="trait_unruly"
+		trait="trait_wasteful"
+	}
+	name="Etherianische Allianz"
+	adjective="Etherianisch"
+	authority="auth_imperial"
+	government="gov_enlightened_monarchy"
+	planet_name="Etheria"
+	planet_class="pc_continental"
+	system_name="Ethor"
+	initializer="ethor_system_initializer"
+	graphical_culture="avian_01"
+	city_graphical_culture="reptilian_01"
+	empire_flag={
+		icon={
+			category="motu"
+			file="rebellion.dds"
+		}
+		background={
+			category="backgrounds"
+			file="circle.dds"
+		}
+		colors={
+			"yellow"
+			"beige"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="Edith Higginbottom"
+		portrait="human_female_04"
+		texture=0
+		hair=4
+		clothes=0
+		leader_class="ruler"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="default_room"
+	spawn_enabled=no
+	ethic="ethic_xenophile"
+	ethic="ethic_fanatic_materialist"
+	civics={
+		"civic_aristocratic_elite"
+		"civic_philosopher_king"
+	}
+	origin="EA_origin_mystic"
+}

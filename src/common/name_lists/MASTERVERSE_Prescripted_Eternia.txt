@@ -1,0 +1,2484 @@
+﻿### Eternia
+MASTERVERSE_PRESCRIPTED_ETERNIA_HUMANS = {
+	selectable = { always = no }
+    randomized = no
+
+	ship_names = {
+		corvette = {
+			ETERNIA_SHIP_Antelope
+			ETERNIA_SHIP_Arthro
+			ETERNIA_SHIP_Bat
+			ETERNIA_SHIP_Bear
+			ETERNIA_SHIP_BigtoothFurlon
+			ETERNIA_SHIP_Bionatops
+			ETERNIA_SHIP_BushTail
+			ETERNIA_SHIP_Chimporilla
+			ETERNIA_SHIP_Cringer
+			ETERNIA_SHIP_Crocodile
+			ETERNIA_SHIP_Dolphin
+			ETERNIA_SHIP_Drachadon
+			ETERNIA_SHIP_Draco
+			ETERNIA_SHIP_Dragon
+			ETERNIA_SHIP_Dragosaur
+			ETERNIA_SHIP_Dylinx
+			ETERNIA_SHIP_Eledon
+			ETERNIA_SHIP_Falcon
+			ETERNIA_SHIP_Furlon
+			ETERNIA_SHIP_FuzzBee
+			ETERNIA_SHIP_Gark
+			ETERNIA_SHIP_GhostBird
+			ETERNIA_SHIP_GiantSnake
+			ETERNIA_SHIP_GoldenHorse
+			ETERNIA_SHIP_Gorilla
+			ETERNIA_SHIP_GreatBird
+			ETERNIA_SHIP_GreenTiger
+			ETERNIA_SHIP_Griffin
+			ETERNIA_SHIP_HornedLeopard
+			ETERNIA_SHIP_IceHacker
+			ETERNIA_SHIP_Ilkort
+ 			ETERNIA_SHIP_Kobold
+			ETERNIA_SHIP_Lizard
+			ETERNIA_SHIP_Liozard
+			ETERNIA_SHIP_Manticore
+			ETERNIA_SHIP_Myrtlephant
+			ETERNIA_SHIP_Narwal
+			ETERNIA_SHIP_Panther
+			ETERNIA_SHIP_Panthor
+			ETERNIA_SHIP_PlantApe
+			ETERNIA_SHIP_Porpoise
+			ETERNIA_SHIP_PterrorDactyl
+			ETERNIA_SHIP_Pulmo
+			ETERNIA_SHIP_Raider
+			ETERNIA_SHIP_Razorfin
+			ETERNIA_SHIP_Roe
+			ETERNIA_SHIP_Sabrecat
+			ETERNIA_SHIP_Sandwolf
+			ETERNIA_SHIP_Sandworm
+			ETERNIA_SHIP_Sandipede
+			ETERNIA_SHIP_SeaEagle
+			ETERNIA_SHIP_Seal
+			ETERNIA_SHIP_SeaSerpent
+			ETERNIA_SHIP_Serpintaur
+			ETERNIA_SHIP_Shadowbeast
+			ETERNIA_SHIP_Shark
+			ETERNIA_SHIP_Shrieker
+			ETERNIA_SHIP_Slotto
+			ETERNIA_SHIP_Snake
+			ETERNIA_SHIP_Spidasaur
+			ETERNIA_SHIP_Spinedeer
+			ETERNIA_SHIP_Squigilla
+			ETERNIA_SHIP_Stag
+			ETERNIA_SHIP_Starbeetle
+			ETERNIA_SHIP_Stingray
+			ETERNIA_SHIP_SwampHopper
+			ETERNIA_SHIP_Tiger
+			ETERNIA_SHIP_Turbodactyl
+			ETERNIA_SHIP_Turtle
+			ETERNIA_SHIP_Tyrantisaur
+			ETERNIA_SHIP_Unicorn
+			ETERNIA_SHIP_Unilope
+ 			ETERNIA_SHIP_Walrus
+ 			ETERNIA_SHIP_Whale
+			ETERNIA_SHIP_WingedHorse
+			ETERNIA_SHIP_Wolfbat
+			ETERNIA_SHIP_WolfDemon
+			ETERNIA_SHIP_Wolve
+			ETERNIA_SHIP_Wyvern
+			ETERNIA_SHIP_RainbowCorvette
+			ETERNIA_SHIP_RainbowExplorer
+			ETERNIA_SHIP_TalonCorvette
+			ETERNIA_SHIP_TalonFighter
+			ETERNIA_SHIP_Windraider
+			ETERNIA_SHIP_Wonderbread
+		}
+		
+		destroyer = {
+			ETERNIA_SHIP_Abra
+ 			ETERNIA_SHIP_Andreenos
+ 			ETERNIA_SHIP_AnwatGar
+ 			ETERNIA_SHIP_Aquatica
+ 			ETERNIA_SHIP_Arcadia
+ 			ETERNIA_SHIP_Aridan
+ 			ETERNIA_SHIP_Artanna
+ 			ETERNIA_SHIP_Avathar
+ 			ETERNIA_SHIP_Avion
+ 			ETERNIA_SHIP_Basilia
+ 			ETERNIA_SHIP_Calash
+ 			ETERNIA_SHIP_Cathenay
+ 			ETERNIA_SHIP_Chandor
+ 			ETERNIA_SHIP_Colmay
+ 			ETERNIA_SHIP_Drisdos
+ 			ETERNIA_SHIP_Dyperia
+ 			ETERNIA_SHIP_Eastfen
+ 			ETERNIA_SHIP_Eternos
+ 			ETERNIA_SHIP_FelisFolia
+ 			ETERNIA_SHIP_FelisQuadi
+			ETERNIA_SHIP_IslandOfTears
+ 			ETERNIA_SHIP_Lorbos
+ 			ETERNIA_SHIP_Malarkah
+ 			ETERNIA_SHIP_Millarca
+ 			ETERNIA_SHIP_Morainia
+ 			ETERNIA_SHIP_Morragor
+ 			ETERNIA_SHIP_Operon
+ 			ETERNIA_SHIP_Perpetua
+ 			ETERNIA_SHIP_Polonia
+			ETERNIA_SHIP_Randorhaven
+ 			ETERNIA_SHIP_Ruckstown
+ 			ETERNIA_SHIP_SelkieIslands
+			ETERNIA_SHIP_Serul
+ 			ETERNIA_SHIP_Shandor
+ 			ETERNIA_SHIP_Spelea
+ 			ETERNIA_SHIP_Stardica
+ 			ETERNIA_SHIP_Stilia
+ 			ETERNIA_SHIP_StoneCity
+ 			ETERNIA_SHIP_Tahryn
+ 			ETERNIA_SHIP_Targa
+ 			ETERNIA_SHIP_Veridas
+ 			ETERNIA_SHIP_Zak
+ 			ETERNIA_SHIP_Zalesia
+ 			ETERNIA_SHIP_RainbowDestroyer
+ 			ETERNIA_SHIP_TalonDestroyer
+		}
+		
+		cruiser = {
+			ETERNIA_SHIP_Aramesh
+			ETERNIA_SHIP_AZor
+		    ETERNIA_SHIP_Bakkul
+			ETERNIA_SHIP_BrightStar
+ 			ETERNIA_SHIP_Cambro
+ 			ETERNIA_SHIP_Carnivus
+ 			ETERNIA_SHIP_Ceratus
+ 			ETERNIA_SHIP_Chimera
+			ETERNIA_SHIP_Choloh
+			ETERNIA_SHIP_Colossor
+ 			ETERNIA_SHIP_CrimsonScourge
+ 			ETERNIA_SHIP_Dactys
+ 			ETERNIA_SHIP_Dekker
+ 			ETERNIA_SHIP_Gorpo
+ 			ETERNIA_SHIP_Granamyr
+ 			ETERNIA_SHIP_Grimalkin
+ 			ETERNIA_SHIP_Gwildor
+			ETERNIA_SHIP_Gygor
+ 			ETERNIA_SHIP_Helios
+			ETERNIA_SHIP_IceBird
+			ETERNIA_SHIP_Kraal
+			ETERNIA_SHIP_Kraken
+ 			ETERNIA_SHIP_KudukUngol
+ 			ETERNIA_SHIP_Molkrom
+ 			ETERNIA_SHIP_MorningStar
+ 			ETERNIA_SHIP_Nami
+ 			ETERNIA_SHIP_Negator
+ 			ETERNIA_SHIP_Oftar
+ 			ETERNIA_SHIP_Oracle
+ 			ETERNIA_SHIP_Reigam
+ 			ETERNIA_SHIP_Satmar
+ 			ETERNIA_SHIP_Shelandor
+ 			ETERNIA_SHIP_Shokoti
+ 			ETERNIA_SHIP_Skytree
+ 			ETERNIA_SHIP_Strobo
+ 			ETERNIA_SHIP_Tauron
+ 			ETERNIA_SHIP_Thales
+ 			ETERNIA_SHIP_Veena
+ 			ETERNIA_SHIP_Vikor
+			ETERNIA_SHIP_Vykron
+ 			ETERNIA_SHIP_Wundar
+ 			ETERNIA_SHIP_Yog
+ 			ETERNIA_SHIP_Zagraz
+ 			ETERNIA_SHIP_Zodac
+ 			ETERNIA_SHIP_RainbowCruiser
+ 			ETERNIA_SHIP_TalonCruiser
+		}
+		
+		battleship = {
+			ETERNIA_SHIP_AdamGlennGrayskull
+			ETERNIA_SHIP_DVannGrayskull
+			ETERNIA_SHIP_EldonTheWise
+			ETERNIA_SHIP_FreenornTheStrong
+			ETERNIA_SHIP_MarlenaGlenn
+			ETERNIA_SHIP_MiroGrayskull
+			ETERNIA_SHIP_RandorGrayskull
+			ETERNIA_SHIP_StefenGrayskull
+			ETERNIA_SHIP_VolnarTheBold
+			ETERNIA_SHIP_RainbowBattleship
+			ETERNIA_SHIP_TalonBattleship
+		}
+		
+		titan = {
+			ETERNIA_SHIP_Zoar
+			ETERNIA_SHIP_Fantus
+			ETERNIA_SHIP_Horokoth
+			ETERNIA_SHIP_Serpos
+		}
+
+		colossus = {
+			ETERNIA_SHIP_Adarion
+			ETERNIA_SHIP_Eternia
+			ETERNIA_SHIP_Preternia
+			ETERNIA_SHIP_Subternia
+		}
+
+		juggernaut = {
+			ETERNIA_SHIP_Darksmoke
+			ETERNIA_SHIP_Krona
+			ETERNIA_SHIP_Zelite
+			ETERNIA_SHIP_DragonMount
+		}
+
+		constructor = {
+			ETERNIA_SHIP_Bumbit
+ 			ETERNIA_SHIP_CaveDweller
+ 			ETERNIA_SHIP_Coridite
+ 			ETERNIA_SHIP_Deterium
+ 			ETERNIA_SHIP_Eternium
+ 			ETERNIA_SHIP_GrowthGlobe
+ 			ETERNIA_SHIP_Ironvine
+			ETERNIA_SHIP_Mentalite
+ 			ETERNIA_SHIP_Photanium
+ 			ETERNIA_SHIP_RockSoftener
+		}
+		
+		colonizer = {
+			ETERNIA_SHIP_SandsOfTime
+ 			ETERNIA_SHIP_BitterRose
+ 			ETERNIA_SHIP_RoseMountain
+ 			ETERNIA_SHIP_SeaOfEternity
+ 			ETERNIA_SHIP_EvergreenForrest
+ 			ETERNIA_SHIP_VineJungle
+ 			ETERNIA_SHIP_MysticMountains
+ 			ETERNIA_SHIP_IcyMountains
+ 			ETERNIA_SHIP_ValleyOfPower
+ 			ETERNIA_SHIP_SeaOfRakash
+ 			ETERNIA_SHIP_HarmonySea
+ 			ETERNIA_SHIP_WidgetWoods
+		}
+
+		sponsored_colonizer = {
+			ETERNIA_SHIP_SandsOfTime
+ 			ETERNIA_SHIP_BitterRose
+ 			ETERNIA_SHIP_RoseMountain
+ 			ETERNIA_SHIP_SeaOfEternity
+ 			ETERNIA_SHIP_EvergreenForrest
+ 			ETERNIA_SHIP_VineJungle
+ 			ETERNIA_SHIP_MysticMountains
+ 			ETERNIA_SHIP_IcyMountains
+ 			ETERNIA_SHIP_ValleyOfPower
+ 			ETERNIA_SHIP_SeaOfRakash
+ 			ETERNIA_SHIP_HarmonySea
+ 			ETERNIA_SHIP_WidgetWoods
+		}
+		
+		science = {
+			ETERNIA_SHIP_Ambrosia
+ 			ETERNIA_SHIP_CrimsonPearl
+ 			ETERNIA_SHIP_FireJewel
+ 			ETERNIA_SHIP_Hemisphere
+ 			ETERNIA_SHIP_Preternia
+			ETERNIA_SHIP_Stardust
+ 			ETERNIA_SHIP_StarSeed
+ 			ETERNIA_SHIP_Subternia
+ 			ETERNIA_SHIP_SunStone
+ 			ETERNIA_SHIP_TriadOfDiscidium
+ 			ETERNIA_SHIP_WheelOfInfinity
+		}
+		
+		mining_station = { }
+		research_station = { }
+		observation_station = { }
+
+		transport = {
+			"Transport"
+		}
+
+		military_station_small = {
+			"Station Alpha" "Station Beta" "Station Gamma" "Station Delta" "Station Epsilon" "Station Zeta" "Station Eta"
+			"Station Theta" "Station Iota" "Station Kappa" "Station Lambda" "Station My" "Station Ny" "Station Xi"
+			"Station Omikron" "Station Pi" "Station Rho" "Station Sigma" "Station Tau" "Station Ypsilon" "Station Phi"
+			"Station Chi" "Station Psi" "Station Omega" "Station Digamma" "Station Stigma" "Station Heta" "Station San"
+			"Station Koppa" "Station Sampi" "Station Scho"
+		}
+
+		military_station_medium = { 
+			"$O$ Naval Base"
+		}
+		
+		
+		military_station_large = { 
+			"Naval Depot"		
+		}
+	}
+
+	fleet_names = {
+		sequential_name = ETERNIA_xxFLEET_ORD
+	}
+	
+	army_names = {
+		machine_defense = {
+			sequential_name = ETERNIA_xxPLANETARYGUARD_ORD
+		}
+
+		machine_assault_1 = {
+			sequential_name = ETERNIA_xxEXPEDITIONARYFORCE_ORD
+		}
+
+		machine_assault_2 = {
+			sequential_name = ETERNIA_xxEXPEDITIONARYFORCE_ORD
+		}
+
+		machine_assault_3 = {
+			sequential_name = ETERNIA_xxEXPEDITIONARYFORCE_ORD
+		}
+
+		defense_army = {
+			sequential_name = ETERNIA_xxPLANETARYGUARD_ORD
+		}
+
+		assault_army = {
+			sequential_name = ETERNIA_xxEXPEDITIONARYFORCE_ORD
+		}
+
+		slave_army = {
+			sequential_name = ETERNIA_xxINDENTUREDRIFLES_ORD
+		}
+
+		clone_army = {
+			sequential_name = ETERNIA_xxCLONEARMY_ORD
+		}
+
+		undead_army = {
+			sequential_name = ETERNIA_xxDREADCOMMANDO_ORD
+		}
+
+		robotic_army = {
+			sequential_name = ETERNIA_xxHUNTERKILLERGROUP_ORD
+		}
+
+		robotic_defense_army = {
+			sequential_name = ETERNIA_xxGROUNDDEFENSEMATRIX_ORD
+		}
+
+		psionic_army = {
+			sequential_name = ETERNIA_xxPSICOMMANDO_ORD
+		}
+
+		mage_army = {
+			sequential_name = ETERNIA_xxMAGECOMMANDO_ORD
+		}
+
+		xenomorph_army = {
+			sequential_name = ETERNIA_xxBIOWARFAREDIVISION_ORD
+		}
+
+		gene_warrior_army = {
+			sequential_name = ETERNIA_xxBIOENGINEEREDSQUADRON_ORD
+		}
+
+		occupation_army = {
+			sequential_name = ETERNIA_xxGARRISONFORCE_ORD
+		}
+
+		robotic_occupation_army = {
+			sequential_name = ETERNIA_xxMECHANIZEDGARRISON_ORD
+		}
+
+		primitive_army = {
+			sequential_name = ETERNIA_PRIMITIVEARMYxx_SEQ
+		}
+
+		industrial_army = {
+			sequential_name = ETERNIA_INDUSTRIALARMYxx_SEQ
+		}
+
+		postatomic_army = {
+			sequential_name = ETERNIA_POSTATOMICARMYxx_SEQ
+		}
+	}
+
+	### CHARACTERS
+
+	character_names = {
+		full_names = {
+			first_names_male = {
+                Adam Randor Duncan Zak Miro Thaos Garn Pangas Zagraz Kor Danton Mallek Thaos David Jacob Mark Melvin
+                Lester Philipp Marzo Phillip Orius Krass Stefen Dal Dare Perkaedo Malcom Dekker Raenius Doodon Jey Riolus
+                Blast Darid Jaxton Gepher Zodak Zodac Esker Boreas Xenthor Gary Kevin Nikolas Lou Victor D'Vann Theydon
+                Falcon Jeoff Micah Kyle Allepsatsac Galen Eldon Freenorn Volnar Morgoth Geldor Zem Brindle Eldor
+                Ade-Ren Condore Nazghal Damon Demos Aran Draca Rago Cambro Todd Drew Caleb Marsh Tauron Melaktha Stanlan
+                Zek Kothos Zantar Zem Nephtu Ollo Trydor Garda Agar Farin Jed Elias Jeremy Landros Chadzar Trojan
+                Kor Jaymar Orn Abram Elmas Elden Chad Kol Rohad Mitro Galen Jonno Justin Hovar Tyrin Melbrag Zicran
+                Yarrow Alan Krill Tager Ananda Merlo Grod Drak Jova Vokan Danavas Dalmus Korr Goras Abstanem Andras
+				Ar-Bor Ceril Torgul Maran
+            }
+			
+			first_names_female = {
+		        Teela "Teela Na" Marlena Rhea Balina Celice Celine Aylina Adora Janice Linda Venus Christina Nicole
+		        Majestra Nadira Evelyn Morgan Maligna Meg Sharella Penelope Esmeralda Tara Abby Beatrix Es'tra Lynda
+		        Mortella Balina Tyrella Oona Zilora Gwen Karil Emma Edwina Elora Arvela Mira Kuduk Bran Sibyline Elmora
+		        Valtira Ileena Rayna Podi Cynda Sumana Jade Jeeta Karyn Erika Regina Alisha Lyra Veena Andra Sultra
+			}
+
+		    second_names = {
+			    Glenn Powers Zur Fist Blast Arms Blithe Scheimer Reccula Fancy Mackenzie De'Note Nycroft Gunden Chopper
+			    Lightspinner D'Ream Scurvy Vesselak Gary Kalif Donovan Drome Darkspur Sencri Scope Esooniux Dini Zukor
+			    Hansen Perkins Wilkins Ungol Darr Clark Orion Barbo Smallen Thales Ritter Lamore Abra Miller Squire Fu
+				Ari Crusher Palos Dakon
+			}
+		}
+	}
+}
+
+MASTERVERSE_PRESCRIPTED_ETERNIA_GAR = {
+	selectable = { always = no }
+    randomized = no
+
+	ship_names = {
+		generic = {
+		    Anwat-Gar Avathar
+		}
+
+		corvette = {
+		    "Corvette"
+		}
+
+		constructor = {
+			"Constructor"
+		}
+
+		colonizer = {
+			"Colony"
+		}
+
+		science = {
+			"Explorer"
+		}
+
+		destroyer = {
+		    "Destroyer"
+		}
+
+		cruiser = {
+		    "Cruiser"
+		}
+
+		battleship = {
+			"Battleship"
+		}
+
+		mining_station = { }
+		research_station = { }
+		observation_station = { }
+
+		transport = {
+			"Transport"
+		}
+
+		military_station_small = {
+			"Station Anvat-Gar" "Station Avathar"
+		}
+
+		military_station_medium = {
+			"$O$ Naval Base"
+		}
+
+
+		military_station_large = {
+			"Naval Depot"
+		}
+	}
+
+	fleet_names = {
+		sequential_name = "$O$ Gar Fleet"
+	}
+
+	army_names = {
+
+		defense_army = {
+			sequential_name = "$O$ Gar Holy Guard"
+		}
+
+		assault_army = {
+			sequential_name = "$O$ Gar Division"
+		}
+
+		slave_army = {
+			sequential_name = "$O$ Gar Foreign Army"
+		}
+
+		clone_army = {
+			sequential_name = "$O$ Gar Clone Army"
+		}
+
+		robotic_army = {
+			sequential_name = "$O$ Gar Robotic Army"
+		}
+
+		android_army = {
+			sequential_name = "$O$ Gar Synthetic Army"
+		}
+
+		psionic_army = {
+			sequential_name = "$O$ Gar Force Commando"
+		}
+
+		xenomorph_army = {
+			sequential_name = "$O$ Gar Bio-Warfare Division"
+		}
+
+		gene_warrior_army = {
+			sequential_name = "$O$ Gar Bio-Engineered Squadron"
+		}
+	}
+
+	### CHARACTERS
+
+	character_names = {
+		full_names = {
+			first_names_male = {
+                Keldor Adi Kronis Syklone Jarvan Cychop Hexon Edu Odu Aki Rekdor Dultar Nolar Bak Lizar Nordor Melchor
+                Rikdor Malakus Malkor Tarsus Kyron Damus Scychor
+            }
+
+			first_names_female = {
+		        Shokoti Saryn Erati Selyn Edwyn Bakra Suani Liari Enwyn Shoryn Sumara Sabylla Maxilla Sumana Illumina
+		        Karyn Ursa Allusia Zorelle Mala Kayle Keltra Azurra
+			}
+
+		    second_names = {
+		        ""
+			}
+		}
+	}
+}
+
+MASTERVERSE_PRESCRIPTED_ETERNIA_QADIANS = {
+	selectable = { always = no }
+    randomized = no
+
+	ship_names = {
+		generic = {
+		    "Felis Qadi"
+		}
+
+		corvette = {
+		    "Corvette"
+		}
+
+		constructor = {
+			"Constructor"
+		}
+
+		colonizer = {
+			"Colony"
+		}
+
+		science = {
+			"Explorer"
+		}
+
+		destroyer = {
+		    "Destroyer"
+		}
+
+		cruiser = {
+		    "Cruiser"
+		}
+
+		battleship = {
+			"Battleship"
+		}
+
+		mining_station = { }
+		research_station = { }
+		observation_station = { }
+
+		transport = {
+			"Transport"
+		}
+
+		military_station_small = {
+			"Station Qadi"
+		}
+
+		military_station_medium = {
+			"$O$ Naval Base"
+		}
+
+
+		military_station_large = {
+			"Naval Depot"
+		}
+	}
+
+	fleet_names = {
+		sequential_name = "$O$ Qadian Fleet"
+	}
+
+	army_names = {
+
+		defense_army = {
+			sequential_name = "$O$ Qadian Guard"
+		}
+
+		assault_army = {
+			sequential_name = "$O$ Qadian Division"
+		}
+
+		slave_army = {
+			sequential_name = "$O$ Qadian Foreign Army"
+		}
+
+		clone_army = {
+			sequential_name = "$O$ Qadian Clone Army"
+		}
+
+		robotic_army = {
+			sequential_name = "$O$ Qadian Robotic Army"
+		}
+
+		android_army = {
+			sequential_name = "$O$ Qadian Synthetic Army"
+		}
+
+		psionic_army = {
+			sequential_name = "$O$ Qadian Force Commando"
+		}
+
+		xenomorph_army = {
+			sequential_name = "$O$ Qadian Bio-Warfare Division"
+		}
+
+		gene_warrior_army = {
+			sequential_name = "$O$ Qadian Bio-Engineered Squadron"
+		}
+	}
+
+	### CHARACTERS
+
+	character_names = {
+		full_names = {
+			first_names_male = {
+                Carnivus Paw Felis
+            }
+
+			first_names_female = {
+		        Kittrina Qadi Felina Faylene
+			}
+
+		    second_names = {
+		        ""
+			}
+		}
+	}
+}
+
+MASTERVERSE_PRESCRIPTED_ETERNIA_AVIONIANS = {
+	selectable = { always = no }
+    randomized = no
+
+	ship_names = {
+		generic = {
+		    "Avion"
+		}
+
+		corvette = {
+		    "Corvette"
+		}
+
+		constructor = {
+			"Constructor"
+		}
+
+		colonizer = {
+			"Colony"
+		}
+
+		science = {
+			"Explorer"
+		}
+
+		destroyer = {
+		    "Destroyer"
+		}
+
+		cruiser = {
+		    "Cruiser"
+		}
+
+		battleship = {
+			"Battleship"
+		}
+
+		mining_station = { }
+		research_station = { }
+		observation_station = { }
+
+		transport = {
+			"Transport"
+		}
+
+		military_station_small = {
+			"Station Qadi"
+		}
+
+		military_station_medium = {
+			"$O$ Naval Base"
+		}
+
+
+		military_station_large = {
+			"Naval Depot"
+		}
+	}
+
+	fleet_names = {
+		sequential_name = "$O$ Avion Fleet"
+	}
+
+	army_names = {
+
+		defense_army = {
+			sequential_name = "$O$ Avion Guard"
+		}
+
+		assault_army = {
+			sequential_name = "$O$ Avion Division"
+		}
+
+		slave_army = {
+			sequential_name = "$O$ Avion Foreign Army"
+		}
+
+		clone_army = {
+			sequential_name = "$O$ Avion Clone Army"
+		}
+
+		robotic_army = {
+			sequential_name = "$O$ Avion Robotic Army"
+		}
+
+		android_army = {
+			sequential_name = "$O$ Avion Synthetic Army"
+		}
+
+		psionic_army = {
+			sequential_name = "$O$ Avion Force Commando"
+		}
+
+		xenomorph_army = {
+			sequential_name = "$O$ Avion Bio-Warfare Division"
+		}
+
+		gene_warrior_army = {
+			sequential_name = "$O$ Avion Bio-Engineered Squadron"
+		}
+	}
+
+	### CHARACTERS
+
+	character_names = {
+		full_names = {
+			first_names_male = {
+                Stratos Laros Falcon Claw Syracu Tufos Tingos
+            }
+
+			first_names_female = {
+		        Elora Hawk Delora Emerald Hawke Tingale Sparrow 
+			}
+
+		    second_names = {
+		        ""
+			}
+		}
+	}
+}
+
+MASTERVERSE_PRESCRIPTED_ETERNIA_ANDREENIDS = {
+	selectable = { always = no }
+    randomized = no
+
+	ship_names = {
+		generic = {
+		    "Andreenos"
+		}
+
+		corvette = {
+		    "Corvette"
+		}
+
+		constructor = {
+			"Constructor"
+		}
+
+		colonizer = {
+			"Colony"
+		}
+
+		science = {
+			"Explorer"
+		}
+
+		destroyer = {
+		    "Destroyer"
+		}
+
+		cruiser = {
+		    "Cruiser"
+		}
+
+		battleship = {
+			"Battleship"
+		}
+
+		mining_station = { }
+		research_station = { }
+		observation_station = { }
+
+		transport = {
+			"Transport"
+		}
+
+		military_station_small = {
+			"Station Andreenos"
+		}
+
+		military_station_medium = {
+			"$O$ Naval Base"
+		}
+
+
+		military_station_large = {
+			"Naval Depot"
+		}
+	}
+
+	fleet_names = {
+		sequential_name = "$O$ Andreenid Fleet"
+	}
+
+	army_names = {
+
+		defense_army = {
+			sequential_name = "$O$ Andreenid Guard"
+		}
+
+		assault_army = {
+			sequential_name = "$O$ Andreenid Division"
+		}
+
+		slave_army = {
+			sequential_name = "$O$ Andreenid Foreign Army"
+		}
+
+		clone_army = {
+			sequential_name = "$O$ Andreenid Clone Army"
+		}
+
+		robotic_army = {
+			sequential_name = "$O$ Andreenid Robotic Army"
+		}
+
+		android_army = {
+			sequential_name = "$O$ Andreenid Synthetic Army"
+		}
+
+		psionic_army = {
+			sequential_name = "$O$ Andreenid Force Commando"
+		}
+
+		xenomorph_army = {
+			sequential_name = "$O$ Andreenid Bio-Warfare Division"
+		}
+
+		gene_warrior_army = {
+			sequential_name = "$O$ Andreenid Bio-Engineered Squadron"
+		}
+	}
+
+	### CHARACTERS
+
+    character_names = {
+		full_names = {
+			first_names_male = {
+				Tyke Stingrad Buzz "Buzz-Off" Bumblor Hornet Wasp Stitch Drone
+            }
+
+			first_names_female = {
+		        Andreeno Bee "Bright Wing" Ambrosia Bumblebee Weisel Larva "Warble Fly"
+			}
+
+		    second_names = {
+		        ""
+			}
+		}
+	}
+
+	ruler_names = {
+		default = {
+			full_names = {
+				Andreeno
+			}
+		}
+	}
+}
+
+MASTERVERSE_PRESCRIPTED_ETERNIA_REPTONS = {
+	selectable = { always = no }
+    randomized = no
+
+	ship_names = {
+		generic = {
+		    "Serpos"
+		}
+
+		corvette = {
+		    "Corvette"
+		}
+
+		constructor = {
+			"Constructor"
+		}
+
+		colonizer = {
+			"Colony"
+		}
+
+		science = {
+			"Explorer"
+		}
+
+		destroyer = {
+		    "Destroyer"
+		}
+
+		cruiser = {
+		    "Cruiser"
+		}
+
+		battleship = {
+			"Battleship"
+		}
+
+		mining_station = { }
+		research_station = { }
+		observation_station = { }
+
+		transport = {
+			"Transport"
+		}
+
+		military_station_small = {
+			"Station Serpos"
+		}
+
+		military_station_medium = {
+			"$O$ Naval Base"
+		}
+
+
+		military_station_large = {
+			"Naval Depot"
+		}
+	}
+
+	fleet_names = {
+		sequential_name = "$O$ Repton Fleet"
+	}
+
+	army_names = {
+
+		defense_army = {
+			sequential_name = "$O$ Repton Guard"
+		}
+
+		assault_army = {
+			sequential_name = "$O$ Repton Division"
+		}
+
+		slave_army = {
+			sequential_name = "$O$ Repton Foreign Army"
+		}
+
+		clone_army = {
+			sequential_name = "$O$ Repton Clone Army"
+		}
+
+		robotic_army = {
+			sequential_name = "$O$ Repton Robotic Army"
+		}
+
+		android_army = {
+			sequential_name = "$O$ Repton Synthetic Army"
+		}
+
+		psionic_army = {
+			sequential_name = "$O$ Repton Force Commando"
+		}
+
+		xenomorph_army = {
+			sequential_name = "$O$ Repton Bio-Warfare Division"
+		}
+
+		gene_warrior_army = {
+			sequential_name = "$O$ Repton Bio-Engineered Squadron"
+		}
+	}
+
+	### CHARACTERS
+
+	character_names = {
+		default = {
+			full_names = {
+				Pythos Kobra Khan Jester Scales Vipris Vipros Adder Lurkis Kobris
+			}
+		}
+	}
+}
+
+MASTERVERSE_PRESCRIPTED_ETERNIA_AQUATICANS = {
+	selectable = { always = no }
+    randomized = no
+
+	ship_names = {
+		generic = {
+		    "Aquatica"
+		}
+
+		corvette = {
+		    "Corvette"
+		}
+
+		constructor = {
+			"Constructor"
+		}
+
+		colonizer = {
+			"Colony"
+		}
+
+		science = {
+			"Explorer"
+		}
+
+		destroyer = {
+		    "Destroyer"
+		}
+
+		cruiser = {
+		    "Cruiser"
+		}
+
+		battleship = {
+			"Battleship"
+		}
+
+		mining_station = { }
+		research_station = { }
+		observation_station = { }
+
+		transport = {
+			"Transport"
+		}
+
+		military_station_small = {
+			"Station Aquatica"
+		}
+
+		military_station_medium = {
+			"$O$ Naval Base"
+		}
+
+
+		military_station_large = {
+			"Naval Depot"
+		}
+	}
+
+	fleet_names = {
+		sequential_name = "$O$ Aquatican Fleet"
+	}
+
+	army_names = {
+
+		defense_army = {
+			sequential_name = "$O$ Aquatican Guard"
+		}
+
+		assault_army = {
+			sequential_name = "$O$ Aquatican Division"
+		}
+
+		slave_army = {
+			sequential_name = "$O$ Aquatican Foreign Army"
+		}
+
+		clone_army = {
+			sequential_name = "$O$ Aquatican Clone Army"
+		}
+
+		robotic_army = {
+			sequential_name = "$O$ Aquatican Robotic Army"
+		}
+
+		android_army = {
+			sequential_name = "$O$ Aquatican Synthetic Army"
+		}
+
+		psionic_army = {
+			sequential_name = "$O$ Aquatican Force Commando"
+		}
+
+		xenomorph_army = {
+			sequential_name = "$O$ Aquatican Bio-Warfare Division"
+		}
+
+		gene_warrior_army = {
+			sequential_name = "$O$ Aquatican Bio-Engineered Squadron"
+		}
+	}
+
+	### CHARACTERS
+
+	character_names = {
+		default = {
+			full_names_male = {
+				Shalandor Lambda Eelan Breamor Troutan Sturgeon Tritus Aquarus
+			}
+
+			full_names_female = {
+				Nami Shala Rani Vana Lina Chovy Carpi 
+			}
+		}
+	}
+}
+
+MASTERVERSE_PRESCRIPTED_ETERNIA_SPELEANS = {
+	selectable = { always = no }
+    randomized = no
+
+	ship_names = {
+		generic = {
+		    "Spelean"
+		}
+
+		corvette = {
+		    "Corvette"
+		}
+
+		constructor = {
+			"Constructor"
+		}
+
+		colonizer = {
+			"Colony"
+		}
+
+		science = {
+			"Explorer"
+		}
+
+		destroyer = {
+		    "Destroyer"
+		}
+
+		cruiser = {
+		    "Cruiser"
+		}
+
+		battleship = {
+			"Battleship"
+		}
+
+		mining_station = { }
+		research_station = { }
+		observation_station = { }
+
+		transport = {
+			"Transport"
+		}
+
+		military_station_small = {
+			"Station Aquatica"
+		}
+
+		military_station_medium = {
+			"$O$ Naval Base"
+		}
+
+
+		military_station_large = {
+			"Naval Depot"
+		}
+	}
+
+	fleet_names = {
+		sequential_name = "$O$ Spelean Fleet"
+	}
+
+	army_names = {
+
+		defense_army = {
+			sequential_name = "$O$ Spelean Guard"
+		}
+
+		assault_army = {
+			sequential_name = "$O$ Spelean Division"
+		}
+
+		slave_army = {
+			sequential_name = "$O$ Spelean Foreign Army"
+		}
+
+		clone_army = {
+			sequential_name = "$O$ Spelean Clone Army"
+		}
+
+		robotic_army = {
+			sequential_name = "$O$ Spelean Robotic Army"
+		}
+
+		android_army = {
+			sequential_name = "$O$ Spelean Synthetic Army"
+		}
+
+		psionic_army = {
+			sequential_name = "$O$ Spelean Force Commando"
+		}
+
+		xenomorph_army = {
+			sequential_name = "$O$ Spelean Bio-Warfare Division"
+		}
+
+		gene_warrior_army = {
+			sequential_name = "$O$ Spelean Bio-Engineered Squadron"
+		}
+	}
+
+	### CHARACTERS
+
+	character_names = {
+		default = {
+			full_names_male = {
+				Dactys Batros Nostys Feratys Vampos Dactus Dax
+			}
+
+			full_names_female = {
+				Feratu Batris Vampris Liliac Nahkir 
+			}
+		}
+	}
+}
+
+MASTERVERSE_PRESCRIPTED_ETERNIA_CALIGARS = {
+	selectable = { always = no }
+    randomized = no
+
+	ship_names = {
+		generic = {
+		    "Caligar"
+		}
+
+		corvette = {
+		    "Corvette"
+		}
+
+		constructor = {
+			"Constructor"
+		}
+
+		colonizer = {
+			"Colony"
+		}
+
+		science = {
+			"Explorer"
+		}
+
+		destroyer = {
+		    "Destroyer"
+		}
+
+		cruiser = {
+		    "Cruiser"
+		}
+
+		battleship = {
+			"Battleship"
+		}
+
+		mining_station = { }
+		research_station = { }
+		observation_station = { }
+
+		transport = {
+			"Transport"
+		}
+
+		military_station_small = {
+			"Station Aquatica"
+		}
+
+		military_station_medium = {
+			"$O$ Naval Base"
+		}
+
+
+		military_station_large = {
+			"Naval Depot"
+		}
+	}
+
+	fleet_names = {
+		sequential_name = "$O$ Caligar Fleet"
+	}
+
+	army_names = {
+
+		defense_army = {
+			sequential_name = "$O$ Caligar Guard"
+		}
+
+		assault_army = {
+			sequential_name = "$O$ Caligar Division"
+		}
+
+		slave_army = {
+			sequential_name = "$O$ Caligar Foreign Army"
+		}
+
+		clone_army = {
+			sequential_name = "$O$ Caligar Clone Army"
+		}
+
+		robotic_army = {
+			sequential_name = "$O$ Caligar Robotic Army"
+		}
+
+		android_army = {
+			sequential_name = "$O$ Caligar Synthetic Army"
+		}
+
+		psionic_army = {
+			sequential_name = "$O$ Caligar Force Commando"
+		}
+
+		xenomorph_army = {
+			sequential_name = "$O$ Caligar Bio-Warfare Division"
+		}
+
+		gene_warrior_army = {
+			sequential_name = "$O$ Caligar Bio-Engineered Squadron"
+		}
+	}
+
+	### CHARACTERS
+
+	character_names = {
+		default = {
+			full_names_male = {
+				Ceratus Whiplash Pagos Rospos Jaszur Sopar Guanos Krazut
+			}
+
+			full_names_female = {
+				Kali Iguani Repta Gala Jesta Terka Soparla
+			}
+		}
+	}
+}
+
+MASTERVERSE_PRESCRIPTED_ETERNIA_WIDGETS = {
+	selectable = { always = no }
+    randomized = no
+
+	ship_names = {
+		generic = {
+		    "Coridite"
+		}
+
+		corvette = {
+		    "Corvette"
+		}
+
+		constructor = {
+			"Constructor"
+		}
+
+		colonizer = {
+			"Colony"
+		}
+
+		science = {
+			"Explorer"
+		}
+
+		destroyer = {
+		    "Destroyer"
+		}
+
+		cruiser = {
+		    "Cruiser"
+		}
+
+		battleship = {
+			"Battleship"
+		}
+
+		mining_station = { }
+		research_station = { }
+		observation_station = { }
+
+		transport = {
+			"Transport"
+		}
+
+		military_station_small = {
+			"Station Coridite"
+		}
+
+		military_station_medium = {
+			"$O$ Naval Base"
+		}
+
+
+		military_station_large = {
+			"Naval Depot"
+		}
+	}
+
+	fleet_names = {
+		sequential_name = "$O$ Widget Fleet"
+	}
+
+	army_names = {
+
+		defense_army = {
+			sequential_name = "$O$ Widget Guard"
+		}
+
+		assault_army = {
+			sequential_name = "$O$ Widget Division"
+		}
+
+		slave_army = {
+			sequential_name = "$O$ Widget Foreign Army"
+		}
+
+		clone_army = {
+			sequential_name = "$O$ Widget Clone Army"
+		}
+
+		robotic_army = {
+			sequential_name = "$O$ Widget Robotic Army"
+		}
+
+		android_army = {
+			sequential_name = "$O$ Widget Synthetic Army"
+		}
+
+		psionic_army = {
+			sequential_name = "$O$ Widget Force Commando"
+		}
+
+		xenomorph_army = {
+			sequential_name = "$O$ Widget Bio-Warfare Division"
+		}
+
+		gene_warrior_army = {
+			sequential_name = "$O$ Widget Bio-Engineered Squadron"
+		}
+	}
+
+	### CHARACTERS
+
+	character_names = {
+		default = {
+			full_names_male = {
+				Kando Squinch Biro Faso Mondo Smudge
+			}
+
+			full_names_female = {
+				Lara Cori Nia Mera Dira Hela Gadi
+			}
+		}
+	}
+}
+
+MASTERVERSE_PRESCRIPTED_ETERNIA_KULATAKS = {
+	selectable = { always = no }
+    randomized = no
+
+	ship_names = {
+		generic = {
+		    "Eternium"
+		}
+
+		corvette = {
+		    "Corvette"
+		}
+
+		constructor = {
+			"Constructor"
+		}
+
+		colonizer = {
+			"Colony"
+		}
+
+		science = {
+			"Explorer"
+		}
+
+		destroyer = {
+		    "Destroyer"
+		}
+
+		cruiser = {
+		    "Cruiser"
+		}
+
+		battleship = {
+			"Battleship"
+		}
+
+		mining_station = { }
+		research_station = { }
+		observation_station = { }
+
+		transport = {
+			"Transport"
+		}
+
+		military_station_small = {
+			"Station Coridite"
+		}
+
+		military_station_medium = {
+			"$O$ Naval Base"
+		}
+
+
+		military_station_large = {
+			"Naval Depot"
+		}
+	}
+
+	fleet_names = {
+		sequential_name = "$O$ Kulatak Fleet"
+	}
+
+	army_names = {
+
+		defense_army = {
+			sequential_name = "$O$ Kulatak Guard"
+		}
+
+		assault_army = {
+			sequential_name = "$O$ Kulatak Division"
+		}
+
+		slave_army = {
+			sequential_name = "$O$ Kulatak Foreign Army"
+		}
+
+		clone_army = {
+			sequential_name = "$O$ Kulatak Clone Army"
+		}
+
+		robotic_army = {
+			sequential_name = "$O$ Kulatak Robotic Army"
+		}
+
+		android_army = {
+			sequential_name = "$O$ Kulatak Synthetic Army"
+		}
+
+		psionic_army = {
+			sequential_name = "$O$ Kulatak Force Commando"
+		}
+
+		xenomorph_army = {
+			sequential_name = "$O$ Kulatak Bio-Warfare Division"
+		}
+
+		gene_warrior_army = {
+			sequential_name = "$O$ Kulatak Bio-Engineered Squadron"
+		}
+	}
+
+	### CHARACTERS
+
+	character_names = {
+		full_names = {
+			first_names_male = {
+                "K'Rudulak" "T'Kuduk" "Z'Vral" "K'Rago" "T'Velukar"
+            }
+			
+			first_names_female = {
+		        "V'Kredila" "T'Livar" "S'Ivaa" "R'Gula" "B'Vaari"
+			}
+
+		    second_names = {
+			    Chuboola Nechaaru Bocheera Chooblah Niyaaro Fuchoora Koowiela Vacheeri Niivah Cooline
+			}
+		}
+	}
+}
+
+### Etheria
+MASTERVERSE_PRESCRIPTED_ETHERIA_HUMANS = {
+	selectable = { always = no }
+    randomized = no
+
+	ship_names = {
+		# Animals & Creatures
+		corvette = {
+		    ETHERIA_SHIP_Alicorn
+		    ETHERIA_SHIP_Allegro
+    		ETHERIA_SHIP_Arrow
+			ETHERIA_SHIP_Bird
+			ETHERIA_SHIP_BlackSteed
+			ETHERIA_SHIP_BlackHorse
+			ETHERIA_SHIP_Bogwaddler
+			ETHERIA_SHIP_BoneBat
+			ETHERIA_SHIP_BrightWing
+			ETHERIA_SHIP_BundasCow
+			ETHERIA_SHIP_Cat
+			ETHERIA_SHIP_Chibbit
+			ETHERIA_SHIP_Chirpee
+			ETHERIA_SHIP_Clawdeen
+			ETHERIA_SHIP_Crabulus
+			ETHERIA_SHIP_Creeper
+			ETHERIA_SHIP_CrimsonScracklebird
+			ETHERIA_SHIP_CrystalHorse
+			ETHERIA_SHIP_Darkstalker
+			ETHERIA_SHIP_DarkHorse
+			ETHERIA_SHIP_DavyJones
+			ETHERIA_SHIP_Dragon
+			ETHERIA_SHIP_Elephant
+			ETHERIA_SHIP_Enchanta
+			ETHERIA_SHIP_Falcon
+			ETHERIA_SHIP_Fang
+			ETHERIA_SHIP_Foal
+		    ETHERIA_SHIP_Firehoof
+			ETHERIA_SHIP_GreatBeast
+			ETHERIA_SHIP_GreatLizard
+			ETHERIA_SHIP_Hawk
+			ETHERIA_SHIP_Horse
+			ETHERIA_SHIP_HornWhale
+			ETHERIA_SHIP_Kolian
+			ETHERIA_SHIP_Kowl
+			ETHERIA_SHIP_Kowla
+			ETHERIA_SHIP_Kulwat
+			ETHERIA_SHIP_KyoWolf
+			ETHERIA_SHIP_Lion
+			ETHERIA_SHIP_Manchine
+			ETHERIA_SHIP_Monstroid
+			ETHERIA_SHIP_Moornik
+			ETHERIA_SHIP_Mouse
+			ETHERIA_SHIP_Octopus
+			ETHERIA_SHIP_Pegasus
+			ETHERIA_SHIP_Phribian
+			ETHERIA_SHIP_PinkLion
+			ETHERIA_SHIP_PolarBeast
+			ETHERIA_SHIP_Pooka
+			ETHERIA_SHIP_Razorfin
+			ETHERIA_SHIP_RedEye
+			ETHERIA_SHIP_Screamer
+			ETHERIA_SHIP_Scruffer
+			ETHERIA_SHIP_SeaFairy
+			ETHERIA_SHIP_SeaHawk
+			ETHERIA_SHIP_Slotto
+			ETHERIA_SHIP_Snapgator
+			ETHERIA_SHIP_Snorter
+			ETHERIA_SHIP_SnowBeast
+			ETHERIA_SHIP_SnowHowler
+			ETHERIA_SHIP_Sorrowful
+			ETHERIA_SHIP_SwampCrawler
+			ETHERIA_SHIP_Spirit
+			ETHERIA_SHIP_Squall
+			ETHERIA_SHIP_Stallion
+			ETHERIA_SHIP_StarWind
+			ETHERIA_SHIP_Steed
+			ETHERIA_SHIP_Storm
+			ETHERIA_SHIP_Streak
+			ETHERIA_SHIP_Styrax
+			ETHERIA_SHIP_Swan
+			ETHERIA_SHIP_SwiftWind
+			ETHERIA_SHIP_TrueBlue
+			ETHERIA_SHIP_Tyrosaur
+			ETHERIA_SHIP_Unicorn
+			ETHERIA_SHIP_Unilope
+			ETHERIA_SHIP_WhiteFang
+			ETHERIA_SHIP_AllianceCorvette
+			ETHERIA_SHIP_RebelCorvette
+			ETHERIA_SHIP_SolarCorvette
+			ETHERIA_SHIP_SolarSailor
+		}
+
+        # Locations
+		destroyer = {
+		    ETHERIA_SHIP_Alwyn
+		    ETHERIA_SHIP_BeastIsland
+		    ETHERIA_SHIP_BibbetLand
+		    ETHERIA_SHIP_Blackmoor
+		    ETHERIA_SHIP_BlueMountain
+		    ETHERIA_SHIP_Bluestone
+		    ETHERIA_SHIP_BrightMoon
+		    ETHERIA_SHIP_Brigis
+		    ETHERIA_SHIP_Condor
+		    ETHERIA_SHIP_CrackingSea
+		    ETHERIA_SHIP_CrystalFalls
+		    ETHERIA_SHIP_Darkedge
+		    ETHERIA_SHIP_DarkPool
+		    ETHERIA_SHIP_Darkspur
+		    ETHERIA_SHIP_Devlan
+		    ETHERIA_SHIP_Dreer
+		    ETHERIA_SHIP_Dryl
+		    ETHERIA_SHIP_CaveOfWinds
+		    ETHERIA_SHIP_Colonia
+		    ETHERIA_SHIP_CrimsonWaste
+		    ETHERIA_SHIP_Elberon
+		    ETHERIA_SHIP_Elfworld
+		    ETHERIA_SHIP_Erelandia
+		    ETHERIA_SHIP_FlowerMountain
+		    ETHERIA_SHIP_ForestOfFreedom
+		    ETHERIA_SHIP_FreezingMountain
+		    ETHERIA_SHIP_GaleBreath
+		    ETHERIA_SHIP_Glenmar
+		    ETHERIA_SHIP_Greenfield
+		    ETHERIA_SHIP_GreenRiver
+		    ETHERIA_SHIP_GreenThatch
+		    ETHERIA_SHIP_Greenvale
+		    ETHERIA_SHIP_GrowlingSea
+		    ETHERIA_SHIP_Halfmoon
+		    ETHERIA_SHIP_Highpoint
+		    ETHERIA_SHIP_HiddenForest
+		    ETHERIA_SHIP_Jaymstown
+		    ETHERIA_SHIP_LavenderPond
+		    ETHERIA_SHIP_Mystacor
+		    ETHERIA_SHIP_MysticIsle
+		    ETHERIA_SHIP_MysticStones
+		    ETHERIA_SHIP_NorthLand
+		    ETHERIA_SHIP_OctopusCove
+		    ETHERIA_SHIP_Pinetown
+		    ETHERIA_SHIP_Phlax
+		    ETHERIA_SHIP_PolarSea
+		    ETHERIA_SHIP_Rosewood
+		    ETHERIA_SHIP_Salineas
+		    ETHERIA_SHIP_SandValley
+		    ETHERIA_SHIP_ScorpionHill
+		    ETHERIA_SHIP_Seaworthy
+		    ETHERIA_SHIP_SeaOfDemons
+		    ETHERIA_SHIP_SeaOfSigh
+		    ETHERIA_SHIP_Serenia
+		    ETHERIA_SHIP_Silverglade
+		    ETHERIA_SHIP_SingingRiver
+		    ETHERIA_SHIP_Skyland
+		    ETHERIA_SHIP_SmallOak
+		    ETHERIA_SHIP_Thaymor
+		    ETHERIA_SHIP_Vargon
+		    ETHERIA_SHIP_ValleyOfTheLost
+		    ETHERIA_SHIP_WhisperingWoods
+		    ETHERIA_SHIP_WoefulMountain
+			ETHERIA_SHIP_AllianceDestroyer
+			ETHERIA_SHIP_RebelDestroyer
+			ETHERIA_SHIP_SolarDestroyer
+		}
+
+        # Peoples & Legendaries
+		cruiser = {
+    		ETHERIA_SHIP_BaronCondore
+    		ETHERIA_SHIP_Beastmonster
+		    ETHERIA_SHIP_Bibbet
+		    ETHERIA_SHIP_CrystalMoonbeam
+		    ETHERIA_SHIP_CrystalSunDancer
+		    ETHERIA_SHIP_DukeDreer
+		    ETHERIA_SHIP_Harpy
+		    ETHERIA_SHIP_Human
+		    ETHERIA_SHIP_KingLiz
+		    ETHERIA_SHIP_KonSeal
+		    ETHERIA_SHIP_Magicat
+		    ETHERIA_SHIP_MerFolk
+		    ETHERIA_SHIP_PrinceArkion
+		    ETHERIA_SHIP_PrinceHazar
+		    ETHERIA_SHIP_PrinceHighcliff
+		    ETHERIA_SHIP_PrinceNorb
+		    ETHERIA_SHIP_PrincessAllegra
+		    ETHERIA_SHIP_PrincessAyla
+		    ETHERIA_SHIP_PrincessElaysia
+		    ETHERIA_SHIP_PrincessGlimmer
+		    ETHERIA_SHIP_RockPeople
+		    ETHERIA_SHIP_SeaElf
+		    ETHERIA_SHIP_Selkie
+		    ETHERIA_SHIP_Troll
+		    ETHERIA_SHIP_Twigget
+		    ETHERIA_SHIP_Wooble
+			ETHERIA_SHIP_AllianceCruiser
+			ETHERIA_SHIP_RebelCruiser
+			ETHERIA_SHIP_SolarCruiser
+		}
+
+        # People of interest
+		battleship = {
+    		ETHERIA_SHIP_AdoraGrayskull
+    		ETHERIA_SHIP_KingAgho
+    		ETHERIA_SHIP_KingArbor
+    		ETHERIA_SHIP_KingDarkspur
+    		ETHERIA_SHIP_KingDuplis
+    		ETHERIA_SHIP_KingGrox
+    		ETHERIA_SHIP_KingJared
+    		ETHERIA_SHIP_KingMercia
+    		ETHERIA_SHIP_KingMicah
+    		ETHERIA_SHIP_KingTheymor
+    		ETHERIA_SHIP_QueenAgella
+    		ETHERIA_SHIP_QueenCastaspella
+    		ETHERIA_SHIP_PhotonCutlass
+			ETHERIA_SHIP_AllianceBattleship
+			ETHERIA_SHIP_RebelBattleship
+			ETHERIA_SHIP_SolarBattleship
+		}
+
+        titan = {
+			ETHERIA_SHIP_LightHope
+			ETHERIA_SHIP_AllianceTitan
+			ETHERIA_SHIP_RebelTitan
+			ETHERIA_SHIP_SolarTitan
+		}
+
+		colossus = {
+            ETHERIA_SHIP_EtherianColossus
+			ETHERIA_SHIP_AllianceColossus
+			ETHERIA_SHIP_RebelColossus
+			ETHERIA_SHIP_SolarColossus
+		}
+
+		juggernaut = {
+			ETHERIA_SHIP_Ethor
+			ETHERIA_SHIP_Etheria
+			ETHERIA_SHIP_FirstOnes
+			ETHERIA_SHIP_CrystalCastle
+		}
+
+		constructor = {
+			"Constructor"
+		}
+
+		colonizer = {
+			"Colony"
+		}
+
+		science = {
+			"Explorer"
+		}
+
+		mining_station = { }
+		research_station = { }
+		observation_station = { }
+
+		transport = {
+			"Transport"
+		}
+
+		military_station_small = {
+			"Station Alpha" "Station Beta" "Station Gamma" "Station Delta" "Station Epsilon" "Station Zeta" "Station Eta"
+			"Station Theta" "Station Iota" "Station Kappa" "Station Lambda" "Station My" "Station Ny" "Station Xi"
+			"Station Omikron" "Station Pi" "Station Rho" "Station Sigma" "Station Tau" "Station Ypsilon" "Station Phi"
+			"Station Chi" "Station Psi" "Station Omega" "Station Digamma" "Station Stigma" "Station Heta" "Station San"
+			"Station Koppa" "Station Sampi" "Station Scho"
+		}
+
+		military_station_medium = {
+			"$O$ Naval Base"
+		}
+
+
+		military_station_large = {
+			"Naval Depot"
+		}
+	}
+
+	fleet_names = {
+		sequential_name = ETHERIA_xxFLEET_ORD
+	}
+
+	army_names = {
+		machine_defense = {
+			sequential_name = ETHERIA_xxPLANETARYGUARD_ORD
+		}
+
+		machine_assault_1 = {
+			sequential_name = ETHERIA_xxEXPEDITIONARYFORCE_ORD
+		}
+
+		machine_assault_2 = {
+			sequential_name = ETHERIA_xxEXPEDITIONARYFORCE_ORD
+		}
+
+		machine_assault_3 = {
+			sequential_name = ETHERIA_xxEXPEDITIONARYFORCE_ORD
+		}
+
+		defense_army = {
+			sequential_name = ETHERIA_xxPLANETARYGUARD_ORD
+		}
+
+		assault_army = {
+			sequential_name = ETHERIA_xxEXPEDITIONARYFORCE_ORD
+		}
+
+		slave_army = {
+			sequential_name = ETHERIA_xxINDENTUREDRIFLES_ORD
+		}
+
+		clone_army = {
+			sequential_name = ETHERIA_xxCLONEARMY_ORD
+		}
+
+		undead_army = {
+			sequential_name = ETHERIA_xxDREADCOMMANDO_ORD
+		}
+
+		robotic_army = {
+			sequential_name = ETHERIA_xxHUNTERKILLERGROUP_ORD
+		}
+
+		robotic_defense_army = {
+			sequential_name = ETHERIA_xxGROUNDDEFENSEMATRIX_ORD
+		}
+
+		psionic_army = {
+			sequential_name = ETHERIA_xxPSICOMMANDO_ORD
+		}
+
+		mage_army = {
+			sequential_name = ETHERIA_xxMAGECOMMANDO_ORD
+		}
+
+		xenomorph_army = {
+			sequential_name = ETHERIA_xxBIOWARFAREDIVISION_ORD
+		}
+
+		gene_warrior_army = {
+			sequential_name = ETHERIA_xxBIOENGINEEREDSQUADRON_ORD
+		}
+
+		occupation_army = {
+			sequential_name = ETHERIA_xxGARRISONFORCE_ORD
+		}
+
+		robotic_occupation_army = {
+			sequential_name = ETHERIA_xxMECHANIZEDGARRISON_ORD
+		}
+
+		primitive_army = {
+			sequential_name = ETHERIA_PRIMITIVEARMYxx_SEQ
+		}
+
+		industrial_army = {
+			sequential_name = ETHERIA_INDUSTRIALARMYxx_SEQ
+		}
+
+		postatomic_army = {
+			sequential_name = ETHERIA_POSTATOMICARMYxx_SEQ
+		}
+	}
+
+	### CHARACTERS
+
+	character_names = {
+		full_names = {
+			first_names_male = {
+                Zak Miro Thaos Garn Pangas Kor Danton Thaos David Jacob Mark Melvin Lester Philipp Marzo Phillip Orius
+                Krass Stefen Dal Dare Perkaedo Malcom Dekker Raenius Doodon Jey Riolus Blast Darid Jaxton Gepher Zodak
+                Esker Boreas Xenthor Gary Kevin Nikolas Lou Victor D'Vann Theydon Falcon Jeoff Micah Erika Kyle Vokan
+                Allepsatsac Galen Eldon Freenorn Volnar Morgoth Geldor Ade-Ren Condore Nazghal Damon Demos Aran Draca
+                Rago Cambro Todd Drew Caleb Marsh Tauron Melaktha Stanlan Zek Kothos Zantar Zem Nephtu Ollo Trydor Garda
+                Agar Farin Jed Elias Jeremy Landros Kor Jaymar Orn Abram Elmas Elden Chad Kol Rohad Mitro Galen Jonno
+                Justin Hovar Tyrin Melbrag Zicran Yarrow Alan Krill Tager Ananda Merlo Grod Drak Jova Danavas Gommoroth
+				Davy Kristan Frod Andras Arden Marcus Barris Bryan Brian Candor Catillus Collon Cory Norwyn Petro Carliss
+				Garv J'Milla Korg Tondy Darius Loden Turron Frit
+            }
+
+			first_names_female = {
+		        Marlena Rhea Balina Celice Celine Aylina Adora Janice Linda Venus Christina Nicole Alisha Majestra Podi
+		        Nadira Evelyn Morgan Maligna Meg Sharella Penelope Esmeralda Tara Abby Beatrix Es'tra Lynda Mortella
+		        Balina Tyrella Oona Zilora Gwen Karil Emma Edwina Elora Arvela Mira Kuduk Bran Sibyline Elmora Valtira
+		        Ileena Rayna Cynda Sumana Jade Jeeta Karyn Glimmer Angella Regina Deena Andra Ariane Ariel Sera Sara
+				Hemli Leena Jarine Krystala Lohni Serena Shakra
+			}
+
+		    second_names = {
+			    Glenn Powers Zur Fist Blast Arms Blithe Scheimer Reccula Fancy Mackenzie De'Note Nycroft Gunden Squire
+			    Lightspinner D'Ream Scurvy Vesselak Gary Kalif Donovan Drome Darkspur Sencri Scope Esooniux Dini Zukor
+			    Abra Ungol Darr Clark Orion Barbo Smallen Thales Ritter Lamore Condore Miller Jones Baker Dreer Bron
+				Sunder Peck
+			}
+		}
+	}
+}
+
+MASTERVERSE_PRESCRIPTED_ETHERIA_TWIGGETS = {
+	selectable = { always = no }
+    randomized = no
+
+	ship_names = {
+		generic = {
+
+		}
+
+		corvette = {
+		    "Corvette"
+		}
+
+		constructor = {
+			"Constructor"
+		}
+
+		colonizer = {
+			"Colony"
+		}
+
+		science = {
+			"Explorer"
+		}
+
+		destroyer = {
+		    "Destroyer"
+		}
+
+		cruiser = {
+		    "Cruiser"
+		}
+
+		battleship = {
+			"Battleship"
+		}
+
+		mining_station = { }
+		research_station = { }
+		observation_station = { }
+
+		transport = {
+			"Transport"
+		}
+
+		military_station_small = {
+			"Station Twigget"
+		}
+
+		military_station_medium = {
+			"$O$ Naval Base"
+		}
+
+
+		military_station_large = {
+			"Naval Depot"
+		}
+	}
+
+	fleet_names = {
+		sequential_name = "$O$ Widget Fleet"
+	}
+
+	army_names = {
+
+		defense_army = {
+			sequential_name = "$O$ Twigget Guard"
+		}
+
+		assault_army = {
+			sequential_name = "$O$ Twigget Division"
+		}
+
+		slave_army = {
+			sequential_name = "$O$ Twigget Foreign Army"
+		}
+
+		clone_army = {
+			sequential_name = "$O$ Twigget Clone Army"
+		}
+
+		robotic_army = {
+			sequential_name = "$O$ Twigget Robotic Army"
+		}
+
+		android_army = {
+			sequential_name = "$O$ Twigget Synthetic Army"
+		}
+
+		psionic_army = {
+			sequential_name = "$O$ Twigget Force Commando"
+		}
+
+		xenomorph_army = {
+			sequential_name = "$O$ Twigget Bio-Warfare Division"
+		}
+
+		gene_warrior_army = {
+			sequential_name = "$O$ Twigget Bio-Engineered Squadron"
+		}
+	}
+
+	### CHARACTERS
+
+	character_names = {
+		default = {
+			full_names_male = {
+				Sprag Sprint Sprite Sprocker Spunky Ritz Sporn Spanky Sparky Spurn
+			}
+
+			full_names_female = {
+				Sparkle Spritina Razz Spalina Fancy Regina Ruffy Spolene Twinkle Spleenea
+			}
+		}
+	}
+}
+
+MASTERVERSE_PRESCRIPTED_ETHERIA_TROLLS = {
+	selectable = { always = no }
+    randomized = no
+
+	ship_names = {
+		generic = {
+
+		}
+
+		corvette = {
+		    "Corvette"
+		}
+
+		constructor = {
+			"Constructor"
+		}
+
+		colonizer = {
+			"Colony"
+		}
+
+		science = {
+			"Explorer"
+		}
+
+		destroyer = {
+		    "Destroyer"
+		}
+
+		cruiser = {
+		    "Cruiser"
+		}
+
+		battleship = {
+			"Battleship"
+		}
+
+		mining_station = { }
+		research_station = { }
+		observation_station = { }
+
+		transport = {
+			"Transport"
+		}
+
+		military_station_small = {
+			"Station Troll"
+		}
+
+		military_station_medium = {
+			"$O$ Naval Base"
+		}
+
+
+		military_station_large = {
+			"Naval Depot"
+		}
+	}
+
+	fleet_names = {
+		sequential_name = "$O$ Troll Fleet"
+	}
+
+	army_names = {
+
+		defense_army = {
+			sequential_name = "$O$ Troll Guard"
+		}
+
+		assault_army = {
+			sequential_name = "$O$ Troll Division"
+		}
+
+		slave_army = {
+			sequential_name = "$O$ Troll Foreign Army"
+		}
+
+		clone_army = {
+			sequential_name = "$O$ Troll Clone Army"
+		}
+
+		robotic_army = {
+			sequential_name = "$O$ Troll Robotic Army"
+		}
+
+		android_army = {
+			sequential_name = "$O$ Troll Synthetic Army"
+		}
+
+		psionic_army = {
+			sequential_name = "$O$ Troll Force Commando"
+		}
+
+		xenomorph_army = {
+			sequential_name = "$O$ Troll Bio-Warfare Division"
+		}
+
+		gene_warrior_army = {
+			sequential_name = "$O$ Troll Bio-Engineered Squadron"
+		}
+	}
+
+	### CHARACTERS
+
+	character_names = {
+		default = {
+			full_names_male = {
+				Agho Grox Lakin Juma Jalai Azibo Jafan Alwan Tedar Sligo
+			}
+
+			full_names_female = {
+				Esha Ithra Zesa Keja Valja Moza Yashi Kina Zujia Nepita
+			}
+		}
+	}
+}
+
+MASTERVERSE_PRESCRIPTED_ETHERIA_KONSEALS = {
+	selectable = { always = no }
+    randomized = no
+
+	ship_names = {
+		generic = {
+
+		}
+
+		corvette = {
+		    "Corvette"
+		}
+
+		constructor = {
+			"Constructor"
+		}
+
+		colonizer = {
+			"Colony"
+		}
+
+		science = {
+			"Explorer"
+		}
+
+		destroyer = {
+		    "Destroyer"
+		}
+
+		cruiser = {
+		    "Cruiser"
+		}
+
+		battleship = {
+			"Battleship"
+		}
+
+		mining_station = { }
+		research_station = { }
+		observation_station = { }
+
+		transport = {
+			"Transport"
+		}
+
+		military_station_small = {
+			"Station Twigget"
+		}
+
+		military_station_medium = {
+			"$O$ Naval Base"
+		}
+
+
+		military_station_large = {
+			"Naval Depot"
+		}
+	}
+
+	fleet_names = {
+		sequential_name = "$O$ Widget Fleet"
+	}
+
+	army_names = {
+
+		defense_army = {
+			sequential_name = "$O$ Twigget Guard"
+		}
+
+		assault_army = {
+			sequential_name = "$O$ Twigget Division"
+		}
+
+		slave_army = {
+			sequential_name = "$O$ Twigget Foreign Army"
+		}
+
+		clone_army = {
+			sequential_name = "$O$ Twigget Clone Army"
+		}
+
+		robotic_army = {
+			sequential_name = "$O$ Twigget Robotic Army"
+		}
+
+		android_army = {
+			sequential_name = "$O$ Twigget Synthetic Army"
+		}
+
+		psionic_army = {
+			sequential_name = "$O$ Twigget Force Commando"
+		}
+
+		xenomorph_army = {
+			sequential_name = "$O$ Twigget Bio-Warfare Division"
+		}
+
+		gene_warrior_army = {
+			sequential_name = "$O$ Twigget Bio-Engineered Squadron"
+		}
+	}
+
+	### CHARACTERS
+
+	character_names = {
+		default = {
+			full_names_male = {
+				Loo-Kee Pop-Pee Roo-Kuu Kee-Loo Raa-Kee Pop-Ruu Kon-See
+			}
+
+			full_names_female = {
+				Laa-See Lee-Laa Kee-Raa Tee-Pee Huu-Laa Fee-Laa See-Luu
+			}
+		}
+	}
+}
+
+MASTERVERSE_PRESCRIPTED_ETHERIA_SELKIES = {
+	selectable = { always = no }
+    randomized = no
+
+	ship_names = {
+		generic = {
+
+		}
+
+		corvette = {
+		    "Corvette"
+		}
+
+		constructor = {
+			"Constructor"
+		}
+
+		colonizer = {
+			"Colony"
+		}
+
+		science = {
+			"Explorer"
+		}
+
+		destroyer = {
+		    "Destroyer"
+		}
+
+		cruiser = {
+		    "Cruiser"
+		}
+
+		battleship = {
+			"Battleship"
+		}
+
+		mining_station = { }
+		research_station = { }
+		observation_station = { }
+
+		transport = {
+			"Transport"
+		}
+
+		military_station_small = {
+			"Station Selkie"
+		}
+
+		military_station_medium = {
+			"$O$ Naval Base"
+		}
+
+
+		military_station_large = {
+			"Naval Depot"
+		}
+	}
+
+	fleet_names = {
+		sequential_name = "$O$ Selkie Fleet"
+	}
+
+	army_names = {
+
+		defense_army = {
+			sequential_name = "$O$ Selkie Guard"
+		}
+
+		assault_army = {
+			sequential_name = "$O$ Selkie Division"
+		}
+
+		slave_army = {
+			sequential_name = "$O$ Selkie Foreign Army"
+		}
+
+		clone_army = {
+			sequential_name = "$O$ Selkie Clone Army"
+		}
+
+		robotic_army = {
+			sequential_name = "$O$ Selkie Robotic Army"
+		}
+
+		android_army = {
+			sequential_name = "$O$ Selkie Synthetic Army"
+		}
+
+		psionic_army = {
+			sequential_name = "$O$ Selkie Force Commando"
+		}
+
+		xenomorph_army = {
+			sequential_name = "$O$ Selkie Bio-Warfare Division"
+		}
+
+		gene_warrior_army = {
+			sequential_name = "$O$ Selkie Bio-Engineered Squadron"
+		}
+	}
+
+	### CHARACTERS
+
+	character_names = {
+		default = {
+			full_names_male = {
+				Narwahl Wesk Obhecht Selbamh Faol Ighir Cobh Bethghai Albail Nagh
+			}
+
+			full_names_female = {
+				Tall Mangei Ophnestra Silma Dorbhia Neilmu Engu Niash Ring Brephnu
+			}
+		}
+	}
+}

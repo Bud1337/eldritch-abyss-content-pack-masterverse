@@ -1,0 +1,560 @@
+##########################
+#                        #
+# Eternia Relic Events   #
+#                        #
+# Written by Manuel Lieb #
+#                        #
+##########################
+
+namespace = MASTERVERSE_eternia_relics
+
+##########################################################
+# Eternia Arc Sites #1 Castle Grayskull - Sword of Power #
+##########################################################
+country_event = {
+	id = MASTERVERSE_eternia_relics.100
+
+	show_sound = event_scanner
+	location = from
+	trackable = yes
+
+	hide_window = yes
+
+	fire_only_once = yes
+
+	trigger = {
+	}
+
+	immediate = {
+		every_planet_within_border = {
+			limit = { has_planet_flag = eternia_castle_grayskull } 
+			create_archaeological_site = MASTERVERSE_eternia_arc_site_2
+		}
+	}
+}
+
+###################################################
+# Eternia Arc Sites #1 Castle Grayskull - Stage 1 #
+###################################################
+fleet_event = {
+	id = MASTERVERSE_eternia_relics.101
+	title = "MASTERVERSE_eternia_relics.101.name"
+	desc = "MASTERVERSE_eternia_relics.101.desc"
+	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+	show_sound = event_dig_site
+	location = from
+
+	archaeology = yes
+
+    immediate = {
+    }
+
+	is_triggered_only = yes
+
+	option = {
+		name = INTRIGUING
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+		}
+	}
+}
+
+###################################################
+# Eternia Arc Sites #1 Castle Grayskull - Stage 2 #
+###################################################
+fleet_event = {
+	id = MASTERVERSE_eternia_relics.102
+	title = "MASTERVERSE_eternia_relics.102.name"
+	desc = "MASTERVERSE_eternia_relics.102.desc"
+	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+	show_sound = event_dig_site
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = INCREDIBLE
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+		}
+	}
+}
+
+###################################################
+# Eternia Arc Sites #1 Castle Grayskull - Stage 3 #
+###################################################
+fleet_event = {
+	id = MASTERVERSE_eternia_relics.103
+	title = "MASTERVERSE_eternia_relics.103.name"
+	desc = "MASTERVERSE_eternia_relics.103.desc"
+	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+	show_sound = event_dig_site
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = REMARKABLE
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+		}
+	}
+}
+
+###################################################
+# Eternia Arc Sites #1 Castle Grayskull - Stage 4 #
+###################################################
+fleet_event = {
+	id = MASTERVERSE_eternia_relics.104
+	title = "MASTERVERSE_eternia_relics.104.name"
+	desc = "MASTERVERSE_eternia_relics.104.desc"
+	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+	show_sound = event_dig_site
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = INTRIGUING
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+		}
+	}
+}
+
+###################################################
+# Eternia Arc Sites #1 Castle Grayskull - Stage 5 #
+###################################################
+fleet_event = {
+	id = MASTERVERSE_eternia_relics.105
+	title = "MASTERVERSE_eternia_relics.105.name"
+	desc = "MASTERVERSE_eternia_relics.105.desc"
+	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+	show_sound = event_dig_site
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = INCREDIBLE
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+		}
+	}
+}
+
+###################################################
+# Eternia Arc Sites #1 Castle Grayskull - Stage 6 #
+###################################################
+fleet_event = {
+	id = MASTERVERSE_eternia_relics.106
+	title = "MASTERVERSE_eternia_relics.106.name"
+	desc = "MASTERVERSE_eternia_relics.106.desc"
+	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+	show_sound = event_dig_site
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = REMARKABLE
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+			add_relic = r_eternia_sword_of_power
+		}
+	}
+}
+
+##################################################
+# Eternia Relics #2 Snake Mountain - Havoc Staff #
+##################################################
+#fleet_event = {
+#	id = MASTERVERSE_eternia_relics.2
+#	title = "MASTERVERSE_eternia_relics.2.name"
+#	desc = "MASTERVERSE_eternia_relics.2.desc"
+#	picture = MASTERVERSE_GFX_evt_eternia_snake_mountain
+#	show_sound = event_scanner
+#	location = from
+#	trackable = yes
+#
+#	fire_only_once = yes
+#
+#	trigger = {
+#		owner = {
+#			has_country_flag = eternia_story_18
+#			NOT = {
+#				has_country_flag = eternia_relics_2
+#			}
+#		}
+#	}
+#
+#   mean_time_to_happen = {
+#		days = 30
+#	}
+#
+#	option = {
+#	    # button label
+#       name = MAKE_IT_SO
+#
+#		# enabling special project
+#		owner = {
+#			# set flag for eternia story chain
+#			set_country_flag = eternia_relics_2
+#		}
+#	}
+#}
+
+#################################################
+# Eternia Arc Sites #2 Snake Mountain - Stage 1 #
+#################################################
+#fleet_event = {
+#	id = MASTERVERSE_eternia_relics.201
+#	title = "MASTERVERSE_eternia_relics.201.name"
+#	desc = "MASTERVERSE_eternia_relics.201.desc"
+#	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+#	show_sound = event_dig_site
+#	location = from
+#
+#	archaeology = yes
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = INTRIGUING
+#		owner = {
+#			add_resource = { minor_artifacts = 5 }
+#		}
+#	}
+#}
+
+#################################################
+# Eternia Arc Sites #2 Snake Mountain - Stage 2 #
+#################################################
+#fleet_event = {
+#	id = MASTERVERSE_eternia_relics.202
+#	title = "MASTERVERSE_eternia_relics.202.name"
+#	desc = "MASTERVERSE_eternia_relics.202.desc"
+#	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+#	show_sound = event_dig_site
+#	location = from
+#
+#	archaeology = yes
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = INCREDIBLE
+#		owner = {
+#			add_resource = { minor_artifacts = 5 }
+#		}
+#	}
+#}
+
+#################################################
+# Eternia Arc Sites #2 Snake Mountain - Stage 3 #
+#################################################
+#fleet_event = {
+#	id = MASTERVERSE_eternia_relics.203
+#	title = "MASTERVERSE_eternia_relics.203.name"
+#	desc = "MASTERVERSE_eternia_relics.203.desc"
+#	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+#	show_sound = event_dig_site
+#	location = from
+#
+#	archaeology = yes
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = REMARKABLE
+#		owner = {
+#			add_resource = { minor_artifacts = 5 }
+#		}
+#	}
+#}
+
+#################################################
+# Eternia Arc Sites #2 Snake Mountain - Stage 4 #
+#################################################
+#fleet_event = {
+#	id = MASTERVERSE_eternia_relics.204
+#	title = "MASTERVERSE_eternia_relics.204.name"
+#	desc = "MASTERVERSE_eternia_relics.204.desc"
+#	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+#	show_sound = event_dig_site
+#	location = from
+#
+#	archaeology = yes
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = INTRIGUING
+#		owner = {
+#			add_resource = { minor_artifacts = 5 }
+#		}
+#	}
+#}
+
+#################################################
+# Eternia Arc Sites #2 Snake Mountain - Stage 5 #
+#################################################
+#fleet_event = {
+#	id = MASTERVERSE_eternia_relics.205
+#	title = "MASTERVERSE_eternia_relics.205.name"
+#	desc = "MASTERVERSE_eternia_relics.205.desc"
+#	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+#	show_sound = event_dig_site
+#	location = from
+#
+#	archaeology = yes
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = INCREDIBLE
+#		owner = {
+#			add_resource = { minor_artifacts = 5 }
+#		}
+#	}
+#}
+
+#################################################
+# Eternia Arc Sites #2 Snake Mountain - Stage 6 #
+#################################################
+#fleet_event = {
+#	id = MASTERVERSE_eternia_relics.206
+#	title = "MASTERVERSE_eternia_relics.206.name"
+#	desc = "MASTERVERSE_eternia_relics.206.desc"
+#	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+#	show_sound = event_dig_site
+#	location = from
+#
+#	archaeology = yes
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = REMARKABLE
+#		owner = {
+#			add_resource = { minor_artifacts = 5 }
+#			add_relic = r_eternia_havoc_staff
+#		}
+#	}
+#}
+
+#################################################
+# Eternia Relics #3 Thenurian Cave - Cosmic Key #
+#################################################
+#fleet_event = {
+#	id = MASTERVERSE_eternia_relics.3
+#	title = "MASTERVERSE_eternia_relics.3.name"
+#	desc = "MASTERVERSE_eternia_relics.3.desc"
+#	picture = MASTERVERSE_GFX_evt_eternia_cosmic_key_2
+#	show_sound = event_scanner
+#	location = from
+#	trackable = yes
+#
+#	fire_only_once = yes
+#
+#	trigger = {
+#		owner = {
+#			has_country_flag = eternia_story_19
+#			NOT = {
+#				has_country_flag = eternia_relics_3
+#			}
+#		}
+#	}
+#
+#   mean_time_to_happen = {
+#		days = 30
+#	}
+#
+#	option = {
+#	    # button label
+#       name = MAKE_IT_SO
+#
+#		# enabling special project
+#		owner = {
+#			# set flag for eternia story chain
+#			set_country_flag = eternia_relics_3
+#		}
+#	}
+#}
+
+#################################################
+# Eternia Arc Sites #3 Thenurian Cave - Stage 1 #
+#################################################
+
+country_event = {
+	id = MASTERVERSE_eternia_relics.300
+
+	show_sound = event_scanner
+	location = from
+	trackable = yes
+
+	hide_window = yes
+
+	fire_only_once = yes
+
+	trigger = {
+	}
+
+	immediate = {
+		every_planet_within_border = {
+			limit = { has_planet_flag = eternia_thenurian_cave } 
+			create_archaeological_site = MASTERVERSE_eternia_arc_site_4
+		}
+	}
+}
+
+
+#################################################
+# Eternia Arc Sites #3 Thenurian Cave - Stage 1 #
+#################################################
+fleet_event = {
+	id = MASTERVERSE_eternia_relics.301
+	title = "MASTERVERSE_eternia_relics.301.name"
+	desc = "MASTERVERSE_eternia_relics.301.desc"
+	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+	show_sound = event_dig_site
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = INTRIGUING
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+		}
+	}
+}
+
+#################################################
+# Eternia Arc Sites #3 Thenurian Cave - Stage 2 #
+#################################################
+fleet_event = {
+	id = MASTERVERSE_eternia_relics.302
+	title = "MASTERVERSE_eternia_relics.302.name"
+	desc = "MASTERVERSE_eternia_relics.302.desc"
+	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+	show_sound = event_dig_site
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = INCREDIBLE
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+		}
+	}
+}
+
+#################################################
+# Eternia Arc Sites #3 Thenurian Cave - Stage 3 #
+#################################################
+fleet_event = {
+	id = MASTERVERSE_eternia_relics.303
+	title = "MASTERVERSE_eternia_relics.303.name"
+	desc = "MASTERVERSE_eternia_relics.303.desc"
+	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+	show_sound = event_dig_site
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = REMARKABLE
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+			# set flag for eternia story chain
+		}
+	}
+}
+
+#################################################
+# Eternia Arc Sites #3 Thenurian Cave - Stage 4 #
+#################################################
+fleet_event = {
+	id = MASTERVERSE_eternia_relics.304
+	title = "MASTERVERSE_eternia_relics.304.name"
+	desc = "MASTERVERSE_eternia_relics.304.desc"
+	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+	show_sound = event_dig_site
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = INTRIGUING
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+		}
+	}
+}
+
+#################################################
+# Eternia Arc Sites #3 Thenurian Cave - Stage 5 #
+#################################################
+fleet_event = {
+	id = MASTERVERSE_eternia_relics.305
+	title = "MASTERVERSE_eternia_relics.305.name"
+	desc = "MASTERVERSE_eternia_relics.305.desc"
+	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+	show_sound = event_dig_site
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = INCREDIBLE
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+		}
+	}
+}
+
+#################################################
+# Eternia Arc Sites #3 Thenurian Cave - Stage 6 #
+#################################################
+fleet_event = {
+	id = MASTERVERSE_eternia_relics.306
+	title = "MASTERVERSE_eternia_relics.306.name"
+	desc = "MASTERVERSE_eternia_relics.306.desc"
+	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+	show_sound = event_dig_site
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = REMARKABLE
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+			add_relic = r_eternia_cosmic_key
+		}
+	}
+}

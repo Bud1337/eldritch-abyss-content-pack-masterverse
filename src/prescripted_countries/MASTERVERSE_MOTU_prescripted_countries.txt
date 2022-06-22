@@ -1,0 +1,80 @@
+# United Kingdoms of Eternia
+EternianKingdoms = {
+	name = "EMPIRE_DESIGN_EternianKingdoms"
+	adjective = "PRESCRIPTED_adjective_EternianKingdoms"
+	spawn_enabled = yes
+	ignore_portrait_duplication = yes
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_EternianKingdoms"
+
+    species = {
+        class = "HUM"
+        portrait = "human"
+		gender = male
+        name = "PRESCRIPTED_species_name_humans"
+        plural = "PRESCRIPTED_species_plural_humans"
+        adjective = "PRESCRIPTED_species_adjective_humans"
+        name_list = "MASTERVERSE_PRESCRIPTED_ETERNIA_HUMANS"
+        bio = "EMPIRE_DESIGN_EternianKingdoms_desc"
+        ideal_planet_class = pc_continental
+        trait = trait_adaptive 
+  	    trait = trait_talented
+        trait = trait_conservational
+	    trait = trait_unruly
+    }
+
+	room = "personality_decadent_hierarchy_room"
+
+	authority = "auth_imperial"
+	civics = { "civic_aristocratic_elite" "civic_memorialist" }
+	government = gov_theocratic_monarchy
+
+	ethic = "ethic_fanatic_xenophile"
+	ethic = "ethic_materialist"
+	
+	origin=  "EA_origin_mystic"
+
+	flags = { eternia masterverse custom_start_screen }
+	
+	planet_name = "NAME_Eternia"
+	planet_class = "pc_continental"
+	system_name = "NAME_Adarion"
+    initializer = "MASTERVERSE_adarion_system"
+
+	graphical_culture = "humanoid_01"
+	city_graphical_culture = "reptilian_01"
+
+	empire_flag = {
+		icon={
+			category="masterverse"
+			file="heroic.dds"
+		}
+		background={
+			category="backgrounds"
+			file="rounded_middle.dds"
+		}
+		colors={
+			"blue"
+			"red"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_EternianKingdoms"
+		gender = male
+		portrait = "human_male_03"
+		texture = 0
+		hair = 12
+		clothes = 6
+		ruler_title = "RT_HIGH_KING"
+		heir_title = "HT_PRINCE"
+		ruler_title_female = "RT_HIGH_QUEEN"
+		heir_title_female = "HT_PRINCESS"
+		leader_class = ruler
+	}
+
+	advisor_voice_type = "l_egalitarian"
+	spawn_as_fallen = no
+}

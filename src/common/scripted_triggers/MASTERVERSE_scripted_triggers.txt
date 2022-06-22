@@ -1,0 +1,8 @@
+
+is_fallen_empire_hordes = {
+	OR = {
+		is_country_type = fallen_empire
+		is_country_type = awakened_fallen_empire
+	}
+	has_country_flag = the_hordes
+}

@@ -1,0 +1,6 @@
+#!/bin/sh
+
+convert aquatic_05_portrait_blue_01.dds aquatican_05_portrait_blue_01.dds
+convert aquatic_05_portrait_blue_02.dds aquatican_05_portrait_blue_02.dds
+convert aquatic_05_portrait_green_01.dds aquatican_05_portrait_green_01.dds
+convert aquatic_05_portrait_green_02.dds aquatican_05_portrait_green_02.dds

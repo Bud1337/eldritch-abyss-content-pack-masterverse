@@ -1,0 +1,435 @@
+#	Example:
+#
+#	example_effect = {
+#		add_resource = { energy = -100 }
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+#
+
+# Checks if gar people exists
+# Creates the country and saves it if it does not
+# use in planet scope
+MASTERVERSE_eternia_create_species_gar = {
+    every_planet_within_border = {
+        limit = { has_planet_flag = planet_eternia }
+        if = {
+            # is this limit check needed?
+            limit = {
+                has_planet_flag = planet_eternia
+                # has_country_flag = eternia
+            }
+            create_species = {
+                name = "NAME_Eternia_Species_Gar"
+                plural = "NAME_Eternia_Species_Gar_plural"
+                class = HUM
+                portrait = masterverse_gar
+                namelist = MASTERVERSE_PRESCRIPTED_ETERNIA_GAR
+                traits = {
+                    ideal_planet_class = pc_tropical
+                    trait = trait_latent_psionic
+                    trait = trait_venerable
+                    trait = trait_slow_breeders
+                    trait = trait_unruly
+                }
+                homeworld = root
+            }
+            while = {
+                count = 7
+                create_pop = {
+                    species = last_created
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                NOT = { exists = event_target:ssc_eternian_species_gar }
+            }
+            random_country = {
+                limit = {
+                    is_country_type = adversary
+                    has_country_flag = ssc_eternian_species_gar
+                }
+                save_event_target_as = ssc_eternian_species_gar
+            }
+        }
+    }
+}
+
+MASTERVERSE_eternia_create_species_widgets = {
+    every_planet_within_border = {
+        limit = { has_planet_flag = planet_eternia }
+        if = {
+            # is this limit check needed?
+            limit = {
+                NOT = {
+                    any_country = {
+                        is_country_type = adversary
+                        has_country_flag = ssc_eternia_country_widgets
+                    }
+                }
+            }
+            create_species = {
+                name = "NAME_Eternia_Species_Widget"
+                plural = "NAME_Eternia_Species_Widget_plural"
+                class = HUM
+                portrait = humanoid_hp_02
+                namelist = MASTERVERSE_PRESCRIPTED_ETERNIA_WIDGETS
+                traits = {
+                    ideal_planet_class = pc_continental
+                    trait = trait_industrious
+                    trait = trait_communal
+                    trait = trait_slow_breeders
+                    trait = trait_weak
+                }
+                homeworld = root
+            }
+            while = {
+                count = 2
+                create_pop = {
+                    species = last_created
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                NOT = { exists = event_target:ssc_eternian_species_widgets }
+            }
+            random_country = {
+                limit = {
+                    is_country_type = adversary
+                    has_country_flag = ssc_eternian_species_widgets
+                }
+                save_event_target_as = ssc_eternian_species_widgets
+            }
+        }
+    }
+}
+
+MASTERVERSE_eternia_create_species_aquaticans = {
+    every_planet_within_border = {
+        limit = { has_planet_flag = planet_eternia }
+        if = {
+            create_species = {
+                name = "NAME_Eternia_Species_Aquatican"
+                plural = "NAME_Eternia_Species_Aquatican_plural"
+                class = AQUATIC
+                portrait = masterverse_aquatican
+                namelist = MASTERVERSE_PRESCRIPTED_ETERNIA_AQUATICANS
+                traits = {
+                    ideal_planet_class = pc_ocean
+                    trait = trait_thrifty
+                    trait = trait_adaptive
+                    trait = trait_sedentary
+                }
+                homeworld = root
+            }
+            while = {
+                count = 2
+                create_pop = {
+                    species = last_created
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                NOT = { exists = event_target:ssc_eternian_species_aquaticans }
+            }
+            random_country = {
+                limit = {
+                    is_country_type = adversary
+                    has_country_flag = ssc_eternian_species_aquaticans
+                }
+                save_event_target_as = ssc_eternian_species_aquaticans
+            }
+        }
+	}
+}
+
+MASTERVERSE_eternia_create_species_speleans = {
+    every_planet_within_border = {
+        limit = { has_planet_flag = planet_eternia }
+        if = {
+            # is this limit check needed?
+            limit = {
+                NOT = {
+                    any_country = {
+                        is_country_type = adversary
+                        has_country_flag = ssc_eternian_species_speleans
+                    }
+                }
+            }
+            create_species = {
+                name = "NAME_Eternia_Species_Spelean"
+                plural = "NAME_Eternia_Species_Spelean_plural"
+                class = MAM
+                portrait = nec15
+                namelist = MASTERVERSE_PRESCRIPTED_ETERNIA_SPELEANS
+                traits = {
+                    ideal_planet_class = pc_arid
+                    trait = trait_intelligent
+                    trait = trait_strong
+                    trait = trait_enduring
+                    trait = trait_repugnant
+                }
+                homeworld = root
+            }
+            while = {
+                count = 3
+                create_pop = {
+                    species = last_created
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                NOT = { exists = event_target:ssc_eternian_species_speleans }
+            }
+            random_country = {
+                limit = {
+                    is_country_type = adversary
+                    has_country_flag = ssc_eternian_species_speleans
+                }
+                save_event_target_as = ssc_eternian_species_speleans
+            }
+        }
+    }
+}
+
+MASTERVERSE_eternia_create_species_caligars = {
+    every_planet_within_border = {
+        limit = { has_planet_flag = planet_eternia }
+        if = {
+            # is this limit check needed?
+            limit = {
+                NOT = {
+                    any_country = {
+                        is_country_type = adversary
+                        has_country_flag = ssc_eternian_species_caligars
+                    }
+                }
+            }
+            create_species = {
+                name = "NAME_Eternia_Species_Caligar"
+                plural = "NAME_Eternia_Species_Caligar_plural"
+                class = REP
+                portrait = humanoid_hp_12
+                namelist = MASTERVERSE_PRESCRIPTED_ETERNIA_CALIGARS
+                traits = {
+                    ideal_planet_class = pc_arid
+                    trait = trait_very_strong
+                    trait = trait_resilient
+                    trait = trait_unruly
+                }
+                homeworld = root
+            }
+            while = {
+                count = 1
+                create_pop = {
+                    species = last_created
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                NOT = { exists = event_target:ssc_eternian_species_caligars }
+            }
+            random_country = {
+                limit = {
+                    is_country_type = adversary
+                    has_country_flag = ssc_eternian_species_caligars
+                }
+                save_event_target_as = ssc_eternian_species_caligars
+            }
+        }
+    }
+}
+
+MASTERVERSE_eternia_create_species_reptons = {
+    every_planet_within_border = {
+        limit = { has_planet_flag = planet_eternia }
+        if = {
+            # is this limit check needed?
+            limit = {
+                NOT = {
+                    any_country = {
+                        is_country_type = adversary
+                        has_country_flag = ssc_eternian_species_reptons
+                    }
+                }
+            }
+            create_species = {
+                name = "NAME_Eternia_Species_Repton"
+                plural = "NAME_Eternia_Species_Repton_plural"
+                class = REP
+                portrait = masterverse_repton
+                namelist = MASTERVERSE_PRESCRIPTED_ETERNIA_REPTONS
+                traits = {
+                    ideal_planet_class = pc_desert
+                    trait = trait_intelligent
+                    trait = trait_agrarian
+                    trait = trait_traditional
+                    trait = trait_unruly
+                    trait = trait_sedentary
+                }
+                homeworld = root
+            }
+            while = {
+                count = 2
+                create_pop = {
+                    species = last_created
+                }
+            }
+        }
+        else_if = {
+            limit = {
+                NOT = { exists = event_target:ssc_eternian_species_reptons }
+            }
+            random_country = {
+                limit = {
+                    is_country_type = adversary
+                    has_country_flag = ssc_eternian_species_reptons
+                }
+                save_event_target_as = ssc_eternian_species_reptons
+            }
+        }
+    }
+}
+
+#################
+# Event effects #
+#################
+
+MASTERVERSE_eternia_create_colony_on_phantos = {
+    every_planet_within_border = {
+        limit = { has_planet_flag = planet_phantos }
+        # add districts to phantos
+        add_district = district_city
+        add_district = district_generator
+        while = {
+            count = 1
+            add_district = district_mining
+        }
+        add_district = district_industrial
+        add_district = district_farming
+        # add buildingss to phantos
+        add_building = building_bureaucratic_1
+        add_building = building_research_lab_1
+        add_building = building_foundry_1
+        set_owner = root
+        set_name = "NAME_Phantos"
+    }
+}
+
+MASTERVERSE_eternia_give_photanium_alloy_tech_option_effect = {
+	if = {
+		add_research_option = tech_eternia_photanium_alloys
+		add_tech_progress = {
+			tech = tech_eternia_photanium_alloys
+			progress = 0.33
+		}
+	}
+}
+
+###################
+# Deposit effects #
+###################
+
+MASTERVERSE_eternia_add_deposit_eternium_plant = {
+    event_target:planet_eternia = {
+        add_deposit = d_eternia_eternium_plant
+        set_planet_flag = eternia_eternium_plant
+    }
+}
+
+MASTERVERSE_eternia_add_deposit_castle_grayskull = {
+    event_target:planet_eternia = {
+        add_deposit = d_eternia_castle_grayskull
+        set_planet_flag = eternia_castle_grayskull
+        set_planet_flag = eternia_thenurian_cave
+		# create_archaeological_site = MASTERVERSE_eternia_arc_site_2
+        owner = { 
+            country_event = { id = MASTERVERSE_eternia_relics.300 days = 1825 }
+            country_event = { id = MASTERVERSE_eternia_relics.100 days = 3650 }
+        }
+    }
+}
+
+MASTERVERSE_eternia_add_deposit_snake_mountain = {
+    event_target:planet_eternia = {
+        add_deposit = d_eternia_snake_mountain
+        set_planet_flag = eternia_snake_mountain 
+		create_archaeological_site = MASTERVERSE_eternia_arc_site_3
+    }
+}
+
+MASTERVERSE_eternia_add_deposit_three_towers = {
+    event_target:planet_eternia = {
+        add_deposit = d_eternia_three_towers
+        set_planet_flag = eternia_three_towers
+    }
+}
+
+MASTERVERSE_phantos_add_deposit_photanium_alloys = {
+    event_target:planet_phantos = {
+        add_deposit = d_phantos_photanium_alloys
+        set_planet_flag = phantos_photanium_alloys
+    }
+}
+
+#########################
+# Eternian moon effects #
+#########################
+
+MASTERVERSE_eternia_bright_moon_add_ancient_deposits = {
+    every_planet_within_border = {
+        limit = {
+            has_planet_flag = planet_eternia_bright_moon
+        }
+        add_deposit = d_eternia_moon_bright_farms
+        add_deposit = d_eternia_moon_bright_science_labors
+    }
+}
+
+MASTERVERSE_eternia_bright_moon_add_light_mirror = {
+    every_planet_within_border = {
+        limit = {
+            has_planet_flag = planet_eternia_bright_moon
+        }
+        add_deposit = d_eternia_moon_bright_light_mirror
+    }
+    hidden_effect = {
+        every_planet_within_border = {
+            limit = { has_planet_flag = planet_eternia_dark_moon }
+            change_pc = pc_barren
+            add_modifier = {
+                modifier = "terraforming_candidate"
+                days = -1
+            }
+        }
+    }
+}
+
+MASTERVERSE_eternia_dark_moon_add_ancient_colony = {
+    every_planet_within_border = {
+        limit = {
+            has_planet_flag = planet_eternia_dark_moon
+        }
+        add_deposit = d_eternia_moon_bright_farms
+        add_deposit = d_eternia_moon_dark_colony
+    }
+}
+
+MASTERVERSE_eternia_dark_moon_add_housing_deposit = {
+    every_planet_within_border = {
+        limit = {
+            has_planet_flag = planet_eternia_dark_moon
+        }
+        add_deposit = d_eternia_moon_dark_housing
+    }
+}

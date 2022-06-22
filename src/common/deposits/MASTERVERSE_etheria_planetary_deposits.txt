@@ -1,0 +1,439 @@
+## Possible Deposit Variables ##
+# resources, resource and amount
+# potential trigger (planet scope)
+# blocked_modifier - applied to planet
+# constant_modifier - applied to planet always
+# station = station class in orbit to gather
+# blocker_swap_types = {}
+# all_blocker_swap_types = yes/no
+# use_weights_for_blocker_swap_types = yes/no
+# terraforming_swap_types = { }
+# should_swap_deposit_on_terraforming = yes/no
+# all_terraforming_swap_types = yes/no
+# use_weights_for_terraforming_swap_types = yes/no
+
+@high = 16
+@med = 8
+@low = 4
+
+@high_rare = 0.5
+@mid_rare = 0.25
+@low_rare = 0.1
+
+@planet_type_bonus = 1.5
+
+###############
+#### ENERGY ###
+###############
+
+## Possible Deposit Variables ##
+# resources, resource and amount
+# potential trigger (planet scope)
+# blocked_modifier - applied to planet
+# planet_modifier - applied to planet always
+# station = station class in orbit to gather
+
+##########################
+# Eternia Event Deposits #
+##########################
+d_etheria_balance_center = {
+	category = deposit_cat_etheria
+
+	potential = {
+		has_planet_flag = planet_etheria
+	}
+
+	planet_modifier = {
+		planet_jobs_unity_produces_mult = 0.25
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_etheria_crystal_castle = {
+	category = deposit_cat_etheria
+	icon = d_etheria_crystal_castle
+
+	potential = {
+		has_planet_flag = planet_etheria
+	}
+
+	planet_modifier = {
+		pop_happiness = 0.05
+	}
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			unity = 5
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_etheria_fright_zone = {
+	category = deposit_cat_etheria
+
+	potential = { 
+		OR = {
+			has_planet_flag = eternia
+		}
+	}
+
+	planet_modifier = {
+		# erm .... bring the evil ... or sth like this ... yeah
+		pop_happiness = -0.05
+		planet_stability_add = -3
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_soldier_add = 2
+			job_enforcer_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_warrior_drone_add = 2
+			job_patrol_drone_add = 2
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+###########################
+# Eternia Energy Deposits #
+###########################
+
+d_etheria_mount_candila = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+
+	category = deposit_cat_etheria
+
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = yes
+	terraforming_swap_types = {
+		d_arid_highlands
+		d_buzzing_plains # gaia
+	}
+
+	planet_modifier = {
+		district_generator_max = 2
+	}
+
+	potential = {
+		has_planet_flag = planet_etheria
+	}
+
+	drop_weight = {
+		weight = @high
+		modifier = {
+			factor = @planet_type_bonus
+			is_dry = yes
+		}
+	}
+}
+
+############################
+# Eternia Mineral Deposits #
+############################
+
+d_etheria_crystal_mines = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+
+	category = deposit_cat_etheria
+
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = yes
+	terraforming_swap_types = {
+		d_prosperous_mesa
+	}
+
+	planet_modifier = {
+		district_mining_max = 1
+	}
+
+	potential = {
+		has_planet_flag = planet_etheria
+	}
+
+	drop_weight = {
+		weight = @med
+		modifier = {
+			factor = @planet_type_bonus
+			is_cold = yes
+		}
+	}
+}
+
+d_etheria_etherium_mine = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+
+	category = deposit_cat_etheria
+
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = yes
+	terraforming_swap_types = {
+		d_prosperous_mesa
+	}
+
+	planet_modifier = {
+		district_mining_max = 2
+	}
+
+	potential = {
+		has_planet_flag = planet_etheria
+	}
+
+	drop_weight = {
+		weight = @med
+		modifier = {
+			factor = @planet_type_bonus
+			is_cold = yes
+		}
+	}
+}
+
+#########################
+# Eternia Food Deposits #
+#########################
+
+d_etheria_village = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+
+	category = deposit_cat_etheria
+
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = yes
+	terraforming_swap_types = {
+		d_bountiful_plains
+		d_rugged_woods
+		d_green_hills
+		d_forgiving_tundra
+		d_boggy_fens
+		d_nutritious_mudland
+		d_natural_farmland # gaia
+	}
+
+	planet_modifier = {
+		district_farming_max = 1
+	}
+
+	potential = {
+		has_planet_flag = planet_etheria
+	}
+
+	drop_weight = {
+		weight = @high
+		modifier = {
+			factor = 0.33
+			is_planet_class = pc_nuked
+		}
+		modifier = {
+			factor = @planet_type_bonus
+			is_wet = yes
+		}
+	}
+}
+
+d_etheria_mystacore_woods = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+
+	category = deposit_cat_eternia
+
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = yes
+	terraforming_swap_types = {
+		d_bountiful_plains
+		d_rugged_woods
+		d_green_hills
+		d_forgiving_tundra
+		d_boggy_fens
+		d_nutritious_mudland
+		d_natural_farmland # gaia
+	}
+
+	planet_modifier = {
+		district_farming_max = 2
+	}
+
+	potential = {
+		has_planet_flag = planet_eternia
+	}
+
+	drop_weight = {
+		weight = @high
+		modifier = {
+			factor = 0.33
+			is_planet_class = pc_nuked
+		}
+		modifier = {
+			factor = @planet_type_bonus
+			is_wet = yes
+		}
+	}
+}
+
+############################################################
+# Eternia Civilization Deposits (partially not yet ingame) #
+############################################################
+
+d_etheria_castle_brightmoon = {
+	is_for_colonizable = yes
+	category = deposit_cat_etheria
+
+	icon = d_etheria_castle_brightmoon_2
+
+	resources = {
+	}
+
+	planet_modifier = {
+		job_politician_add = 1
+	}
+
+	potential = {
+		has_planet_flag = planet_etheria
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_etheria_mystacore_castle = {
+	is_for_colonizable = yes
+	category = deposit_cat_etheria
+
+	resources = {
+	}
+
+	planet_modifier = {
+		job_politician_add = 1
+	}
+
+	potential = {
+		has_planet_flag = planet_etheria
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_etheria_moonstone = {
+	is_for_colonizable = yes
+	category = deposit_cat_etheria
+
+	resources = {
+	}
+
+	planet_modifier = {
+		planet_jobs_unity_produces_mult = 0.05
+	}
+
+	potential = {
+		has_planet_flag = planet_etheria
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+#######################################################
+# Eternia Natural Deposits (partially not yet ingame) #
+#######################################################
+
+d_etheria_woods_of_peace = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+
+	category = deposit_cat_etheria
+
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = yes
+	terraforming_swap_types = {
+		d_bountiful_plains
+		d_rugged_woods
+		d_green_hills
+		d_forgiving_tundra
+		d_boggy_fens
+		d_nutritious_mudland
+		d_natural_farmland # gaia
+	}
+
+	planet_modifier = {
+		planet_jobs_food_produces_mult = 0.05
+		pop_happiness = 0.10
+	}
+
+	potential = {
+		has_planet_flag = planet_etheria
+		owner = {
+			has_country_flag = eternia_story_13
+		}
+	}
+
+	drop_weight = {
+		weight = @high
+		modifier = {
+			factor = 0.33
+			is_planet_class = pc_nuked
+		}
+		modifier = {
+			factor = @planet_type_bonus
+			is_wet = yes
+		}
+	}
+}
+
+d_etheria_whispering_woods = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+
+	category = deposit_cat_etheria
+
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = yes
+	terraforming_swap_types = {
+		d_prosperous_mesa
+	}
+
+	planet_modifier = {
+		planet_jobs_unity_produces_mult = 0.10
+		pop_happiness = 0.10
+	}
+
+	potential = {
+		has_planet_flag = planet_etheria
+	}
+
+	drop_weight = {
+		weight = @med
+		modifier = {
+			factor = @planet_type_bonus
+			is_cold = yes
+		}
+	}
+}

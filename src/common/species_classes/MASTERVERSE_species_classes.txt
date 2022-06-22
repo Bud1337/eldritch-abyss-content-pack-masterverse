@@ -1,0 +1,87 @@
+# Number of entries controlls amount to choose from in designer  I.E.   "mol1" "mol2" "mol3" "mol4"
+# graphical_culture is connected to the looks used for ships and cities, see "common/graphical_culture/"
+# Portraits here are one you can choose from in the character creater. For prescripted races they are grabbed straight from the .gfx file. 
+# can specify playable=no to disable people from picking specified class.
+# can specify randomized=no to filter specified class from randomization.
+
+##############################################
+###                                        ###
+### Enable this for testing the portraits  ###
+###                                        ###
+### enabled: (playable = { always = yes }) ###
+### disabled: (playable = { always = no }) ###
+###                                        ###
+##############################################
+
+MASTERVERSE = {
+    archetype = BIOLOGICAL
+
+	possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+
+	playable = { always = yes }
+	randomized = no
+
+	portraits = {
+		"human"
+		"human_vanilla"
+		"masterverse_gar"
+        "masterverse_andreenid"
+		"masterverse_kulatak"
+		"masterverse_aquatican"
+		"masterverse_repton"
+		"masterverse_robot"
+		"masterverse_pelleezean"
+		"masterverse_trannisian"
+		"masterverse_troll"
+		"masterverse_selkie"
+		"masterverse_skelcon"
+		"masterverse_hordes"
+		"masterverse_hordes_test_1"
+		"masterverse_hordes_test_2"
+	}
+
+	# These should not be used for randomly generated species
+	non_randomized_portraits = {
+		"human"
+		"human_vanilla"
+		"masterverse_gar"
+        "masterverse_andreenid"
+		"masterverse_kulatak"
+		"masterverse_aquatican"
+		"masterverse_repton"
+		"masterverse_robot"
+		"masterverse_pelleezean"
+		"masterverse_trannisian"
+		"masterverse_troll"
+		"masterverse_selkie"
+		"masterverse_skelcon"
+		"masterverse_hordes"
+		"masterverse_hordes_test"
+		"masterverse_hordes_test_1"
+		"masterverse_hordes_test_2"
+	}
+
+	graphical_culture = humanoid_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+} 
+
+#MASTERVERSE_ROBOT = {
+#    archetype = ROBOT
+#
+#	possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
+#
+#	playable = { always = yes }
+#	randomized = no
+#
+#	portraits = {
+#		"MASTERVERSE_robot"
+#	}
+#
+#	# These should not be used for randomly generated species
+#	non_randomized_portraits = {
+#		"MASTERVERSE_robot"
+#	}
+#
+#	graphical_culture = humanoid_01
+#	move_pop_sound_effect = "moving_pop_confirmation"
+#} 

@@ -1,0 +1,67 @@
+Stellaris: Eldritch Abyss - Masters of the Universe
+===================================================
+
+Hinweis: Präfix MOTU (Synonym für MotUverse, beinhaltend MotU, PoP, NA, RotS) [change 2 MASTERSVERSE / MOTUVERSE / MASTERVERSE ?]
+
+https://he-man.fandom.com/wiki/Zal-Kron / Crystal World / https://he-man.fandom.com/wiki/Crystal_Moonbeam
+https://he-man.fandom.com/wiki/Insect_People
+
+United Kingdoms of Eternia
+==========================
+
+System: solar_systems/masterverse/Ardarion.txt
+
+Origin: 
+Planetary Blocker: Pech-Sumpf, Vulkanische Ebene, Karge Einöde
+Planetary Deposits: Arides Hochland, Geysir-Felder, Minen von Arcadia, Alte Gefängnis-Minen, Fruchtbare Ebene, Ebenen der Ewigkeit
+                    Königlicher Palast, Damm der Uralten
+Planetary Deposits Events: Eternium-Kraftwerk (Event), Widget-Minen, Castle Grayskull, Snake-Mountain, Die drei Türme
+
+Ship-Names
+==========
+Corvettes: Animals
+Cruiser: Legendaries & POI (Bakkul, Yog, Dekker, Zagraz)
+Battleship: Former Leaders
+Titan: Gods
+Colossus: Systems
+Juggernaut: Mountains
+Construction Ship: Materials
+Colonization Ships: Regions
+Science Ships: Artifacts
+
+Sources
+=======
+Movies: Live Action Movie 1987
+TV-Series: Filmation, 200x
+Comics: Ladybird, DC 2015, Golden Books
+Audioplays: Europa
+
+Etherian Alliance
+=================
+
+System: solar_systems/masterverse/Ethor.txt
+Planeten: Etheria + Mond, Infinita, ++
+
+Reich: Etherianische Allianz
+Origin: 
+Völker: Menschen
+Planetary Blocker: 
+Planetary Deposits: 
+Planetary Deposits Events: 
+
+Ship-Names
+==========
+Corvettes: 
+Cruiser: 
+Battleship: 
+Titan: 
+Colossus: 
+Juggernaut: 
+Construction Ship: 
+Colonization Ships:
+Science Ships: 
+
+Sources
+=======
+TV-Series: Filmation, 200x
+Comics: Ladybird

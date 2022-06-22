@@ -1,0 +1,21 @@
+﻿l_german:
+ PRESCRIPTED_ship_prefix_EternianKingdoms:0 "RSS"
+ PRESCRIPTED_adjective_EternianKingdoms:0 "eternisch"
+ PRESCRIPTED_name_EternianKingdoms:0 "Vereinigte Königreiche von Eternia"
+ PRESCRIPTED_ruler_name_EternianKingdoms:0 "Randor Grayskull"
+ PRESCRIPTED_heir_name_EternianKingdoms:0 "Adam Grayskull"
+ PRESCRIPTED_planet_name_EternianKingdoms:0 "$NAME_Eternia$"
+ 
+ PRESCRIPTED_ship_prefix_EtherianAlliance:0 "ASS"
+ PRESCRIPTED_adjective_EtherianAlliance:0 "Etherianisch"
+ PRESCRIPTED_name_EtherianAlliance:0 "Etherianische Allianz"
+ PRESCRIPTED_ruler_name_EtherianAlliance:0 "Angela Brightmoon"
+ PRESCRIPTED_heir_name_EtherianAlliance:0 "Glimmer Brightmoon"
+ PRESCRIPTED_planet_name_EtherianAlliance:0 "$NAME_Etheria$"
+ 
+ PRESCRIPTED_ship_prefix_TheHordes:0 "HS"
+ PRESCRIPTED_adjective_TheHordes:0 "Hordes"
+ PRESCRIPTED_name_TheHordes:0 "Die Horde"
+ PRESCRIPTED_ruler_name_TheHordes:0 "Hordak"
+ PRESCRIPTED_system_name_TheHordes:0 "Despondos"
+ PRESCRIPTED_planet_name_TheHordes:0 "Horde Welt"

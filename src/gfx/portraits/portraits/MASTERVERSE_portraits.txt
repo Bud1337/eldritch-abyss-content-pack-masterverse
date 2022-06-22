@@ -1,0 +1,1356 @@
+##############################################################
+###	PORTRAITS SETTINGS
+###
+### Which portraits are used is set in 
+### common\species_classes\00_species_classes.txt
+###
+###	This file configures how portraits and planet backgrounds are built.
+###	Default position orientation is lower left.
+##############################################################
+
+portraits = {
+	# MotU Pt. 1: Gar
+	masterverse_gar_female_01 = { entity = "portrait_human_vanilla_female_01_entity" clothes_selector = "mammalian_human_female_clothes_01" hair_selector = "human_vanilla_female_hair_02" greeting_sound = "human_female_greetings_03" character_textures = { "gfx/models/portraits/masterverse/gar_female_body_01.dds" } }
+	masterverse_gar_female_02 = { entity = "portrait_human_vanilla_female_02_entity" clothes_selector = "mammalian_human_female_clothes_01" hair_selector = "human_vanilla_female_hair_01" greeting_sound = "human_female_greetings_04" character_textures = { "gfx/models/portraits/masterverse/gar_female_body_02.dds" } }
+	masterverse_gar_female_03 = { entity = "portrait_human_vanilla_female_03_entity" clothes_selector = "mammalian_human_female_clothes_01" hair_selector = "human_vanilla_female_hair_03" greeting_sound = "human_female_greetings_05" character_textures = { "gfx/models/portraits/masterverse/gar_female_body_03.dds" } }
+	masterverse_gar_female_04 = { entity = "portrait_human_vanilla_female_04_entity" clothes_selector = "mammalian_human_female_clothes_01" hair_selector = "human_vanilla_female_hair_04" greeting_sound = "human_female_greetings_01" character_textures = { "gfx/models/portraits/masterverse/gar_female_body_04.dds" } }
+	masterverse_gar_male_01 = {	entity = "portrait_human_vanilla_male_01_entity" clothes_selector = "mammalian_human_male_clothes_01" hair_selector = "human_vanilla_male_hair_02" greeting_sound = "human_male_greetings_03" character_textures = { "gfx/models/portraits/masterverse/gar_male_body_01.dds" } }
+	masterverse_gar_male_02 = {	entity = "portrait_human_vanilla_male_02_entity" clothes_selector = "mammalian_human_male_clothes_01" hair_selector = "human_vanilla_male_hair_01" greeting_sound = "human_male_greetings_04" character_textures = { "gfx/models/portraits/masterverse/gar_male_body_02.dds" } }
+	masterverse_gar_male_03 = {	entity = "portrait_human_vanilla_male_03_entity" clothes_selector = "mammalian_human_male_clothes_01" hair_selector = "human_vanilla_male_hair_03" greeting_sound = "human_male_greetings_05" character_textures = { "gfx/models/portraits/masterverse/gar_male_body_03.dds" } }
+	masterverse_gar_male_04 = {	entity = "portrait_human_vanilla_male_04_entity" clothes_selector = "mammalian_human_male_clothes_01" hair_selector = "human_vanilla_male_hair_05" greeting_sound = "human_male_greetings_01" character_textures = { "gfx/models/portraits/masterverse/gar_male_body_04.dds" } }
+    masterverse_repton_01 = { entity = "portrait_reptilian_04_entity" clothes_selector = "reptilian_slender_clothes_04" hair_selector = "no_texture" greeting_sound = "reptilian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/repton_01.dds" } }
+    masterverse_repton_02 = { entity = "portrait_reptilian_04_entity" clothes_selector = "reptilian_slender_clothes_04" hair_selector = "no_texture" greeting_sound = "reptilian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/repton_02.dds" } }
+    masterverse_repton_03 = { entity = "portrait_reptilian_04_entity" clothes_selector = "reptilian_slender_clothes_04" hair_selector = "no_texture" greeting_sound = "reptilian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/repton_03.dds" } }
+    masterverse_repton_04 = { entity = "portrait_reptilian_04_entity" clothes_selector = "reptilian_slender_clothes_04" hair_selector = "no_texture" greeting_sound = "reptilian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/repton_04.dds" } }
+    # masterverse_andreenid_01 = { entity = "humanoid_hp_01_entity" clothes_selector = "mammalian_slender_01_clothes_01" hair_selector = "no_texture"	greeting_sound = "humanoid_portrait_a_male"	character_textures = { "gfx/models/portraits/masterverse/andreenid_01.dds" } }
+    masterverse_andreenid_male_01 = { entity = "humanoid_hp_01_entity" clothes_selector = "andreenid_male_clothes_01" hair_selector = "no_texture"	greeting_sound = "humanoid_portrait_a_male"	character_textures = { "gfx/models/portraits/masterverse/andreenid_male_01.dds" } }
+    masterverse_andreenid_male_02 = { entity = "humanoid_hp_01_entity" clothes_selector = "andreenid_male_clothes_02" hair_selector = "no_texture"	greeting_sound = "humanoid_portrait_a_male"	character_textures = { "gfx/models/portraits/masterverse/andreenid_male_02.dds" } }
+    masterverse_andreenid_male_03 = { entity = "humanoid_hp_01_entity" clothes_selector = "andreenid_male_clothes_03" hair_selector = "no_texture"	greeting_sound = "humanoid_portrait_a_male"	character_textures = { "gfx/models/portraits/masterverse/andreenid_male_03.dds" } }
+    masterverse_andreenid_female_01 = { entity = "humanoid_hp_01_entity" clothes_selector = "andreenid_male_clothes_01" hair_selector = "no_texture"	greeting_sound = "humanoid_portrait_a_female"	character_textures = { "gfx/models/portraits/masterverse/andreenid_female_01.dds" } }
+    masterverse_andreenid_female_02 = { entity = "humanoid_hp_01_entity" clothes_selector = "andreenid_male_clothes_02" hair_selector = "no_texture"	greeting_sound = "humanoid_portrait_a_female"	character_textures = { "gfx/models/portraits/masterverse/andreenid_female_02.dds" } }
+    masterverse_andreenid_female_03 = { entity = "humanoid_hp_01_entity" clothes_selector = "andreenid_male_clothes_03" hair_selector = "no_texture"	greeting_sound = "humanoid_portrait_a_female"	character_textures = { "gfx/models/portraits/masterverse/andreenid_female_03.dds" } }
+    masterverse_robot_01 = { entity = "portrait_humanoid_synthetic_dawn_01_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "robot_human_greetings"	character_textures = { "gfx/models/portraits/masterverse/robot_01.dds" } }
+    masterverse_robot_02 = { entity = "portrait_humanoid_synthetic_dawn_01_entity" clothes_selector = "no_texture" hair_selector = "no_texture"	greeting_sound = "robot_human_greetings"	character_textures = { "gfx/models/portraits/masterverse/robot_02.dds" } }
+    masterverse_skelcon_01 = { entity = "portrait_human_vanilla_male_05_entity" clothes_selector = "skelcon_clothes_skeletor" hair_selector = "no_texture" greeting_sound = "human_male_greetings_05"	character_textures = { "gfx/models/portraits/masterverse/skelcon_body_skeletor.dds" } }
+    masterverse_trannisian_female_01 = { entity = "portrait_avian_06_entity" clothes_selector = "avian_normal_clothes_01" hair_selector = "no_texture" greeting_sound = "avian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/trannisian_01.dds" } }
+    masterverse_trannisian_female_02 = { entity = "portrait_avian_06_entity" clothes_selector = "avian_normal_clothes_01" hair_selector = "no_texture" greeting_sound = "avian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/trannisian_02.dds" } }
+    masterverse_trannisian_female_03 = { entity = "portrait_avian_06_entity" clothes_selector = "avian_normal_clothes_01" hair_selector = "no_texture" greeting_sound = "avian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/trannisian_03.dds" } }
+    masterverse_trannisian_female_04 = { entity = "portrait_avian_06_entity" clothes_selector = "avian_normal_clothes_01" hair_selector = "no_texture" greeting_sound = "avian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/trannisian_04.dds" } }
+    masterverse_trannisian_albino = { entity = "portrait_avian_06_entity" clothes_selector = "avian_normal_clothes_01" hair_selector = "no_texture" greeting_sound = "avian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/trannisian_05.dds" } }
+    masterverse_trannisian_male_01 = { entity = "portrait_avian_06_entity" clothes_selector = "avian_normal_clothes_01" hair_selector = "no_texture" greeting_sound = "avian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/trannisian_06.dds" } }
+    masterverse_trannisian_male_02 = { entity = "portrait_avian_06_entity" clothes_selector = "avian_normal_clothes_01" hair_selector = "no_texture" greeting_sound = "avian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/trannisian_07.dds" } }
+    masterverse_trannisian_male_03 = { entity = "portrait_avian_06_entity" clothes_selector = "avian_normal_clothes_01" hair_selector = "no_texture" greeting_sound = "avian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/trannisian_08.dds" } }
+    masterverse_trannisian_male_04 = { entity = "portrait_avian_06_entity" clothes_selector = "avian_normal_clothes_01" hair_selector = "no_texture" greeting_sound = "avian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/trannisian_09.dds" } }
+    masterverse_kulatak_01 = { entity = "portrait_mammalian_07_entity" clothes_selector = "mammalian_normal_clothes_01" hair_selector = "no_texture" greeting_sound = "mammalian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/kulatak_01.dds" } }
+    masterverse_kulatak_02 = { entity = "portrait_mammalian_07_entity" clothes_selector = "mammalian_normal_clothes_01" hair_selector = "no_texture" greeting_sound = "mammalian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/kulatak_02.dds" } }
+    masterverse_kulatak_03 = { entity = "portrait_mammalian_07_entity" clothes_selector = "mammalian_normal_clothes_01" hair_selector = "no_texture" greeting_sound = "mammalian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/kulatak_03.dds" } }
+    masterverse_kulatak_04 = { entity = "portrait_mammalian_07_entity" clothes_selector = "mammalian_normal_clothes_01" hair_selector = "no_texture" greeting_sound = "mammalian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/kulatak_04.dds" } }
+    masterverse_aquatican_01 = { entity = "portrait_aquatic_05_entity" clothes_selector = "aquatic_clothes_02" hair_selector = "no_texture" greeting_sound = "aqu_portrait_03" character_textures = { "gfx/models/portraits/masterverse/aquatican_01.dds" } }
+    masterverse_pelleezean_01 = { entity = "portrait_mammalian_06_entity" clothes_selector = "mammalian_normal_clothes_01" hair_selector = "no_texture" greeting_sound = "mammalian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/pelleezeans_01.dds" } }
+    masterverse_pelleezean_02 = { entity = "portrait_mammalian_06_entity" clothes_selector = "mammalian_normal_clothes_01" hair_selector = "no_texture" greeting_sound = "mammalian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/pelleezeans_02.dds" } }
+    masterverse_troll_male_01 = { entity = "humanoid_hp_12_entity" clothes_selector = "humanoid_hp_12_clothes" hair_selector = "no_texture" greeting_sound = "humanoid_portrait_i_male" character_textures = { "gfx/models/portraits/masterverse/troll_male_01.dds" } }
+    masterverse_troll_male_02 = { entity = "humanoid_hp_12_entity" clothes_selector = "humanoid_hp_12_clothes" hair_selector = "no_texture" greeting_sound = "humanoid_portrait_i_male" character_textures = { "gfx/models/portraits/masterverse/troll_male_02.dds" } }
+    masterverse_troll_male_03 = { entity = "humanoid_hp_12_entity" clothes_selector = "humanoid_hp_12_clothes" hair_selector = "no_texture" greeting_sound = "humanoid_portrait_i_male" character_textures = { "gfx/models/portraits/masterverse/troll_male_03.dds" } }
+    masterverse_troll_female_01 = { entity = "humanoid_hp_12_entity" clothes_selector = "humanoid_hp_12_clothes" hair_selector = "no_texture" greeting_sound = "humanoid_portrait_i_female" character_textures = { "gfx/models/portraits/masterverse/troll_female_01.dds" } }
+    masterverse_selkie_01 = { entity = "portrait_mammalian_16_entity" clothes_selector = "mammalian_massive_clothes_01" hair_selector = "no_texture" greeting_sound = "mammalian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/selkie_01.dds" } }
+    masterverse_selkie_02 = { entity = "portrait_mammalian_16_entity" clothes_selector = "mammalian_massive_clothes_01" hair_selector = "no_texture" greeting_sound = "mammalian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/selkie_02.dds" } }
+    masterverse_selkie_03 = { entity = "portrait_mammalian_16_entity" clothes_selector = "mammalian_massive_clothes_01" hair_selector = "no_texture" greeting_sound = "mammalian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/selkie_03.dds" } }
+    masterverse_selkie_04 = { entity = "portrait_mammalian_16_entity" clothes_selector = "mammalian_massive_clothes_01" hair_selector = "no_texture" greeting_sound = "mammalian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/selkie_04.dds" } }
+    masterverse_selkie_05 = { entity = "portrait_mammalian_16_entity" clothes_selector = "mammalian_massive_clothes_01" hair_selector = "no_texture" greeting_sound = "mammalian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/selkie_05.dds" } }
+    masterverse_hordes_01 = { entity = "portrait_human_vanilla_male_01_entity" clothes_selector = "no_texture" hair_selector = "no_texture" greeting_sound = "humanoid_portrait_j_male" character_textures = { "gfx/models/portraits/masterverse/hordes_01.dds" } }
+    masterverse_hordes_02 = { entity = "humanoid_hp_07_entity" clothes_selector = "humanoid_hp_07_clothes" hair_selector = "no_texture" greeting_sound = "humanoid_portrait_j_male" character_textures = { "gfx/models/portraits/masterverse/hordes_02.dds" } }
+    masterverse_hordes_03 = { entity = "humanoid_hp_07_entity" clothes_selector = "humanoid_hp_07_clothes" hair_selector = "no_texture" greeting_sound = "humanoid_portrait_j_male" character_textures = { "gfx/models/portraits/masterverse/hordes_03.dds" } }
+}
+
+portrait_groups = {
+    # MotU Pt. 1: Gar
+	masterverse_gar = {
+        default = masterverse_gar_male_01
+        game_setup = {
+            add = {
+                trigger = {
+                    ruler = { gender = male }
+                }
+                portraits = {
+                    masterverse_gar_male_02
+                    masterverse_gar_male_01
+                    masterverse_gar_male_03
+                    masterverse_gar_male_04
+                }
+            }
+            add = {
+                trigger = {
+                    ruler = { gender = female }
+                }
+                portraits = {
+                    masterverse_gar_female_01
+                    masterverse_gar_female_02
+                    masterverse_gar_female_03
+                    masterverse_gar_female_04
+                }
+            }
+        }
+
+        #species scope
+        species = {
+            add = {
+                portraits = {
+                    masterverse_gar_female_01
+                    masterverse_gar_female_02
+                    masterverse_gar_female_03
+                    masterverse_gar_female_04
+                    masterverse_gar_male_01
+                    masterverse_gar_male_02
+                    masterverse_gar_male_03
+                    masterverse_gar_male_04
+                }
+            }
+        }
+
+        #pop scope
+        pop = {
+            add = {
+                portraits = {
+                    masterverse_gar_female_01
+                    masterverse_gar_female_02
+                    masterverse_gar_female_03
+                    masterverse_gar_female_04
+                    masterverse_gar_male_01
+                    masterverse_gar_male_02
+                    masterverse_gar_male_03
+                    masterverse_gar_male_04
+                }
+            }
+        }
+
+        #leader scope
+        leader = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_gar_female_01
+                    masterverse_gar_female_02
+                    masterverse_gar_female_03
+                    masterverse_gar_female_04
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_gar_male_01
+                    masterverse_gar_male_02
+                    masterverse_gar_male_03
+                    masterverse_gar_male_04
+                }
+            }
+        }
+
+        #leader scope
+        ruler = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_gar_female_01
+                    masterverse_gar_female_02
+                    masterverse_gar_female_03
+                    masterverse_gar_female_04
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_gar_male_01
+                    masterverse_gar_male_02
+                    masterverse_gar_male_03
+                    masterverse_gar_male_04
+                }
+            }
+        }
+    }
+    # MotU Pt. 2: Repton
+	masterverse_repton = {
+        default = masterverse_repton_01
+        game_setup = {
+            add = {
+                trigger = {
+                    ruler = { gender = male }
+                }
+                portraits = {
+                    masterverse_repton_01
+                }
+            }
+            add = {
+                trigger = {
+                    ruler = { gender = female }
+                }
+                portraits = {
+                    masterverse_repton_01
+                }
+            }
+        }
+
+        #species scope
+        species = {
+            add = {
+                portraits = {
+                    masterverse_repton_01
+                    masterverse_repton_02
+                    masterverse_repton_03
+                    masterverse_repton_04
+                }
+            }
+        }
+
+        #pop scope
+        pop = {
+            add = {
+                portraits = {
+                    masterverse_repton_01
+                    masterverse_repton_02
+                    masterverse_repton_03
+                    masterverse_repton_04
+                }
+            }
+        }
+
+        #leader scope
+        leader = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_repton_01
+                    masterverse_repton_02
+                    masterverse_repton_03
+                    masterverse_repton_04
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_repton_01
+                    masterverse_repton_02
+                    masterverse_repton_03
+                    masterverse_repton_04
+                }
+            }
+        }
+
+        #leader scope
+        ruler = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_repton_01
+                    masterverse_repton_02
+                    masterverse_repton_03
+                    masterverse_repton_04
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_repton_01
+                    masterverse_repton_02
+                    masterverse_repton_03
+                    masterverse_repton_04
+                }
+            }
+        }
+    }
+    # MotU Pt. 3: Andreenid
+	masterverse_andreenid = {
+        default = masterverse_andreenid_male_01
+        game_setup = {
+            add = {
+                trigger = {
+                    ruler = { gender = male }
+                }
+                portraits = {
+                    masterverse_andreenid_male_01
+                    masterverse_andreenid_male_02
+                    masterverse_andreenid_male_03
+                }
+            }
+            add = {
+                trigger = {
+                    ruler = { gender = female }
+                }
+                portraits = {
+                    masterverse_andreenid_female_02
+                    masterverse_andreenid_female_03
+                    masterverse_andreenid_female_01
+                }
+            }
+        }
+
+        #species scope
+        species = {
+            add = {
+                portraits = {
+                    masterverse_andreenid_female_01
+                    masterverse_andreenid_female_02
+                    masterverse_andreenid_female_03
+                    masterverse_andreenid_male_01
+                    masterverse_andreenid_male_02
+                    masterverse_andreenid_male_03
+                }
+            }
+        }
+
+        #pop scope
+        pop = {
+            add = {
+                portraits = {
+                    masterverse_andreenid_female_01
+                    masterverse_andreenid_female_02
+                    masterverse_andreenid_female_03
+                    masterverse_andreenid_male_01
+                    masterverse_andreenid_male_02
+                    masterverse_andreenid_male_03
+                }
+            }
+        }
+
+        #leader scope
+        leader = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_andreenid_female_01
+                    masterverse_andreenid_female_02
+                    masterverse_andreenid_female_03
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_andreenid_male_01
+                    masterverse_andreenid_male_02
+                    masterverse_andreenid_male_03
+                }
+            }
+        }
+
+        #ruler scope
+        ruler = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_andreenid_female_01
+                    masterverse_andreenid_female_02
+                    masterverse_andreenid_female_03
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_andreenid_male_01
+                    masterverse_andreenid_male_02
+                    masterverse_andreenid_male_03
+                }
+            }
+        }
+    }
+    # MotU Pt. 4: Robot(o)s
+	masterverse_robot = {
+        default = masterverse_robot_01
+        game_setup = {
+            add = {
+                trigger = {
+                    ruler = { gender = male }
+                }
+                portraits = {
+                    masterverse_robot_01
+                    masterverse_robot_02
+                }
+            }
+            add = {
+                trigger = {
+                    ruler = { gender = female }
+                }
+                portraits = {
+                    masterverse_robot_01
+                    masterverse_robot_02
+                }
+            }
+        }
+
+        #species scope
+        species = {
+            add = {
+                portraits = {
+                    masterverse_robot_01
+                    masterverse_robot_02
+                }
+            }
+        }
+
+        #pop scope
+        pop = {
+            add = {
+                portraits = {
+                    masterverse_robot_01
+                    masterverse_robot_02
+                }
+            }
+        }
+
+        #leader scope
+        leader = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_robot_02
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_robot_02
+                }
+            }
+        }
+
+        #leader scope
+        ruler = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_robot_01
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_robot_01
+                }
+            }
+        }
+    }
+    # MotU Pt. 5: Skelcons
+	masterverse_skelcon = {
+        default = masterverse_skelcon_01
+        game_setup = {
+            add = {
+                trigger = {
+                    ruler = { gender = male }
+                }
+                portraits = {
+                    masterverse_skelcon_01
+                }
+            }
+            add = {
+                trigger = {
+                    ruler = { gender = female }
+                }
+                portraits = {
+                    masterverse_skelcon_01
+                }
+            }
+        }
+
+        #species scope
+        species = {
+            add = {
+                portraits = {
+                    masterverse_skelcon_01
+                }
+            }
+        }
+
+        #pop scope
+        pop = {
+            add = {
+                portraits = {
+                    masterverse_skelcon_01
+                }
+            }
+        }
+
+        #leader scope
+        leader = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_skelcon_01
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_skelcon_01
+                }
+            }
+        }
+
+        #leader scope
+        ruler = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_skelcon_01
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_skelcon_01
+                }
+            }
+        }
+    }
+    # MotU Pt. 6: Trannisian
+	masterverse_trannisian = {
+        default = masterverse_trannisian_female_01
+        game_setup = {
+            add = {
+                trigger = {
+                    ruler = { gender = male }
+                }
+                portraits = {
+                    masterverse_trannisian_male_02
+                    masterverse_trannisian_male_01
+                    masterverse_trannisian_male_03
+                    masterverse_trannisian_male_04
+                    masterverse_trannisian_albino
+                }
+            }
+            add = {
+                trigger = {
+                    ruler = { gender = female }
+                }
+                portraits = {
+                    masterverse_trannisian_female_01
+                    masterverse_trannisian_female_02
+                    masterverse_trannisian_female_03
+                    masterverse_trannisian_female_04
+                    masterverse_trannisian_albino
+                }
+            }
+        }
+
+        #species scope
+        species = {
+            add = {
+                portraits = {
+                    masterverse_trannisian_female_01
+                    masterverse_trannisian_female_02
+                    masterverse_trannisian_female_03
+                    masterverse_trannisian_female_04
+                    masterverse_trannisian_male_01
+                    masterverse_trannisian_male_02
+                    masterverse_trannisian_male_03
+                    masterverse_trannisian_male_04
+                    masterverse_trannisian_albino
+                }
+            }
+        }
+
+        #pop scope
+        pop = {
+            add = {
+                portraits = {
+                    masterverse_trannisian_female_01
+                    masterverse_trannisian_female_02
+                    masterverse_trannisian_female_03
+                    masterverse_trannisian_female_04
+                    masterverse_trannisian_male_01
+                    masterverse_trannisian_male_02
+                    masterverse_trannisian_male_03
+                    masterverse_trannisian_male_04
+                    masterverse_trannisian_albino
+                }
+            }
+        }
+
+        #leader scope
+        leader = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_trannisian_female_01
+                    masterverse_trannisian_female_02
+                    masterverse_trannisian_female_03
+                    masterverse_trannisian_female_04
+                    masterverse_trannisian_albino
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_trannisian_male_01
+                    masterverse_trannisian_male_02
+                    masterverse_trannisian_male_03
+                    masterverse_trannisian_male_04
+                    masterverse_trannisian_albino
+                }
+            }
+        }
+
+        #leader scope
+        ruler = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_trannisian_female_01
+                    masterverse_trannisian_female_02
+                    masterverse_trannisian_female_03
+                    masterverse_trannisian_female_04
+                    masterverse_trannisian_albino
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_trannisian_male_01
+                    masterverse_trannisian_male_02
+                    masterverse_trannisian_male_03
+                    masterverse_trannisian_male_04
+                    masterverse_trannisian_albino
+                }
+            }
+        }
+    }
+    # MotU Pt. 7: Kulataks
+	masterverse_kulatak = {
+        default = masterverse_kulatak_01
+        game_setup = {
+            add = {
+                trigger = {
+                    ruler = { gender = male }
+                }
+                portraits = {
+                    masterverse_kulatak_01
+                }
+            }
+            add = {
+                trigger = {
+                    ruler = { gender = female }
+                }
+                portraits = {
+                    masterverse_kulatak_02
+                }
+            }
+        }
+
+        #species scope
+        species = {
+            add = {
+                portraits = {
+                    masterverse_kulatak_01
+                    masterverse_kulatak_02
+                    masterverse_kulatak_03
+                    masterverse_kulatak_04
+                }
+            }
+        }
+
+        #pop scope
+        pop = {
+            add = {
+                portraits = {
+                    masterverse_kulatak_01
+                    masterverse_kulatak_02
+                    masterverse_kulatak_03
+                    masterverse_kulatak_04
+                }
+            }
+        }
+
+        #leader scope
+        leader = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_kulatak_02
+                    masterverse_kulatak_04
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_kulatak_01
+                    masterverse_kulatak_03
+                }
+            }
+        }
+
+        #leader scope
+        ruler = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_kulatak_02
+                    masterverse_kulatak_04
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_kulatak_01
+                    masterverse_kulatak_03
+                }
+            }
+        }
+    }
+    # MotU Pt. 8: Aquatican
+	masterverse_aquatican = {
+        default = masterverse_aquatican_01
+        game_setup = {
+            add = {
+                trigger = {
+                    ruler = { gender = male }
+                }
+                portraits = {
+                    masterverse_aquatican_01
+                }
+            }
+            add = {
+                trigger = {
+                    ruler = { gender = female }
+                }
+                portraits = {
+                    masterverse_aquatican_01
+                }
+            }
+        }
+
+        #species scope
+        species = {
+            add = {
+                portraits = {
+                    masterverse_aquatican_01
+                }
+            }
+        }
+
+        #pop scope
+        pop = {
+            add = {
+                portraits = {
+                    masterverse_aquatican_01
+                }
+            }
+        }
+
+        #leader scope
+        leader = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_aquatican_01
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_aquatican_01
+                }
+            }
+        }
+
+        #leader scope
+        ruler = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_aquatican_01
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_aquatican_01
+                }
+            }
+        }
+    }
+    # MotU Pt. 9: pelleezeans_01
+	masterverse_pelleezean = {
+        default = masterverse_pelleezean_01
+        game_setup = {
+            add = {
+                trigger = {
+                    ruler = { gender = male }
+                }
+                portraits = {
+                    masterverse_pelleezean_01
+                    masterverse_pelleezean_02
+                }
+            }
+            add = {
+                trigger = {
+                    ruler = { gender = female }
+                }
+                portraits = {
+                    masterverse_pelleezean_01
+                    masterverse_pelleezean_02
+                }
+            }
+        }
+
+        #species scope
+        species = {
+            add = {
+                portraits = {
+                    masterverse_pelleezean_01
+                    masterverse_pelleezean_02
+                }
+            }
+        }
+
+        #pop scope
+        pop = {
+            add = {
+                portraits = {
+                    masterverse_pelleezean_01
+                    masterverse_pelleezean_02
+                }
+            }
+        }
+
+        #leader scope
+        leader = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_pelleezean_01
+                    masterverse_pelleezean_02
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_pelleezean_01
+                    masterverse_pelleezean_02
+                }
+            }
+        }
+
+        #leader scope
+        ruler = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_pelleezean_01
+                    masterverse_pelleezean_02
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_pelleezean_01
+                    masterverse_pelleezean_02
+                }
+            }
+        }
+    }
+    # PoP Pt. 1: Trolls
+    masterverse_troll = {
+        default = masterverse_troll_male_03
+        game_setup = {
+            add = {
+                #trigger = {
+                #    ruler = { gender = male }
+                #}
+                portraits = {
+                    #masterverse_troll_male_01
+                    #masterverse_troll_male_02
+                    masterverse_troll_male_03
+                }
+            }
+            #add = {
+            #    trigger = {
+            #        ruler = { gender = female }
+            #    }
+            #    portraits = {
+            #        masterverse_troll_female_01
+            #    }
+            #}
+        }
+
+        #species scope
+        species = {
+            add = {
+                portraits = {
+                    masterverse_troll_male_01
+                    masterverse_troll_male_02
+                    masterverse_troll_male_03
+                    masterverse_troll_female_01
+                }
+            }
+        }
+
+        #pop scope
+        pop = {
+            add = {
+                portraits = {
+                    masterverse_troll_male_01
+                    masterverse_troll_male_02
+                    masterverse_troll_male_03
+                    masterverse_troll_female_01
+                }
+            }
+        }
+
+        #leader scope
+        leader = {
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_troll_male_01
+                    masterverse_troll_male_02
+                    masterverse_troll_male_03
+                }
+            }
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_troll_female_01
+                }
+            }
+        }
+
+        #leader scope
+        ruler = {
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_troll_male_01
+                    masterverse_troll_male_02
+                    masterverse_troll_male_03
+                }
+            }
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_troll_female_01
+                }
+            }
+        }
+    }
+    # PoP Pt. 2: Selkies
+    masterverse_selkie = {
+        default = masterverse_selkie_01
+        game_setup = {
+            add = {
+                trigger = {
+                    ruler = { gender = male }
+                }
+                portraits = {
+                    masterverse_selkie_01
+                    masterverse_selkie_02
+                    masterverse_selkie_03
+                    masterverse_selkie_04
+                }
+            }
+            add = {
+                trigger = {
+                    ruler = { gender = female }
+                }
+                portraits = {
+                    masterverse_selkie_01
+                    masterverse_selkie_02
+                    masterverse_selkie_03
+                    masterverse_selkie_04
+                }
+            }
+        }
+
+        #species scope
+        species = {
+            add = {
+                portraits = {
+                    masterverse_selkie_01
+                    masterverse_selkie_02
+                    masterverse_selkie_03
+                    masterverse_selkie_04
+                }
+            }
+        }
+
+        #pop scope
+        pop = {
+            add = {
+                portraits = {
+                    masterverse_selkie_01
+                    masterverse_selkie_02
+                    masterverse_selkie_03
+                    masterverse_selkie_04
+                }
+            }
+        }
+
+        #leader scope
+        leader = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_selkie_01
+                    masterverse_selkie_02
+                    masterverse_selkie_03
+                    masterverse_selkie_04
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_selkie_01
+                    masterverse_selkie_02
+                    masterverse_selkie_03
+                    masterverse_selkie_04
+                }
+            }
+        }
+
+        #leader scope
+        ruler = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_selkie_01
+                    masterverse_selkie_02
+                    masterverse_selkie_03
+                    masterverse_selkie_04
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_selkie_01
+                    masterverse_selkie_02
+                    masterverse_selkie_03
+                    masterverse_selkie_04
+                }
+            }
+        }
+    }
+    # MotU Pt. 10: Hordes
+	masterverse_hordes = {
+        default = masterverse_hordes_01
+        game_setup = {
+            add = {
+                trigger = {
+                    ruler = { gender = male }
+                }
+                portraits = {
+                    masterverse_hordes_01
+                }
+            }
+            add = {
+                trigger = {
+                    ruler = { gender = female }
+                }
+                portraits = {
+                    masterverse_hordes_01
+                }
+            }
+        }
+
+        #species scope
+        species = {
+            add = {
+                portraits = {
+                    masterverse_hordes_01
+                }
+            }
+        }
+
+        #pop scope
+        pop = {
+            add = {
+                portraits = {
+                    masterverse_hordes_01
+                }
+            }
+        }
+
+        #leader scope
+        leader = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_hordes_01
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_hordes_01
+                }
+            }
+        }
+
+        #leader scope
+        ruler = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_hordes_01
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_hordes_01
+                }
+            }
+        }
+    }
+    # MotU Pt. 10: Hordes Test
+	masterverse_hordes_test_1 = {
+        default = masterverse_hordes_02
+        game_setup = {
+            add = {
+                trigger = {
+                    ruler = { gender = male }
+                }
+                portraits = {
+                    masterverse_hordes_02
+                }
+            }
+            add = {
+                trigger = {
+                    ruler = { gender = female }
+                }
+                portraits = {
+                    masterverse_hordes_02
+                }
+            }
+        }
+
+        #species scope
+        species = {
+            add = {
+                portraits = {
+                    masterverse_hordes_02
+                }
+            }
+        }
+
+        #pop scope
+        pop = {
+            add = {
+                portraits = {
+                    masterverse_hordes_02
+                }
+            }
+        }
+
+        #leader scope
+        leader = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_hordes_02
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_hordes_02
+                }
+            }
+        }
+
+        #leader scope
+        ruler = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_hordes_02
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_hordes_02
+                }
+            }
+        }
+    }
+    # MotU Pt. 10: Hordes Test
+	masterverse_hordes_test_2 = {
+        default = masterverse_hordes_03
+        game_setup = {
+            add = {
+                trigger = {
+                    ruler = { gender = male }
+                }
+                portraits = {
+                    masterverse_hordes_03
+                }
+            }
+            add = {
+                trigger = {
+                    ruler = { gender = female }
+                }
+                portraits = {
+                    masterverse_hordes_03
+                }
+            }
+        }
+
+        #species scope
+        species = {
+            add = {
+                portraits = {
+                    masterverse_hordes_03
+                }
+            }
+        }
+
+        #pop scope
+        pop = {
+            add = {
+                portraits = {
+                    masterverse_hordes_03
+                }
+            }
+        }
+
+        #leader scope
+        leader = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_hordes_03
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_hordes_03
+                }
+            }
+        }
+
+        #leader scope
+        ruler = {
+            add = {
+                trigger = {
+                    gender = female
+                }
+                portraits = {
+                    masterverse_hordes_03
+                }
+            }
+            add = {
+                trigger = {
+                    gender = male
+                }
+                portraits = {
+                    masterverse_hordes_03
+                }
+            }
+        }
+    }
+}

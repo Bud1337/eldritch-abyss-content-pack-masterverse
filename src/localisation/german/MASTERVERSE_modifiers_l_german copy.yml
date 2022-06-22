@@ -1,0 +1,18 @@
+﻿################\
+# german translation
+##################\
+
+l_german:
+ #####################################
+ # Decision Modifiers
+ #####################################
+ eternia_consumer_goods_weighting:0 "Fokus auf Konsumgüter"
+ eternia_moon_bright_science_weighting:0 "Fokus auf Forschung"
+ eternia_moon_dark_food_weighting:0 "Fokus auf Nahrungsmittel"
+
+ #####################################
+ # Relic Modifiers
+ #####################################
+ eternia_artifact_sword_of_power:0 "Das Schwert der Macht"
+ eternia_artifact_havoc_staff:0 "Widder-Stab"
+ eternia_artifact_cosmic_key:0 "Der kosmische Schlüssel"

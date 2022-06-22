@@ -1,0 +1,1001 @@
+##########################
+#                        #
+# Eternia Story Events   #
+#                        #
+# Written by Manuel Lieb #
+#                        #
+##########################
+
+namespace = MASTERVERSE_eternia_story
+
+######################################
+# Eternia #1 Study the later history #
+######################################
+ship_event = {
+	id = MASTERVERSE_eternia_story.1
+	title = "MASTERVERSE_eternia_story.1.name"
+	desc = "MASTERVERSE_eternia_story.1.desc"
+	picture = MASTERVERSE_GFX_evt_eternia_planet
+	show_sound = event_celebration
+
+	trackable = yes
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 30 }
+
+	trigger = {
+		owner = {
+        	has_country_flag = eternia
+		}
+	}
+
+	immediate = {
+		owner = {
+			every_planet_within_border = {
+				limit = { has_planet_flag = planet_eternia }
+				save_global_event_target_as = planet_eternia
+			}
+
+			every_planet_within_border = {
+				limit = { has_planet_flag = planet_phantos }
+				save_global_event_target_as = planet_phantos
+			}
+		}
+	}
+
+	option = {
+	    # button label
+        name = MAKE_IT_SO
+		owner = {
+			# set flag for starting story chain
+			set_country_flag = eternia_intro
+			# set flag for eternia story chain
+			set_country_flag = eternia_story_1
+			# prevent precursor projects when doing this event chain
+			set_country_flag = baol_intro
+			set_country_flag = vultaum_intro
+			set_country_flag = yuht_intro
+			set_country_flag = first_league_intro
+			set_country_flag = irassian_intro
+			set_country_flag = cybrex_intro
+			set_country_flag = zroni_intro
+			# enabling special project
+			enable_special_project = {
+				name = "SSC_PROJECT_ETERNIA_STORY_1" #Establish Communications
+				# location = this
+				location = event_target:planet_eternia
+				owner = root
+			}
+		}
+		# because ai does ai things
+		if = {
+			limit = { owner = { is_ai = yes } }
+			create_fleet = {
+				effect = {
+					set_owner = prev
+
+					create_ship = {
+						name = random
+						random_existing_design = science
+					}
+
+					set_fleet_stance = evasive
+					# set_location = from.capital_star
+					set_location = event_target:planet_eternia
+
+					owner = {
+						create_leader = {
+							class = scientist
+							sub_type = survey
+							name = random
+							species = owner_main_species
+						}
+					}
+					set_leader = last_created_leader
+				}
+			}
+		}
+		# trigger hidden effect
+		hidden_effect = {
+            # get planet scope
+            event_target:planet_eternia = { 
+				create_archaeological_site = MASTERVERSE_eternia_arc_site_1
+			}
+        }
+	}
+	#option = {
+	#    # no time for story
+	#    name = NOTIME
+	#	ai_weight = {
+	#		weight = 0
+	#	}
+	#}
+    after = {
+		#Effects that are applied after option is chosen.
+		#Will generate a tooltip in addition the tooptip of every option, unless hidden_effect is used.
+	}
+}
+
+####################################
+# Eternia #2 Adarion History pt. 1 #
+####################################
+fleet_event = {
+	id = MASTERVERSE_eternia_story.2
+	title = "MASTERVERSE_eternia_story.2.name"
+	desc = "MASTERVERSE_eternia_story.2.desc"
+	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+	show_sound = event_dig_site
+	location = from
+
+	archaeology = yes
+
+    immediate = {
+    }
+
+	is_triggered_only = yes
+
+	option = {
+		name = INTRIGUING
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+			# set flag for eternia story chain
+			set_country_flag = eternia_story_2
+		}
+	}
+}
+
+####################################
+# Eternia #3 Adarion History pt. 2 #
+####################################
+fleet_event = {
+	id = MASTERVERSE_eternia_story.3
+	title = "MASTERVERSE_eternia_story.3.name"
+	desc = "MASTERVERSE_eternia_story.3.desc"
+	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+	show_sound = event_dig_site
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = INCREDIBLE
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+			# set flag for eternia story chain
+			set_country_flag = eternia_story_3
+		}
+	}
+}
+
+####################################
+# Eternia #4 Adarion History pt. 3 #
+####################################
+fleet_event = {
+	id = MASTERVERSE_eternia_story.4
+	title = "MASTERVERSE_eternia_story.4.name"
+	desc = "MASTERVERSE_eternia_story.4.desc"
+	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+	show_sound = event_dig_site
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = REMARKABLE
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+			# set flag for eternia story chain
+			set_country_flag = eternia_story_4
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			# owner = { ship_event = { id = MASTERVERSE_eternia_story.5 days = 2 } }
+			event_target:planet_eternia = {
+				enable_special_project = {
+					name = "SSC_PROJECT_ETERNIA_STORY_1_B"
+					location = event_target:planet_eternia
+					owner = root.owner
+				}
+			}
+			# owner = { country_event = { id = MASTERVERSE_eternia_story.5 days = 30 } }
+		}
+	}
+}
+
+######################################################
+# Eternia #5 Old Alliance | Phantos offers Photanium #
+######################################################
+country_event = {
+	id = MASTERVERSE_eternia_story.5
+	title = MASTERVERSE_eternia_story.5.name
+	desc = MASTERVERSE_eternia_story.5.desc
+	show_sound = sfx_event_eternia_story_5
+	# location = ROOT
+	# location = from
+
+	diplomatic = yes
+
+	is_triggered_only = yes
+
+	picture_event_data = {
+		portrait = human_female_01
+		planet_background = pc_continental
+		graphical_culture = "mammalian_01"
+		city_level = 4
+		room = event_target:planet_phantos
+	}
+
+	option = {
+		name = colony.8006.a
+
+		# enabling special project
+		enable_special_project = {
+    	    name = "SSC_PROJECT_ETERNIA_STORY_2"
+			location = event_target:planet_phantos
+			owner = root
+		}
+
+		# enabling special project
+		enable_special_project = {
+			name = "SSC_PROJECT_ETERNIA_PEOPLE_1"
+			location = event_target:planet_phantos
+			owner = root
+		}
+		
+		# set flag for eternia story chain
+		owner = {
+			set_country_flag = eternia_story_5
+		}
+	}
+	#option = {
+	#	name = origin.10.b
+	#}
+}
+
+######################################
+# Eternia #6 The search for eternium #
+######################################
+ship_event = {
+	id = MASTERVERSE_eternia_story.6
+	title = "MASTERVERSE_eternia_story.6.name"
+	desc = "MASTERVERSE_eternia_story.6.desc"
+	picture = MASTERVERSE_GFX_evt_eternia_eternium_crystals
+	show_sound = event_scanner
+	# location = ROOT
+	location = FROM
+	trackable = yes
+
+    is_triggered_only = yes
+
+	immediate = {
+		#if = {
+		#	limit = {
+		#		owner = { is_ai = yes }
+		#	}
+		#	# enabling special project
+		#	MASTERVERSE_eternia_create_colony_on_phantos = yes
+		#}
+	}
+
+	option = {
+	    # button label
+        name = MAKE_IT_SO
+
+		# enabling special project
+		enable_special_project = {
+    	    name = "SSC_PROJECT_ETERNIA_STORY_3"
+			location = event_target:planet_eternia
+			owner = root
+		}
+
+		# set flag for eternia story chain
+		owner = {
+			set_country_flag = eternia_story_6
+		}
+	}
+}
+
+################################
+# Eternia #7 Rise of Anwat Gar #
+################################
+country_event = {
+	id = MASTERVERSE_eternia_story.7
+	title = TRANSMISSION
+    show_sound = event_celebration
+	location = ROOT
+	# location = FROM
+
+	desc = "MASTERVERSE_eternia_story.7.desc"
+
+	diplomatic = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	picture_event_data = {
+		portrait = masterverse_gar
+		planet_background = pc_mystic
+   		graphical_culture = "necroid_01"
+   		city_level = 3
+		room = "personality_decadent_hierarchy_room"
+	}
+
+	option = {
+		name = origin.10.a
+
+		# enabling special project
+        enable_special_project = {
+            name = "SSC_PROJECT_ETERNIA_PEOPLE_2"
+            location = event_target:planet_eternia
+            owner = root
+        }
+
+		# set flag for eternia story chain
+		owner = {
+			set_country_flag = eternia_story_7
+		}
+	}
+	#option = {
+	#	name = origin.10.b
+	#}
+	after = {
+        hidden_effect = { country_event = { id = MASTERVERSE_eternia_story.8 days = 30 } }
+    }
+}
+
+###########################################
+# Eternia #8 The search for the coridite  #
+###########################################
+country_event = {
+	id = MASTERVERSE_eternia_story.8
+	title = "MASTERVERSE_eternia_story.8.name"
+	desc = "MASTERVERSE_eternia_story.8.desc"
+	picture = MASTERVERSE_GFX_evt_eternia_coridite_mine
+	show_sound = event_celebration
+	location = ROOT
+	# location = FROM
+	trackable = yes
+
+    is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+	    # button label
+        name = MAKE_IT_SO
+
+		# enabling special project
+		enable_special_project = {
+    	    name = "SSC_PROJECT_ETERNIA_STORY_4"
+			location = event_target:planet_eternia
+			owner = root
+		}
+
+		# set flag for eternia story chain
+		owner = {
+			set_country_flag = eternia_story_8
+		}
+	}
+}
+
+###############################################
+# Eternia #9 The lost fortress of the widgets #
+###############################################
+ship_event = {
+	id = MASTERVERSE_eternia_story.9
+	title = "MASTERVERSE_eternia_story.9.name"
+	desc = "MASTERVERSE_eternia_story.9.desc"
+	picture = MASTERVERSE_GFX_evt_eternia_widget_fortress
+	show_sound = sfx_event_eternia_story_9
+	location = FROM
+	trackable = yes
+
+    is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+	    # button label
+        name = MAKE_IT_SO
+
+		# enabling special project
+		enable_special_project = {
+    	    name = "SSC_PROJECT_ETERNIA_STORY_5"
+			location = event_target:planet_eternia
+			owner = root
+		}
+
+		# set flag for eternia story chain
+		owner = {
+			set_country_flag = eternia_story_9
+		}
+	}
+}
+
+################################################
+# Eternia #10 The hunt for the coridyte crytal #
+################################################
+country_event = {
+	id = MASTERVERSE_eternia_story.10
+    title = "MASTERVERSE_eternia_story.10.name"
+	desc = "MASTERVERSE_eternia_story.10.desc"
+	show_sound = event_celebration
+
+	diplomatic = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	picture_event_data = {
+		portrait = humanoid_hp_02
+		planet_background = pc_mystic
+   		graphical_culture = "preindustrial_01"
+   		city_level = 1
+		room = from.ruler
+	}
+
+	option = {
+		name = origin.10.a
+
+		# enabling special project
+        enable_special_project = {
+            name = "SSC_PROJECT_ETERNIA_PEOPLE_3"
+            location = event_target:planet_eternia
+            owner = root
+        }
+
+		# set flag for eternia story chain
+		owner = {
+			set_country_flag = eternia_story_10
+		}
+	}
+	#option = {
+	#	name = origin.10.b
+	#}
+	after = {
+        hidden_effect = { country_event = { id = MASTERVERSE_eternia_story.11 days = 30 } }
+    }
+}
+
+######################################
+# Eternia #11 The city under the sea #
+######################################
+country_event = {
+	id = MASTERVERSE_eternia_story.11
+	title = "MASTERVERSE_eternia_story.11.name"
+    show_sound = event_celebration
+
+	desc = "MASTERVERSE_eternia_story.11.desc"
+
+	diplomatic = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	picture_event_data = {
+		portrait = humanoid_03
+		planet_background = pc_mystic
+   		graphical_culture = "humanoid_01"
+   		city_level = 3
+		room = from.ruler
+	}
+
+	option = {
+		name = origin.10.a
+
+		# enabling special project
+        enable_special_project = {
+            name = "SSC_PROJECT_ETERNIA_STORY_6"
+            location = event_target:planet_eternia
+            owner = root
+        }
+
+		# set flag for eternia story chain
+		owner = {
+			set_country_flag = eternia_story_11
+		}
+	}
+
+	#option = {
+	#	name = origin.10.b
+	#}
+
+	after = {
+		# enabling special project
+	}
+}
+
+#########################
+# Eternia #12 Subternia #
+#########################
+ship_event = {
+	id = MASTERVERSE_eternia_story.12
+	title = "MASTERVERSE_eternia_story.12.name"
+    show_sound = event_celebration
+    picture = MASTERVERSE_GFX_evt_eternia_subternia_2
+	desc = "MASTERVERSE_eternia_story.12.desc"
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = MAKE_IT_SO
+
+		# enabling special project
+        enable_special_project = {
+            name = "SSC_PROJECT_ETERNIA_STORY_7"
+            location = event_target:planet_eternia
+            owner = root
+        }
+
+		# set flag for eternia story chain
+		owner = {
+			set_country_flag = eternia_story_12
+		}
+	}
+
+	# option = {
+	#	name = TOOPOOR
+	#}
+
+	after = {
+		# enabling special project
+	}
+}
+
+####################################
+# Eternia #13 The Mystic Mountains #
+####################################
+ship_event = {
+	id = MASTERVERSE_eternia_story.13
+	title = "MASTERVERSE_eternia_story.13.name"
+    show_sound = event_celebration
+    picture = MASTERVERSE_GFX_evt_eternia_valley_of_power
+	desc = "MASTERVERSE_eternia_story.13.desc"
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = KEEP_SEARCHING
+
+		# enabling special project
+        enable_special_project = {
+            name = "SSC_PROJECT_ETERNIA_STORY_8"
+            location = event_target:planet_eternia
+            owner = root
+        }
+
+		# set flag for eternia story chain
+		owner = {
+			set_country_flag = eternia_story_13
+		}
+	}
+
+	#option = {
+	#	name = NODEAL
+	#}
+
+	after = {
+		# enabling special project
+	}
+}
+
+#####################################
+# Eternia #14 The Evergreen Forests #
+#####################################
+ship_event = {
+	id = MASTERVERSE_eternia_story.14
+	title = "MASTERVERSE_eternia_story.14.name"
+    show_sound = event_celebration
+    picture = MASTERVERSE_GFX_evt_eternia_evergreen_forests
+	desc = "MASTERVERSE_eternia_story.14.desc"
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = ACKNOWLEDGED
+
+		# enabling special project
+        enable_special_project = {
+            name = "SSC_PROJECT_ETERNIA_STORY_9"
+            location = event_target:planet_eternia
+            owner = root
+        }
+
+		# set flag for eternia story chain
+		owner = {
+			set_country_flag = eternia_story_14
+		}
+	}
+
+	#option = {
+	#	name = NODEAL
+	#}
+
+	after = {
+		# enabling special project
+	}
+}
+
+##########################
+# Eternia #15 The plains #
+##########################
+ship_event = {
+	id = MASTERVERSE_eternia_story.15
+	title = "MASTERVERSE_eternia_story.15.name"
+    show_sound = event_celebration
+    picture = MASTERVERSE_GFX_evt_eternia_plains
+	desc = "MASTERVERSE_eternia_story.15.desc"
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = MAKE_IT_SO
+
+		# enabling special project
+        enable_special_project = {
+            name = "SSC_PROJECT_ETERNIA_STORY_10"
+            location = event_target:planet_eternia
+            owner = root
+        }
+
+		# set flag for eternia story chain
+		owner = {
+			set_country_flag = eternia_story_15
+		}
+	}
+
+	#option = {
+	#	name = NODEAL
+	#}
+
+	after = {
+		# enabling special project
+	}
+}
+
+#######################################
+# Eternia #16 An ancient battleground #
+#######################################
+ship_event = {
+	id = MASTERVERSE_eternia_story.16
+	title = "MASTERVERSE_eternia_story.16.name"
+    show_sound = event_celebration
+    picture = MASTERVERSE_GFX_evt_eternia_three_towers
+
+	desc = "MASTERVERSE_eternia_story.16.desc"
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = FASCINATING
+
+		# enabling special project
+        enable_special_project = {
+            name = "SSC_PROJECT_ETERNIA_STORY_11"
+            location = event_target:planet_eternia
+            owner = root
+        }
+
+		# set flag for eternia story chain
+		owner = {
+			set_country_flag = eternia_story_16
+		}
+	}
+
+	#option = {
+	#	name = TOOPOOR
+	#}
+
+	after = {
+		# enabling special project
+	}
+}
+
+#################################
+# Eternia #17 The sands of time #
+#################################
+ship_event = {
+	id = MASTERVERSE_eternia_story.17
+	title = "MASTERVERSE_eternia_story.17.name"
+    show_sound = event_celebration
+    picture = MASTERVERSE_GFX_evt_eternia_ancient_ruins
+	desc = "MASTERVERSE_eternia_story.17.desc"
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = INTERESTING
+
+		# enabling special project
+        enable_special_project = {
+            name = "SSC_PROJECT_ETERNIA_STORY_12"
+            location = event_target:planet_eternia
+            owner = root
+        }
+
+		# set flag for eternia story chain
+		owner = {
+			set_country_flag = eternia_story_17
+		}
+	}
+
+	#option = {
+	#	name = NODEAL
+	#}
+
+	after = {
+		# enabling special project
+	}
+}
+
+###################################
+# Eternia #18 The dark hemisphere #
+###################################
+ship_event = {
+	id = MASTERVERSE_eternia_story.18
+	title = "MASTERVERSE_eternia_story.18.name"
+    show_sound = event_celebration
+    picture = MASTERVERSE_GFX_evt_eternia_snake_mountain
+	desc = "MASTERVERSE_eternia_story.18.desc"
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = INCREDIBLE
+
+		# enabling special project
+        enable_special_project = {
+            name = "SSC_PROJECT_ETERNIA_STORY_13"
+            location = event_target:planet_eternia
+            owner = root
+        }
+
+		# set flag for eternia story chain
+		owner = {
+			set_country_flag = eternia_story_18
+		}
+	}
+
+	#option = {
+	#	name = TOOPOOR
+	#}
+
+	after = {
+		# enabling special project
+	}
+}
+
+#######################
+# Eternia #19 Eternia #
+#######################
+ship_event = {
+	id = MASTERVERSE_eternia_story.19
+	title = "MASTERVERSE_eternia_story.19.name"
+    show_sound = event_celebration
+	picture = MASTERVERSE_GFX_evt_eternia_world_map
+
+	desc = "MASTERVERSE_eternia_story.19.desc"
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = MARVELOUS
+
+		# set flag for eternia story chain
+		owner = {
+			set_country_flag = eternia_story_19 
+	    	# end_event_chain = "SSC_event_chain_eternia_story"
+		}
+	}
+
+	after = {
+		# clearing event targets
+		clear_global_event_target = planet_eternia
+		clear_global_event_target = planet_phantos
+	}
+}
+
+##########################
+#                        #
+# Eternia People Events  #
+#                        #
+# Written by Manuel Lieb #
+#                        #
+##########################
+
+namespace = SSC_eternia_people
+
+##############################
+# Eternia People #1 Speleans #
+##############################
+country_event = {
+	id = SSC_eternia_people.1
+	title = SSC_eternia_people.1.name
+	desc = SSC_eternia_people.1.desc
+	show_sound = event_celebration
+	location = ROOT
+
+	diplomatic = yes
+
+	trigger = {
+		has_country_flag = eternia_story_12
+		NOT = {
+			has_country_flag = eternia_people_1
+		}
+	}
+
+	mean_time_to_happen = {
+	    days = 30
+	}
+
+	immediate = {
+	}
+
+	picture_event_data = {
+		portrait = nec15
+		planet_background = pc_mystic
+   		graphical_culture = "necroid_01"
+   		city_level = 6
+		room = necroids_room
+	}
+
+	option = {
+		name = colony.8006.a
+
+		# enabling special project
+		enable_special_project = {
+    	    name = "SSC_PROJECT_ETERNIA_PEOPLE_9"
+			location = this
+			owner = root
+		}
+		
+		# set flag for eternia story chain
+		set_country_flag = eternia_people_1
+	}
+	#option = {
+	#	name = origin.10.b
+	#}
+}
+
+#############################
+# Eternia People #2 Reptons #
+#############################
+country_event = {
+	id = SSC_eternia_people.2
+	title = SSC_eternia_people.2.name
+	desc = SSC_eternia_people.2.desc
+	show_sound = event_celebration
+	location = ROOT
+
+	diplomatic = yes
+
+	trigger = {
+		has_country_flag = eternia_story_12
+		NOT = {
+			has_country_flag = eternia_people_2
+		}
+	}
+
+	mean_time_to_happen = {
+	    days = 30
+	}
+
+	immediate = {
+	}
+
+	picture_event_data = {
+		portrait = masterverse_repton
+		planet_background = pc_mystic
+   		graphical_culture = "reptilian_01"
+   		city_level = 6
+		room = personality_hive_mind_room
+	}
+
+	option = {
+		name = colony.8006.a
+
+		# enabling special project
+		enable_special_project = {
+    	    name = "SSC_PROJECT_ETERNIA_PEOPLE_8"
+			location = this
+			owner = root
+		}
+		
+		# set flag for eternia story chain
+		set_country_flag = eternia_people_2
+	}
+	#option = {
+	#	name = origin.10.b
+	#}
+}
+
+##############################
+# Eternia People #3 Caligars #
+##############################
+country_event = {
+	id = SSC_eternia_people.3
+	title = SSC_eternia_people.3.name
+	desc = SSC_eternia_people.3.desc
+	show_sound = event_celebration
+	location = ROOT
+
+	diplomatic = yes
+
+	trigger = {
+		has_country_flag = eternia_story_12
+		NOT = {
+			has_country_flag = eternia_people_3
+		}
+	}
+
+	mean_time_to_happen = {
+	    days = 30
+	}
+
+	immediate = {
+	}
+
+	picture_event_data = {
+		portrait = humanoid_hp_12
+		planet_background = pc_mystic
+   		graphical_culture = "reptilian_01"
+   		city_level = 6
+		room = personality_honorbound_warriors_room
+	}
+
+	option = {
+		name = colony.8006.a
+
+		# enabling special project
+		enable_special_project = {
+    	    name = "SSC_PROJECT_ETERNIA_PEOPLE_10"
+			location = this
+			owner = root
+		}
+		
+		# set flag for eternia story chain
+		set_country_flag = eternia_people_3
+	}
+	#option = {
+	#	name = origin.10.b
+	#}
+}

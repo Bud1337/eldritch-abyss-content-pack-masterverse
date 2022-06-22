@@ -1,0 +1,163 @@
+Planeten:
+- Adarion (pc_g_star)
+- Eternia (pc_mystic), Brightmoon & Darkmoon
+- Phantos (pc_continental)
+- 2 Astorid belts
+- 3 big Asteroids
+
+Nachbar-Systeme:
+- Trannis
+- Robotica
+- Kylax
+
+Geschichte:
+
+Einst ein Planeten-System im Zentrum des Universums voller Leben. Auf drei der acht Planeten, die Adarion umkreisten entstand Leben. Auf Eternia, Etheria und Phantos.
+Eternia und Etheria befanden sich auf der gleichen Bahn, nur auf der jeweils gegenüberliegenden Seite Adarions, weswegen sie als Bruderplaneten galten.
+
+Viele Dämonische Kriege überkamen beide Planeten, doch der letzte erstreckte sich über das komplette System und erzeugte eine Havarie ungeahnten Ausmaßes.
+Die Annahme verdichtet sich, dass die mächtigsten der Guten Mächte beider Welten ihre komplette Macht bündelten, um die Übermacht des Bösen, hier genannt "Horde" und "Dämonen", zu vernichten.
+Das hat die Havarie des Systems Adarions ausgelöst. Das Böse war besiegt... und das Gute?
+
+Mit Eternia und Phantos befanden sich jetzt nur noch 2 Planeten befinden sich im jetzt System, heimgesucht von einem Kataklysmus. Die letzten Königreiche der Menschen ("Eternia", "Morainia", "Targa", "Operon", "Arcadia"), taten was getan werden musste.
+Sie schlossen sich zusammen und bestimmten Randor II. von Eternos zum Großkönig, der die Völker vereinen und in eine neue Zukunft führen soll. Einige nicht-menschliche Völker, die die Katastrophe überlebten schlossen sich nicht an und zogen sich stark dezimiert zurück.
+Wiederum von anderen Völkern fehlt heute jede Spur. Es ist nicht bekannt, ob sie noch existieren, oder unentdeckt weiter existieren.
+
+Reich:
+
+Name: Vereinigten Königreiche von Eternia
+Titel: Großkönig*in
+Erben-Titel: Prinz/-essin
+
+Story-Quests:
+
+Step 1 - 4: Geschichte & Ausgrabung | Project 1
+=> 3 Grabungen, erzähle obige Geschichte
+
+Step 5: Kontakt Phantos
+=> Projekt: Beitritt von Phantos zu den VKE | SSC_PROJECT_ETERNIA_PEOPLE_1
+=> Projekt: Legierungs-Veredelung durch Photanium | SSC_PROJECT_ETERNIA_STORY_2
+
+Step 6: Suche nach Eternium | SSC_PROJECT_ETERNIA_STORY_3
+=> Deposit auf Eternia
+
+Step 7: Aufsteig von Anwat Gar
+=> Projekt: Beitritt der Gar zu den VKE | SSC_PROJECT_ETERNIA_PEOPLE_2
+
+Step 8: Die Suche nach dem Kordit-Kristall | SSC_PROJECT_ETERNIA_STORY_4
+=> Nur Forschungs-Projekt, das sagt wo
+
+Step 9: Verlassenes Fort der Widgets | SSC_PROJECT_ETERNIA_STORY_5
+=> Direkt Sprung zu Event 10
+
+Step 10: Die Jagd nach dem Kordit-Kristall |
+=> Projekt: Beitritt Widgets zu VKE | SSC_PROJECT_ETERNIA_PEOPLE_3.
+=> Die Widgets sind von der Suche nicht begeistert, verraten jedoch, dass das Koridit zerstört wurde, es aber noch ein gestohlenes Vorkommen in der Harmony Sea geben könnte.
+
+Step 11: Die Jagd nach dem Kordit-Kristall | Project 9
+=> Forschungs-Projekt | SSC_PROJECT_ETERNIA_STORY_7
+=> Nach Abschluss Projekt: Beitritt Aquaticaner zu VKE | SSC_PROJECT_ETERNIA_PEOPLE_4.
+=> Pre Trigger: Karikoni
+
+Step 12: Subternia
+=> Pre Trigger Speleaner, Caligaren
+
+Step 13: Die mystischen Berge
+=> Pre Trigger Andreeniden, Avionier
+
+Step 14: Die immer grünenden Wälder
+=> Stadt der Urahnen
+=> Artefakte
+=> Pre Trigger Qadians, Tree People
+
+Step 15: Die Ebene der Ewigkeit
+=> Artefakte
+=> Pre Trigger Tycons, Pelleezeans
+=> Deposit: Castle Grayskull ( +5 Einigkeit )
+
+Step 16: Ein uraltes Schlachtfeld
+=> Artefakte
+=> Deposit: Uraltes Schlachtfeld (Irgendwas)
+
+Step 17: Die Wüste der Zeit
+=> Artefakte
+
+Step 18: Die dunkle Hemisphäre
+=> Deposit: Snake Mountain ( -5 Einigkeit )
+
+Step 19: Eternia
+
+Völker mit Trigger:
+- Menschen (Eternia)    https://he-man.fandom.com/wiki/Humans               ideal_planet_class = pc_continental trait_adaptive, trait_talented, trait_conservational, trait_unruly
+- Menschen (Phantos)    https://he-man.fandom.com/wiki/Humans               ideal_planet_class = pc_continental trait_adaptive, trait_nomadic, trait_natural_engineers, trait_wasteful, trait_unruly
+- Gar                   https://he-man.fandom.com/wiki/Gar                  ideal_planet_class = pc_ocean       trait_potential_psionic, trait_venerable, trait_slow_breeders, trait_unruly
+- Aquaticaner           https://he-man.fandom.com/wiki/Aquaticans           ideal_planet_class = pc_ocean       trait_thrifty, trait_adaptive, trait_sedentary
+- Widgets               https://he-man.fandom.com/wiki/Widgets              ideal_planet_class = pc_tropical    trait_industrious, trait_communal, trait_slow_breeders, trait_weak
+- Qadians               https://he-man.fandom.com/wiki/Qadians              ideal_planet_class = pc_tropical    trait_adaptable, trait_strong, trait_sedentary
+- Andreeniden           https://he-man.fandom.com/wiki/Andreenids           ideal_planet_class = pc_savannah    trait_rapid_breeders, trait_communal, trait_nonadaptive
+- Avionier              https://he-man.fandom.com/wiki/Avionians            ideal_planet_class = pc_arid        trait_talented, trait_communal, trait_resilient, trait_slow_breeders, trait_quarrelsome
+- Speleaner             https://he-man.fandom.com/wiki/Speleans             ideal_planet_class = pc_arid        
+- Caligaren             https://he-man.fandom.com/wiki/Caligars             ideal_planet_class = pc_arid        
+- Reptons                                                                   ideal_planet_class = pc_arid        
+- Kulataks              https://he-man.fandom.com/wiki/Kulataks             ideal_planet_class = pc_arctic        
+
+Völker ohne Trigger:
+- Torg                  https://he-man.fandom.com/wiki/Torg                 (Es gibt genug Menschen)
+- Cave Dweller          https://he-man.fandom.com/wiki/Cave_Dwellers        (Es gibt genug Menschen)
+- Baum-Leute            https://he-man.fandom.com/wiki/Tree_People          (Nennung möglich)
+- Thenurian                                                                 (Nennung möglich)
+- Reptile Men           https://he-man.fandom.com/wiki/Reptile_Men          (Nennung möglich)
+- Gargons               https://he-man.fandom.com/wiki/Gargons              (Nennung möglich)
+- Tycons                https://he-man.fandom.com/wiki/Tycons               (Nennung möglich)
+- Feuervolk             https://he-man.fandom.com/wiki/Fire_People          (Nennung möglich)
+- Karikoni              https://he-man.fandom.com/wiki/Karikoni             (Nennung möglich)
+- Orks                  https://he-man.fandom.com/wiki/Orks                 (Nennung möglich)
+- Eistrolle             https://he-man.fandom.com/wiki/Ice_Troll            (Nennung)
+- Pelleezeans           https://he-man.fandom.com/wiki/Pelleezeans          (Zu wenig Infos, zu geringe Relevanz)
+- Arachna                                                                   (Zu wenig Infos, zu geringe Relevanz)
+- Kobolde               https://he-man.fandom.com/wiki/Kobolds              (Nur Horde wilder Kreaturen?)
+- Ilkorts               https://he-man.fandom.com/wiki/Ilkorts              (Nur Horde wilder Kreaturen?)
+
+Krisen: 
+1)
+Krisen-Volk: Dämonen
+Beschreibung: Dämonen übernehmen Sternen-Systeme (Art Bürgerkrieg)
+2)
+Krisen-Volk: Schlangen-Menschen
+Beschriebung: Schlangenmenschen übernehmen Sternen-Systeme (Art Bürgerkrieg)
+
+FANDOM:
+
+Eternia is a planet that revolves around the great yellow sun, Adarion, among 8 planets, has a direct connection with
+its brother planet Etheria, of the same sun on opposite sides.
+
+About 300 years ago, Eternia and Etheria had a world war against two demons, former enemies of the
+guardians of Grayskull and Light Hope. Both planets had large advanced cities, but powerful sections like Castle
+Grayskull and the Crystal Castle were preserved in the war. Ancient archaeological cities in medieval style have been
+used and refined wirh new technologies, as in the case of the royal palace of King Randor.
+
+Prehistory
+
+In most continuities, Eternian civilization is founded upon the remnants of an older society that possessed advanced
+technology and powerful sorcery. Details about "the Ancients" are intentionally vague, and are often unknown to the main
+characters due to the history being lost in a planetwide crisis such as the Great Wars. Legend and myth notwithstanding,
+the recorded history of Eternia usually dates back no further than the creation of Castle Grayskull.
+
+The Powers of Grayskull: The Legend Begins! reveals that prehistoric Eternia featured dinosaur-like monsters, giants,
+and cavemen. Some of these dinosaurs are preserved within Eternia's Tar Swamp. Some of Eternia's ancient civilizations,
+such as the Osirians, possessed very advanced technology, and left many ruins and artifacts behind. Preternia was
+menaced by King Hiss and the Snake Men until the Ancients imprisoned them in another dimension.
+
+The oldest being still alive on Eternia is an enormous sentient tree named Skytree. The second oldest is Granamyr,
+ruler of the Dragons of Darksmoke, who has always envied the tree's status.
+
+Crisis Event (Base):
+
+original/events/crisis_events_3.txt
+############################
+#
+# Crisis Events III
+#
+# Written by Henrik Thyrwall and Miranda van den Brink
+#
+############################

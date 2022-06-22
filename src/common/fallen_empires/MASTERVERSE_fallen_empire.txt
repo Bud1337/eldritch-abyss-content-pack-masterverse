@@ -1,0 +1,26 @@
+# Horde
+#fallen_empire_horde = {
+#	graphical_culture = "fallen_empire_04"
+#	initializer = "MASTERVERSE_despondos_system"
+#
+#	weight_modifier = {
+#		base = 100
+#		modifier = {
+#			any_country = {
+#				OR = { 
+#					has_country_flag = masterverse
+#					has_country_flag = human_1
+#					has_country_flag = human_2
+#				}
+#			}
+#			NOT = { any_country = { has_country_flag = fallen_empire_horde } }
+#			any_system = { has_star_flag = despondos_system }
+#			num_ai_empires_setting >= 0
+#			add = 99999
+#		}
+#	}
+#
+#	create_country_effect = {
+#		MASTERVERSE_generate_planet_hordes_empire = yes
+#	}
+#}

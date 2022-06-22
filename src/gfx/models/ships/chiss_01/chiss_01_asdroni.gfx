@@ -1,0 +1,70 @@
+objectTypes = {
+	pdxmesh = {
+		name = "chiss_01_asdroni_mesh"
+		file = "gfx/models/ships/chiss_01/chiss_01_asdroni.mesh"
+		scale = 0.1
+
+		meshsettings = {
+			name = "Asdoni_hull_greyShape"
+			index = 0
+			texture_diffuse = "hull_grey.dds"
+			texture_normal = "hull_grey_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Asdoni_hull_blue_02Shape"
+			index = 0
+			texture_diffuse = "hull_blue_02.dds"
+			texture_normal = "hull_grey_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Asdoni_hull_grey_darkerShape"
+			index = 0
+			texture_diffuse = "hull_grey_darker.dds"
+			texture_normal = "hull_grey_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Asdoni_hull_yellow_darkestShape"
+			index = 0
+			texture_diffuse = "hull_yellow_darkest.dds"
+			texture_normal = "hull_grey_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Asdoni_grey_tall_grid_diffuseShape"
+			index = 0
+			texture_diffuse = "grey_tall_grid_diffuse.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Asdoni_hull_grey_brightShape"
+			index = 0
+			texture_diffuse = "hull_grey_bright.dds"
+			texture_normal = "hull_grey_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Asdoni__windows_001Shape"
+			index = 0
+			texture_diffuse = "chiss_01_lights_grid_diffuse.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUVNoDissolve"
+		}
+	}
+}

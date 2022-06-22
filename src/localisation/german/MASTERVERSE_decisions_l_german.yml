@@ -1,0 +1,19 @@
+﻿################\
+# german translation
+##################\
+
+l_german:
+ decision_eternia_consumer_goods_weighting:0 "Fokus auf Konsumgüter"
+ decision_eternia_consumer_goods_weighting_desc:0 "Mit dem Schwerpunkt auf Konsumgüter-Produktion können wir unseren Ausstoß erhöhen, allerdings zu Lasten der Legierung-Produktion."
+ decision_eternia_moon_bright_reactivate_ancient_deposits:0 "Inbetriebnahme alter Einrichtungen"
+ decision_eternia_moon_bright_reactivate_ancient_deposits_desc:0 "Einrichtungen unserer Vorfahren haben den Terraforming-Prozess wundersamer Weise überstanden. Wir könnten uns bemühen, diese instand zu setzen."
+ decision_eternia_moon_bright_science_weighting:0 "Fokus auf Forschung"
+ decision_eternia_moon_bright_science_weighting_desc:0 "Wissen ist Macht - Mehr Forschung wird unsere Stellung in der Galaxie festigen."
+ decision_eternia_moon_bright_light_mirror:0 "Antiken Lichtspiegel wieder aufbauen"
+ decision_eternia_moon_bright_light_mirror_desc:0 "Mit dem Aufstellen und der Inbetriebnahme eines Lichtspiegels können wir den dunklen Mond erhellen und lebensfreundlicher gestalten."
+ decision_eternia_moon_dark_ancient_colony:0 "Antiken Komplex wieder aufbauen"
+ decision_eternia_moon_dark_ancient_colony_desc:0 "In dem antiken Komplex haben wir Wohnungen gefunden, eine Anlage für Photanium-Legierungen und eine hydroponische Farm. Der Zahn der Zeit nagte zwar an allem und der Terraforming-Prozess war auch nicht gnädig, aber wir könnten das ganze wieder aufbauen."
+ decision_eternia_moon_dark_food_weighting:0 "Fokus auf Nahrungsmittel"
+ decision_eternia_moon_dark_food_weighting_desc:0 "Mit dem Schwerpunkt auf Nahrungsmittel-Produktion können wir unsere Ernten erhöhen, allerdings zu Lasten unserer Mineralien-Produktion."
+ decision_eternia_moon_dark_housing:0 "Wohnraum für alle"
+ decision_eternia_moon_dark_housing_desc:0 "Auch der letzte freie Fleck Erde muss genutzt werden, um unserer Bevölkerung Unterschlupf zu gewährleisten."

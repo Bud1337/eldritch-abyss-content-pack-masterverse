@@ -1,0 +1,74 @@
+﻿################\
+# german translation
+##################\
+
+l_german:
+ ####################
+ # Eternia Species 
+ ####################
+ NAME_Eternia_Species_Andreenid:0 "Andreenide"
+ NAME_Eternia_Species_Andreenid_plural:0 "Andreeniden"
+ NAME_Eternia_Species_Aquatican:0 "Aquaticaner"
+ NAME_Eternia_Species_Aquatican_plural:0 "Aquaticaner"
+ NAME_Eternia_Species_Avionian:0 "Avionier"
+ NAME_Eternia_Species_Avionian_plural:0 "Avionier"
+ NAME_Eternia_Species_Caligar:0 "Caligarianer"
+ NAME_Eternia_Species_Caligar_plural:0 "Caligarianer"
+ NAME_Eternia_Species_Gar:0 "Gar"
+ NAME_Eternia_Species_Gar_plural:0 "Gar"
+ NAME_Eternia_Species_Kulatak:0 "Kulatak"
+ NAME_Eternia_Species_Kulatak_plural:0 "Kulataks"
+ NAME_Eternia_Species_Qadian:0 "Qadianer"
+ NAME_Eternia_Species_Qadian_plural:0 "Qadianer"
+ NAME_Eternia_Species_Repton:0 "Repton"
+ NAME_Eternia_Species_Repton_plural:0 "Reptons"
+ NAME_Eternia_Species_Spelean:0 "Speleaner"
+ NAME_Eternia_Species_Spelean_plural:0 "Speleaner"
+ NAME_Eternia_Species_Widget:0 "Widget"
+ NAME_Eternia_Species_Widget_plural:0 "Widgets"
+ 
+ ####################
+ # Trannis Species 
+ ####################
+ NAME_Eternia_Species_Trannisian:0 "Trannisianer"
+ NAME_Eternia_Species_Trannisian_plural:0 "Trannisianer"
+
+ #######################
+ # Robotica "Species"
+ #######################
+ NAME_Eternia_Species_Robotica:0 "Robot"
+ NAME_Eternia_Species_Robotica_plural:0 "Robots"
+ 
+ ####################################
+ # Species Names | Events / Crisis
+ ####################################
+ NAME_Eternia_Species_Evil_Warriors:0 "Krieger des Bösen"
+ NAME_Eternia_Species_Evil_Warriors_plural:0 "Krieger des Bösen"
+ NAME_Eternia_Species_Snake_Men:0 "Schlangenmenschen"
+ NAME_Eternia_Species_Snake_Men_plural:0 "Schlangenmenschen"
+ 
+ ####################################
+ # Eternia Event Villain Countries
+ ####################################
+ NAME_Eternia_Country_Evil_Warriors:0 "Reich des Bösen"
+ NAME_Eternia_Country_Evil_Warriors_Ruler:0 "Skeletor"
+ NAME_Eternia_Country_Snake_Men:0 "Reich des Schlangengottes"
+ NAME_Eternia_Country_Snake_Men_Ruler:0 "Hssss"
+
+ ####################
+ # Etheria Species 
+ ####################
+ NAME_Etheria_Species_KonSeal:0 "Kon-Seal"
+ NAME_Etheria_Species_KonSeal_plural:0 "Kon-Seals"
+ NAME_Etheria_Species_Selkie:0 "Selkie"
+ NAME_Etheria_Species_Selkie_plural:0 "Selkies"
+ NAME_Etheria_Species_Troll:0 "Troll"
+ NAME_Etheria_Species_Troll_plural:0 "Trolls"
+ NAME_Etheria_Species_Twigget:0 "Twigget"
+ NAME_Etheria_Species_Twigget_plural:0 "Twiggets"
+
+ ####################
+ # Zal-Kron Species 
+ ####################
+ NAME_Etheria_Species_ZalKron:0 "Zal-Kron"
+ NAME_Etheria_Species_ZalKron_plural:0 "Zal-Kron"

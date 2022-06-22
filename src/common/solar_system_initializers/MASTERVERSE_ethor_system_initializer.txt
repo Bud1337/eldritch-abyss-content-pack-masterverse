@@ -1,0 +1,365 @@
+@distance = 50
+@base_moon_distance = 10
+@jumps = 3
+
+### Ethor System
+MASTERVERSE_ethor_system = {
+	name = "NAME_Ethor"
+	class = "sc_g"
+	max_instances = 1
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 285
+	}
+	asteroid_belt = {
+        type = crystal_asteroid_belt
+        radius = 240
+    }
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 195
+	}
+	flags = {
+	    empire_home_system
+	    ethor_system
+	}
+	usage = custom_empire
+	init_effect = {
+        every_neighbor_system = {
+            set_star_flag = empire_cluster
+            every_neighbor_system = {
+                set_star_flag = empire_cluster
+            }
+        }
+        generate_home_system_resources = yes
+    }
+	planet = {
+		name = "NAME_Ethor"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 35
+		orbit_angle = 75
+	}
+	planet = {
+		name = "NAME_Lastor"
+		class = "pc_toxic"
+		orbit_distance = 24
+		orbit_angle = 65
+		size = 14
+		has_ring = no
+	}
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 7
+		orbit_angle = 60
+	}
+	planet = {
+		name = "NAME_Etheria"
+		class = "pc_continental"
+		orbit_distance = 20
+		orbit_angle = 60
+		size = 18
+		starting_planet = yes
+		has_ring = no
+		deposit_blockers = none
+		modifiers = none
+        home_planet = yes
+        init_effect = {
+            generate_empire_home_planet = yes
+            prevent_anomaly = yes
+            set_planet_flag = planet_etheria
+        }
+		moon = {
+			name = "NAME_Yudiah"
+			class = "pc_barren_cold"
+			size = 4
+			orbit_distance = 10
+			orbit_angle = 40
+			has_ring = no
+		}
+	}
+	planet = {
+		name = "NAME_Infinita"
+		class = "pc_barren"
+		orbit_distance = 25
+		orbit_angle = 60
+		size = 13
+		has_ring = no
+
+		init_effect = {
+			add_modifier = {
+				modifier = "terraforming_candidate"
+				days = -1
+			}
+			set_planet_flag = planet_infinita
+		}
+	}
+	planet = {
+		name = "NAME_Eldar"
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = 50
+		size = 30
+		has_ring = yes
+		moon = {
+			name = "NAME_Ancient"
+			class = pc_barren_cold
+			orbit_distance = 18
+			orbit_angle = 25
+			size = 10
+			has_ring = no
+			deposit_blockers = none
+			modifiers = none
+		}
+	}
+	planet = {
+		count = { min = 8 max = 12 }
+		class = pc_asteroid
+		orbit_distance = 15
+		size = { min = 2 max = 5 }
+		orbit_angle = { min = 40 max = 110 }
+	}
+
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "MASTERVERSE_ethor_neighbor_t1"
+	}
+}
+
+### Ethor System
+MASTERVERSE_npc_ethor_system = {
+	name = "NAME_Ethor"
+	class = "sc_g"
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 285
+	}
+	asteroid_belt = {
+        type = crystal_asteroid_belt
+        radius = 240
+    }
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 195
+	}
+
+	init_effect = {
+        every_neighbor_system = {
+            set_star_flag = empire_cluster
+            every_neighbor_system = {
+                set_star_flag = empire_cluster
+            }
+        }
+        generate_home_system_resources = yes
+    }
+
+	flags = { empire_home_system ethor_system }
+
+	usage = misc_system_init
+
+	# spawn this if uke is chosen in single player game
+	usage_odds = {
+		base = 0
+		modifier = {
+			any_country = {
+				OR = {
+					# has_country_flag = human_1
+					# has_country_flag = human_2
+					has_country_flag = masterverse
+				}
+			}
+			NOT = { any_system = { has_star_flag = ethor_system } }
+			NOT = { has_star_flag = empire_cluster }
+			num_ai_empires_setting >= 0
+			# num_ai_empires_setting >= 99999
+			# num_ai_empires_setting >= 1
+
+			add = 99999
+		}
+	}
+
+	max_instances = 1
+
+	planet = {
+		name = "NAME_Ethor"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 35
+		orbit_angle = 75
+	}
+
+	planet = {
+		name = "NAME_Lastor"
+		class = "pc_toxic"
+		orbit_distance = 24
+		orbit_angle = 65
+		size = 14
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 7
+		orbit_angle = 60
+	}
+
+	planet = {
+		name = "NAME_Etheria"
+		class = "pc_continental"
+		orbit_distance = 20
+		orbit_angle = 60
+		size = 18
+		starting_planet = yes
+		has_ring = no
+		deposit_blockers = none
+		modifiers = none
+        home_planet = yes
+        init_effect = {
+            generate_empire_home_planet = yes
+            prevent_anomaly = yes
+            set_planet_flag = planet_etheria
+			MASTERVERSE_generate_country_etheria_npc = yes
+        }
+		moon = {
+			name = "NAME_Yudiah"
+			class = "pc_barren_cold"
+			size = 4
+			orbit_distance = 10
+			orbit_angle = 40
+			has_ring = no
+		}
+	}
+
+	planet = {
+		name = "NAME_Infinita"
+		class = "pc_barren"
+		orbit_distance = 25
+		orbit_angle = 60
+		size = 13
+		has_ring = no
+
+		init_effect = {
+			add_modifier = {
+				modifier = "terraforming_candidate"
+				days = -1
+			}
+		}
+	}
+
+	planet = {
+		name = "NAME_Eldar"
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = 50
+		size = 30
+		has_ring = yes
+		moon = {
+			name = "NAME_Ancient"
+			class = pc_barren_cold
+			orbit_distance = 18
+			orbit_angle = 25
+			size = 10
+			has_ring = no
+			deposit_blockers = none
+			modifiers = none
+		}
+	}
+
+	planet = {
+		count = { min = 8 max = 12 }
+		class = pc_asteroid
+		orbit_distance = 15
+		size = { min = 2 max = 5 }
+		orbit_angle = { min = 40 max = 110 }
+	}
+
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "MASTERVERSE_ethor_neighbor_t1"
+	}
+}
+
+# Ethor Neighbor Tier 1
+MASTERVERSE_ethor_neighbor_t1 = {
+	name = "NAME_Krona"
+	class = sc_g
+	flags = { neighbor_t1_first_colony }
+
+	init_effect = {
+		every_neighbor_system = { set_star_flag = empire_cluster }
+	}
+
+	planet = {
+		name = "NAME_Krona"
+		count = 1
+		class = pc_g_star
+		orbit_distance = 0
+		orbit_angle = 1
+	    size = 32
+		has_ring = no
+	}
+
+	planet = {
+		count = 3
+		orbit_distance = 25
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+        name = "NAME_ZalKron"
+		count = 1
+		orbit_distance = 30
+		class = pc_crystal
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 18 }
+
+		init_effect = {
+            set_planet_flag = planet_zal_kron
+            MASTERVERSE_generate_country_zalkron = yes 
+			MASTERVERSE_zalkron_generate_deposits_and_blockers = yes
+        }
+
+		moon = {
+			name = "NAME_Zerus"
+			class = pc_barren_cold
+			size = 2
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = 2
+		orbit_distance = 25
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_distance = 5
+		}
+	}
+
+#	neighbor_system = {
+#		hyperlane_jumps = { min = 1 max = @jumps }
+#		initializer = "MASTERVERSE_adarion_neighbor_t2"
+#	}
+}

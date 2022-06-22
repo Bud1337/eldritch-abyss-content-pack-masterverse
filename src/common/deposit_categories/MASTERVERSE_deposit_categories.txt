@@ -1,0 +1,12 @@
+
+deposit_cat_eternia = { }
+
+deposit_cat_eternia_bright_moon = { }
+
+deposit_cat_eternia_dark_moon = { }
+
+deposit_cat_etheria = { }
+
+deposit_cat_phantos = { }
+
+deposit_cat_trannis = { }

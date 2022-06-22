@@ -1,0 +1,33 @@
+﻿################\
+# german translation
+##################\
+
+l_german:
+ ####################################
+ # Species Classes
+ ####################################
+ MASTERVERSE:0 "Masterverse"
+ 
+ ####################################
+ # Flag Category
+ ####################################
+ FLAG_CATEGORY_masterverse:0 "Masterverse"
+
+ ####################################
+ # Planet Start Screens
+ ####################################
+ START_SCREEN_UKE:0 "Seit den kataklysmischen ewigen Kampf der großen Mächte, ist viel geschehen. Die verbliebenen menschlichen Königreiche vereinten sich und der wissenschaftliche Fortschritt ist schnell, aber die mystischen, ja teils magischen Elemente scheinen verloren gegangen zu sein.\n\nAndere Völker sind der Katastrophe zum Opfer gefallen, oder haben sich zurückgezogen.\n\nEine technologische Revolution fand statt und in Windeseile erreichte man das Raumfahrtzeitalter.\n\nDie magische Ferne des Weltalls ruft uns zu sich!"
+ START_SCREEN_EA:0 "Seit den kataklysmischen ewigen Kampf der großen Mächte, ist viel geschehen. Die verbliebenen menschlichen Königreiche vereinten sich und der wissenschaftliche Fortschritt ist schnell, aber die mystischen, ja teils magischen Elemente scheinen verloren gegangen zu sein.\n\nAndere Völker sind der Katastrophe zum Opfer gefallen, oder haben sich zurückgezogen.\n\nEine technologische Revolution fand statt und in Windeseile erreichte man das Raumfahrtzeitalter.\n\nDie magische Ferne des Weltalls ruft uns zu sich!"
+
+ #####################################
+ # Relics
+ #####################################
+ r_eternia_sword_of_power:0 "Schwert der Macht"
+ r_eternia_havoc_staff:0 "Verwüster-Stab"
+ r_eternia_cosmic_key:0 "Kosmischer Schlüssel"
+
+ #####################################
+ # Technology
+ #####################################
+ tech_eternia_photanium_alloys:0 "Photanium-Legierungen"
+ tech_eternia_photanium_alloys_desc:0 "Die Verwendung von Photanium-Legierungen verbessert die Hüllen unserer Schiffe."

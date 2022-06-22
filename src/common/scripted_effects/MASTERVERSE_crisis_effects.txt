@@ -1,0 +1,121 @@
+###################################
+# #1 CREATE EVIL WARRIORS SPECIES #
+###################################
+MASTERVERSE_generate_crisis_species_evil_warriors = {
+	create_species = {
+		name = NAME_Eternia_Species_Evil_Warriors
+		class = NECROID
+		portrait = skelcon
+		traits = {
+			trait="trait_necrophage"
+			trait="trait_deviants"
+			trait="trait_very_strong"
+		}
+		immortal = yes
+	}
+}
+
+###################################
+# #1 CREATE EVIL WARRIORS COUNTRY #
+###################################
+MASTERVERSE_generate_crisis_country_evil_warriors = {
+	create_country = {
+		name = NAME_Eternia_Country_Evil_Warriors
+		type = default
+		species = last_created_species
+		ignore_initial_colony_error = yes
+		day_zero_contact = no
+		authority = auth_imperial
+		origin = origin_necrophage
+		ethos = {
+			ethic = ethic_militarist
+			ethic = ethic_fanatic_authoritarian
+		}
+		civics = {
+			civic = civic_reanimated_armies
+			civic = civic_barbaric_despoilers
+		}
+		effect = {
+			save_event_target_as = current_uprising
+			country_event = { id = MASTERVERSE_eternia_crisis.1022 } # setup happens here now
+		}
+		flag = {
+			icon= {
+				category = "masterverse"
+				file = "evil.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "00_solid.dds"
+			}
+			colors={
+				"indigo"
+				"indigo"
+				"null"
+				"null"
+			}
+		}
+	}
+}
+
+###############################
+# #1 CREATE SNAKE MEN SPECIES #
+###############################
+MASTERVERSE_generate_crisis_species_snake_men = {
+	create_species = {
+		name = NAME_Eternia_Species_Snake_Men
+		class = NECROID
+		portrait = repton
+		traits = {
+			trait = trait_very_strong
+			trait = trait_intelligent
+			trait = trait_repugnant
+			trait = trait_unruly
+			trait = trait_quarrelsome
+		}
+		immortal = yes
+	}
+}
+
+###############################
+# #1 CREATE SNAKE MEN COUNTRY #
+###############################
+MASTERVERSE_generate_crisis_country_snake_men = {
+	create_country = {
+		name = NAME_ETERNIA_Country_Snake_Men
+		type = default
+		species = last_created_species
+		ignore_initial_colony_error = yes
+		day_zero_contact = no
+		authority = auth_imperial
+		origin = origin_separatists
+		ethos = {
+			ethic = ethic_militarist
+			ethic = ethic_fanatic_authoritarian
+		}
+		civics = {
+			civic = civic_distinguished_admiralty
+			civic = civic_barbaric_despoilers
+		}
+		effect = {
+			save_event_target_as = current_uprising
+			country_event = { id = MASTERVERSE_eternia_crisis.1122 } # setup happens here now
+		}
+		flag = {
+			icon= {
+				category = "masterverse"
+				file = "snakes.dds"
+			}
+			background= {
+				category = "backgrounds"
+				file = "v.dds"
+			}
+			colors={
+				"green"
+				"yellow"
+				"null"
+				"null"
+			}
+		}
+	}
+}

@@ -1,0 +1,1083 @@
+#####################################
+# Predefined Origin Start Species
+#####################################
+
+MASTERVERSE_eternia_create_origin_mystic_start_species = {
+	MASTERVERSE_eternia_create_origin_mystic_start_species_andreenids = yes
+	MASTERVERSE_eternia_create_origin_mystic_start_species_avionians = yes
+	MASTERVERSE_eternia_create_origin_mystic_start_species_kulataks = yes
+	MASTERVERSE_eternia_create_origin_mystic_start_species_qadians = yes
+}
+
+MASTERVERSE_eternia_create_origin_mystic_start_species_andreenids = {
+    create_species = {
+        name = "NAME_Eternia_Species_Andreenid"
+        plural = "NAME_Eternia_Species_Andreenid_plural"
+        class = ART
+        portrait = masterverse_andreenid
+        namelist = MASTERVERSE_PRESCRIPTED_ETERNIA_ANDREENIDS
+        traits = {
+            ideal_planet_class = pc_savannah
+            trait = trait_industrious
+            trait = trait_rapid_breeders
+            trait = trait_communal
+            trait = trait_quarrelsome
+            trait = trait_unruly
+        }
+        homeworld = this
+    }
+    
+	random_list = {
+		3 = { 
+			while = {
+				count = 4
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+		2 = { 
+			while = {
+				count = 3
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+		1 = { 
+			while = {
+				count = 2
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+	}
+}
+
+MASTERVERSE_eternia_create_origin_mystic_start_species_avionians = {
+    create_species = {
+        name = "NAME_Eternia_Species_Avionian"
+        plural = "NAME_Eternia_Species_Avionian_plural"
+        class = HUM
+        portrait = humanoid_hp_08
+        namelist = MASTERVERSE_PRESCRIPTED_ETERNIA_AVIONIANS
+        traits = {
+            ideal_planet_class = pc_arid
+            trait = trait_talented
+            trait = trait_communal
+            trait = trait_resilient
+            trait = trait_slow_breeders
+            trait = trait_quarrelsome
+        }
+        homeworld = this
+    }
+
+	random_list = {
+		3 = { 
+			while = {
+				count = 4
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+		2 = { 
+			while = {
+				count = 3
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+		1 = { 
+			while = {
+				count = 2
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+	}
+}
+
+MASTERVERSE_eternia_create_origin_mystic_start_species_kulataks = {
+    create_species = {
+        name = "NAME_Eternia_Species_Kulatak"
+        plural = "NAME_Eternia_Species_Kulatak_plural"
+        class = MAM
+        portrait = masterverse_kulatak
+        namelist = MASTERVERSE_PRESCRIPTED_ETERNIA_KULATAKS
+        traits = {
+            ideal_planet_class = pc_arctic
+            trait = trait_very_strong
+            trait = trait_resilient
+            trait = trait_unruly
+        }
+        homeworld = this
+    }
+    
+	random_list = {
+		3 = { 
+			while = {
+				count = 4
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+		2 = { 
+			while = {
+				count = 3
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+		1 = { 
+			while = {
+				count = 2
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+	}
+}
+
+MASTERVERSE_eternia_create_origin_mystic_start_species_qadians = {
+    create_species = {
+        name = "NAME_Eternia_Species_Qadian"
+        plural = "NAME_Eternia_Species_Qadian_plural"
+        class = HUM
+        portrait = mam14
+        namelist = MASTERVERSE_PRESCRIPTED_ETERNIA_QADIANS
+        traits = {
+            ideal_planet_class = pc_tropical
+            trait = trait_adaptive
+            trait = trait_strong
+            trait = trait_sedentary
+        }
+        homeworld = this
+    }
+    
+	random_list = {
+		3 = { 
+			while = {
+				count = 4
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+		2 = { 
+			while = {
+				count = 3
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+		1 = { 
+			while = {
+				count = 2
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+	}
+}
+
+MASTERVERSE_etheria_create_origin_mystic_start_species = {
+	MASTERVERSE_etheria_create_origin_mystic_start_species_trolls = yes
+	MASTERVERSE_etheria_create_origin_mystic_start_species_twiggets = yes
+	MASTERVERSE_etheria_create_origin_mystic_start_species_konseals = yes
+	MASTERVERSE_etheria_create_origin_mystic_start_species_selkies = yes
+}
+
+MASTERVERSE_etheria_create_origin_mystic_start_species_trolls = {
+	create_species = {
+		name = "NAME_Etheria_Species_Troll"
+		plural = "NAME_Etheria_Species_Troll_plural"
+		class = HUM
+		portrait = masterverse_troll
+		namelist = MASTERVERSE_PRESCRIPTED_ETHERIA_TROLLS
+		traits = {
+			ideal_planet_class = pc_arid
+			trait = trait_industrious
+			trait = trait_communal
+			trait = trait_slow_breeders
+			trait = trait_weak
+		}
+		homeworld = root
+	}
+    random_list = {
+		3 = { 
+			while = {
+				count = 4
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+		2 = { 
+			while = {
+				count = 3
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+		1 = { 
+			while = {
+				count = 2
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+	}
+}
+
+MASTERVERSE_etheria_create_origin_mystic_start_species_twiggets = {
+	create_species = {
+		name = "NAME_Etheria_Species_Twigget"
+		plural = "NAME_Etheria_Species_Twigget_plural"
+		class = HUM
+		portrait = humanoid_hp_02
+		namelist = MASTERVERSE_PRESCRIPTED_ETHERIA_TWIGGETS
+		traits = {
+			ideal_planet_class = pc_continental
+			trait = trait_industrious
+			trait = trait_communal
+			trait = trait_slow_breeders
+			trait = trait_weak
+		}
+		homeworld = root
+	}
+	random_list = {
+		3 = { 
+			while = {
+				count = 3
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+		2 = { 
+			while = {
+				count = 2
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+		1 = { 
+			while = {
+				count = 1
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+	}
+}
+
+MASTERVERSE_etheria_create_origin_mystic_start_species_konseals = {
+	create_species = {
+		name = "NAME_Etheria_Species_KonSeal"
+		plural = "NAME_Etheria_Species_KonSeal_plural"
+		class = MAM
+		portrait = mam_rat
+		namelist = MASTERVERSE_PRESCRIPTED_ETHERIA_KONSEALS
+		traits = {
+			ideal_planet_class = pc_tropical
+			trait = trait_industrious
+			trait = trait_communal
+			trait = trait_slow_breeders
+			trait = trait_weak
+		}
+		homeworld = root
+	}
+	random_list = {
+		2 = { 
+			while = {
+				count = 2
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+		1 = { 
+			while = {
+				count = 1
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+	}
+}
+
+MASTERVERSE_etheria_create_origin_mystic_start_species_selkies = {
+	create_species = {
+		name = "NAME_Etheria_Species_Selkie"
+		plural = "NAME_Etheria_Species_Selkie_plural"
+		class = MAM
+		portrait = masterverse_selkie
+		namelist = MASTERVERSE_PRESCRIPTED_ETERNIA_WIDGETS
+		traits = {
+			ideal_planet_class = pc_arctic
+			trait = trait_industrious
+			trait = trait_communal
+			trait = trait_slow_breeders
+			trait = trait_weak
+		}
+		homeworld = root
+	}
+    random_list = {
+		3 = { 
+			while = {
+				count = 3
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+		2 = { 
+			while = {
+				count = 2
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+		1 = { 
+			while = {
+				count = 1
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+	}
+}
+
+#####################################
+# Predefined Planetary Deposits
+#####################################
+
+MASTERVERSE_eternia_generate_deposits_and_blockers = {
+    clear_blockers = yes
+	clear_deposits = yes
+
+	# energy deposits
+	add_deposit = d_eternia_geysir_fields
+	add_deposit = d_arid_highlands
+
+	# mineral deposits
+	add_deposit = d_eternia_mines_of_arcadia
+	add_deposit = d_eternia_old_prison_mines
+
+	# food deposits
+	add_deposit = d_eternia_fertile_plains
+	add_deposit = d_eternia_plains_of_eternity
+
+	# blocker deposits
+	add_deposit = d_eternia_waste_lands
+	add_deposit = d_eternia_volcano_plains
+	add_deposit = d_eternia_tar_swamp
+
+	# natural deposits
+	add_deposit = d_eternia_sea_of_eternity
+
+	# civilization deposits
+	add_deposit = d_eternia_royal_palace_eternos
+	add_deposit = d_eternia_dam_of_the_ancients
+
+    # ancient deposits
+    add_deposit = d_eternia_temple_of_the_sun
+}
+
+MASTERVERSE_etheria_generate_deposits_and_blockers = {
+	clear_blockers = yes
+	clear_deposits = yes
+
+	# energy deposits
+	add_deposit = d_etheria_mount_candila
+	add_deposit = d_arid_highlands
+
+	# mineral deposits
+	add_deposit = d_etheria_crystal_mines
+	add_deposit = d_etheria_etherium_mine
+
+	# food deposits
+	add_deposit = d_etheria_village
+	add_deposit = d_etheria_mystacore_woods
+
+	# blocker deposits
+	add_deposit = d_mountain_range
+	add_deposit = d_crater
+	add_deposit = d_city_ruins
+
+	# natural deposits
+	add_deposit = d_etheria_woods_of_peace
+	add_deposit = d_etheria_whispering_woods
+
+	# civilization deposits
+	add_deposit = d_etheria_castle_brightmoon
+	add_deposit = d_etheria_mystacore_castle
+
+    # ancient deposits
+    # add_deposit = d_etheria_crystal_castle
+    # add_deposit = d_etheria_fright_zone
+    add_deposit = d_etheria_moonstone
+}
+
+MASTERVERSE_trannis_generate_deposits_and_blockers = {
+	clear_deposits = yes
+
+	# energy deposits
+    add_deposit = d_hot_springs
+    add_deposit = d_hot_springs
+	add_deposit = d_rushing_waterfalls
+
+	# mineral deposits
+    add_deposit = d_mineral_fields
+    add_deposit = d_mineral_fields
+    add_deposit = d_mineral_fields
+    add_deposit = d_prosperous_mesa
+
+	# food deposits
+    add_deposit = d_trannis_plains
+    add_deposit = d_lush_jungle
+    add_deposit = d_lush_jungle
+
+	# blocker deposits
+    add_deposit = d_dense_jungle
+    add_deposit = d_dense_jungle
+    add_deposit = d_dense_jungle
+    add_deposit = d_failing_infrastructure
+    add_deposit = d_trannis_plundors_factory
+    add_deposit = d_decrepit_dwellings
+    add_deposit = d_trannis_dead_nature
+   
+
+	# natural deposits
+    add_deposit = d_trannis_peaceful_animals
+
+	# civilization deposits
+	add_deposit = d_trannis_gleedils_atelier
+}
+
+MASTERVERSE_zalkron_generate_deposits_and_blockers = {
+	clear_blockers = yes
+	clear_deposits = yes
+
+	# energy deposits
+	add_deposit = d_zalkron_crystal_reef
+	add_deposit = d_zalkron_crystal_reef
+
+	# mineral deposits
+	add_deposit = d_impact_crater # 2 districts
+	add_deposit = d_zalkron_crystalline_caverns # 2 districts
+	add_deposit = d_zalkron_crystal_forest # 2 districts
+
+	# food deposits
+	add_deposit = d_zalkron_forgiving_tundra
+	add_deposit = d_zalkron_lichen_fields
+	add_deposit = d_zalkron_bountiful_plains
+
+	# blocker deposits
+	add_deposit = d_mountain_range
+	add_deposit = d_crater
+	add_deposit = d_city_ruins
+}
+
+#####################################
+# Predefined NPC Countries
+#####################################
+
+MASTERVERSE_generate_country_eternia_npc = {
+    # create eternias main species / people
+    create_species = {
+        class = "HUM"
+        portrait = "human"
+        name = "PRESCRIPTED_species_name_humans"
+        plural = "PRESCRIPTED_species_plural_humans"
+        adjective = "PRESCRIPTED_species_adjective_humans"
+		gender=male
+        traits = {
+            trait = trait_pc_continental_preference
+            trait = trait_adaptive 
+            trait = trait_talented
+            trait = trait_conservational
+            trait = trait_unruly
+        }
+    }
+    # create country
+    create_country = {
+        name="PRESCRIPTED_name_EternianKingdoms"
+        adjective="PRESCRIPTED_adjective_EternianKingdoms"
+        authority="auth_imperial"
+        civics={
+            civic = civic_aristocratic_elite
+            civic = civic_memorialist
+        }
+        species=last_created_species
+        name_list="MASTERVERSE_PRESCRIPTED_ETERNIA_HUMANS"
+        # ship_prefix="PRESCRIPTED_ship_prefix_EternianKingdoms"
+        ship_prefix="ER"
+        ethos = {
+            ethic = ethic_fanatic_xenophile
+            ethic = ethic_spiritualist
+        }
+        flag={
+            icon={
+                category="masterverse"
+                file="heroic.dds"
+            }
+            background={
+                category="backgrounds"
+                file="rounded_middle.dds"
+            }
+            colors={
+                "blue"
+                "red"
+                "null"
+                "null"
+            }
+        }
+        effect = {
+			save_global_event_target_as = npc_EternianKingdoms
+			add_resource = {
+				minerals = 800
+				energy = 800
+				food = 800
+				alloys = 400
+				consumer_goods = 400
+				influence = 200
+			}
+		}
+    }
+	event_target:npc_EternianKingdoms = {
+		set_origin = EA_origin_mystic
+		set_country_flag = eternia
+		create_starting_leaders = yes
+        country_event = { id = game_start.9 }
+        country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+	}
+    #create colony
+    create_colony = {
+		owner = event_target:npc_EternianKingdoms
+	}
+    MASTERVERSE_eternia_generate_deposits_and_blockers = yes
+    change_pc = pc_mystic
+	generate_start_buildings_and_districts = yes
+	generate_start_pops = yes
+}
+
+MASTERVERSE_generate_country_etheria_npc = {
+	# create etherias main species/people
+	create_species = {
+		class="HUM"
+		portrait="human"
+		name="PRESCRIPTED_species_name_humans"
+		plural="PRESCRIPTED_species_plural_humans"
+		adjective="PRESCRIPTED_species_adjective_humans"
+		gender=female
+		traits = {
+			trait=trait_pc_continental_preference
+			trait=trait_nomadic
+			trait=trait_adaptive
+			trait=trait_latent_psionic
+			trait=trait_unruly
+			trait=trait_wasteful
+		}
+	}
+	# create country
+	create_country = {
+		name="PRESCRIPTED_name_EtherianAlliance"
+		adjective="PRESCRIPTED_adjective_EtherianAlliance"
+		authority="auth_imperial"
+		civics={
+			civic = civic_aristocratic_elite
+			civic = civic_philosopher_king
+		}
+		species=last_created_species
+		name_list="MASTERVERSE_PRESCRIPTED_ETHERIA_HUMANS"
+		# ship_prefix="PRESCRIPTED_ship_prefix_EtherianAlliance"
+		ship_prefix="ASS"
+		ethos = {
+			ethic = "ethic_xenophile"
+			ethic = "ethic_fanatic_spiritualist"
+		}
+		flag={
+			icon={
+				category="masterverse"
+				file="rebellion.dds"
+			}
+			background={
+				category="backgrounds"
+				file="circle.dds"
+			}
+			colors={
+				"yellow"
+				"beige"
+				"null"
+				"null"
+			}
+		}
+		effect = {
+			save_global_event_target_as = npc_EtherianAlliance
+			add_resource = {
+				minerals = 800
+				energy = 800
+				food = 800
+				alloys = 400
+				consumer_goods = 400
+				influence = 200
+			}
+		}
+	}
+	event_target:npc_EtherianAlliance = {
+		set_origin = EA_origin_mystic
+		set_country_flag = etheria
+		create_starting_leaders = yes
+		country_event = { id = game_start.9 }
+		country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+	}
+	create_colony = {
+		owner = event_target:npc_EtherianAlliance
+	}
+	MASTERVERSE_etheria_generate_deposits_and_blockers = yes
+	change_pc = pc_mystic
+	generate_start_buildings_and_districts = yes
+	generate_start_pops = yes
+}
+
+#####################################
+# Predefined Primitive Countries
+#####################################
+
+MASTERVERSE_generate_country_merrian = {
+    # define the species (human)
+    create_species = {
+        name = Human
+        plural = Humans
+        class = "HUM"
+        portrait = "human"
+        homeworld = THIS
+        traits = {
+            trait = "trait_traditional"
+            trait = "trait_strong"
+            trait = "trait_nomadic"
+            trait = "trait_deviants"
+        }
+    }
+    # create the country
+    create_country = {
+        name = NAME_Merrian
+        authority = random
+        day_zero_contact = yes
+        civics = {
+            civic = civic_increasing_urbanization
+            civic = civic_atmospheric_pollution
+        }
+        species = last_created
+        ethos = {
+            ethic = "ethic_xenophobe"
+            ethic = "ethic_fanatic_militarist"
+        }
+        origin = "origin_enlightened" # Should only be visible if they become spacefaring
+        flag = {
+            icon = {
+                category = "domination"
+                file = "domination_13.dds"
+            }
+            background= {
+                category = "backgrounds"
+                file = "circle.dds"
+            }
+            colors={
+                "black"
+                "red"
+                "null"
+                "null"
+            }
+        }
+        type = primitive
+    }
+    # set country details
+    last_created_country = {
+        set_graphical_culture = industrial_01
+        # set_country_flag = industrial_age
+        set_country_flag = renaissance_age
+        set_country_flag = merrian
+        # set_primitive_age = industrial_age
+        set_primitive_age = renaissance_age
+    }
+    # set to owner of the planet
+    set_owner = last_created_country
+    # create blockers
+    create_primitive_blockers = yes
+    # create population
+    while = {
+        count = 4
+        create_pop = {
+            species = last_created
+        }
+    }
+    # create primitive buildings
+    add_building = building_primitive_farm
+    add_building = building_primitive_factory
+    add_building = building_primitive_mine
+    add_building = building_primitive_power_plant
+    add_building = building_primitive_capital
+    add_building = building_urban_dwellings
+    # set planet as the capital of the created country
+    last_created_country = {
+        capital_scope = { set_name = "NAME_Merrian" }
+    }
+}
+
+MASTERVERSE_generate_country_phantos = {
+    # define the species (human)
+    create_species = {
+        name = Human
+        plural = Humans
+        class = "HUM"
+        portrait = "human"
+        homeworld = THIS
+        traits = {
+            trait = "trait_adaptive"
+            trait = "trait_nomadic"
+            trait = "trait_natural_engineers"
+            trait = "trait_wasteful"
+            trait = "trait_unruly"
+        }
+    }
+    # create the country
+    create_country = {
+        name = NAME_Phantos
+        authority = random
+        day_zero_contact = yes
+        civics = {
+            civic = civic_increasing_urbanization
+            civic = civic_atmospheric_pollution
+        }
+        species = last_created
+        ethos = {
+            ethic = "ethic_xenophile"
+            ethic = "ethic_fanatic_egalitarian"
+        }
+        origin = "origin_enlightened" # Should only be visible if they become spacefaring
+        flag = {
+            icon = {
+                category = "domination"
+                file = "domination_22.dds"
+            }
+            background= {
+                category = "backgrounds"
+                file = "circle.dds"
+            }
+            colors={
+                "dark_blue"
+                "red"
+                "null"
+                "null"
+            }
+        }
+        type = primitive
+    }
+    # set country details
+    last_created_country = {
+        set_graphical_culture = industrial_01
+        set_country_flag = phantos
+        # bronze_age, iron_age, late_medieval_age, renaissance_age, steam_age, industrial_age, machine_age, atomic_age, early_space_age
+        # 1000, 500, 334, 250, 200, 100, 67, 50, 40, 40 months to be ready ... damn ...
+        set_country_flag = renaissance_age # xD
+		set_primitive_age = renaissance_age # xD
+    }
+    # set to owner of the planet
+    set_owner = last_created_country
+    # create blockers
+    create_primitive_blockers = yes
+    # create an early space station
+    create_fleet = {
+        name = "NAME_PHANTOS_SPACE_STATION"
+        effect = {
+            set_owner = last_created_country
+            create_ship = {
+                name = "NAME_PHANTOS_SPACE_STATION"
+                design = "NAME_Space_Station"
+            }
+            set_location = PREV
+        }
+    }
+    # create population
+    while = {
+        count = 8
+        create_pop = {
+            species = last_created
+        }
+    }
+    # create primitive buildings
+    add_building = building_primitive_farm
+    add_building = building_primitive_factory
+    add_building = building_primitive_mine
+    add_building = building_primitive_power_plant
+    add_building = building_primitive_capital
+    add_building = building_urban_dwellings
+    # set planet as the capital of the created country
+    last_created_country = {
+        capital_scope = { set_name = "NAME_Phantos" }
+    }
+}
+
+MASTERVERSE_generate_country_robotica = {
+    # define the species (robot(o)s)
+    create_species = {
+        name = "NAME_Eternia_Species_Robotica"
+        plural = "NAME_Eternia_Species_Robotica_plural"
+        class = "ROBOT"
+        portrait = "masterverse_robot"
+        homeworld = THIS
+        name_list = "MACHINE"
+        traits = {
+            trait = "trait_robot_logic_engines"
+            trait = "trait_robot_durable"
+            trait = "trait_robot_learning_algorithms"
+            trait = "trait_robot_bulky"
+            trait = "trait_robot_high_bandwidth"
+        }
+    }
+    # create the country
+    create_country = {
+        name = NAME_Robotica
+        authority = random
+        day_zero_contact = yes
+        civics = {
+            civic = civic_increasing_urbanization
+            civic = civic_atmospheric_pollution
+        }
+        name_list = "MACHINE"
+        species = last_created
+        ethos = {
+            ethic = "ethic_authoritarian"
+            ethic = "ethic_fanatic_materialist"
+        }
+        origin = "origin_enlightened" # Should only be visible if they become spacefaring
+        # room = "machine_room"
+        # city_graphical_culture = "mammalian_01"
+        flag = {
+            icon = {
+                category = "legion"
+                file = "flag_mp_beta_04.dds"
+            }
+            background= {
+                category = "backgrounds"
+                file = "stripes.dds"
+            }
+            colors={
+                "grey"
+                "black"
+                "null"
+                "null"
+            }
+        }
+        type = primitive
+    }
+    # set to owner of the planet
+    last_created_country = {
+        set_graphical_culture = "mammalian_01"
+        set_country_flag = early_space_age
+        set_country_flag = robotica
+        set_primitive_age = early_space_age
+    }
+    # create blockers
+    set_owner = last_created_country
+    # create primitive buildings
+    create_primitive_blockers = yes
+    # create population
+    while = {
+        count = 12
+        create_pop = {
+            species = last_created
+        }
+    }
+    # create primitive buildings
+    add_building = building_primitive_factory
+    add_building = building_primitive_mine
+    add_building = building_primitive_power_plant
+    add_building = building_primitive_capital
+    add_building = building_urban_dwellings
+    # set planet as the capital of the created country
+    last_created_country = {
+        capital_scope = { set_name = "NAME_Robotica" }
+    }
+}
+
+MASTERVERSE_generate_country_trannis = {
+    # define the species (trannisian)
+    create_species = {
+        name = "NAME_Eternia_Species_Trannisian"
+        plural = "NAME_Eternia_Species_Trannisian_plural"
+        class = "AVI"
+        portrait = "masterverse_trannisian"
+        homeworld = THIS
+        traits = {
+            trait = "trait_agrarian"
+            trait = "trait_industrious"
+            trait = "trait_natural_sociologists"
+            trait = "trait_quarrelsome"
+            trait = "trait_unruly"
+        }
+    }
+    # create the country
+    create_country = {
+        name = NAME_Trannis
+        authority = random
+        day_zero_contact = yes
+        civics = {
+            civic = civic_increasing_urbanization
+            civic = civic_atmospheric_pollution
+        }
+        species = last_created
+        ethos = {
+            ethic = "ethic_xenophile"
+            ethic = "ethic_fanatic_egalitarian"
+        }
+        origin = "origin_enlightened" # Should only be visible if they become spacefaring
+        flag = {
+            icon = {
+                category = "zoological"
+                file = "flag_zoological_7.dds"
+            }
+            background= {
+                category = "backgrounds"
+                file = "sinus.dds"
+            }
+            colors={
+                "green"
+                "yellow"
+                "null"
+                "null"
+            }
+        }
+        type = primitive
+    }
+    # set country details
+    last_created_country = {
+        set_graphical_culture = avian_01
+        # set_country_flag = industrial_age
+        set_country_flag = renaissance_age
+        set_country_flag = trannis
+        # set_primitive_age = industrial_age
+        set_primitive_age = renaissance_age
+    }
+    # set to owner of the planet
+    set_owner = last_created_country
+    # create blockers
+    create_primitive_blockers = yes
+    # create population
+    while = {
+        count = 7
+        create_pop = {
+            species = last_created
+        }
+    }
+    # create primitive buildings
+    add_building = building_primitive_farm
+    add_building = building_primitive_factory
+    add_building = building_primitive_mine
+    add_building = building_primitive_power_plant
+    add_building = building_primitive_capital
+    add_building = building_urban_dwellings
+    # set planet as the capital of the created country
+    last_created_country = {
+        capital_scope = { set_name = "NAME_Trannis" }
+    }
+}
+
+MASTERVERSE_generate_country_zalkron = {
+    # define the species (trannisian)
+    create_species = {
+        name = "NAME_Etheria_Species_ZalKron"
+        plural = "NAME_Etheria_Species_ZalKron_plural"
+        class = "LITHOID"
+        portrait = "lith1"
+        homeworld = THIS
+        traits = {
+            trait = "trait_industrious"
+            trait = "trait_very_strong"
+            trait = "trait_quarrelsome"
+            trait = "trait_slow_breeders"
+        }
+    }
+    # create the country
+    create_country = {
+        name = NAME_ZalKron
+        authority = random
+        day_zero_contact = yes
+        civics = {
+            civic = civic_mining_guilds
+            civic = civic_functional_architecture
+        }
+        species = last_created
+        ethos = {
+            ethic = "ethic_militarist"
+            ethic = "ethic_fanatic_xenophile"
+        }
+        origin = "origin_enlightened" # Should only be visible if they become spacefaring
+        flag = {
+            icon = {
+                category = "lithoid"
+                file = "lithoid_06.dds"
+            }
+            background= {
+                category = "backgrounds"
+                file = "v.dds"
+            }
+            colors={
+                "off_white"
+				"grey"
+				"black"
+				"null"
+            }
+        }
+        type = primitive
+    }
+    # set country details
+    last_created_country = {
+        set_graphical_culture = lithoid_01
+        # set_country_flag = industrial_age
+		set_country_flag = renaissance_age
+        set_country_flag = zalkron
+        # set_primitive_age = industrial_age
+		set_primitive_age = renaissance_age
+    }
+    # set to owner of the planet
+    set_owner = last_created_country
+    # create blockers
+    create_primitive_blockers = yes
+    # create population
+    while = {
+        count = 7
+        create_pop = {
+            species = last_created
+        }
+    }
+    # create primitive buildings
+    add_building = building_primitive_farm
+    add_building = building_primitive_factory
+    add_building = building_primitive_mine
+    add_building = building_primitive_power_plant
+    add_building = building_primitive_capital
+    add_building = building_urban_dwellings
+    # set planet as the capital of the created country
+    last_created_country = {
+        capital_scope = { set_name = "NAME_ZalKron" }
+    }
+}

@@ -1,0 +1,82 @@
+## Possible Deposit Variables ##
+# resources, resource and amount
+# potential trigger (planet scope)
+# planet_modifier - applied to planet only when deposit blocker has been cleared
+# constant_modifier - applied to planet always
+# station = station class in orbit to gather
+
+@blocker_high = 10
+@blocker_low = 5
+
+d_trannis_dead_nature = {
+	time = 220
+	is_for_colonizable = yes
+	category = deposit_cat_blockers
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 1000
+		}
+	}
+
+	potential = {
+		has_planet_flag = planet_trannis
+		NOT = { has_deposit = d_trannis_dead_nature }
+	}
+
+	planet_modifier = {
+		district_farming_max = -2
+	}
+
+	use_weights_for_blocker_swap_types = yes
+	blocker_swap_types = {
+		d_trannis_healed_nature
+	}
+
+	drop_weight = {
+		weight = @blocker_high
+		modifier = {
+			factor = 2
+		}
+		modifier = {
+			factor = 0
+			num_free_districts = {
+				type = district_farming
+				value < 2
+			}
+		}
+	}
+
+	prerequisites = { "tech_dense_jungle" }
+}
+
+d_trannis_plundors_factory = {
+	time = 1250
+	is_for_colonizable = yes
+	category = deposit_cat_blockers
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			unity = 150
+			energy = 10000
+		}
+	}
+
+	potential = {
+		has_planet_flag = planet_trannis
+		NOT = { has_deposit = d_trannis_plundors_factory }
+	}
+
+	planet_modifier = {
+		pop_happiness = -0.5
+		planet_jobs_unity_produces_mult = -0.5
+		planet_max_districts_add = -1
+	}
+
+	use_weights_for_blocker_swap_types = yes
+	blocker_swap_types = {
+		d_fertile_lands
+	}
+}

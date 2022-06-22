@@ -1,0 +1,218 @@
+# site_type_name = {				# Key of the site, used for name and desc lookup etc.
+#	max_instances = <int>			# Max instances of this type a galaxy can have, only checked when using `create_archaeological_site = random`
+#	weight = <scriptable value>		# Weight used for random weight, only used when using `create_archaeological_site = random`. scriptable value type is defined either by '<int>' or `<mean time to happen>`.
+#	stages = <int>					# Should match number of defined stages below.
+#	potential = <trigger>			# Trigger checking if a scope with this=fleet ,prev=archaeological site is potential to excavate (this will add/remove this option without giving the player a reason).
+#	allow = <trigger>				# Trigger checking if a scope with this=fleet ,prev=archaeological site is allowed to excavate (this will toggle enable/disabled mode on buttons etc).
+#	stage = {						# Stage definition, order dependent.
+#		difficulty = <intervall int> 	# min max intervall type. intervall is defined either by '<int>' or '{ min = <int> max=<int> }' where the later will randomize a value between min and max.
+#		icon = <string>			# rune icon gfx type.
+#		event = <string>			# event to fire when finished the state.
+#	}
+#	stage = {...}					# Second stage
+#	on_roll_failed = <effect>			# effect to fire when a roll fails
+#}
+
+#The Eternian History - Eternia Planet
+MASTERVERSE_eternia_arc_site_1 = {
+	desc = "MASTERVERSE_eternia_arc_site_1"
+	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+	stages = 3
+	max_instances = 1
+	weight = 0 
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+	visible = {
+		has_country_flag = eternia
+		has_country_flag = eternia_story_arc_site_1
+		default_site_visible_trigger = yes
+	}
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_C1
+		event = MASTERVERSE_eternia_story.2
+	}
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_C2
+		event = MASTERVERSE_eternia_story.3
+	}
+	stage = {
+		difficulty = 1
+		icon = GFX_archaeology_runes_C3
+		event = MASTERVERSE_eternia_story.4
+	}
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}
+
+####################################
+# Eternia Relics #1 Sword of Power #
+####################################
+
+MASTERVERSE_eternia_arc_site_2 = {
+	desc = "MASTERVERSE_eternia_arc_site_2_desc"
+	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+	stages = 6
+	max_instances = 1
+	weight = 0 
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+	visible = {
+		has_country_flag = eternia
+		has_country_flag = eternia_relics_arc_site_1
+		default_site_visible_trigger = yes
+	}
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_C1
+		event = MASTERVERSE_eternia_relics.101
+	}
+	stage = {
+		difficulty = 3
+		icon = GFX_archaeology_runes_A2
+		event = MASTERVERSE_eternia_relics.102
+	}
+	stage = {
+		difficulty = 4
+		icon = GFX_archaeology_runes_F3
+		event = MASTERVERSE_eternia_relics.103
+	}
+	stage = {
+		difficulty = 5
+		icon = GFX_archaeology_runes_B4
+		event = MASTERVERSE_eternia_relics.104
+	}
+	stage = {
+		difficulty = 6
+		icon = GFX_archaeology_runes_C5
+		event = MASTERVERSE_eternia_relics.105
+	}
+	stage = {
+		difficulty = 7
+		icon = GFX_archaeology_runes_D6
+		event = MASTERVERSE_eternia_relics.106
+	}
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}
+
+#################################
+# Eternia Relics #2 Havoc Staff #
+#################################
+MASTERVERSE_eternia_arc_site_3 = {
+	desc = "MASTERVERSE_eternia_arc_site_3_desc"
+	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+	stages = 6
+	max_instances = 1
+	weight = 0 
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+	visible = {
+		has_country_flag = eternia
+		has_country_flag = eternia_relics_arc_site_3
+		default_site_visible_trigger = yes
+	}
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_B1
+		event = MASTERVERSE_eternia_relics.201
+	}
+	stage = {
+		difficulty = 3
+		icon = GFX_archaeology_runes_D2
+		event = MASTERVERSE_eternia_relics.202
+	}
+	stage = {
+		difficulty = 4
+		icon = GFX_archaeology_runes_A3
+		event = MASTERVERSE_eternia_relics.203
+	}
+	stage = {
+		difficulty = 5
+		icon = GFX_archaeology_runes_F4
+		event = MASTERVERSE_eternia_relics.204
+	}
+	stage = {
+		difficulty = 6
+		icon = GFX_archaeology_runes_B5
+		event = MASTERVERSE_eternia_relics.205
+	}
+	stage = {
+		difficulty = 7
+		icon = GFX_archaeology_runes_C6
+		event = MASTERVERSE_eternia_relics.206
+	}
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}
+
+################################
+# Eternia Relics #3 Cosmic Key #
+################################
+MASTERVERSE_eternia_arc_site_4 = {
+	desc = "MASTERVERSE_eternia_arc_site_2_desc"
+	picture = MASTERVERSE_GFX_evt_adarion_solar_system
+	stages = 6
+	max_instances = 1
+	weight = 0 
+	allow = {
+		exists = leader
+		leader = { leader_class = scientist }
+	}
+	visible = {
+		has_country_flag = eternia
+		has_country_flag = eternia_relics_arc_site_1
+		default_site_visible_trigger = yes
+	}
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_F1
+		event = MASTERVERSE_eternia_relics.301
+	}
+	stage = {
+		difficulty = 3
+		icon = GFX_archaeology_runes_A2
+		event = MASTERVERSE_eternia_relics.302
+	}
+	stage = {
+		difficulty = 4
+		icon = GFX_archaeology_runes_B3
+		event = MASTERVERSE_eternia_relics.303
+	}
+	stage = {
+		difficulty = 5
+		icon = GFX_archaeology_runes_E4
+		event = MASTERVERSE_eternia_relics.304
+	}
+	stage = {
+		difficulty = 6
+		icon = GFX_archaeology_runes_D5
+		event = MASTERVERSE_eternia_relics.305
+	}
+	stage = {
+		difficulty = 7
+		icon = GFX_archaeology_runes_C6
+		event = MASTERVERSE_eternia_relics.306
+	}
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}

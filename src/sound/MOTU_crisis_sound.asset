@@ -1,0 +1,115 @@
+category = {
+ name = "EterniaCrisis"
+ soundeffects = {
+    sfx_eternia_crisis_uprising_evil_warriors
+    sfx_eternia_crisis_uprising_evil_warriors_lost
+    sfx_eternia_crisis_uprising_snake_men
+    sfx_eternia_crisis_uprising_snake_men_lost
+    sfx_eternia_crisis_uprising_villain_won
+ }
+}
+
+#################################
+# Crisis Evil Warriors Uprising #
+#################################
+sound =
+{
+	name = "sfx_eternia_crisis_uprising_evil_warriors"
+	file = "sfx_eternia_crisis_uprising_evil_warriors.wav"
+}
+
+soundeffect =
+{
+    name = "sfx_eternia_crisis_uprising_evil_warriors"
+    volume = 0.5
+    max_audible = 1
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { -10.0 10.0 }
+	fade_out = 0
+    sounds = {
+        sound = sfx_eternia_crisis_uprising_evil_warriors
+	}
+}
+
+sound =
+{
+	name = "sfx_eternia_crisis_uprising_evil_warriors_lost"
+	file = "sfx_eternia_crisis_uprising_evil_warriors_lost.wav"
+}
+
+soundeffect =
+{
+    name = "sfx_eternia_crisis_uprising_evil_warriors_lost"
+    volume = 0.5
+    max_audible = 1
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { -10.0 10.0 }
+	fade_out = 0
+    sounds = {
+        sound = sfx_eternia_crisis_uprising_evil_warriors_lost
+	}
+}
+
+#############################
+# Crisis Snake Men Uprising #
+#############################
+sound =
+{
+	name = "sfx_eternia_crisis_uprising_snake_men"
+	file = "sfx_eternia_crisis_uprising_snake_men.wav"
+}
+
+soundeffect =
+{
+    name = "sfx_eternia_crisis_uprising_snake_men"
+    volume = 0.5
+    max_audible = 1
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { -10.0 10.0 }
+	fade_out = 0
+    sounds = {
+        sound = sfx_eternia_crisis_uprising_snake_men
+	}
+}
+
+sound =
+{
+	name = "sfx_eternia_crisis_uprising_snake_men_lost"
+	file = "sfx_eternia_crisis_uprising_snake_men_lost.wav"
+}
+
+soundeffect =
+{
+    name = "sfx_eternia_crisis_uprising_snake_men_lost"
+    volume = 0.5
+    max_audible = 1
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { -10.0 10.0 }
+	fade_out = 0
+    sounds = {
+        sound = sfx_eternia_crisis_uprising_snake_men_lost
+	}
+}
+
+###############################
+# Crisis Uprising Villain won #
+###############################
+
+sound =
+{
+	name = "sfx_eternia_crisis_uprising_villain_won"
+	file = "sfx_eternia_crisis_uprising_villain_won.wav"
+}
+
+soundeffect =
+{
+    name = "sfx_eternia_crisis_uprising_villain_won"
+    volume = 0.5
+    max_audible = 1
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { -10.0 10.0 }
+	fade_out = 0
+    sounds = {
+        sound = sfx_eternia_crisis_uprising_villain_won
+	}
+}

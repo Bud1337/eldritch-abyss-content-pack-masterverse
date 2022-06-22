@@ -1,0 +1,61 @@
+objectTypes = {
+	pdxmesh = {
+		name = "chiss_01_massias_mesh"
+		file = "gfx/models/ships/chiss_01/chiss_01_massias.mesh"
+		scale = 0.1
+
+		meshsettings = {
+			name = "Massias_windows_glowShape"
+			index = 0
+			texture_diffuse = "chiss_01_lights_grid_diffuse.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUVNoDissolve"
+		}
+
+		meshsettings = {
+			name = "Massias_hull_greyShape"
+			index = 0
+			texture_diffuse = "hull_grey.dds"
+			texture_normal = "hull_grey_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Massias_plates_blueShape"
+			index = 0
+			texture_diffuse = "hull_blue_02.dds"
+			texture_normal = "hull_grey_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Massias_hull_grey_darkerShape"
+			index = 0
+			texture_diffuse = "hull_grey_darker.dds"
+			texture_normal = "hull_grey_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Massias_hull_beigeShape"
+			index = 0
+			texture_diffuse = "hull_yellow_darkest.dds"
+			texture_normal = "hull_grey_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Massias_hull_grey_brightShape"
+			index = 0
+			texture_diffuse = "hull_grey_bright.dds"
+			texture_normal = "hull_grey_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

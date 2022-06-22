@@ -1,0 +1,17 @@
+objectTypes = {
+	#Clawcraft
+	pdxmesh = {
+		name = "swp_chiss_fighter_clawcraft_mesh"
+		file = "gfx/models/ships/chiss_01/swp_chiss_fighter_clawcraft.mesh"
+		scale = 0.2
+
+		meshsettings = {
+			name = "ClawcraftShape"
+			index = 0
+			texture_diffuse = "swp_chiss_fighter_claw_diffuse.dds"
+			texture_normal = "swp_chiss_fighter_claw_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

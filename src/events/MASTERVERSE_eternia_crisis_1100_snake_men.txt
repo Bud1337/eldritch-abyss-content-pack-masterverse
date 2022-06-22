@@ -1,0 +1,778 @@
+##################################
+#                                #
+# Eternia Villain Crisis Events  #
+#                                #
+# Written by Manuel Lieb         #
+#                                #
+##################################
+
+namespace = MASTERVERSE_eternia_crisis
+
+########################################
+# Eternia Crisis 1 - Villains Uprising #
+########################################
+
+country_event = {
+	id = MASTERVERSE_eternia_crisis.1100
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		mid_game_years_passed >= 0
+		is_country_type = default
+		num_owned_planets > 2
+		# has_country_flag = this_event_shall_not_yet_do_trigger
+		has_country_flag = eternia
+		has_country_flag = eternia_story_18
+		NOR = {
+			has_country_flag = eternia_crisis_no_snake_men_uprising
+			has_country_flag = eternia_crisis_snake_men_uprising
+		}
+	}
+
+	immediate = {
+		# all stable, no uprising
+		random_list = {
+			10 = {
+				set_timed_country_flag = {
+					flag = eternia_crisis_no_snake_men_uprising
+					days = 3600
+				}
+			}
+			9 = {
+				set_timed_country_flag = {
+					flag = eternia_crisis_no_snake_men_uprising
+					days = 1800
+				}
+			}
+			8 = {
+				set_timed_country_flag = {
+					flag = eternia_crisis_no_snake_men_uprising
+					days = 900
+				}
+			}
+			7 = {
+				set_timed_country_flag = {
+					flag = eternia_crisis_no_snake_men_uprising
+					days = 450
+				}
+			}
+			6 = {
+				set_timed_country_flag = {
+					flag = eternia_crisis_no_snake_men_uprising
+					days = 225
+				}
+			}
+			5 = {
+				set_timed_country_flag = {
+					flag = eternia_crisis_no_snake_men_uprising
+					days = 112
+				}
+			}
+			4 = { 
+				# do nothing
+			}
+		}
+		# uprising on colony
+		if = {
+			limit = {
+				NOT = { has_country_flag = eternia_crisis_no_snake_men_uprising }
+			}
+			if = {
+				limit = {
+					any_owned_planet = {
+						is_capital = no
+					}
+				}
+				random_owned_planet = {
+					limit = {
+						is_capital = no
+					}
+					planet_event = { id = MASTERVERSE_eternia_crisis.1120 }
+				}
+			}
+			# uprising wherever
+			else = {
+				random_owned_planet = {
+					planet_event = { id = MASTERVERSE_eternia_crisis.1120 }
+				}
+			}
+		}
+	}
+}
+
+planet_event = { #uprising
+	id = MASTERVERSE_eternia_crisis.1120
+	title = MASTERVERSE_eternia_crisis.1120.name
+
+	picture = MASTERVERSE_GFX_evt_eternia_crisis_snake_men
+
+	show_sound = sfx_eternia_crisis_uprising_snake_men
+
+	is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+	}
+	
+	trigger = {}
+
+	desc = {
+		trigger = {
+			NOT = {
+				owner = { has_country_flag = eternia_crisis_villain_uprising } 
+			}
+		}
+		text = MASTERVERSE_eternia_crisis.1020.desc.a
+	}
+	desc = {
+		trigger = {
+			owner = { has_country_flag = eternia_crisis_villain_uprising } 
+		}
+		text = MASTERVERSE_eternia_crisis.1020.desc.b
+	}
+	
+	immediate = {
+		owner = {
+			save_event_target_as = eternia_snake_men_uprising_originator #the old script accidentally saved the owner as two event targets, keeping it that way for safety, sorry!
+		}
+		set_planet_flag = villain_up_capital@root.owner
+		# event lock all fleets to prevent exploits
+		owner = { every_owned_fleet = { set_event_locked = yes } }
+		# find and flag planets
+		owner = {
+			effect_on_blob = {
+				center = root.solar_system
+				owned_planets_percentage = 0.5
+				planet_limit = {
+					OR = {
+						controller = { is_same_value = root.owner }
+						solar_system = {
+							exists = starbase
+							starbase = { owner = { is_same_value = root.owner } }
+						}
+					}
+					solar_system = { # never flip any planets in the capital system
+						NOT = { any_system_planet = { is_same_value = root.owner.capital_scope } }
+						NOT = { has_star_flag = adarion_system }
+					}
+					is_under_colonization = no
+				}
+				effect = {
+					set_star_flag = snake_men_system_flip
+				}
+			}
+		}
+		# create snake men villains empire
+		MASTERVERSE_generate_crisis_species_snake_men = yes
+		owner = {
+			MASTERVERSE_generate_crisis_country_snake_men = yes
+		}
+	}
+
+	option = {
+		name = MASTERVERSE_eternia_crisis.1120.a
+		custom_tooltip = MASTERVERSE_eternia_crisis.1120.a.tooltip
+	}
+
+	option = {
+		name = MASTERVERSE_eternia_crisis.1120.b
+		trigger = {
+			event_target:eternia_snake_men_uprising_originator = { is_ai = no }
+		}
+		custom_tooltip = MASTERVERSE_eternia_crisis.1120.b.tooltip
+		hidden_effect = {
+			if = {
+				limit = {
+					event_target:eternia_snake_men_uprising_originator = { num_owned_planets > 0 }
+				}
+				event_target:current_uprising = {
+					set_player = event_target:eternia_snake_men_uprising_originator
+				}				
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			event_target:eternia_snake_men_uprising_originator = {
+				every_owned_fleet = {
+					set_event_locked = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MASTERVERSE_eternia_crisis.1122
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {  }
+
+	immediate = {
+		# saving uprising and host as event targets
+		save_event_target_as = current_uprising
+		from.owner = { save_event_target_as = eternia_snake_men_uprising_originator }
+
+		# setting flags
+		set_country_flag = eternia_snake_men_uprising_country@from.owner
+		set_country_flag = eternia_snake_men_uprising_country
+		set_relation_flag = {
+			who = event_target:eternia_deamon_uprising_originator
+			flag = uprising_to_host_flag
+		}
+		from.owner = {
+			set_country_flag = eternia_snake_men_uprising_originator@root
+			set_country_flag = eternia_snake_men_uprising_originator
+			set_relation_flag = {
+				who = root
+				flag = host_to_uprising_flag
+			}
+		}
+
+		# setting graphical culture
+		set_graphical_culture = event_target:eternia_snake_men_uprising_originator
+
+		# establish comms
+		every_country = {
+			limit = {
+				OR = {
+					has_communications = event_target:eternia_snake_men_uprising_originator
+					intel_level = {
+						level > low
+						system = event_target:eternia_snake_men_uprising_originator.capital_scope.solar_system
+					}
+					any_system = {
+						has_star_flag = snake_men_system_flip
+						prev = {
+							intel_level = {
+								level > low
+								system = prev
+							}
+						}
+					}
+				}
+			}
+			establish_communications_no_message = root
+			establish_contact = { who = root location = from }
+		}
+
+		# baseline resource stockpile
+		add_resource = {
+			energy = 5000
+			minerals = 5000
+			influence = 500
+			alloys = 5000
+		}
+		add_500_unity_per_year_passed = yes # scripted effect
+
+		# Deamon Uprising opinion modifier
+		add_opinion_modifier = {
+			who = event_target:eternia_snake_men_uprising_originator
+			modifier = opinion_machine_uprising_originator
+		}
+
+		event_target:eternia_snake_men_uprising_originator = {
+			add_opinion_modifier = {
+				who = root
+				modifier = opinion_machine_uprising
+			}
+		}
+
+		# clear new contact opinion modifier
+		if = {
+			limit = {
+				has_opinion_modifier = {
+					who = event_target:eternia_snake_men_uprising_originator
+					modifier = opinion_new_contact
+				}
+			}
+			remove_opinion_modifier = {
+				who = event_target:eternia_snake_men_uprising_originator
+				modifier = opinion_new_contact
+			}
+		}
+
+		# flip capital planet and add at least 10 Snale Men pops
+		from = {
+			# flip military stations
+			solar_system = {
+				every_fleet_in_system = {
+					limit = {
+						exists = owner
+						owner = { is_same_value = event_target:eternia_snake_men_uprising_originator }
+						any_owned_ship = { is_ship_class = shipclass_military_station }
+					}
+					set_owner = root
+				}
+			}
+			set_owner = root
+			set_controller = root
+			set_capital = yes
+
+			solar_system = {
+				if = {
+					limit = {
+						exists = starbase
+					}
+					starbase = { set_owner = root }
+				}
+				else = {
+					create_starbase = {
+						size = starbase_starport
+						module = shipyard
+						owner = root
+					}
+				}
+			}
+
+			# create armies
+			# regular armies
+			while = {
+				count = 5
+				create_army = {
+					owner = root
+					type = slave_army
+				}
+			}
+			while = {
+				count = 8
+				create_army = {
+					owner = root
+					type = assault_army
+				}
+			}
+
+			# flip remaining flagged planets
+			while = {
+				count = 100
+				limit = {
+					any_system = {
+						has_star_flag = snake_men_system_flip
+						exists = starbase
+						starbase = {
+							owner = { is_same_value = event_target:eternia_snake_men_uprising_originator }
+						}
+					}
+				}
+				random_system = {
+					limit = {
+						has_star_flag = snake_men_system_flip
+						exists = starbase
+						starbase = {
+							owner = { is_same_value = event_target:eternia_snake_men_uprising_originator }
+						}
+					}
+					starbase = { set_owner = root }
+				}
+			}
+			event_target:eternia_snake_men_uprising_originator = {
+				every_owned_planet = {
+					limit = {
+						solar_system = {
+							#has_star_flag = snake_men_system_flip@event_target:eternia_snake_men_uprising_originator
+							has_star_flag = snake_men_system_flip
+						}
+					}
+
+					# flip military stations
+					solar_system = {
+						every_fleet_in_system = {
+							limit = {
+								exists = owner
+								owner = { is_same_value = event_target:eternia_snake_men_uprising_originator }
+								any_owned_ship = { is_ship_class = shipclass_military_station }
+							}
+							set_owner = root
+						}
+					}
+
+					set_planet_flag = been_flipped
+					set_owner = root
+					set_controller = root
+
+					# create regular armies on planets
+					while = {
+						count = 10
+						create_army = {
+							owner = root
+							type = assault_army
+						}
+					}
+					if = {
+						limit = { is_under_colonization = yes }
+						destroy_colony = yes
+					}
+				}
+			}
+			every_system = {
+				limit = {
+					has_star_flag = snake_men_system_flip
+				}
+				remove_star_flag = snake_men_system_flip
+			}
+		}
+
+		# survey host's surveyed planets
+		every_galaxy_planet = {
+			limit = {
+				is_surveyed = {
+					who = event_target:eternia_snake_men_uprising_originator
+					status = yes
+				}
+			}
+			set_surveyed = {
+				surveyed = yes
+				surveyor = root
+			}
+		}
+
+		# declare war on host
+		declare_war = {
+			target = event_target:eternia_snake_men_uprising_originator
+			name = "MASTERVERSE_NAME_SNAKE_MEN_Uprising_War"
+			# "[This.MainDefender.GetAdj] Machine Uprising"
+			attacker_war_goal = "eternia_snake_men_uprising"
+		}
+
+
+		# create fleets
+		# exterminator fleets, 120% naval cap
+		
+		create_fleet_from_naval_cap = 0.4
+		random_owned_planet = {
+			last_created_fleet = {
+				set_location = prev
+			}
+		}
+
+		create_fleet_from_naval_cap = 0.3
+		random_owned_planet = {
+			last_created_fleet = {
+				set_location = prev
+			}
+		}
+
+		create_fleet_from_naval_cap = 0.6
+		random_owned_planet = {
+			last_created_fleet = {
+				set_location = prev
+			}
+		}
+
+		create_fleet_from_naval_cap = 0.5
+		random_owned_planet = {
+			last_created_fleet = {
+				set_location = prev
+			}
+		}
+
+		# add modifier for AI, including 10x naval cap
+		if = {
+			limit = { is_ai = yes }
+			add_modifier = {
+				modifier = uprising_ai_buff
+				days = 1800
+			}
+		}
+		# add modifier for player, 10x naval cap
+		else = {
+			add_modifier = {
+				modifier = uprising_player_buff
+				days = 1800
+			}
+		}
+		#science
+		create_fleet = {
+			effect = {
+				set_owner = root
+
+				create_ship = {
+					name = random
+					random_existing_design = science
+				}
+
+				set_fleet_stance = evasive				
+				set_location = root.capital_scope
+				
+				owner = {
+					create_leader = {
+						class = scientist
+						sub_type = survey
+						name = random
+						species = owner_main_species
+					}
+				}
+				set_leader = last_created_leader
+			}			
+		}
+			
+		#constructor
+		create_fleet = {
+			effect = {
+				set_owner = root
+				
+				create_ship = {
+					name = random
+					random_existing_design = constructor
+				}
+				
+				set_fleet_stance = evasive
+				set_location = root.capital_scope
+			}
+		}
+
+		every_owned_fleet = {
+			#limit = { event_locked = yes }
+			set_event_locked = no
+		}
+
+		every_playable_country = {
+			limit = {
+				has_communications = event_target:eternia_snake_men_uprising_originator
+				NOR = {
+					is_same_value = root
+					is_same_value = event_target:eternia_snake_men_uprising_originator
+				}
+			}
+			country_event = { id = MASTERVERSE_eternia_crisis.1125 days = 5 }
+		}
+		observer_event = { id = observer.81 }
+	}
+}
+
+# Snake Men Uprising begins notification
+country_event = {
+	id = MASTERVERSE_eternia_crisis.1125
+	title = MASTERVERSE_eternia_crisis.1125.name
+
+	desc = {
+		text = MASTERVERSE_eternia_crisis.1125.desc
+	}
+
+	picture = GFX_evt_organic_oppression
+	location = fromfrom
+	is_triggered_only = yes
+	show_sound = event_robo
+
+	trigger = {
+		exists = event_target:eternia_snake_men_uprising_originator
+		exists = event_target:current_uprising
+		NOR = {
+			is_same_value = event_target:eternia_snake_men_uprising_originator
+			is_same_value = event_target:current_uprising
+		}
+	}
+
+	option = {
+		name = MASTERVERSE_eternia_crisis.1125.a
+	}
+}
+
+# Snake Men Uprising ends notification - Snake Men win
+country_event = {
+	id = MASTERVERSE_eternia_crisis.1130
+	title = MASTERVERSE_eternia_crisis.1130.name
+	desc = {
+		trigger = {
+			OR = {
+				has_country_flag = eternia_snake_men
+			}
+		}
+		text = MASTERVERSE_eternia_crisis.1130.desc.snake_men
+	}
+	desc = {
+		trigger = {
+			NOR = {
+				has_country_flag = eternia_snake_men
+			}
+		}
+		text = MASTERVERSE_eternia_crisis.1130.desc
+	}
+	picture = GFX_evt_machine_sapience
+	location = fromfrom.capital_scope
+	is_triggered_only = yes
+
+	trigger = {  }
+
+	option = {
+		name = OK
+	}
+}
+
+# Snake Men Uprising ends notification - Eternia wins
+country_event = {
+	id = MASTERVERSE_eternia_crisis.1135
+	title = MASTERVERSE_eternia_crisis.1135.name
+	desc = {
+		trigger = {
+			OR = {
+				has_country_flag = eternia_snake_men
+			}
+		}
+		text = MASTERVERSE_eternia_crisis.1135.desc.snake_men
+	}
+	desc = {
+		trigger = {
+			NOR = {
+				has_country_flag = eternia_snake_men
+			}
+		}
+		text = MASTERVERSE_eternia_crisis.1135.desc
+	}
+	picture = GFX_evt_interior_battle
+	location = fromfrom
+	is_triggered_only = yes
+
+	trigger = {  }
+
+	option = {
+		name = OK
+	}
+}
+
+# Snake Men ruler gets Evil Ruler trait to make them immortal
+country_event = {
+	id = MASTERVERSE_eternia_crisis.1150
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		has_authority = auth_imperial
+		FROM = { leader_class = ruler }
+	}
+
+	immediate = {
+		from = {
+			add_trait = MASTERVERSE_leader_trait_ruler_evil_uprising
+		}
+	}
+}
+
+# Villains Uprising wins
+# Root = Winner Warleader
+# From = Loser Warleader
+# FromFrom = War
+country_event = {
+	id = MASTERVERSE_eternia_crisis.1170
+	title = MASTERVERSE_eternia_crisis.1170.name
+	desc = MASTERVERSE_eternia_crisis.1170.desc
+	picture = MASTERVERSE_GFX_evt_eternia_crisis_snake_men_2
+	#hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_country_type = default
+		has_authority = auth_imperial
+		has_country_flag = eternia_snake_men_uprising_country
+		has_relation_flag = {
+			who = from
+			flag = uprising_to_host_flag
+		}
+	}
+
+	immediate = {
+		every_playable_country = {
+			limit = { has_communications = root }
+			country_event = { id = MASTERVERSE_eternia_crisis.1130 days = 5 }
+		}
+		observer_event = { id = observer.82 }
+	}
+
+	option = {
+		name = MASTERVERSE_eternia_crisis.1170.a
+		add_monthly_resource_mult = {
+			resource = unity
+			value = 120
+			min = 2000
+			max = 6000
+		}
+		add_monthly_resource_mult = {
+			resource = influence
+			value = 120
+			min = 200
+			max = 600
+		}
+		custom_tooltip = "MASTERVERSE_eternia_crisis.1170.a.tooltip"
+	}
+}
+
+# Uprising Host wins
+# Root = Winner Warleader
+# From = Loser Warleader
+# FromFrom = War
+country_event = {
+	id = MASTERVERSE_eternia_crisis.1175
+	title = MASTERVERSE_eternia_crisis.1175.name
+	desc = MASTERVERSE_eternia_crisis.1175.desc
+
+	picture = GFX_evt_unity_symbol
+	#hide_window = yes
+	is_triggered_only = yes
+	show_sound = sfx_eternia_crisis_uprising_snake_men_lost
+
+	trigger = {
+		is_country_type = default
+		has_relation_flag = {
+			who = from
+			flag = host_to_uprising_flag
+		}
+	}
+
+	immediate = {
+		every_playable_country = {
+			limit = { has_communications = root }
+			country_event = { id = MASTERVERSE_eternia_crisis.1135 days = 5 }
+		}
+		observer_event = { id = observer.83 }
+	}
+
+	option = {
+		name = OK
+		add_monthly_resource_mult = {
+			resource = unity
+			value = 120
+			min = 2000
+			max = 6000
+		}
+		add_monthly_resource_mult = {
+			resource = influence
+			value = 120
+			min = 200
+			max = 600
+		}
+		custom_tooltip = MASTERVERSE_eternia_crisis.1175.a.tooltip
+		hidden_effect = {
+			every_playable_country = {
+				limit = {
+					has_communications = root
+					NOR = {
+						has_country_flag = eternia_snake_men_uprising_country
+						has_authority = auth_imperial
+						is_same_value = root
+					}
+				}
+				add_opinion_modifier = {
+					who = root
+					modifier = opinion_machine_uprising_defeated
+				}
+			}
+			every_playable_country = {
+				limit = {
+					has_communications = root
+					OR = {
+						has_country_flag = eternia_snake_men_uprising_country
+						has_authority = auth_imperial
+					}
+				}
+				add_opinion_modifier = {
+					who = root
+					modifier = opinion_machine_uprising_machine_comrades_defeated
+				}
+			}
+		}
+	}
+}

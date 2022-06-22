@@ -1,0 +1,52 @@
+objectTypes = {
+	pdxmesh = {
+		name = "chiss_01_ascendancy_mesh"
+		file = "gfx/models/ships/chiss_01/chiss_01_ascendancy.mesh"
+		scale = 0.1
+
+		meshsettings = {
+			name = "Ascendancy_windowsShape"
+			index = 0
+			texture_diffuse = "chiss_01_lights_grid_diffuse.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUVNoDissolve"
+		}
+
+		meshsettings = {
+			name = "Ascendancy_hull_blue_02Shape"
+			index = 0
+			texture_diffuse = "hull_blue_02.dds"
+			texture_normal = "hull_grey_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Ascendancy_hull_greyShape"
+			index = 0
+			texture_diffuse = "hull_grey.dds"
+			texture_normal = "hull_grey_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Ascendancy_hull_grey_darker_001Shape"
+			index = 0
+			texture_diffuse = "hull_grey_darker.dds"
+			texture_normal = "hull_grey_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Ascendancy_hull_grey_brightShape"
+			index = 0
+			texture_diffuse = "hull_grey_bright.dds"
+			texture_normal = "hull_grey_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

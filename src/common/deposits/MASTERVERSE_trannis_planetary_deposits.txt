@@ -1,0 +1,133 @@
+## Possible Deposit Variables ##
+# resources, resource and amount
+# potential trigger (planet scope)
+# blocked_modifier - applied to planet
+# constant_modifier - applied to planet always
+# station = station class in orbit to gather
+# blocker_swap_types = {}
+# all_blocker_swap_types = yes/no
+# use_weights_for_blocker_swap_types = yes/no
+# terraforming_swap_types = { }
+# should_swap_deposit_on_terraforming = yes/no
+# all_terraforming_swap_types = yes/no
+# use_weights_for_terraforming_swap_types = yes/no
+
+@high = 16
+@med = 8
+@low = 4
+
+@high_rare = 0.5
+@mid_rare = 0.25
+@low_rare = 0.1
+
+@planet_type_bonus = 1.5
+
+###############
+#### ENERGY ###
+###############
+
+## Possible Deposit Variables ##
+# resources, resource and amount
+# potential trigger (planet scope)
+# blocked_modifier - applied to planet
+# planet_modifier - applied to planet always
+# station = station class in orbit to gather
+
+##########################
+# Eternia Event Deposits #
+##########################
+
+###########################
+# Eternia Energy Deposits #
+###########################
+
+############################
+# Eternia Mineral Deposits #
+############################
+
+#########################
+# Eternia Food Deposits #
+#########################
+
+d_trannis_plains = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+
+	category = deposit_cat_trannis
+
+	planet_modifier = {
+		district_farming_max = 1
+	}
+
+	potential = {
+		has_planet_flag = planet_trannis
+		NOT = { has_deposit = d_trannis_plains }
+	}
+}
+
+d_trannis_healed_nature = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+
+	category = deposit_cat_trannis
+
+	planet_modifier = {
+		district_farming_max = 2
+		planet_jobs_unity_produces_mult = 0.05
+	}
+
+	potential = {
+		has_planet_flag = planet_trannis
+		NOT = { has_deposit = d_trannis_healed_nature }
+	}
+}
+
+############################################################
+# Trannis Civilization Deposits (partially not yet ingame) #
+############################################################
+
+d_trannis_gleedils_atelier = {
+	is_for_colonizable = yes
+	category = deposit_cat_trannis
+
+	resources = {
+	}
+
+	planet_modifier = {
+		planet_jobs_unity_produces_mult = 0.1
+	}
+
+	potential = {
+		has_planet_flag = planet_trannis
+		NOT = { has_deposit = d_trannis_gleedils_atelier }
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+#######################################################
+# Trannis Natural Deposits (partially not yet ingame) #
+#######################################################
+
+d_trannis_peaceful_animals = {
+	is_for_colonizable = yes
+	category = deposit_cat_trannis
+
+	resources = {
+	}
+
+	planet_modifier = {
+		pop_happiness = 0.1
+	}
+
+	potential = {
+		has_planet_flag = planet_trannis
+		NOT = { has_deposit = d_trannis_peaceful_animals }
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}

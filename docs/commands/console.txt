@@ -1,0 +1,10 @@
+Opening Console:
+
+Alt + Shift + C
+
+Starting an event:
+
+event #eventid
+
+Create Archeological site
+effect create_archaeological_site = #siteid

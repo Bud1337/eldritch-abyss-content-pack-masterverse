@@ -1,0 +1,124 @@
+## Possible Deposit Variables ##
+# resources, resource and amount
+# potential trigger (planet scope)
+# planet_modifier - applied to planet only when deposit blocker has been cleared
+# constant_modifier - applied to planet always
+# station = station class in orbit to gather
+
+@blocker_high = 10
+@blocker_low = 5
+
+d_eternia_tar_swamp = {
+	time = 220
+	is_for_colonizable = yes
+	category = deposit_cat_blockers
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 1000
+		}
+	}
+
+	potential = {
+		has_planet_flag = planet_eternia
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = -1
+	}
+
+	# all_blocker_swap_types = yes
+
+	drop_weight = {
+		weight = @blocker_high
+		modifier = {
+			factor = 2
+		}
+		modifier = {
+			factor = 0
+			num_free_districts = {
+				type = district_city
+				value < 2
+			}
+		}
+	}
+
+	prerequisites = { "tech_dense_jungle" }
+}
+
+d_eternia_waste_lands = {
+	time = 120
+
+	is_for_colonizable = yes
+	category = deposit_cat_blockers
+
+	# all_blocker_swap_types = yes
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 300
+		}
+	}
+
+	potential = {
+		has_planet_flag = planet_eternia
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = -2
+	}
+
+	drop_weight = {
+		weight = @blocker_high
+		modifier = {
+			factor = 2
+			num_free_districts = {
+				type = district_city
+				value < 2
+			}
+		}
+	}
+}
+
+d_eternia_volcano_plains = {
+	time = 120
+
+	is_for_colonizable = yes
+	category = deposit_cat_blockers
+
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 300
+		}
+	}
+
+	potential = {
+		is_mystic = yes
+		has_planet_flag = planet_eternia
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = -2
+	}
+
+	use_weights_for_blocker_swap_types = yes
+	blocker_swap_types = {
+		d_eternia_volcano_caves
+	}
+
+	drop_weight = {
+		weight = @blocker_high
+		modifier = {
+			factor = 2
+			num_free_districts = {
+				type = district_city
+				value < 2
+			}
+		}
+	}
+
+	prerequisites = { "tech_volcano" }
+}

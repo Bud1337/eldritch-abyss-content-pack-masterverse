@@ -1,0 +1,65 @@
+# Etherian Alliance
+EtherianAlliance={
+	ship_prefix="PRESCRIPTED_ship_prefix_EtherianAlliance"
+	species={
+		class="HUM"
+		portrait="human"
+		name="PRESCRIPTED_species_name_humans"
+		plural="PRESCRIPTED_species_plural_humans"
+		adjective="PRESCRIPTED_species_adjective_humans"
+		name_list="POP_PRESCRIPTED_ETHERIA_HUMANS"
+		gender=female
+		trait="trait_nomadic"
+		trait="trait_adaptive"
+		trait="trait_potential_psionic"
+		trait="trait_unruly"
+		trait="trait_wasteful"
+	}
+	name="EtherianAlliance"
+	adjective="PRESCRIPTED_adjective_EtherianAlliance"
+	authority="auth_imperial"
+	government="gov_enlightened_monarchy"
+	flags={ etheria masterverse custom_start_screen }
+	planet_name="NAME_Etheria"
+	planet_class="pc_continental"
+	system_name="NAME_Ethor"
+	initializer="POP_ethor_system"
+	graphical_culture="avian_01"
+	city_graphical_culture="reptilian_01"
+	empire_flag={
+		icon={
+			category="motu"
+			file="rebellion.dds"
+		}
+		background={
+			category="backgrounds"
+			file="circle.dds"
+		}
+		colors={
+			"yellow"
+			"beige"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="Edith Higginbottom"
+		portrait="human_female_04"
+		texture=0
+		hair=4
+		clothes=0
+		leader_class="ruler"
+	}
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	room="default_room"
+	spawn_enabled=no
+	ethic="ethic_xenophile"
+	ethic="ethic_fanatic_materialist"
+	civics={
+		"civic_aristocratic_elite"
+		"civic_philosopher_king"
+	}
+	origin="EA_origin_mystic"
+}

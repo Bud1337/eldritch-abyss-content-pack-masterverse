@@ -1,0 +1,76 @@
+# Etherian Alliance
+EtherianAlliance={
+	name = "EMPIRE_DESIGN_EtherianAlliance"
+	adjective = "PRESCRIPTED_adjective_EtherianAlliance"
+	spawn_enabled = yes # yes / no / always
+	ignore_portrait_duplication = yes
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_EtherianAlliance"
+
+	species = {
+		class = "HUM"
+		portrait = "human"
+		gender = female
+		name = "PRESCRIPTED_species_name_humans"
+		plural = "PRESCRIPTED_species_plural_humans"
+		adjective = "PRESCRIPTED_species_adjective_humans"
+		name_list = "MASTERVERSE_PRESCRIPTED_ETHERIA_HUMANS"
+		bio = "EMPIRE_DESIGN_EtherianAlliance_desc"
+		trait = "trait_nomadic"
+		trait = "trait_adaptive"
+		trait = "trait_communal"
+		trait = "trait_unruly"
+		trait = "trait_wasteful"
+	}
+
+	room = "default_room"
+
+	authority = "auth_imperial"
+	civics = { "civic_aristocratic_elite" "civic_philosopher_king" }
+	government = "gov_enlightened_monarchy"
+
+	ethic = "ethic_xenophile"
+	ethic = "ethic_fanatic_materialist"
+
+	origin = "EA_origin_mystic"
+
+	flags = { etheria masterverse custom_start_screen }
+
+	planet_name = "NAME_Etheria"
+	planet_class = "pc_continental"
+	initializer = "MASTERVERSE_ethor_system"
+	system_name = "NAME_Ethor"
+
+	graphical_culture = "avian_01"
+	city_graphical_culture = "reptilian_01"
+
+	empire_flag = {
+		icon={
+			category="masterverse"
+			file="rebellion.dds"
+		}
+		background={
+			category="backgrounds"
+			file="circle.dds"
+		}
+		colors={
+			"yellow"
+			"beige"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_EhterianAlliance"
+		gender = female
+		portrait = human_vanilla_female_04
+		texture = 0
+		hair = 4
+		clothes = 0
+		leader_class = ruler
+	}
+
+	spawn_as_fallen = no
+	ignore_portrait_duplication = no
+}

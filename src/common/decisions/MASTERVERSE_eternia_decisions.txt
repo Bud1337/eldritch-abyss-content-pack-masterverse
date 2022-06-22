@@ -1,0 +1,277 @@
+#####################
+# Eternia Decisions #
+#####################
+decision_eternia_consumer_goods_weighting = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_eternia_consumer_goods_weighting
+
+	potential = {
+		has_planet_flag = planet_eternia
+		owner = { is_regular_empire = yes }
+        owner = { has_country_flag = eternia }
+	}
+
+	allow = {
+        OR = { has_planet_flag = planet_eternia }
+		NOT = { has_modifier = eternia_consumer_goods_weighting }
+	}
+
+	effect = {
+		add_modifier = { modifier = "eternia_consumer_goods_weighting" }
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+###################################
+# Eternia Decisions - Bright Moon #
+###################################
+decision_eternia_moon_bright_reactivate_ancient_deposits = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_eternia_moon_bright_reactivate_ancient_deposits
+
+	enactment_time = 750
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+			energy = 500
+			minerals = 1000
+		}
+	}
+
+	potential = {
+        has_planet_flag = planet_eternia_bright_moon
+		NOT = { 
+			has_planet_flag = planet_eternia_bright_moon_reactivated_ancient_deposits 
+		}
+		owner = { 
+			has_country_flag = eternia
+			is_regular_empire = yes 
+		}
+	}
+
+	allow = {
+		NOT = { 
+			is_planet_class = pc_barren
+			has_planet_flag = planet_eternia_bright_moon_reactivated_ancient_deposits 
+		}
+	}
+
+	effect = {
+		owner = { MASTERVERSE_eternia_bright_moon_add_ancient_deposits = yes }
+		set_planet_flag = planet_eternia_bright_moon_reactivated_ancient_deposits
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+decision_eternia_moon_bright_science_weighting = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_eternia_moon_bright_science_weighting
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+		}
+	}
+
+	potential = {
+        has_planet_flag = planet_eternia_bright_moon
+		has_planet_flag = planet_eternia_bright_moon_reactivated_ancient_deposits
+		NOT = { 
+			has_modifier = eternia_moon_bright_science_weighting 
+		}
+		owner = { 
+			is_regular_empire = yes
+        	has_country_flag = eternia 
+		}
+	}
+
+	allow = {
+		has_planet_flag = planet_eternia_bright_moon_reactivated_ancient_deposits
+		NOT = { has_modifier = eternia_moon_bright_science_weighting }
+	}
+
+	effect = {
+		add_modifier = { modifier = "eternia_moon_bright_science_weighting" }
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+decision_eternia_moon_bright_light_mirror = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_eternia_moon_bright_light_mirror
+
+	enactment_time = 400
+	resources = {
+		category = decisions
+		cost = {
+			energy = 500
+			minerals = 1000
+		}
+	}
+
+	potential = {
+		has_planet_flag = planet_eternia_bright_moon
+		has_modifier = eternia_moon_bright_science_weighting
+		NOT = { 
+			has_planet_flag = planet_eternia_bright_moon_light_mirror 
+		}
+		owner = { 
+			is_regular_empire = yes
+        	has_country_flag = eternia 
+		}
+	}
+
+	allow = {
+		has_modifier = eternia_moon_bright_science_weighting
+		NOT = { has_planet_flag = planet_eternia_bright_moon_light_mirror }
+	}
+
+	effect = {
+		owner = { MASTERVERSE_eternia_bright_moon_add_light_mirror = yes }
+		set_planet_flag = planet_eternia_bright_moon_light_mirror
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+#################################
+# Eternia Decisions - Dark Moon #
+#################################
+decision_eternia_moon_dark_ancient_colony = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_eternia_moon_dark_ancient_colony
+
+	enactment_time = 750
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+			energy = 500
+			minerals = 1000
+		}
+	}
+
+	potential = {
+        has_planet_flag = planet_eternia_dark_moon
+		NOT = { 
+			has_planet_flag = planet_eternia_moon_dark_ancient_colony
+		}
+		owner = { 
+			has_country_flag = eternia
+			is_regular_empire = yes 
+		}
+	}
+
+	allow = {
+		NOT = { 
+			is_planet_class = pc_barren
+			has_planet_flag = planet_eternia_moon_dark_ancient_colony 
+		}
+	}
+
+	effect = {
+		owner = { MASTERVERSE_eternia_dark_moon_add_ancient_colony = yes }
+		set_planet_flag = planet_eternia_moon_dark_ancient_colony
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+decision_eternia_moon_dark_food_weighting = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_eternia_moon_dark_food_weighting
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 25
+		}
+	}
+
+	potential = {
+        has_planet_flag = planet_eternia_dark_moon
+		has_planet_flag = planet_eternia_moon_dark_ancient_colony
+		NOT = { 
+			has_modifier = eternia_moon_dark_food_weighting 
+		}
+		owner = { 
+			is_regular_empire = yes
+        	has_country_flag = eternia 
+		}
+	}
+
+	allow = {
+		has_planet_flag = planet_eternia_moon_dark_ancient_colony
+		NOT = { has_modifier = eternia_moon_dark_food_weighting }
+	}
+
+	effect = {
+		add_modifier = { modifier = "eternia_moon_dark_food_weighting" }
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+decision_eternia_moon_dark_housing = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = default
+
+	enactment_time = 400
+	resources = {
+		category = decisions
+		cost = {
+			energy = 500
+			minerals = 1000
+		}
+	}
+
+	potential = {
+		has_planet_flag = planet_eternia_dark_moon
+		has_modifier = eternia_moon_dark_food_weighting
+		NOT = { 
+			has_planet_flag = planet_eternia_dark_moon_housing 
+		}
+		owner = { 
+			is_regular_empire = yes
+        	has_country_flag = eternia 
+		}
+	}
+
+	allow = {
+		has_modifier = eternia_moon_dark_food_weighting
+		NOT = { has_planet_flag = planet_eternia_dark_moon_housing }
+	}
+
+	effect = {
+		owner = { MASTERVERSE_eternia_dark_moon_add_housing_deposit = yes }
+		set_planet_flag = planet_eternia_dark_moon_housing
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}

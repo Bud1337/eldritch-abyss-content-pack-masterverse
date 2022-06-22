@@ -1,0 +1,5 @@
+entity = {
+	name = "swp_chiss_strikecraft_01_entity"
+	pdxmesh = "swp_chiss_fighter_clawcraft_mesh"
+}
+

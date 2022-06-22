@@ -1,0 +1,87 @@
+category = {
+ name = "Eternia"
+ soundeffects = {
+    relic_activation_eternia_sword_of_power
+    relic_activation_eternia_cosmic_key
+    sfx_event_eternia_story_5
+    sfx_event_eternia_story_9
+ }
+}
+
+sound = 
+{
+    name = "sfx_relic_activation_eternia_sword_of_power"
+    file = "sfx_relic_activation_eternia_sword_of_power.wav"
+    volume = 1
+}
+
+sound = 
+{
+    name = "sfx_relic_activation_eternia_cosmic_key"
+    file = "sfx_relic_activation_eternia_cosmic_key.wav"
+    volume = 1
+}
+
+soundeffect =
+{
+    name = "relic_activation_eternia_sword_of_power"
+    volume = 0.5
+    max_audible = 1
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { -10.0 10.0 }
+	fade_out = 0
+    sounds = {
+        sound = sfx_relic_activation_eternia_sword_of_power
+	}
+}
+
+soundeffect =
+{
+    name = "relic_activation_eternia_cosmic_key"
+    volume = 0.5
+    max_audible = 1
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { -10.0 10.0 }
+	fade_out = 0
+    sounds = {
+        sound = sfx_relic_activation_eternia_cosmic_key
+	}
+}
+
+sound =
+{
+	name = "sfx_event_eternia_story_5"
+	file = "sfx_event_eternia_story_5.wav"
+}
+
+soundeffect =
+{
+    name = "sfx_event_eternia_story_5"
+    volume = 0.5
+    max_audible = 1
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { -10.0 10.0 }
+	fade_out = 0
+    sounds = {
+        sound = sfx_event_eternia_story_5
+	}
+}
+
+sound =
+{
+	name = "sfx_event_eternia_story_9"
+	file = "sfx_event_eternia_story_9.wav"
+}
+
+soundeffect =
+{
+    name = "sfx_event_eternia_story_9"
+    volume = 0.5
+    max_audible = 1
+	max_audible_behaviour = fail
+	playbackrate_random_offset = { -10.0 10.0 }
+	fade_out = 0
+    sounds = {
+        sound = sfx_event_eternia_story_9
+	}
+}

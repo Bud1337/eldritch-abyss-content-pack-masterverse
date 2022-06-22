@@ -1,0 +1,29 @@
+Stellaris: Eldritch Abyss
+=========================
+
+Abandoned Mod-Integration:
+- Extended PSI
+- Symbiose aus Little Green Men & Sectoid => Serpo Conspiracy
+- Magie Content
+
+Content: Eldritch Abyss
+
+Neue Planeten Klasse "Mystischer Planet"
+- Ideale Welt
+
+Neues Origin "Mystische Kultur" / "Magische Kultur":
+- Start Planet: Mystisch
+- div. Völker     (needs Rework)
+- eigene Deposits (todo)
+- Vorraussetzung für Aufstiegsvorteil Magie
+
+Neuer Aufstiegsvorteil "Verstand über Ley-Linie"
+- Alternative zu Verstand über Materie
+- Technologie erforschbar: Magie statt Telepathie
+- Neue Armee: Magier-Armee
+- Neues Gebäude: Akademie der Magie
+
+Sub-Contents:
+- Masters of the Universe (Beinhaltet MotU, PoP, NA (???), RotS) => concept_masterverse.txt
+- Serpo Conspiracy => concept_sc.txt
+- Legend of Zelda => concept_zelda.txt

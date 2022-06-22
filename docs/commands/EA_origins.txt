@@ -1,0 +1,127 @@
+#origin_chiss_ascendancy = {
+#	is_origin = yes
+#	icon = "gfx/interface/icons/origins/origins_default.dds"
+#	picture = GFX_evt_metropolis
+#
+#	potential = {
+#		always = yes
+#	}
+#
+#	possible = {
+#	}
+#
+#	description = "origin_tooltip_chiss_ascendancy_effects"
+#	flags = { custom_start_screen }
+#
+#	random_weight = {
+#		base = 0
+#	}
+#}
+
+EA_origin_mystic = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origin_mystic.dds"
+	picture = EA_GFX_origin_mystic
+
+	starting_colony = pc_mystic
+
+	playable = {
+		always = yes
+	}
+
+	potential = {
+		always = yes
+	}
+
+	possible = {
+		
+	}
+
+	random_weight = {
+		base = 0
+	}
+
+	traits = {
+		
+	}
+
+	# - Beginnt mit einer §HMystischen Welt§! als Heimatplanet\n- 
+	description = "EA_origin_tooltip_mystic_effects"
+
+	advanced_start = yes
+}
+
+EA_origin_psionic = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origin_psionic.dds"
+	picture = EA_GFX_origin_psionic
+
+	playable = {
+		always = yes
+	}
+
+	potential = {
+		always = yes
+	}
+
+	possible = {
+		
+	}
+
+	traits = {
+		trait = trait_latent_psionic
+	}
+
+	random_weight = {
+		base = 0
+	}
+
+	# - Beginnt mit einer §HMystischen Welt§! als Heimatplanet\n- 
+	description = "EA_origin_tooltip_psionic_effects"
+
+	advanced_start = yes
+}
+
+EA_origin_parasitoid = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_necrophage.dds"
+	picture = GFX_origin_necrophage
+	flags = { custom_start_screen }
+
+	playable = {
+		always = no
+	}
+
+	possible = {
+		authority = {
+			NOT = { value = auth_machine_intelligence }
+		}
+		ethics = {
+			NOR = {
+				value = ethic_xenophile
+				value = ethic_fanatic_xenophile
+				value = ethic_fanatic_egalitarian
+			}
+		}
+		civics = {
+			NOR = {
+				value = civic_death_cult
+				value = civic_death_cult_corporate
+				value = civic_hive_empath
+				value = civic_permanent_employment
+			}
+		}
+	}
+
+	description = civic_tooltip_necrophage_effects
+
+	traits = {
+		trait = trait_parasitoid
+	}
+
+	advanced_start = yes
+
+	random_weight = {
+		base = 5
+	}
+}

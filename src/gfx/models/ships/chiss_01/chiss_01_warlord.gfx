@@ -1,0 +1,61 @@
+objectTypes = {
+	pdxmesh = {
+		name = "chiss_01_warlord_mesh"
+		file = "gfx/models/ships/chiss_01/chiss_01_warlord.mesh"
+		scale = 0.1
+
+		meshsettings = {
+			name = "warlord_hull_blue_02Shape"
+			index = 0
+			texture_diffuse = "hull_blue_02.dds"
+			texture_normal = "hull_grey_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "warlord_hull_greyShape"
+			index = 0
+			texture_diffuse = "hull_grey.dds"
+			texture_normal = "hull_grey_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "warlord_windows_glowShape"
+			index = 0
+			texture_diffuse = "chiss_01_lights_grid_diffuse.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUVNoDissolve"
+		}
+
+		meshsettings = {
+			name = "warlord_machinery_grey_diffuseShape"
+			index = 0
+			texture_diffuse = "machinery_grey_diffuse.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "warlord_hull_grey_brightShape"
+			index = 0
+			texture_diffuse = "hull_grey_bright.dds"
+			texture_normal = "hull_grey_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "warlord_hull_grey_darkerShape"
+			index = 0
+			texture_diffuse = "hull_grey_darker.dds"
+			texture_normal = "hull_grey_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

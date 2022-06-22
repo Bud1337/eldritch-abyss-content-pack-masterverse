@@ -1,0 +1,43 @@
+
+tech_eternia_photanium_alloys = {
+	cost = @tier1cost3
+	area = engineering
+	tier = 1
+	category = { voidcraft }
+	weight = @tier1weight3
+
+	# only available when playing eternia and having reached story event five
+	potential = {
+		has_country_flag = eternia
+		has_country_flag = eternia_story_5
+	}
+
+    modifier = {
+        shipsize_corvette_hull_add = 50
+        shipsize_destroyer_hull_add = 100
+        shipsize_cruiser_hull_add = 250
+        shipsize_battleship_hull_add = 400
+        shipsize_titan_hull_add = 500
+    }
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 3 # ship upgrades are supposed to be good!
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}

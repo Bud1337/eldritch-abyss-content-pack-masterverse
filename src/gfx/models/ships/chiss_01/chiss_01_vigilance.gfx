@@ -1,0 +1,69 @@
+objectTypes = {
+	pdxmesh = {
+		name = "chiss_01_vigilance_mesh"
+		file = "gfx/models/ships/chiss_01/chiss_01_vigilance.mesh"
+		scale = 0.1
+
+		meshsettings = {
+			name = "Vigilance_deflector_02_diffuse_glowShape"
+			index = 0
+			texture_diffuse = "deflector_02_diffuse.dds"
+			texture_normal = "deflector_01_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Vigilance_hull_blue_02Shape"
+			index = 0
+			texture_diffuse = "hull_blue_02.dds"
+			texture_normal = "hull_grey_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Vigilance_windows_glowShape"
+			index = 0
+			texture_diffuse = "chiss_01_lights_grid_diffuse.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUVNoDissolve"
+		}
+
+		meshsettings = {
+			name = "Vigilance_hull_grey_darkerShape"
+			index = 0
+			texture_diffuse = "hull_grey_darker.dds"
+			texture_normal = "hull_grey_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Vigilance_grey_tall_grid_diffuseShape"
+			index = 0
+			texture_diffuse = "grey_tall_grid_diffuse.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Vigilance_hull_yellow_darkestShape"
+			index = 0
+			texture_diffuse = "hull_yellow_darkest.dds"
+			texture_normal = "hull_grey_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "Vigilance_hull_greyShape"
+			index = 0
+			texture_diffuse = "hull_grey.dds"
+			texture_normal = "hull_grey_normal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

@@ -1,0 +1,20 @@
+# Event chains.
+
+# counter, counters that can be increased and checked from effects and triggers
+#
+# Localization needed:
+# event_chain_chainnkey_title, a title to show in the situation log.
+# event_chain_chainnkey_desc, a description to show in the situation log.
+
+SSC_event_chain_eternia_story = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+  	picture = MASTERVERSE_GFX_evt_eternia_planet
+}
+SSC_event_chain_eternia_people = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+  	picture = MASTERVERSE_GFX_evt_eternia_palace
+}
+#SSC_event_chain_eternia_relics = {
+#	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+#  	picture = MASTERVERSE_GFX_evt_eternia_world_map
+#}

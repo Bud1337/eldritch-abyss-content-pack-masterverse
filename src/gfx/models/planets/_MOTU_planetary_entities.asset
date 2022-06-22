@@ -1,0 +1,20 @@
+#####    Planet attachments    ######
+@astroid_scale = 30
+
+entity = {
+	name = "crystal_planet_01_entity"
+	pdxmesh = "planet_clouded_mesh"
+	default_state = "idle"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "crystal_01_diffuse.dds"
+	texture_normal = "arctic_01_normals.dds"
+	texture_specular = "arctic_01_spec.dds"
+	}
+	
+		state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}

@@ -1,0 +1,602 @@
+
+create_built_robot_species = {
+	create_species = {
+		name = "NAME_Robot"
+		plural = "NAME_Robots"
+		class = ROBOT
+		namelist = this
+		portrait = "default_robot"
+		traits = {
+			trait = "trait_mechanical"
+		}
+
+		effect = {
+			set_species_flag = mechanical_species@prev
+			if = {
+				limit = {
+					prev = { use_robot_portrait_sd_hum_robot = yes }
+				}
+				change_species_portrait = sd_hum_robot
+			}
+			else_if = {
+				limit = {
+					prev = { use_robot_portrait_sd_mam_robot = yes }
+				}
+				change_species_portrait = sd_mam_robot
+			}
+			else_if = {
+				limit = {
+					prev = { use_robot_portrait_sd_rep_robot = yes }
+				}
+				change_species_portrait = sd_rep_robot
+			}
+			else_if = {
+				limit = {
+					prev = { use_robot_portrait_sd_avi_robot = yes }
+				}
+				change_species_portrait = sd_avi_robot
+			}
+			else_if = {
+				limit = {
+					prev = { use_robot_portrait_sd_art_robot = yes }
+				}
+				change_species_portrait = sd_art_robot
+			}
+			else_if = {
+				limit = {
+					prev = { use_robot_portrait_sd_mol_robot = yes }
+				}
+				change_species_portrait = sd_mol_robot
+			}
+			else_if = {
+				limit = {
+					prev = { use_robot_portrait_sd_fun_robot = yes }
+				}
+				change_species_portrait = sd_fun_robot
+			}
+			else_if = {
+				limit = {
+					prev = { use_robot_portrait_sd_pla_robot = yes }
+				}
+				change_species_portrait = sd_pla_robot
+			}
+			else_if = {
+				limit = {
+					prev = { use_robot_portrait_sd_lit_robot = yes }
+				}
+				change_species_portrait = lith_machine
+			}
+			else_if = {
+				limit = {
+					prev = { use_robot_portrait_sd_nec_robot = yes }
+				}
+				change_species_portrait = nec_machine
+			}
+			else_if = {
+				limit = {
+					prev = { use_robot_portrait_sd_aqu_robot = yes }
+				}
+				change_species_portrait = aqu_machine
+			}
+
+            if = {
+                limit = {
+                    prev = { use_robot_portrait_sd_eternia_robot = yes }
+                }
+                change_species_portrait = motu_robot
+            }
+		}
+	}
+
+	set_built_species = last_created_species
+}
+
+###############################################
+# Mystic Origin start species initializations #
+###############################################
+EA_create_origin_mystic_random_start_species = {
+	# create random species with dry preferation (arid, desert)
+	# create random species with warm preferation (savannah, tropical)
+	# create random species with moderate preferation (continental, ocean)
+	# create random species with cold preferation (tundra, alpine,)
+	random_list = {
+		10 = { 
+			EA_create_origin_mystic_random_start_species_molluscoid = yes
+		}
+		9 = { 
+			EA_create_origin_mystic_random_start_species_fungoid = yes
+		}
+		8 = { 
+			EA_create_origin_mystic_random_start_species_lithoid = yes
+		}
+		7 = { 
+			EA_create_origin_mystic_random_start_species_mammalian = yes
+		}
+		6 = { 
+			EA_create_origin_mystic_random_start_species_plantoid = yes
+		}
+		5 = { 
+			EA_create_origin_mystic_random_start_species_humanoid = yes
+		}
+		4 = { 
+			EA_create_origin_mystic_random_start_species_aquatic = yes
+		}
+		3 = { 
+			EA_create_origin_mystic_random_start_species_avian = yes
+		}
+		2 = { 
+			EA_create_origin_mystic_random_start_species_reptiloid = yes
+		}
+		1 = { 
+			EA_create_origin_mystic_random_start_species_arthropoid = yes
+		}
+	}
+	random_list = {
+		3 = { 
+			while = {
+				count = 4
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+		2 = { 
+			while = {
+				count = 3
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+		1 = { 
+			while = {
+				count = 2
+				create_pop = {
+					species = last_created_species
+				}
+			}
+		}
+	}
+}
+
+EA_create_origin_mystic_random_start_species_cold = {
+	if = {
+		limit = {
+			owner = { NOT = { has_country_flag = ea_origin_mystic_cold_species } }
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = {
+						owner_main_species = { is_species_class = "MOL" } 
+						owner_main_species = { has_trait = trait_pc_tundra_preference } 
+					}
+				}
+			}
+			create_species = {
+				name = random
+				class = MOL
+				portrait = random
+				traits = { ideal_planet_class = pc_tundra trait = random_traits } 
+				homeworld = root
+			}
+			owner = { set_country_flag = ea_origin_mystic_cold_species }
+		}
+		else_if = {
+			limit = {
+				NOT = { 
+					OR = {
+						owner_main_species = { is_species_class = "LITHOID" } 
+						owner_main_species = { has_trait = trait_pc_alpine_preference } 
+					}
+				}
+			}
+			create_species = {
+				name = random
+				class = LITHOID
+				portrait = random
+				traits = { ideal_planet_class = pc_alpine trait = random_traits } 
+				homeworld = root
+			}
+			owner = { set_country_flag = ea_origin_mystic_cold_species }
+		}
+		else_if = {
+			limit = {
+				NOT = { 
+					OR = {
+						owner_main_species = { is_species_class = "MAM" } 
+						owner_main_species = { has_trait = trait_pc_arctic_preference } 
+					}
+				}
+			}
+			create_species = {
+				name = random
+				class = MAM
+				portrait = random
+				traits = { ideal_planet_class = pc_arctic trait = random_traits } 
+				homeworld = root
+			}
+			owner = { set_country_flag = ea_origin_mystic_cold_species }
+		}
+		if = {
+			limit = {
+				owner = { NOT = { has_country_flag = ea_origin_mystic_cold_species } }
+			}
+			random_list = {
+				3 = { 
+					while = {
+						count = 4
+						create_pop = {
+							species = last_created_species
+						}
+					}
+				}
+				2 = { 
+					while = {
+						count = 3
+						create_pop = {
+							species = last_created_species
+						}
+					}
+				}
+				1 = { 
+					while = {
+						count = 2
+						create_pop = {
+							species = last_created_species
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+EA_create_origin_mystic_random_start_species_molluscoid = {
+	if = {
+		limit = {
+			NOT = { owner_main_species = { is_species_class = "MOL"} }
+			owner = { NOT = { has_country_flag = ea_origin_mystic_molluscoid_species } }
+		}
+		create_species = {
+			name = random
+			class = MOL
+			portrait = random
+			traits = { ideal_planet_class = pc_tundra trait = random_traits } 
+			homeworld = root
+		}
+		owner = { set_country_flag = ea_origin_mystic_molluscoid_species }
+	}
+	else = {
+		EA_create_origin_mystic_random_start_species_humanoid = yes
+	}
+}
+
+EA_create_origin_mystic_random_start_species_humanoid = {
+	if = {
+		limit = {
+			NOT = { owner_main_species = { is_species_class = "HUM"} }
+			owner = { NOT = { has_country_flag = ea_origin_mystic_humanoid_species } }
+		}
+		create_species = {
+			name = random
+			class = HUM
+			portrait = random
+			traits = { ideal_planet_class = pc_continental trait = random_traits } 
+			homeworld = root
+		}
+		owner = { set_country_flag = ea_origin_mystic_humanoid_species }
+	}
+	else = {
+		EA_create_origin_mystic_random_start_species_arthropoid = yes
+	}
+}
+
+EA_create_origin_mystic_random_start_species_arthropoid = {
+	if = {
+		limit = {
+			NOT = { owner_main_species = { is_species_class = "ART"} }
+			owner = { NOT = { has_country_flag = ea_origin_mystic_arthropoid_species } }
+		}
+		create_species = {
+			name = random
+			class = ART
+			portrait = random
+			traits = { ideal_planet_class = pc_desert trait = random_traits } 
+			homeworld = root
+		}
+		owner = { set_country_flag = ea_origin_mystic_arthropoid_species }
+	}
+	else = {
+		EA_create_origin_mystic_random_start_species_aquatic = yes
+	}
+}
+
+EA_create_origin_mystic_random_start_species_aquatic = {
+	if = {
+		limit = {
+			NOT = { owner_main_species = { is_species_class = "AQUATIC"} }
+			owner = { NOT = { has_country_flag = ea_origin_mystic_aquatic_species } }
+		}
+		create_species = {
+			name = random
+			class = AQUATIC
+			portrait = random
+			traits = { ideal_planet_class = pc_ocean trait = random_traits } 
+			homeworld = root
+		}
+		owner = { set_country_flag = ea_origin_mystic_aquatic_species }
+	}
+	else = {
+		EA_create_origin_mystic_random_start_species_lithoid = yes
+	}
+}
+
+EA_create_origin_mystic_random_start_species_lithoid = {
+	if = {
+		limit = {
+			NOT = { owner_main_species = { is_species_class = "LITHOID"} }
+			owner = { NOT = { has_country_flag = ea_origin_mystic_lithoid_species } }
+		}
+		create_species = {
+			name = random
+			class = LITHOID
+			portrait = random
+			traits = { ideal_planet_class = pc_alpine trait = random_traits } 
+			homeworld = root
+		}
+		owner = { set_country_flag = ea_origin_mystic_lithoid_species }
+	}
+	else = {
+		EA_create_origin_mystic_random_start_species_avian = yes
+	}
+}
+
+EA_create_origin_mystic_random_start_species_avian = {
+	if = {
+		limit = {
+			NOT = { owner_main_species = { is_species_class = "AVI"} }
+			owner = { NOT = { has_country_flag = ea_origin_mystic_avian_species } }
+		}
+		create_species = {
+			name = random
+			class = AVI
+			portrait = random
+			traits = { ideal_planet_class = pc_savannah trait = random_traits } 
+			homeworld = root
+		}
+		owner = { set_country_flag = ea_origin_mystic_avian_species }
+	}
+	else = {
+		EA_create_origin_mystic_random_start_species_fungoid = yes
+	}
+}
+
+EA_create_origin_mystic_random_start_species_fungoid = {
+	if = {
+		limit = {
+			NOT = { owner_main_species = { is_species_class = "FUN"} }
+			owner = { NOT = { has_country_flag = ea_origin_mystic_fungoid_species } }
+		}
+		create_species = {
+			name = random
+			class = FUN
+			portrait = random
+			traits = { ideal_planet_class = pc_tropical trait = random_traits } 
+			homeworld = root
+		}
+		owner = { set_country_flag = ea_origin_mystic_fungoid_species }
+	}
+	else = {
+		EA_create_origin_mystic_random_start_species_mammalian = yes
+	}
+}
+
+EA_create_origin_mystic_random_start_species_mammalian = {
+	if = {
+		limit = {
+			NOT = { owner_main_species = { is_species_class = "MAM"} }
+			owner = { NOT = { has_country_flag = ea_origin_mystic_mammalian_species } }
+		}
+		create_species = {
+			name = random
+			class = MAM
+			portrait = random
+			traits = { ideal_planet_class = pc_arctic trait = random_traits } 
+			homeworld = root
+		}
+		owner = { set_country_flag = ea_origin_mystic_mammalian_species }
+	}
+	else = {
+		EA_create_origin_mystic_random_start_species_plantoid = yes
+	}
+}
+
+EA_create_origin_mystic_random_start_species_plantoid = {
+	if = {
+		limit = {
+			NOT = { owner_main_species = { is_species_class = "PLANT"} }
+			owner = { NOT = { has_country_flag = ea_origin_mystic_plantoid_species } }
+		}
+		create_species = {
+			name = random
+			class = PLANT
+			portrait = random
+			traits = { ideal_planet_class = pc_tropical trait = random_traits } 
+			homeworld = root
+		}
+		owner = { set_country_flag = ea_origin_mystic_plantoid_species }
+	}
+	else = {
+		EA_create_origin_mystic_random_start_species_reptiloid = yes
+	}
+}
+
+EA_create_origin_mystic_random_start_species_reptiloid = {
+	if = {
+		limit = {
+			NOT = { owner_main_species = { is_species_class = "REP"} }
+			owner = { NOT = { has_country_flag = ea_origin_mystic_reptiloid_species } }
+		}
+		create_species = {
+			name = random
+			class = REP
+			portrait = random
+			traits = { ideal_planet_class = pc_arid trait = random_traits } 
+			homeworld = root
+		}
+		owner = { set_country_flag = ea_origin_mystic_reptiloid_species }
+	}
+	else = {
+		EA_create_origin_mystic_random_start_species_molluscoid = yes
+	}
+}
+
+EA_create_fe_servant_species = {
+	create_species = {
+		name = random
+		class = random_non_machine
+		portrait = random
+		traits = random
+		traits = {
+			ideal_planet_class = root
+			trait = "trait_nerve_stapled"
+			trait = "trait_strong"
+			trait = "trait_charismatic"
+		}
+	}
+}
+
+EA_create_fe_servant_robots = {
+	create_species = {
+		name = "NAME_Synthetic"
+		plural = "NAME_Synthetics"
+		class = ROBOT
+		namelist = this
+		portrait = "default_robot"
+		traits = {
+			trait = "trait_mechanical"
+			trait = "trait_robot_luxurious"
+			trait = "trait_robot_domestic_protocols"
+		}
+
+		effect = {
+			if = {
+				limit = {
+					prev = { use_robot_portrait_sd_hum_robot = yes }
+				}
+				change_species_portrait = sd_hum_robot
+			}
+			else_if = {
+				limit = {
+					prev = { use_robot_portrait_sd_mam_robot = yes }
+				}
+				change_species_portrait = sd_mam_robot
+			}
+			else_if = {
+				limit = {
+					prev = { use_robot_portrait_sd_rep_robot = yes }
+				}
+				change_species_portrait = sd_rep_robot
+			}
+			else_if = {
+				limit = {
+					prev = { use_robot_portrait_sd_avi_robot = yes }
+				}
+				change_species_portrait = sd_avi_robot
+			}
+			else_if = {
+				limit = {
+					prev = { use_robot_portrait_sd_art_robot = yes }
+				}
+				change_species_portrait = sd_art_robot
+			}
+			else_if = {
+				limit = {
+					prev = { use_robot_portrait_sd_mol_robot = yes }
+				}
+				change_species_portrait = sd_mol_robot
+			}
+			else_if = {
+				limit = {
+					prev = { use_robot_portrait_sd_fun_robot = yes }
+				}
+				change_species_portrait = sd_fun_robot
+			}
+			else_if = {
+				limit = {
+					prev = { use_robot_portrait_sd_pla_robot = yes }
+				}
+				change_species_portrait = sd_pla_robot
+			}
+			else_if = {
+				limit = {
+					prev = { use_robot_portrait_sd_lit_robot = yes }
+				}
+				change_species_portrait = lith_machine
+			}
+			else_if = {
+				limit = {
+					prev = { use_robot_portrait_sd_nec_robot = yes }
+				}
+				change_species_portrait = nec_machine
+			}
+			else_if = {
+				limit = {
+					prev = { use_robot_portrait_sd_aqu_robot = yes }
+				}
+				change_species_portrait = aqu_machine
+			}
+		}
+	}
+
+	set_built_species = last_created_species
+}
+
+EA_earth_live_on_venus_effect = {
+	event_target:planet_venus = {
+		random_list = {
+			2 = { 
+				change_pc = pc_desert
+				add_modifier = {
+					modifier = "hazardous_weather"
+				}
+			}
+			2 = { 
+				change_pc = pc_arid
+				add_modifier = {
+					modifier = "bleak_planet"
+				}
+			}
+			28 = { 
+				change_pc = pc_barren
+				add_modifier = {
+					modifier = "terraforming_candidate"
+					days = 1
+				}
+			}
+			40 = { 
+				# do nothing
+			}
+			28 = { 
+				change_pc = pc_broken
+				create_ambient_object = {
+					type = "star_explosion"
+					play_animation_once = yes
+					use_3d_location = yes
+					location = event_target:planet_venus
+					entity_face_object = event_target:planet_venus
+					scale = 0.05
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = event_target:planet_venus
+						distance = 0
+						angle = random
+					}
+				}
+				# destroy_fleet = event_target:planet_venus_science_fleet
+			}
+		}
+	}
+}

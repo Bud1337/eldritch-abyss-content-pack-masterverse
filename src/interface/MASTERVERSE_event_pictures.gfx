@@ -1,0 +1,34 @@
+spriteTypes = {
+	spriteType = { name = "MASTERVERSE_GFX_evt_adarion_solar_system" texturefile = "gfx/event_pictures/adarion_solar_system.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent= yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_ancient_city" texturefile = "gfx/event_pictures/eternia_ancient_city.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent= yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_ancient_ruins" texturefile = "gfx/event_pictures/eternia_ancient_ruins.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent= yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_andreenos" texturefile = "gfx/event_pictures/eternia_andreenos.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent= yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_anwat_gar_citadel" texturefile = "gfx/event_pictures/eternia_anwat_gar_citadel.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent= yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_aquatica" texturefile = "gfx/event_pictures/eternia_aquatica.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent= yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_avion" texturefile = "gfx/event_pictures/eternia_avion.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent= yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_castle_grayskull" texturefile = "gfx/event_pictures/eternia_castle_grayskull.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_coridite_mine" texturefile = "gfx/event_pictures/eternia_coridite_mine.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_cosmic_key_1" texturefile = "gfx/event_pictures/eternia_cosmic_key_1.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_cosmic_key_2" texturefile = "gfx/event_pictures/eternia_cosmic_key_2.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_eternium_crystals" texturefile = "gfx/event_pictures/eternia_eternium_crystals.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_evergreen_forests" texturefile = "gfx/event_pictures/eternia_evergreen_forests.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_felis_qadi" texturefile = "gfx/event_pictures/eternia_felis_qadi.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_palace" texturefile = "gfx/event_pictures/eternia_palace.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_phantos" texturefile = "gfx/event_pictures/eternia_phantos.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_plains" texturefile = "gfx/event_pictures/eternia_plains.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_planet" texturefile = "gfx/event_pictures/eternia_planet.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_sands_of_time" texturefile = "gfx/event_pictures/eternia_sands_of_time.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_snake_mountain" texturefile = "gfx/event_pictures/eternia_snake_mountain.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_subternia_1" texturefile = "gfx/event_pictures/eternia_subternia_1.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_subternia_2" texturefile = "gfx/event_pictures/eternia_subternia_2.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_subternia_reptons" texturefile = "gfx/event_pictures/eternia_subternia_reptons.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_subternia_speleans" texturefile = "gfx/event_pictures/eternia_subternia_speleans.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_three_towers" texturefile = "gfx/event_pictures/eternia_three_towers.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent= yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_valley_of_power" texturefile = "gfx/event_pictures/eternia_valley_of_power.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_widget_fortress" texturefile = "gfx/event_pictures/eternia_widget_fortress.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_world_map" texturefile = "gfx/event_pictures/eternia_world_map.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_crisis_evil_warriors" texturefile = "gfx/event_pictures/eternia_crisis_evil_warriors_2.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_crisis_evil_warriors_2" texturefile = "gfx/event_pictures/eternia_crisis_evil_warriors.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_crisis_snake_men" texturefile = "gfx/event_pictures/eternia_crisis_snake_men_2.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+	spriteType = { name = "MASTERVERSE_GFX_evt_eternia_crisis_snake_men_2" texturefile = "gfx/event_pictures/eternia_crisis_snake_men.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes }
+}

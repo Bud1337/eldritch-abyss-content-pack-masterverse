@@ -1,0 +1,413 @@
+#	Example:
+#
+#	example_effect = {
+#		add_resource = { energy = -100 }
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+#
+
+MASTERVERSE_generate_horde_empire = {
+	create_species = {
+		name="PRESCRIPTED_species_name_hordes"
+		class="NECROID"
+		portrait="masterverse_hordes"
+		plural="PRESCRIPTED_species_plural_hordes"
+		adjective="PRESCRIPTED_species_adjective_hordes"
+		gender=male
+		traits = {
+			trait="trait_pc_arid_preference"
+			trait="trait_necrophage"
+			trait="trait_very_strong"
+			trait="trait_deviants"
+		}
+		effect = { save_global_event_target_as = fallen_horde_species }
+	}
+	create_country = {
+		name="PRESCRIPTED_name_TheHordes"
+		adjective="PRESCRIPTED_adjective_TheHordes"
+		authority = auth_imperial
+		type = fallen_empire
+		ignore_initial_colony_error = yes
+		civics = {
+			civic = "civic_nationalistic_zeal"
+			civic = "civic_cutthroat_politics"
+		}
+		species = last_created_species
+		ethos = {
+			ethic = "ethic_xenophobe"
+			ethic = "ethic_fanatic_militarist"
+		}
+		flag={
+			icon={
+				category="masterverse"
+				file="hordes.dds"
+			}
+			background={
+				category="backgrounds"
+				file="circle.dds"
+			}
+			colors={
+				"black"
+				"red"
+				"null"
+				"null"
+			}
+			#background={
+			#	category="backgrounds"
+			#	file="stripes.dds"
+			#}
+			#colors={
+			#	"grey"
+			#	"red"
+			#	"null"
+			#	"null"
+			#}
+		}
+		origin = "origin_fallen_empire"
+		effect = {
+			set_country_flag = fallen_empire_horde
+			add_resource = {
+				minerals = 10000
+				energy = 10000
+				food = 1000
+				influence = 500
+			}
+			# must initialize global designs here
+			add_global_ship_design = "NAME_Reaper"
+			add_global_ship_design = "NAME_Imperium"
+			add_global_ship_design = "NAME_Supremacy"
+			add_global_ship_design = "NAME_Glory"
+			add_global_ship_design = "NAME_Devastator"
+			add_global_ship_design = "NAME_Servitor"
+			add_global_ship_design = "NAME_Destiny"
+			add_global_ship_design = "NAME_FE_Starbase"
+			save_global_event_target_as = fallen_empire_horde
+		}
+	}
+}
+
+MASTERVERSE_generate_horde_planet_horde_world = {
+	prevent_anomaly = yes
+	clear_blockers = yes
+	set_planet_flag = fallen_empire_world
+	set_planet_flag = planet_horde_world
+	# set_owner = root
+	# set_controller = root
+	set_owner = event_target:fallen_empire_horde
+	set_controller = event_target:fallen_empire_horde
+	set_capital = yes
+
+	add_building = building_ancient_palace
+	add_building = building_fe_stronghold
+	add_building = building_fe_stronghold
+	add_building = building_affluence_center
+	add_building = building_affluence_center
+	add_building = building_nourishment_center
+	add_building = building_nourishment_center
+	add_building = building_class_4_singularity
+	add_building = building_dimensional_fabricator
+	add_building = building_dimensional_fabricator
+	add_building = building_nano_forge
+	add_building = building_nano_forge
+	while = {
+		count = 20
+		add_district_and_planet_size_if_needed_effect = {
+			district =district_arcology_housing
+		}
+	}
+	while = {
+		count = 94
+		create_pop = {
+			species = owner_main_species
+		}
+	}
+	event_target:fallen_empire_horde = {
+		set_policy = {
+			policy = artificial_intelligence_policy
+			option = ai_servitude
+			cooldown = no
+		}
+		set_policy = {
+			policy = robot_pop_policy
+			option = robot_pops_allowed
+			cooldown = no
+		}
+	}
+	root = { create_fe_servant_robots = yes }
+	# create_fe_servant_robots = yes
+	last_created_species = { save_event_target_as = fe_servants }
+	while = {
+		count = 94
+		create_pop = {
+			species = event_target:fe_servants
+		}
+	}
+	create_fallen_empire_starting_navy = yes
+	while = {
+		count = 20
+		create_army = {
+			name = random
+			owner = event_target:fallen_empire_horde
+			species = event_target:fallen_empire_horde
+			type = "robotic_army"
+		}
+	}
+	set_name = "NAME_Horde_World"
+}
+
+MASTERVERSE_generate_horde_planet_krytis = {
+	prevent_anomaly = yes
+	clear_blockers = yes
+	set_planet_flag = fallen_empire_world
+	set_planet_flag = planet_krytis
+	set_owner = event_target:fallen_empire_horde
+	set_controller = event_target:fallen_empire_horde
+	set_capital = yes
+
+	add_building = building_ancient_palace
+	add_building = building_fe_dome
+	while = {
+		count = 5
+		add_district = {
+			district_type = district_city
+			ignore_cap = yes
+		}
+	}
+	while = {
+		count = 8
+		create_pop = {
+			species = owner_main_species
+		}
+	}
+	while = {
+		count = 8
+		create_pop = {
+			species = event_target:fe_servants
+		}
+	}
+	event_target:fallen_empire_horde = {
+		set_policy = {
+			policy = artificial_intelligence_policy
+			option = ai_servitude
+			cooldown = no
+		}
+		set_policy = {
+			policy = robot_pop_policy
+			option = robot_pops_allowed
+			cooldown = no
+		}
+	}
+	set_name = "NAME_Krytis"
+}
+
+MASTERVERSE_generate_horde_planet_jungulia = {
+	prevent_anomaly = yes
+	clear_blockers = yes
+	set_planet_flag = fallen_empire_world
+	set_planet_flag = planet_jungulia
+	set_owner = event_target:fallen_empire_horde
+	set_controller = event_target:fallen_empire_horde
+	set_capital = yes
+
+	add_building = building_ancient_palace
+	add_building = building_fe_dome
+	while = {
+		count = 5
+		add_district = {
+			district_type = district_city
+			ignore_cap = yes
+		}
+	}
+	while = {
+		count = 8
+		create_pop = {
+			species = owner_main_species
+		}
+	}
+	while = {
+		count = 8
+		create_pop = {
+			species = event_target:fe_servants
+		}
+	}
+	event_target:fallen_empire_horde = {
+		set_policy = {
+			policy = artificial_intelligence_policy
+			option = ai_servitude
+			cooldown = no
+		}
+		set_policy = {
+			policy = robot_pop_policy
+			option = robot_pops_allowed
+			cooldown = no
+		}
+	}
+	set_name = "NAME_Jungulia"
+}
+
+MASTERVERSE_generate_horde_planet_gluubux_III = {
+	prevent_anomaly = yes
+	clear_blockers = yes
+	set_planet_flag = fallen_empire_world
+	set_planet_flag = planet_gluubux_III
+	set_owner = event_target:fallen_empire_horde
+	set_controller = event_target:fallen_empire_horde
+	set_capital = yes
+
+	add_building = building_ancient_palace
+	add_building = building_fe_dome
+	while = {
+		count = 5
+		add_district = {
+			district_type = district_city
+			ignore_cap = yes
+		}
+	}
+	while = {
+		count = 8
+		create_pop = {
+			species = owner_main_species
+		}
+	}
+	while = {
+		count = 8
+		create_pop = {
+			species = event_target:fe_servants
+		}
+	}
+	event_target:fallen_empire_horde = {
+		set_policy = {
+			policy = artificial_intelligence_policy
+			option = ai_servitude
+			cooldown = no
+		}
+		set_policy = {
+			policy = robot_pop_policy
+			option = robot_pops_allowed
+			cooldown = no
+		}
+	}
+	set_name = "NAME_Gluubux_III"
+}
+
+MASTERVERSE_generate_horde_planet_phelibio_IX = {
+	prevent_anomaly = yes
+	clear_blockers = yes
+	set_planet_flag = fallen_empire_world
+	set_planet_flag = planet_phelibio_IX
+	set_owner = event_target:fallen_empire_horde
+	set_controller = event_target:fallen_empire_horde
+	set_capital = yes
+
+	add_building = building_ancient_palace
+	add_building = building_fe_dome
+	while = {
+		count = 5
+		add_district = {
+			district_type = district_city
+			ignore_cap = yes
+		}
+	}
+	while = {
+		count = 8
+		create_pop = {
+			species = owner_main_species
+		}
+	}
+	while = {
+		count = 8
+		create_pop = {
+			species = event_target:fe_servants
+		}
+	}
+	event_target:fallen_empire_horde = {
+		set_policy = {
+			policy = artificial_intelligence_policy
+			option = ai_servitude
+			cooldown = no
+		}
+		set_policy = {
+			policy = robot_pop_policy
+			option = robot_pops_allowed
+			cooldown = no
+		}
+	}
+	set_name = "NAME_Phelibio_IX"
+}
+
+##################################
+# Hordes awakening modifiers
+##################################
+add_awakened_hordes_empire_fleet = {
+	country_event = { id = MASTERVERSE_hordes_awakening.13 }
+	if = {
+		limit = {
+			any_country = {
+				is_country_type = default
+				OR = {
+					fleet_power > 120000
+					AND = {
+						has_federation = yes
+						federation = {
+							fleet_power > 150000
+						}
+					}
+					AND = {
+						fleet_power > 75000
+						any_country = {
+							has_defensive_pact = prev
+							fleet_power > 75000
+						}
+					}
+				}
+			}
+		}
+		country_event = { id = MASTERVERSE_hordes_awakening.13 }
+	}
+	if = {
+		limit = {
+			any_country = {
+				is_country_type = default
+				OR = {
+					fleet_power > 200000
+					AND = {
+						has_federation = yes
+						federation = {
+							fleet_power > 200000
+						}
+					}
+					AND = {
+						fleet_power > 120000
+						any_country = {
+							has_defensive_pact = prev
+							fleet_power > 120000
+						}
+					}
+				}
+			}
+		}
+		country_event = { id = MASTERVERSE_hordes_awakening.13 }
+	}
+}
+
+add_awakened_hordes_empire_resources = {
+	# Changing country type resets resources, so give them full stores
+	add_resource = { minerals = 50000 }
+	add_resource = { energy = 50000 }
+	add_resource = { food = 10000 }
+	add_resource = { influence = 1000 }
+	add_resource = { alloys = 20000 }
+	add_resource = { consumer_goods = 20000 }
+	add_resource = { alloys = 20000 }
+	add_resource = { exotic_gases = 10000 }
+	add_resource = { volatile_motes = 10000 }
+	add_resource = { rare_crystals = 10000 }
+	add_resource = { sr_dark_matter = 10000 }
+	add_resource = { sr_zro = 10000 }
+}

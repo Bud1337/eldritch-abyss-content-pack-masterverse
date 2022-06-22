@@ -1,0 +1,163 @@
+@activation_cost = 150
+@triumph_duration = 3600
+@triumph_duration_short = 1800
+@triumph_duration_veryshort = 900
+
+r_eternia_sword_of_power = {
+	activation_duration = @triumph_duration
+	portrait = "MASTERVERSE_GFX_eternia_sword_of_power"
+	sound = "relic_activation_eternia_sword_of_power"
+
+	resources = {
+		category = relics
+		# Activation cost
+		cost = {
+			influence = @activation_cost
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+
+	triggered_country_modifier = {
+#		potential = {
+#            OR = {
+#                is_xenophile
+#                is_egalitarian
+#            }
+#        }
+		potential = {
+			always = yes
+		}
+		army_morale = 0.25
+	}
+
+	score = 200
+
+	active_effect = {
+		add_modifier = {
+			modifier = "eternia_artifact_sword_of_power"
+			days = @triumph_duration
+		}
+		custom_tooltip = relic_triumph_cooldown
+		hidden_effect = {
+			add_modifier = {
+				modifier = "relic_activation_cooldown"
+				days = @triumph_duration
+			}
+		}
+	}
+
+	# Possible check for activation
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_relic_no_cooldown"
+			NOT = { has_modifier = relic_activation_cooldown }
+		}
+	}
+}
+
+r_eternia_havoc_staff = {
+	activation_duration = @triumph_duration
+	portrait = "MASTERVERSE_GFX_eternia_havoc_staff"
+	sound = "relic_activation_khans_throne"
+
+	resources = {
+		category = relics
+		# Activation cost
+		cost = {
+			influence = @activation_cost
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+
+	triggered_country_modifier = {
+#		potential = {
+#            OR = {
+#                is_xenophobe
+#                is_authoritarian
+#            }
+#        }
+		potential = {
+			always = yes
+		}
+		army_morale = 0.25
+	}
+
+	score = 200
+
+	active_effect = {
+		add_modifier = {
+			modifier = "eternia_artifact_havoc_staff"
+			days = @triumph_duration
+		}
+		custom_tooltip = relic_triumph_cooldown
+		hidden_effect = {
+			add_modifier = {
+				modifier = "relic_activation_cooldown"
+				days = @triumph_duration
+			}
+		}
+	}
+
+	# Possible check for activation
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_relic_no_cooldown"
+			NOT = { has_modifier = relic_activation_cooldown }
+		}
+	}
+}
+
+r_eternia_cosmic_key = {
+	activation_duration = @triumph_duration
+	portrait = "MASTERVERSE_GFX_eternia_cosmic_key"
+	sound = "relic_activation_eternia_cosmic_key"
+
+	resources = {
+		category = relics
+		# Activation cost
+		cost = {
+			influence = @activation_cost
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_sensor_range_add = 2
+	}
+
+	score = 200
+
+	active_effect = {
+		add_modifier = {
+			modifier = "eternia_artifact_cosmic_key"
+			days = @triumph_duration
+		}
+		custom_tooltip = relic_triumph_cooldown
+		hidden_effect = {
+			add_modifier = {
+				modifier = "relic_activation_cooldown"
+				days = @triumph_duration
+			}
+		}
+	}
+
+	# Possible check for activation
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_relic_no_cooldown"
+			NOT = { has_modifier = relic_activation_cooldown }
+		}
+	}
+}

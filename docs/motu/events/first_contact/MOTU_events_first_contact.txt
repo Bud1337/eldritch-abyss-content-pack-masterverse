@@ -1,0 +1,458 @@
+test_contact_set = {
+	icon = GFX_firstcontact_icon_starter
+	picture = GFX_evt_star_chart
+
+	difficulty = 2
+
+	stage_event = {
+		summary = fcsum_base_contact_set_summary
+		event_weight = {
+			weight = 10
+		}
+		event = first_contact.1 #country event for owner of first contact site
+	}
+
+	on_roll_failed = {
+		#nah
+		standard_first_contact_on_roll_failed = { RANDOM_EVENTS = no_events }
+	}
+}
+
+
+# default empires - start off event
+default_stage_1 = {
+	icon = GFX_firstcontact_icon_progress
+	picture = GFX_evt_star_chart
+
+	difficulty = 5
+
+	stage_event = { # no inhabited systems known
+		summary = fcsum_stage_1_summary
+		event_weight = {
+			weight = 10
+			modifier = {
+				factor = 0
+				contact_country = {
+					any_system_within_border = {
+						root.owner = {
+							intel_level = {
+								level > low
+								system = prev
+							}
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				contact_country = {
+					any_owned_fleet = {
+						is_within_borders_of = root.owner
+					}
+				}
+			}
+		}
+		event = first_contact.5
+	}
+
+	stage_event = { # no inhabited systems known, they are scanning us
+		summary = fcsum_stage_1_summary
+		event_weight = {
+			weight = 10
+			modifier = {
+				factor = 0
+				contact_country = {
+					any_system_within_border = {
+						root.owner = {
+							intel_level = {
+								level > low
+								system = prev
+							}
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					contact_country = {
+						any_owned_fleet = {
+							is_within_borders_of = root.owner
+						}
+					}
+				}
+			}
+		}
+		event = first_contact.10
+	}
+
+	stage_event = { # inhabited systems known
+		summary = fcsum_stage_1_summary
+		event_weight = {
+			weight = 10
+			modifier = {
+				factor = 0
+				NOT = {
+					contact_country = {
+						any_system_within_border = {
+							root.owner = {
+								intel_level = {
+									level > low
+									system = prev
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		event = first_contact.15
+	}
+
+	on_roll_failed = {
+		standard_first_contact_on_roll_failed = { RANDOM_EVENTS = early_fc_random_events }
+	}
+}
+
+# default empires - event for setting up the story
+default_stage_2 = {
+	picture = GFX_evt_mysterious_signal
+	difficulty = 7
+
+	# standard non-proactive
+	stage_event = {
+		icon = GFX_firstcontact_icon_question
+		summary = fcsum_investigation_needed
+		event_weight = {
+			weight = 0
+			modifier = {
+				weight = 100
+				contact_country = {
+					NOT = { has_policy_flag = first_contact_proactive }
+				}
+			}
+		}
+		event = first_contact.50
+	}
+
+	# standard proactive
+	stage_event = {
+		icon = GFX_firstcontact_icon_success
+		summary = fcsum_comms_received
+		event_weight = {
+			weight = 0
+			modifier = {
+				weight = 100
+				contact_country = {
+					has_policy_flag = first_contact_proactive
+				}
+			}
+		}
+		event = first_contact.60
+	}
+
+	# first encounter hive->default
+	stage_event = {
+		icon = GFX_firstcontact_icon_progress
+		summary = fcsum_hive_to_default_1
+		event_weight = {
+			weight = 0
+			modifier = {
+				weight = 10000
+				contact_country = {
+					is_regular_empire = yes
+				}
+				owner = {
+					is_hive_empire = yes
+					NOT = { has_country_flag = hive_encountered_default }
+					NOT = {
+						any_relation = {
+							is_regular_empire = yes
+							has_communications = prev
+						}
+					}
+				}
+			}
+		}
+		event = first_contact.380
+	}
+
+	# first encounter machine->default
+	stage_event = {
+		icon = GFX_firstcontact_icon_progress
+		summary = fcsum_machine_to_default_1
+		event_weight = {
+			weight = 0
+			modifier = {
+				weight = 10000
+				owner = { is_machine_empire = yes }
+				OR = {
+					AND = {
+						contact_country = {
+							is_regular_empire = yes
+						}
+						owner = {
+							NOT = { has_country_flag = machine_encountered_default }
+							NOT = {
+								any_relation = {
+									is_regular_empire = yes
+									has_communications = prev
+								}
+							}
+						}
+					}
+					AND = {
+						contact_country = {
+							is_hive_empire = yes
+						}
+						owner = {
+							NOT = { has_country_flag = machine_encountered_hive }
+							NOT = {
+								any_relation = {
+									is_hive_empire = yes
+									has_communications = prev
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		event = first_contact.390
+	}
+
+	# Speaking in Riddles story
+	stage_event = {
+		icon = GFX_firstcontact_icon_question
+		summary = fcsum_riddles_1
+		event_weight = {
+			weight = 5
+			modifier = {
+				factor = 0
+				owner = {
+					OR = {
+						has_country_flag = first_contact_speaking_in_riddles_chain
+						AND = {
+							is_gestalt = yes
+							any_relation = {
+								has_communications = prev
+								is_regular_empire = yes
+							}
+						}
+						is_homicidal = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				contact_country = {
+					OR = {
+						is_homicidal = yes
+						is_gestalt = yes
+					}
+				}
+			}
+		}
+		event = first_contact.350
+	}
+
+	# Monstrous Noises story
+	stage_event = {
+		icon = GFX_firstcontact_icon_warship_progress
+		summary = fcsum_monstrous_noises_1
+		event_weight = {
+			weight = 5
+			modifier = {
+				factor = 0
+				owner = {
+					OR = {
+						has_country_flag = first_contact_monstrous_noises_chain
+						is_gestalt = yes
+						is_homicidal = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				contact_country = {
+					is_gestalt = yes
+				}
+			}
+			modifier = {
+				factor = 2.5
+				contact_country = {
+					is_militarist = yes
+				}
+			}
+			modifier = {
+				factor = 4
+				contact_country = {
+					OR = {
+						has_ai_personality = honorbound_warriors
+						has_valid_civic = civic_fanatic_purifiers
+					}
+				}
+			}
+		}
+		event = first_contact.365
+	}
+
+	# Apparent Hostility story
+	stage_event = {
+		icon = GFX_firstcontact_icon_warship_progress
+		summary = fcsum_apparent_hostility_1
+		event_weight = {
+			weight = 5
+			modifier = {
+				factor = 0
+				owner = {
+					has_country_flag = first_contact_apparent_hostility_chain
+				}
+			}
+			modifier = {
+				factor = 0
+				contact_country = {
+					is_militarist = no
+					NOT = { has_ai_personality = honorbound_warriors }
+				}
+			}
+			modifier = {
+				factor = 0
+				contact_country = {
+					is_hostile_to = root.owner
+				}
+			}
+			modifier = {
+				factor = 3
+				contact_country = {
+					OR = {
+						has_ai_personality = honorbound_warriors
+						has_valid_civic = civic_fanatic_purifiers
+					}
+				}
+			}
+		}
+		event = first_contact.400
+	}
+
+	# Hummers story
+	stage_event = {
+		icon = GFX_firstcontact_icon_question
+		summary = fcsum_hummers_1
+		event_weight = {
+			weight = 10
+			modifier = {
+				factor = 0
+				owner = {
+					OR = {
+						is_gestalt = yes #no part of it would work, sadly...
+						has_country_flag = first_contact_hummers_chain
+						NOR = { #noobs not allowed
+							has_modifier = first_contact_skill_1
+							has_modifier = first_contact_skill_2
+							has_modifier = first_contact_skill_3
+							has_modifier = first_contact_skill_4
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				contact_country = {
+					is_gestalt = yes
+				}
+			}
+			modifier = {
+				factor = 0.5
+				contact_country = {
+					is_same_species_class = root.owner
+				}
+			}
+		}
+		event = first_contact.415
+	}
+
+	# Octopodes story
+	stage_event = {
+		icon = GFX_firstcontact_icon_question
+		summary = fcsum_octopodes_1
+		event_weight = {
+			weight = 2
+			modifier = {
+				factor = 0
+				owner = {
+					OR = {
+						has_country_flag = first_contact_octopodes_chain
+						NOR = { #noobs not allowed
+							has_modifier = first_contact_skill_1
+							has_modifier = first_contact_skill_2
+							has_modifier = first_contact_skill_3
+							has_modifier = first_contact_skill_4
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				contact_country = {
+					is_gestalt = yes
+				}
+			}
+			modifier = {
+				factor = 8
+				contact_country = {
+					is_species_class = MOL
+				}
+			}
+		}
+		event = first_contact.430
+	}
+
+	on_roll_failed = {
+		standard_first_contact_on_roll_failed = { RANDOM_EVENTS = early_fc_random_events }
+	}
+}
+
+namespace = motu_first_contact
+
+test_contact_event = {
+	id = SSC_eternia_story.1000
+	title = SSC_eternia_story.1000.name
+	desc = {
+		text = first_contact.1.desc.default
+	}
+
+	picture = GFX_evt_star_chart
+	is_triggered_only = yes
+	first_contact = yes
+	location = solar_system
+
+	show_sound = event_mysterious_signal
+
+	abort_trigger = {
+		OR = {
+			NOT = { exists = owner }
+			NOT = { exists = contact_country }
+			owner = { has_communications = root.contact_country }
+		}
+	}
+
+	# immediate = { #deliberately commented out to stop the notification from showing; site is locked anyway by dint of having no envoy
+	#	set_site_progress_locked = yes
+	# }
+
+	after = {
+		# set_site_progress_locked = no
+		hidden_effect = {
+			fire_on_action = {
+				on_action = on_first_contact_started
+			}
+		}
+	}
+
+	#something here?
+	option = {
+		name = INTERESTING
+		set_first_contact_starting_stage = yes
+	}
+}

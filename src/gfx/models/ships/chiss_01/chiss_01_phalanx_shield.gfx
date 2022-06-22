@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "chiss_01_phalanx_shield_mesh"
+		file = "gfx/models/ships/chiss_01/chiss_01_phalanx_shield.mesh"
+		scale = 0.1
+
+		meshsettings = {
+			name = "phalanx_shield_glowShape"
+			index = 0
+			texture_diffuse = "Shield_diffuse.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUVNoDissolve"
+		}
+	}
+}
