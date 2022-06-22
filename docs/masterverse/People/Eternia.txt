@@ -5,6 +5,8 @@ Völker Standard
 - Avionier              https://he-man.fandom.com/wiki/Avionians            ideal_planet_class = pc_arid        trait_talented, trait_communal, trait_resilient, trait_slow_breeders, trait_quarrelsome
 - Kulataks            ✓ https://he-man.fandom.com/wiki/Kulataks             ideal_planet_class = pc_arctic
 
+- Robots              ✓ https://he-man.fandom.com/wiki/Roboto
+
 Völker mit Trigger:
 - Menschen (Phantos)  ✓ https://he-man.fandom.com/wiki/Humans               ideal_planet_class = pc_continental trait_adaptive, trait_nomadic, trait_natural_engineers, trait_wasteful, trait_unruly
 - Gar                 ✓ https://he-man.fandom.com/wiki/Gar                  ideal_planet_class = pc_ocean       trait_potential_psionic, trait_venerable, trait_slow_breeders, trait_unruly
