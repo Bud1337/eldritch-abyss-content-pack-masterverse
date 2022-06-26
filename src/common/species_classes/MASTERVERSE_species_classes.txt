@@ -23,7 +23,6 @@ MASTERVERSE = {
 
 	portraits = {
 		"human"
-		"human_vanilla"
 		"masterverse_gar"
         "masterverse_andreenid"
 		"masterverse_kulatak"
@@ -43,7 +42,6 @@ MASTERVERSE = {
 	# These should not be used for randomly generated species
 	non_randomized_portraits = {
 		"human"
-		"human_vanilla"
 		"masterverse_gar"
         "masterverse_andreenid"
 		"masterverse_kulatak"

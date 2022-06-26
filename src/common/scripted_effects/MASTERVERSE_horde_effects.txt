@@ -58,16 +58,6 @@ MASTERVERSE_generate_horde_empire = {
 				"null"
 				"null"
 			}
-			#background={
-			#	category="backgrounds"
-			#	file="stripes.dds"
-			#}
-			#colors={
-			#	"grey"
-			#	"red"
-			#	"null"
-			#	"null"
-			#}
 		}
 		origin = "origin_fallen_empire"
 		effect = {
