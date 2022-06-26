@@ -244,3 +244,20 @@ country_event = {
 		set_country_type = default
 	}
 }
+
+# Evil Empire ruler gets Evil Ruler trait to make them immortal
+country_event = {
+	id = blub.2
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+	}
+
+	immediate = {
+		any_country = {
+			has_country_flag = masterverse_hordes
+		}
+		set_country_type = default
+	}
+}
