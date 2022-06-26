@@ -1,0 +1,19 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_MASTERVERSE_wg_eternia_snake_men_uprising"
+		texturefile = "gfx/interface/icons/diplomacy/diplomacy_war.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_MASTERVERSE_wg_eternia_evil_warriors_uprising"
+		texturefile = "gfx/interface/icons/diplomacy/diplomacy_war.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_MASTERVERSE_wg_horde_uprising"
+		texturefile = "gfx/interface/icons/diplomacy/diplomacy_war.dds"
+		noOfFrames = 2
+	}
+}

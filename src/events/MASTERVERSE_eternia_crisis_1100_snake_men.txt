@@ -34,18 +34,6 @@ country_event = {
 	immediate = {
 		# all stable, no uprising
 		random_list = {
-			10 = {
-				set_timed_country_flag = {
-					flag = eternia_crisis_no_snake_men_uprising
-					days = 3600
-				}
-			}
-			9 = {
-				set_timed_country_flag = {
-					flag = eternia_crisis_no_snake_men_uprising
-					days = 1800
-				}
-			}
 			8 = {
 				set_timed_country_flag = {
 					flag = eternia_crisis_no_snake_men_uprising
@@ -57,7 +45,7 @@ country_event = {
 					flag = eternia_crisis_no_snake_men_uprising
 					days = 450
 				}
-			}
+		}
 			6 = {
 				set_timed_country_flag = {
 					flag = eternia_crisis_no_snake_men_uprising
@@ -176,23 +164,23 @@ planet_event = { #uprising
 		custom_tooltip = MASTERVERSE_eternia_crisis.1120.a.tooltip
 	}
 
-	option = {
-		name = MASTERVERSE_eternia_crisis.1120.b
-		trigger = {
-			event_target:eternia_snake_men_uprising_originator = { is_ai = no }
-		}
-		custom_tooltip = MASTERVERSE_eternia_crisis.1120.b.tooltip
-		hidden_effect = {
-			if = {
-				limit = {
-					event_target:eternia_snake_men_uprising_originator = { num_owned_planets > 0 }
-				}
-				event_target:current_uprising = {
-					set_player = event_target:eternia_snake_men_uprising_originator
-				}				
-			}
-		}
-	}
+#	option = {
+#		name = MASTERVERSE_eternia_crisis.1120.b
+#		trigger = {
+#			event_target:eternia_snake_men_uprising_originator = { is_ai = no }
+#		}
+#		custom_tooltip = MASTERVERSE_eternia_crisis.1120.b.tooltip
+#		hidden_effect = {
+#			if = {
+#				limit = {
+#					event_target:eternia_snake_men_uprising_originator = { num_owned_planets > 0 }
+#				}
+#				event_target:current_uprising = {
+#					set_player = event_target:eternia_snake_men_uprising_originator
+#				}				
+#			}
+#		}
+#	}
 
 	after = {
 		hidden_effect = {
@@ -367,6 +355,29 @@ country_event = {
 						}
 					}
 					starbase = { set_owner = root }
+					root = {
+						random_list = {
+							10 = {
+								create_fleet_from_naval_cap = 1.0
+								random_owned_planet = {
+									last_created_fleet = {
+										set_location = prev
+									}
+								}
+							}
+							7 = {
+								# do nothing
+							}
+							5 = {
+								create_fleet_from_naval_cap = 0.6
+								random_owned_planet = {
+									last_created_fleet = {
+										set_location = prev
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 			event_target:eternia_snake_men_uprising_originator = {
@@ -435,7 +446,7 @@ country_event = {
 			target = event_target:eternia_snake_men_uprising_originator
 			name = "MASTERVERSE_NAME_SNAKE_MEN_Uprising_War"
 			# "[This.MainDefender.GetAdj] Machine Uprising"
-			attacker_war_goal = "eternia_snake_men_uprising"
+			attacker_war_goal = "MASTERVERSE_wg_eternia_snake_men_uprising"
 		}
 
 
