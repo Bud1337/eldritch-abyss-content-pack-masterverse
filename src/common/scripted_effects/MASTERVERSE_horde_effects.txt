@@ -71,7 +71,8 @@ MASTERVERSE_generate_horde_empire = {
 		}
 		origin = "origin_fallen_empire"
 		effect = {
-			set_country_flag = fallen_empire_horde
+			# set_country_flag = fallen_empire_horde
+			set_country_flag = masterverse_hordes
 			add_resource = {
 				minerals = 10000
 				energy = 10000
@@ -168,7 +169,6 @@ MASTERVERSE_generate_horde_planet_krytis = {
 	set_planet_flag = planet_krytis
 	set_owner = event_target:fallen_empire_horde
 	set_controller = event_target:fallen_empire_horde
-	set_capital = yes
 
 	add_building = building_ancient_palace
 	add_building = building_fe_dome
@@ -213,7 +213,6 @@ MASTERVERSE_generate_horde_planet_jungulia = {
 	set_planet_flag = planet_jungulia
 	set_owner = event_target:fallen_empire_horde
 	set_controller = event_target:fallen_empire_horde
-	set_capital = yes
 
 	add_building = building_ancient_palace
 	add_building = building_fe_dome
@@ -258,7 +257,6 @@ MASTERVERSE_generate_horde_planet_gluubux_III = {
 	set_planet_flag = planet_gluubux_III
 	set_owner = event_target:fallen_empire_horde
 	set_controller = event_target:fallen_empire_horde
-	set_capital = yes
 
 	add_building = building_ancient_palace
 	add_building = building_fe_dome
@@ -303,7 +301,6 @@ MASTERVERSE_generate_horde_planet_phelibio_IX = {
 	set_planet_flag = planet_phelibio_IX
 	set_owner = event_target:fallen_empire_horde
 	set_controller = event_target:fallen_empire_horde
-	set_capital = yes
 
 	add_building = building_ancient_palace
 	add_building = building_fe_dome
