@@ -9,15 +9,130 @@
 ##############################################################
 
 portraits = {
-	# MotU Pt. 1: Gar
-	masterverse_gar_female_01 = { entity = "portrait_human_female_01_entity" clothes_selector = "mammalian_human_female_clothes_01" hair_selector = "human_female_hair_02" greeting_sound = "human_female_greetings_03" character_textures = { "gfx/models/portraits/masterverse/gar_female_body_01.dds" } }
-	masterverse_gar_female_02 = { entity = "portrait_human_female_02_entity" clothes_selector = "mammalian_human_female_clothes_01" hair_selector = "human_female_hair_01" greeting_sound = "human_female_greetings_04" character_textures = { "gfx/models/portraits/masterverse/gar_female_body_02.dds" } }
-	masterverse_gar_female_03 = { entity = "portrait_human_female_03_entity" clothes_selector = "mammalian_human_female_clothes_01" hair_selector = "human_female_hair_03" greeting_sound = "human_female_greetings_05" character_textures = { "gfx/models/portraits/masterverse/gar_female_body_03.dds" } }
-	masterverse_gar_female_04 = { entity = "portrait_human_female_04_entity" clothes_selector = "mammalian_human_female_clothes_01" hair_selector = "human_female_hair_04" greeting_sound = "human_female_greetings_01" character_textures = { "gfx/models/portraits/masterverse/gar_female_body_04.dds" } }
-	masterverse_gar_male_01 = {	entity = "portrait_human_male_01_entity" clothes_selector = "mammalian_human_male_clothes_01" hair_selector = "human_male_hair_02" greeting_sound = "human_male_greetings_03" character_textures = { "gfx/models/portraits/masterverse/gar_male_body_01.dds" } }
-	masterverse_gar_male_02 = {	entity = "portrait_human_male_02_entity" clothes_selector = "mammalian_human_male_clothes_01" hair_selector = "human_male_hair_01" greeting_sound = "human_male_greetings_04" character_textures = { "gfx/models/portraits/masterverse/gar_male_body_02.dds" } }
-	masterverse_gar_male_03 = {	entity = "portrait_human_male_03_entity" clothes_selector = "mammalian_human_male_clothes_01" hair_selector = "human_male_hair_03" greeting_sound = "human_male_greetings_05" character_textures = { "gfx/models/portraits/masterverse/gar_male_body_03.dds" } }
-	masterverse_gar_male_04 = {	entity = "portrait_human_male_04_entity" clothes_selector = "mammalian_human_male_clothes_01" hair_selector = "human_male_hair_05" greeting_sound = "human_male_greetings_01" character_textures = { "gfx/models/portraits/masterverse/gar_male_body_04.dds" } }
+	# MotU: Gar
+	#female
+    masterverse_gar_female_01 = {	entity = "portrait_human_female_entity"	clothes_selector = "new_human_female_clothes_01" hair_selector = "new_human_female_hair_01"	greeting_sound = "human_female_greetings_03"
+    	character_textures = {
+    		"gfx/models/portraits/masterverse/gar_female_body_01_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_01_light_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_01_green_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_01_blue_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_01_hazel_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_01_red_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_01_black_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_01_violet_eyes.dds"
+    	}
+    }
+    masterverse_gar_female_02 = {	entity = "portrait_human_female_entity"	clothes_selector = "new_human_female_clothes_01" hair_selector = "new_human_female_hair_01"	greeting_sound = "human_female_greetings_04"
+    	character_textures = {
+    		"gfx/models/portraits/masterverse/gar_female_body_02_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_02_light_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_02_green_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_02_blue_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_02_hazel_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_02_red_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_02_black_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_02_violet_eyes.dds"
+    	}
+    }
+    masterverse_gar_female_03 = {	entity = "portrait_human_female_entity"	clothes_selector = "new_human_female_clothes_01" hair_selector = "new_human_female_hair_01"	greeting_sound = "human_female_greetings_05"
+    	character_textures = {
+    		"gfx/models/portraits/masterverse/gar_female_body_03_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_03_light_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_03_green_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_03_blue_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_03_hazel_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_03_red_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_03_black_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_03_violet_eyes.dds"
+    	}
+    }
+    masterverse_gar_female_04 = {	entity = "portrait_human_female_entity"			clothes_selector = "new_human_female_clothes_01" 	hair_selector = "new_human_female_hair_01"	greeting_sound = "human_female_greetings_01"
+    	character_textures = {
+    		"gfx/models/portraits/masterverse/gar_female_body_04_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_04_light_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_04_green_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_04_blue_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_04_hazel_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_04_red_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_04_black_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_04_violet_eyes.dds"
+    	}
+    }
+    masterverse_gar_female_05 = {	entity = "portrait_human_female_entity"			clothes_selector = "new_human_female_clothes_01" 	hair_selector = "new_human_female_hair_01"	greeting_sound = "human_female_greetings_02"
+    	character_textures = {
+    		"gfx/models/portraits/masterverse/gar_female_body_05_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_05_light_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_05_green_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_05_blue_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_05_hazel_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_05_red_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_05_black_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_female_body_05_violet_eyes.dds"
+    	}
+    }
+    #male
+    masterverse_gar_male_01 = {	entity = "portrait_human_male_entity"	clothes_selector = "new_human_male_clothes_01" hair_selector = "new_human_male_hair_01"	greeting_sound = "human_male_greetings_03"
+    	character_textures = {
+    		"gfx/models/portraits/masterverse/gar_male_body_01_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_01_light_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_01_green_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_01_blue_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_01_hazel_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_01_red_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_01_black_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_01_violet_eyes.dds"
+    	}
+    }
+    masterverse_gar_male_02 = {	entity = "portrait_human_male_entity"	clothes_selector = "new_human_male_clothes_01" hair_selector = "new_human_male_hair_01"	greeting_sound = "human_male_greetings_04"
+    	character_textures = {
+    		"gfx/models/portraits/masterverse/gar_male_body_02_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_02_light_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_02_green_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_02_blue_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_02_hazel_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_02_red_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_02_black_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_02_violet_eyes.dds"
+    	}
+    }
+    masterverse_gar_male_03 = {	entity = "portrait_human_male_entity"	clothes_selector = "new_human_male_clothes_01" hair_selector = "new_human_male_hair_01"	greeting_sound =     "human_male_greetings_05"
+    	character_textures = {
+    		"gfx/models/portraits/masterverse/gar_male_body_03_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_03_light_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_03_green_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_03_blue_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_03_hazel_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_03_red_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_03_black_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_03_violet_eyes.dds"
+    	}
+    }
+    masterverse_gar_male_04 = {	entity = "portrait_human_male_entity"			clothes_selector = "new_human_male_clothes_01"	hair_selector = "new_human_male_hair_01"	greeting_sound = "human_male_greetings_01"
+    	character_textures = {
+    		"gfx/models/portraits/masterverse/gar_male_body_04_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_04_light_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_04_green_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_04_blue_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_04_hazel_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_04_red_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_04_black_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_04_violet_eyes.dds"
+    	}
+    }
+    masterverse_gar_male_05 = {	entity = "portrait_human_male_entity"			clothes_selector = "new_human_male_clothes_01"	hair_selector = "new_human_male_hair_01"	greeting_sound = "human_male_greetings_02"
+    	character_textures = {
+    		"gfx/models/portraits/masterverse/gar_male_body_05_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_05_light_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_05_green_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_05_blue_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_05_hazel_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_05_red_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_05_black_eyes.dds"
+    		"gfx/models/portraits/masterverse/gar_male_body_05_violet_eyes.dds"
+    	}
+    }
+    # MotU: Repton
     masterverse_repton_01 = { entity = "portrait_reptilian_04_entity" clothes_selector = "reptilian_slender_clothes_04" hair_selector = "no_texture" greeting_sound = "reptilian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/repton_01.dds" } }
     masterverse_repton_02 = { entity = "portrait_reptilian_04_entity" clothes_selector = "reptilian_slender_clothes_04" hair_selector = "no_texture" greeting_sound = "reptilian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/repton_02.dds" } }
     masterverse_repton_03 = { entity = "portrait_reptilian_04_entity" clothes_selector = "reptilian_slender_clothes_04" hair_selector = "no_texture" greeting_sound = "reptilian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/repton_03.dds" } }
@@ -57,9 +172,151 @@ portraits = {
     masterverse_selkie_03 = { entity = "portrait_mammalian_16_entity" clothes_selector = "mammalian_massive_clothes_01" hair_selector = "no_texture" greeting_sound = "mammalian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/selkie_03.dds" } }
     masterverse_selkie_04 = { entity = "portrait_mammalian_16_entity" clothes_selector = "mammalian_massive_clothes_01" hair_selector = "no_texture" greeting_sound = "mammalian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/selkie_04.dds" } }
     masterverse_selkie_05 = { entity = "portrait_mammalian_16_entity" clothes_selector = "mammalian_massive_clothes_01" hair_selector = "no_texture" greeting_sound = "mammalian_01_greetings" character_textures = { "gfx/models/portraits/masterverse/selkie_05.dds" } }
-    masterverse_hordes_01 = { entity = "portrait_human_male_01_entity" clothes_selector = "no_texture" hair_selector = "no_texture" greeting_sound = "humanoid_portrait_j_male" character_textures = { "gfx/models/portraits/masterverse/hordes_01.dds" } }
-    masterverse_hordes_02 = { entity = "humanoid_hp_07_entity" clothes_selector = "humanoid_hp_07_clothes" hair_selector = "no_texture" greeting_sound = "humanoid_portrait_j_male" character_textures = { "gfx/models/portraits/masterverse/hordes_02.dds" } }
-    masterverse_hordes_03 = { entity = "humanoid_hp_07_entity" clothes_selector = "humanoid_hp_07_clothes" hair_selector = "no_texture" greeting_sound = "humanoid_portrait_j_male" character_textures = { "gfx/models/portraits/masterverse/hordes_03.dds" } }
+    # MotU/PoP: Hordes
+    masterverse_hordes_ruler_01 = { entity = "portrait_human_male_01_entity" clothes_selector = "no_texture" hair_selector = "no_texture" greeting_sound = "humanoid_portrait_j_male" character_textures = { "gfx/models/portraits/masterverse/hordes_ruler_body_01.dds" } }
+    #female
+    masterverse_hordes_female_01 = { entity = "portrait_human_female_entity" clothes_selector = "new_human_female_clothes_01" hair_selector = "new_human_female_hair_01"	greeting_sound = "humanoid_portrait_j_female"
+    	character_textures = {
+    		"gfx/models/portraits/masterverse/hordes_female_body_01_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_01_light_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_01_green_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_01_blue_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_01_hazel_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_01_red_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_01_black_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_01_violet_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_01_silver_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_01_golden_eyes.dds"
+    	}
+    }
+    masterverse_hordes_female_02 = {	entity = "portrait_human_female_entity"	clothes_selector = "new_human_female_clothes_01" hair_selector = "new_human_female_hair_01"	greeting_sound = "humanoid_portrait_j_female"
+    	character_textures = {
+    		"gfx/models/portraits/masterverse/hordes_female_body_02_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_02_light_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_02_green_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_02_blue_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_02_hazel_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_02_red_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_02_black_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_02_violet_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_02_silver_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_02_golden_eyes.dds"
+    	}
+    }
+    masterverse_hordes_female_03 = {	entity = "portrait_human_female_entity"	clothes_selector = "new_human_female_clothes_01" hair_selector = "new_human_female_hair_01"	greeting_sound = "humanoid_portrait_j_female"
+    	character_textures = {
+    		"gfx/models/portraits/masterverse/hordes_female_body_03_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_03_light_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_03_green_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_03_blue_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_03_hazel_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_03_red_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_03_black_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_03_violet_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_03_silver_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_03_golden_eyes.dds"
+    	}
+    }
+    masterverse_hordes_female_04 = {	entity = "portrait_human_female_entity"			clothes_selector = "new_human_female_clothes_01" 	hair_selector = "new_human_female_hair_01"	greeting_sound = "humanoid_portrait_j_female"
+    	character_textures = {
+    		"gfx/models/portraits/masterverse/hordes_female_body_04_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_04_light_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_04_green_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_04_blue_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_04_hazel_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_04_red_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_04_black_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_04_violet_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_04_silver_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_04_golden_eyes.dds"
+    	}
+    }
+    masterverse_hordes_female_05 = {	entity = "portrait_human_female_entity"			clothes_selector = "new_human_female_clothes_01" 	hair_selector = "new_human_female_hair_01"	greeting_sound = "humanoid_portrait_j_female"
+    	character_textures = {
+    		"gfx/models/portraits/masterverse/hordes_female_body_05_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_05_light_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_05_green_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_05_blue_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_05_hazel_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_05_red_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_05_black_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_05_violet_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_05_silver_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_female_body_05_golden_eyes.dds"
+    	}
+    }
+
+    	#male
+    masterverse_hordes_male_01 = {	entity = "portrait_human_male_entity"	clothes_selector = "new_human_male_clothes_01" hair_selector = "new_human_male_hair_01"	greeting_sound = "humanoid_portrait_j_male"
+    	character_textures = {
+    		"gfx/models/portraits/masterverse/hordes_male_body_01_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_01_light_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_01_green_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_01_blue_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_01_hazel_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_01_red_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_01_black_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_01_violet_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_01_silver_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_01_golden_eyes.dds"
+    	}
+    }
+    masterverse_hordes_male_02 = {	entity = "portrait_human_male_entity"	clothes_selector = "new_human_male_clothes_01" hair_selector = "new_human_male_hair_01"	greeting_sound = "humanoid_portrait_j_male"
+    	character_textures = {
+    		"gfx/models/portraits/masterverse/hordes_male_body_02_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_02_light_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_02_green_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_02_blue_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_02_hazel_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_02_red_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_02_black_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_02_violet_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_02_silver_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_02_golden_eyes.dds"
+    	}
+    }
+    masterverse_hordes_male_03 = {	entity = "portrait_human_male_entity"	clothes_selector = "new_human_male_clothes_01" hair_selector = "new_human_male_hair_01"	greeting_sound = "humanoid_portrait_j_male"
+    	character_textures = {
+    		"gfx/models/portraits/masterverse/hordes_male_body_03_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_03_light_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_03_green_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_03_blue_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_03_hazel_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_03_red_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_03_black_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_03_violet_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_03_silver_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_03_golden_eyes.dds"
+    	}
+    }
+    masterverse_hordes_male_04 = {	entity = "portrait_human_male_entity"			clothes_selector = "new_human_male_clothes_01"	hair_selector = "new_human_male_hair_01"	greeting_sound = "humanoid_portrait_j_male"
+    	character_textures = {
+    		"gfx/models/portraits/masterverse/hordes_male_body_04_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_04_light_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_04_green_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_04_blue_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_04_hazel_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_04_red_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_04_black_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_04_violet_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_04_silver_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_04_golden_eyes.dds"
+    	}
+    }
+    masterverse_hordes_male_05 = {	entity = "portrait_human_male_entity"			clothes_selector = "new_human_male_clothes_01"	hair_selector = "new_human_male_hair_01"	greeting_sound = "humanoid_portrait_j_male"
+    	character_textures = {
+    		"gfx/models/portraits/masterverse/hordes_male_body_05_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_05_light_brown_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_05_green_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_05_blue_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_05_hazel_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_05_red_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_05_black_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_05_violet_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_05_silver_eyes.dds"
+    		"gfx/models/portraits/masterverse/hordes_male_body_05_golden_eyes.dds"
+    	}
+    }
 }
 
 portrait_groups = {
@@ -76,6 +333,7 @@ portrait_groups = {
                     masterverse_gar_male_01
                     masterverse_gar_male_03
                     masterverse_gar_male_04
+                    masterverse_gar_male_05
                 }
             }
             add = {
@@ -87,6 +345,7 @@ portrait_groups = {
                     masterverse_gar_female_02
                     masterverse_gar_female_03
                     masterverse_gar_female_04
+                    masterverse_gar_female_05
                 }
             }
         }
@@ -99,10 +358,12 @@ portrait_groups = {
                     masterverse_gar_female_02
                     masterverse_gar_female_03
                     masterverse_gar_female_04
+                    masterverse_gar_female_05
                     masterverse_gar_male_01
                     masterverse_gar_male_02
                     masterverse_gar_male_03
                     masterverse_gar_male_04
+                    masterverse_gar_male_05
                 }
             }
         }
@@ -115,10 +376,12 @@ portrait_groups = {
                     masterverse_gar_female_02
                     masterverse_gar_female_03
                     masterverse_gar_female_04
+                    masterverse_gar_female_05
                     masterverse_gar_male_01
                     masterverse_gar_male_02
                     masterverse_gar_male_03
                     masterverse_gar_male_04
+                    masterverse_gar_male_05
                 }
             }
         }
@@ -134,6 +397,7 @@ portrait_groups = {
                     masterverse_gar_female_02
                     masterverse_gar_female_03
                     masterverse_gar_female_04
+                    masterverse_gar_female_05
                 }
             }
             add = {
@@ -145,6 +409,7 @@ portrait_groups = {
                     masterverse_gar_male_02
                     masterverse_gar_male_03
                     masterverse_gar_male_04
+                    masterverse_gar_male_05
                 }
             }
         }
@@ -160,6 +425,7 @@ portrait_groups = {
                     masterverse_gar_female_02
                     masterverse_gar_female_03
                     masterverse_gar_female_04
+                    masterverse_gar_female_05
                 }
             }
             add = {
@@ -171,6 +437,7 @@ portrait_groups = {
                     masterverse_gar_male_02
                     masterverse_gar_male_03
                     masterverse_gar_male_04
+                    masterverse_gar_male_05
                 }
             }
         }
@@ -1115,14 +1382,18 @@ portrait_groups = {
     }
     # MotU Pt. 10: Hordes
 	masterverse_hordes = {
-        default = masterverse_hordes_01
+        default = masterverse_hordes_male_01
         game_setup = {
             add = {
                 trigger = {
                     ruler = { gender = male }
                 }
                 portraits = {
-                    masterverse_hordes_01
+                    masterverse_hordes_male_01
+                    masterverse_hordes_male_02
+                    masterverse_hordes_male_03
+                    masterverse_hordes_male_04
+                    masterverse_hordes_male_05
                 }
             }
             add = {
@@ -1130,7 +1401,11 @@ portrait_groups = {
                     ruler = { gender = female }
                 }
                 portraits = {
-                    masterverse_hordes_01
+                    masterverse_hordes_female_01
+                    masterverse_hordes_female_02
+                    masterverse_hordes_female_03
+                    masterverse_hordes_female_04
+                    masterverse_hordes_female_05
                 }
             }
         }
@@ -1139,7 +1414,16 @@ portrait_groups = {
         species = {
             add = {
                 portraits = {
-                    masterverse_hordes_01
+                    masterverse_hordes_female_01
+                    masterverse_hordes_female_02
+                    masterverse_hordes_female_03
+                    masterverse_hordes_female_04
+                    masterverse_hordes_female_05
+                    masterverse_hordes_male_01
+                    masterverse_hordes_male_02
+                    masterverse_hordes_male_03
+                    masterverse_hordes_male_04
+                    masterverse_hordes_male_05
                 }
             }
         }
@@ -1148,7 +1432,16 @@ portrait_groups = {
         pop = {
             add = {
                 portraits = {
-                    masterverse_hordes_01
+                    masterverse_hordes_female_01
+                    masterverse_hordes_female_02
+                    masterverse_hordes_female_03
+                    masterverse_hordes_female_04
+                    masterverse_hordes_female_05
+                    masterverse_hordes_male_01
+                    masterverse_hordes_male_02
+                    masterverse_hordes_male_03
+                    masterverse_hordes_male_04
+                    masterverse_hordes_male_05
                 }
             }
         }
@@ -1160,7 +1453,11 @@ portrait_groups = {
                     gender = female
                 }
                 portraits = {
-                    masterverse_hordes_01
+                    masterverse_hordes_female_01
+                    masterverse_hordes_female_02
+                    masterverse_hordes_female_03
+                    masterverse_hordes_female_04
+                    masterverse_hordes_female_05
                 }
             }
             add = {
@@ -1168,7 +1465,11 @@ portrait_groups = {
                     gender = male
                 }
                 portraits = {
-                    masterverse_hordes_01
+                    masterverse_hordes_male_01
+                    masterverse_hordes_male_02
+                    masterverse_hordes_male_03
+                    masterverse_hordes_male_04
+                    masterverse_hordes_male_05
                 }
             }
         }
@@ -1180,7 +1481,7 @@ portrait_groups = {
                     gender = female
                 }
                 portraits = {
-                    masterverse_hordes_01
+                    masterverse_hordes_ruler_01
                 }
             }
             add = {
@@ -1188,167 +1489,7 @@ portrait_groups = {
                     gender = male
                 }
                 portraits = {
-                    masterverse_hordes_01
-                }
-            }
-        }
-    }
-    # MotU Pt. 10: Hordes Test
-	masterverse_hordes_test_1 = {
-        default = masterverse_hordes_02
-        game_setup = {
-            add = {
-                trigger = {
-                    ruler = { gender = male }
-                }
-                portraits = {
-                    masterverse_hordes_02
-                }
-            }
-            add = {
-                trigger = {
-                    ruler = { gender = female }
-                }
-                portraits = {
-                    masterverse_hordes_02
-                }
-            }
-        }
-
-        #species scope
-        species = {
-            add = {
-                portraits = {
-                    masterverse_hordes_02
-                }
-            }
-        }
-
-        #pop scope
-        pop = {
-            add = {
-                portraits = {
-                    masterverse_hordes_02
-                }
-            }
-        }
-
-        #leader scope
-        leader = {
-            add = {
-                trigger = {
-                    gender = female
-                }
-                portraits = {
-                    masterverse_hordes_02
-                }
-            }
-            add = {
-                trigger = {
-                    gender = male
-                }
-                portraits = {
-                    masterverse_hordes_02
-                }
-            }
-        }
-
-        #leader scope
-        ruler = {
-            add = {
-                trigger = {
-                    gender = female
-                }
-                portraits = {
-                    masterverse_hordes_02
-                }
-            }
-            add = {
-                trigger = {
-                    gender = male
-                }
-                portraits = {
-                    masterverse_hordes_02
-                }
-            }
-        }
-    }
-    # MotU Pt. 10: Hordes Test
-	masterverse_hordes_test_2 = {
-        default = masterverse_hordes_03
-        game_setup = {
-            add = {
-                trigger = {
-                    ruler = { gender = male }
-                }
-                portraits = {
-                    masterverse_hordes_03
-                }
-            }
-            add = {
-                trigger = {
-                    ruler = { gender = female }
-                }
-                portraits = {
-                    masterverse_hordes_03
-                }
-            }
-        }
-
-        #species scope
-        species = {
-            add = {
-                portraits = {
-                    masterverse_hordes_03
-                }
-            }
-        }
-
-        #pop scope
-        pop = {
-            add = {
-                portraits = {
-                    masterverse_hordes_03
-                }
-            }
-        }
-
-        #leader scope
-        leader = {
-            add = {
-                trigger = {
-                    gender = female
-                }
-                portraits = {
-                    masterverse_hordes_03
-                }
-            }
-            add = {
-                trigger = {
-                    gender = male
-                }
-                portraits = {
-                    masterverse_hordes_03
-                }
-            }
-        }
-
-        #leader scope
-        ruler = {
-            add = {
-                trigger = {
-                    gender = female
-                }
-                portraits = {
-                    masterverse_hordes_03
-                }
-            }
-            add = {
-                trigger = {
-                    gender = male
-                }
-                portraits = {
-                    masterverse_hordes_03
+                    masterverse_hordes_ruler_01
                 }
             }
         }
