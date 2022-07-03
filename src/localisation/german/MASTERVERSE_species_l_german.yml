@@ -28,6 +28,13 @@ l_german:
  NAME_Eternia_Species_Widget_plural:0 "Widgets"
  
  ####################
+ # Horde
+ ####################
+ NAME_Horde_Species_Hordes:0 "Hordes"
+ NAME_Horde_Species_Hordes_plural:0 "Hordes"
+ NAME_Horde_Species_Hordes_adjective:0 "Hordes"
+ 
+ ####################
  # Trannis Species 
  ####################
  NAME_Eternia_Species_Trannisian:0 "Trannisianer"
