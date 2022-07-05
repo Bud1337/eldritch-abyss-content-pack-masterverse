@@ -657,7 +657,7 @@ country_event = {
 
 	immediate = {
 		from = {
-			add_trait = MASTERVERSE_leader_trait_ruler_evil_uprising
+			add_trait = MASTERVERSE_ruler_trait_immortal
 		}
 	}
 }

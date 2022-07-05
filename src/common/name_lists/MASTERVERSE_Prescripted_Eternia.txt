@@ -486,49 +486,6 @@ MASTERVERSE_PRESCRIPTED_ETERNIA_GAR = {
 		}
 	}
 
-	fleet_names = {
-		sequential_name = "$O$ Gar Fleet"
-	}
-
-	army_names = {
-
-		defense_army = {
-			sequential_name = "$O$ Gar Holy Guard"
-		}
-
-		assault_army = {
-			sequential_name = "$O$ Gar Division"
-		}
-
-		slave_army = {
-			sequential_name = "$O$ Gar Foreign Army"
-		}
-
-		clone_army = {
-			sequential_name = "$O$ Gar Clone Army"
-		}
-
-		robotic_army = {
-			sequential_name = "$O$ Gar Robotic Army"
-		}
-
-		android_army = {
-			sequential_name = "$O$ Gar Synthetic Army"
-		}
-
-		psionic_army = {
-			sequential_name = "$O$ Gar Force Commando"
-		}
-
-		xenomorph_army = {
-			sequential_name = "$O$ Gar Bio-Warfare Division"
-		}
-
-		gene_warrior_army = {
-			sequential_name = "$O$ Gar Bio-Engineered Squadron"
-		}
-	}
-
 	### CHARACTERS
 
 	character_names = {
@@ -606,49 +563,6 @@ MASTERVERSE_PRESCRIPTED_ETERNIA_QADIANS = {
 
 		military_station_large = {
 			"Naval Depot"
-		}
-	}
-
-	fleet_names = {
-		sequential_name = "$O$ Qadian Fleet"
-	}
-
-	army_names = {
-
-		defense_army = {
-			sequential_name = "$O$ Qadian Guard"
-		}
-
-		assault_army = {
-			sequential_name = "$O$ Qadian Division"
-		}
-
-		slave_army = {
-			sequential_name = "$O$ Qadian Foreign Army"
-		}
-
-		clone_army = {
-			sequential_name = "$O$ Qadian Clone Army"
-		}
-
-		robotic_army = {
-			sequential_name = "$O$ Qadian Robotic Army"
-		}
-
-		android_army = {
-			sequential_name = "$O$ Qadian Synthetic Army"
-		}
-
-		psionic_army = {
-			sequential_name = "$O$ Qadian Force Commando"
-		}
-
-		xenomorph_army = {
-			sequential_name = "$O$ Qadian Bio-Warfare Division"
-		}
-
-		gene_warrior_army = {
-			sequential_name = "$O$ Qadian Bio-Engineered Squadron"
 		}
 	}
 
@@ -730,49 +644,6 @@ MASTERVERSE_PRESCRIPTED_ETERNIA_AVIONIANS = {
 		}
 	}
 
-	fleet_names = {
-		sequential_name = "$O$ Avion Fleet"
-	}
-
-	army_names = {
-
-		defense_army = {
-			sequential_name = "$O$ Avion Guard"
-		}
-
-		assault_army = {
-			sequential_name = "$O$ Avion Division"
-		}
-
-		slave_army = {
-			sequential_name = "$O$ Avion Foreign Army"
-		}
-
-		clone_army = {
-			sequential_name = "$O$ Avion Clone Army"
-		}
-
-		robotic_army = {
-			sequential_name = "$O$ Avion Robotic Army"
-		}
-
-		android_army = {
-			sequential_name = "$O$ Avion Synthetic Army"
-		}
-
-		psionic_army = {
-			sequential_name = "$O$ Avion Force Commando"
-		}
-
-		xenomorph_army = {
-			sequential_name = "$O$ Avion Bio-Warfare Division"
-		}
-
-		gene_warrior_army = {
-			sequential_name = "$O$ Avion Bio-Engineered Squadron"
-		}
-	}
-
 	### CHARACTERS
 
 	character_names = {
@@ -848,49 +719,6 @@ MASTERVERSE_PRESCRIPTED_ETERNIA_ANDREENIDS = {
 
 		military_station_large = {
 			"Naval Depot"
-		}
-	}
-
-	fleet_names = {
-		sequential_name = "$O$ Andreenid Fleet"
-	}
-
-	army_names = {
-
-		defense_army = {
-			sequential_name = "$O$ Andreenid Guard"
-		}
-
-		assault_army = {
-			sequential_name = "$O$ Andreenid Division"
-		}
-
-		slave_army = {
-			sequential_name = "$O$ Andreenid Foreign Army"
-		}
-
-		clone_army = {
-			sequential_name = "$O$ Andreenid Clone Army"
-		}
-
-		robotic_army = {
-			sequential_name = "$O$ Andreenid Robotic Army"
-		}
-
-		android_army = {
-			sequential_name = "$O$ Andreenid Synthetic Army"
-		}
-
-		psionic_army = {
-			sequential_name = "$O$ Andreenid Force Commando"
-		}
-
-		xenomorph_army = {
-			sequential_name = "$O$ Andreenid Bio-Warfare Division"
-		}
-
-		gene_warrior_army = {
-			sequential_name = "$O$ Andreenid Bio-Engineered Squadron"
 		}
 	}
 
@@ -980,49 +808,6 @@ MASTERVERSE_PRESCRIPTED_ETERNIA_REPTONS = {
 		}
 	}
 
-	fleet_names = {
-		sequential_name = "$O$ Repton Fleet"
-	}
-
-	army_names = {
-
-		defense_army = {
-			sequential_name = "$O$ Repton Guard"
-		}
-
-		assault_army = {
-			sequential_name = "$O$ Repton Division"
-		}
-
-		slave_army = {
-			sequential_name = "$O$ Repton Foreign Army"
-		}
-
-		clone_army = {
-			sequential_name = "$O$ Repton Clone Army"
-		}
-
-		robotic_army = {
-			sequential_name = "$O$ Repton Robotic Army"
-		}
-
-		android_army = {
-			sequential_name = "$O$ Repton Synthetic Army"
-		}
-
-		psionic_army = {
-			sequential_name = "$O$ Repton Force Commando"
-		}
-
-		xenomorph_army = {
-			sequential_name = "$O$ Repton Bio-Warfare Division"
-		}
-
-		gene_warrior_army = {
-			sequential_name = "$O$ Repton Bio-Engineered Squadron"
-		}
-	}
-
 	### CHARACTERS
 
 	character_names = {
@@ -1090,49 +875,6 @@ MASTERVERSE_PRESCRIPTED_ETERNIA_AQUATICANS = {
 
 		military_station_large = {
 			"Naval Depot"
-		}
-	}
-
-	fleet_names = {
-		sequential_name = "$O$ Aquatican Fleet"
-	}
-
-	army_names = {
-
-		defense_army = {
-			sequential_name = "$O$ Aquatican Guard"
-		}
-
-		assault_army = {
-			sequential_name = "$O$ Aquatican Division"
-		}
-
-		slave_army = {
-			sequential_name = "$O$ Aquatican Foreign Army"
-		}
-
-		clone_army = {
-			sequential_name = "$O$ Aquatican Clone Army"
-		}
-
-		robotic_army = {
-			sequential_name = "$O$ Aquatican Robotic Army"
-		}
-
-		android_army = {
-			sequential_name = "$O$ Aquatican Synthetic Army"
-		}
-
-		psionic_army = {
-			sequential_name = "$O$ Aquatican Force Commando"
-		}
-
-		xenomorph_army = {
-			sequential_name = "$O$ Aquatican Bio-Warfare Division"
-		}
-
-		gene_warrior_army = {
-			sequential_name = "$O$ Aquatican Bio-Engineered Squadron"
 		}
 	}
 
@@ -1210,49 +952,6 @@ MASTERVERSE_PRESCRIPTED_ETERNIA_SPELEANS = {
 		}
 	}
 
-	fleet_names = {
-		sequential_name = "$O$ Spelean Fleet"
-	}
-
-	army_names = {
-
-		defense_army = {
-			sequential_name = "$O$ Spelean Guard"
-		}
-
-		assault_army = {
-			sequential_name = "$O$ Spelean Division"
-		}
-
-		slave_army = {
-			sequential_name = "$O$ Spelean Foreign Army"
-		}
-
-		clone_army = {
-			sequential_name = "$O$ Spelean Clone Army"
-		}
-
-		robotic_army = {
-			sequential_name = "$O$ Spelean Robotic Army"
-		}
-
-		android_army = {
-			sequential_name = "$O$ Spelean Synthetic Army"
-		}
-
-		psionic_army = {
-			sequential_name = "$O$ Spelean Force Commando"
-		}
-
-		xenomorph_army = {
-			sequential_name = "$O$ Spelean Bio-Warfare Division"
-		}
-
-		gene_warrior_army = {
-			sequential_name = "$O$ Spelean Bio-Engineered Squadron"
-		}
-	}
-
 	### CHARACTERS
 
 	character_names = {
@@ -1324,49 +1023,6 @@ MASTERVERSE_PRESCRIPTED_ETERNIA_CALIGARS = {
 
 		military_station_large = {
 			"Naval Depot"
-		}
-	}
-
-	fleet_names = {
-		sequential_name = "$O$ Caligar Fleet"
-	}
-
-	army_names = {
-
-		defense_army = {
-			sequential_name = "$O$ Caligar Guard"
-		}
-
-		assault_army = {
-			sequential_name = "$O$ Caligar Division"
-		}
-
-		slave_army = {
-			sequential_name = "$O$ Caligar Foreign Army"
-		}
-
-		clone_army = {
-			sequential_name = "$O$ Caligar Clone Army"
-		}
-
-		robotic_army = {
-			sequential_name = "$O$ Caligar Robotic Army"
-		}
-
-		android_army = {
-			sequential_name = "$O$ Caligar Synthetic Army"
-		}
-
-		psionic_army = {
-			sequential_name = "$O$ Caligar Force Commando"
-		}
-
-		xenomorph_army = {
-			sequential_name = "$O$ Caligar Bio-Warfare Division"
-		}
-
-		gene_warrior_army = {
-			sequential_name = "$O$ Caligar Bio-Engineered Squadron"
 		}
 	}
 
@@ -1444,49 +1100,6 @@ MASTERVERSE_PRESCRIPTED_ETERNIA_WIDGETS = {
 		}
 	}
 
-	fleet_names = {
-		sequential_name = "$O$ Widget Fleet"
-	}
-
-	army_names = {
-
-		defense_army = {
-			sequential_name = "$O$ Widget Guard"
-		}
-
-		assault_army = {
-			sequential_name = "$O$ Widget Division"
-		}
-
-		slave_army = {
-			sequential_name = "$O$ Widget Foreign Army"
-		}
-
-		clone_army = {
-			sequential_name = "$O$ Widget Clone Army"
-		}
-
-		robotic_army = {
-			sequential_name = "$O$ Widget Robotic Army"
-		}
-
-		android_army = {
-			sequential_name = "$O$ Widget Synthetic Army"
-		}
-
-		psionic_army = {
-			sequential_name = "$O$ Widget Force Commando"
-		}
-
-		xenomorph_army = {
-			sequential_name = "$O$ Widget Bio-Warfare Division"
-		}
-
-		gene_warrior_army = {
-			sequential_name = "$O$ Widget Bio-Engineered Squadron"
-		}
-	}
-
 	### CHARACTERS
 
 	character_names = {
@@ -1558,49 +1171,6 @@ MASTERVERSE_PRESCRIPTED_ETERNIA_KULATAKS = {
 
 		military_station_large = {
 			"Naval Depot"
-		}
-	}
-
-	fleet_names = {
-		sequential_name = "$O$ Kulatak Fleet"
-	}
-
-	army_names = {
-
-		defense_army = {
-			sequential_name = "$O$ Kulatak Guard"
-		}
-
-		assault_army = {
-			sequential_name = "$O$ Kulatak Division"
-		}
-
-		slave_army = {
-			sequential_name = "$O$ Kulatak Foreign Army"
-		}
-
-		clone_army = {
-			sequential_name = "$O$ Kulatak Clone Army"
-		}
-
-		robotic_army = {
-			sequential_name = "$O$ Kulatak Robotic Army"
-		}
-
-		android_army = {
-			sequential_name = "$O$ Kulatak Synthetic Army"
-		}
-
-		psionic_army = {
-			sequential_name = "$O$ Kulatak Force Commando"
-		}
-
-		xenomorph_army = {
-			sequential_name = "$O$ Kulatak Bio-Warfare Division"
-		}
-
-		gene_warrior_army = {
-			sequential_name = "$O$ Kulatak Bio-Engineered Squadron"
 		}
 	}
 
@@ -2075,49 +1645,6 @@ MASTERVERSE_PRESCRIPTED_ETHERIA_TWIGGETS = {
 		}
 	}
 
-	fleet_names = {
-		sequential_name = "$O$ Widget Fleet"
-	}
-
-	army_names = {
-
-		defense_army = {
-			sequential_name = "$O$ Twigget Guard"
-		}
-
-		assault_army = {
-			sequential_name = "$O$ Twigget Division"
-		}
-
-		slave_army = {
-			sequential_name = "$O$ Twigget Foreign Army"
-		}
-
-		clone_army = {
-			sequential_name = "$O$ Twigget Clone Army"
-		}
-
-		robotic_army = {
-			sequential_name = "$O$ Twigget Robotic Army"
-		}
-
-		android_army = {
-			sequential_name = "$O$ Twigget Synthetic Army"
-		}
-
-		psionic_army = {
-			sequential_name = "$O$ Twigget Force Commando"
-		}
-
-		xenomorph_army = {
-			sequential_name = "$O$ Twigget Bio-Warfare Division"
-		}
-
-		gene_warrior_army = {
-			sequential_name = "$O$ Twigget Bio-Engineered Squadron"
-		}
-	}
-
 	### CHARACTERS
 
 	character_names = {
@@ -2189,49 +1716,6 @@ MASTERVERSE_PRESCRIPTED_ETHERIA_TROLLS = {
 
 		military_station_large = {
 			"Naval Depot"
-		}
-	}
-
-	fleet_names = {
-		sequential_name = "$O$ Troll Fleet"
-	}
-
-	army_names = {
-
-		defense_army = {
-			sequential_name = "$O$ Troll Guard"
-		}
-
-		assault_army = {
-			sequential_name = "$O$ Troll Division"
-		}
-
-		slave_army = {
-			sequential_name = "$O$ Troll Foreign Army"
-		}
-
-		clone_army = {
-			sequential_name = "$O$ Troll Clone Army"
-		}
-
-		robotic_army = {
-			sequential_name = "$O$ Troll Robotic Army"
-		}
-
-		android_army = {
-			sequential_name = "$O$ Troll Synthetic Army"
-		}
-
-		psionic_army = {
-			sequential_name = "$O$ Troll Force Commando"
-		}
-
-		xenomorph_army = {
-			sequential_name = "$O$ Troll Bio-Warfare Division"
-		}
-
-		gene_warrior_army = {
-			sequential_name = "$O$ Troll Bio-Engineered Squadron"
 		}
 	}
 
@@ -2309,49 +1793,6 @@ MASTERVERSE_PRESCRIPTED_ETHERIA_KONSEALS = {
 		}
 	}
 
-	fleet_names = {
-		sequential_name = "$O$ Widget Fleet"
-	}
-
-	army_names = {
-
-		defense_army = {
-			sequential_name = "$O$ Twigget Guard"
-		}
-
-		assault_army = {
-			sequential_name = "$O$ Twigget Division"
-		}
-
-		slave_army = {
-			sequential_name = "$O$ Twigget Foreign Army"
-		}
-
-		clone_army = {
-			sequential_name = "$O$ Twigget Clone Army"
-		}
-
-		robotic_army = {
-			sequential_name = "$O$ Twigget Robotic Army"
-		}
-
-		android_army = {
-			sequential_name = "$O$ Twigget Synthetic Army"
-		}
-
-		psionic_army = {
-			sequential_name = "$O$ Twigget Force Commando"
-		}
-
-		xenomorph_army = {
-			sequential_name = "$O$ Twigget Bio-Warfare Division"
-		}
-
-		gene_warrior_army = {
-			sequential_name = "$O$ Twigget Bio-Engineered Squadron"
-		}
-	}
-
 	### CHARACTERS
 
 	character_names = {
@@ -2423,49 +1864,6 @@ MASTERVERSE_PRESCRIPTED_ETHERIA_SELKIES = {
 
 		military_station_large = {
 			"Naval Depot"
-		}
-	}
-
-	fleet_names = {
-		sequential_name = "$O$ Selkie Fleet"
-	}
-
-	army_names = {
-
-		defense_army = {
-			sequential_name = "$O$ Selkie Guard"
-		}
-
-		assault_army = {
-			sequential_name = "$O$ Selkie Division"
-		}
-
-		slave_army = {
-			sequential_name = "$O$ Selkie Foreign Army"
-		}
-
-		clone_army = {
-			sequential_name = "$O$ Selkie Clone Army"
-		}
-
-		robotic_army = {
-			sequential_name = "$O$ Selkie Robotic Army"
-		}
-
-		android_army = {
-			sequential_name = "$O$ Selkie Synthetic Army"
-		}
-
-		psionic_army = {
-			sequential_name = "$O$ Selkie Force Commando"
-		}
-
-		xenomorph_army = {
-			sequential_name = "$O$ Selkie Bio-Warfare Division"
-		}
-
-		gene_warrior_army = {
-			sequential_name = "$O$ Selkie Bio-Engineered Squadron"
 		}
 	}
 

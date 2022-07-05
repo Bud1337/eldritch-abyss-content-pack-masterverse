@@ -26,6 +26,7 @@ MASTERVERSE_generate_horde_empire = {
 			trait="trait_very_strong"
 			trait="trait_deviants"
 		}
+		homeworld = this
 		effect = { save_global_event_target_as = fallen_horde_species }
 	}
 	create_country = {
@@ -80,6 +81,12 @@ MASTERVERSE_generate_horde_empire = {
 			add_global_ship_design = "NAME_FE_Starbase"
 			save_global_event_target_as = fallen_empire_horde
 		}
+        #from = {
+        #    add_trait = MASTERVERSE_ruler_trait_immortal
+        #}
+	}
+	last_created_leader = {
+	    add_trait = MASTERVERSE_ruler_trait_immortal
 	}
 }
 

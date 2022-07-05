@@ -13,7 +13,7 @@
 #################################
 
 # Ruler evil Warriors
-MASTERVERSE_leader_trait_ruler_evil_uprising = {
+MASTERVERSE_ruler_trait_immortal = {
 	leader_trait = { ruler }
 	leader_class = { ruler }
 

@@ -35,8 +35,6 @@ MASTERVERSE = {
 		"masterverse_selkie"
 		"masterverse_skelcon"
 		"masterverse_hordes"
-		"masterverse_hordes_test_1"
-		"masterverse_hordes_test_2"
 	}
 
 	# These should not be used for randomly generated species
@@ -55,8 +53,6 @@ MASTERVERSE = {
 		"masterverse_skelcon"
 		"masterverse_hordes"
 		"masterverse_hordes_test"
-		"masterverse_hordes_test_1"
-		"masterverse_hordes_test_2"
 	}
 
 	graphical_culture = humanoid_01
