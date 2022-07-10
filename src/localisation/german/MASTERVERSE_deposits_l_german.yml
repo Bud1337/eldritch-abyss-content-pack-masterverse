@@ -101,9 +101,9 @@ l_german:
  d_trannis_gleedils_atelier:0 "Gleedils Atelier"
  d_trannis_gleedils_atelier_desc:0 "Ein altes Atelier, benannt nach dessen Erbauerin, das alle Tierarten zeigt, die während einer Umwelt-Katastrophe ausgestorben sind, dass sie nicht vergessen werden."
  # trannis blocker deposits
- d_trannis_dead_nature:0 "Tote Natur!"
+ d_trannis_dead_nature:0 "£blocker£ Tote Natur!"
  d_trannis_dead_nature_desc:0 "Hier hat die Industrialisierung zugeschlagen und nicht mehr viel von der üppigen Natur übrig gelassen. Eine Schande!"
- d_trannis_plundors_factory:0 "Plundor Inc."
+ d_trannis_plundors_factory:0 "£blocker£ Plundor Inc."
  d_trannis_plundors_factory_desc:0 "\"Plundor Inc.\" steht auf einem Schild an diesem Moloch von einem Gebäude. Sie scheint uralt zu sein und auf Überresten einer alten Fabrik zu stehen. Keine Leute, aber dennoch Betrieb."
  # zal-kron deposits
  d_zalkron_bountiful_plains:0 "Fruchtbare Ebenen"
