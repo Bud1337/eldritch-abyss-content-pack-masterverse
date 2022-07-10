@@ -87,6 +87,8 @@ MASTERVERSE_generate_horde_empire = {
 	}
 	last_created_leader = {
 	    add_trait = MASTERVERSE_ruler_trait_immortal
+	    portrait = masterverse_hordes_ruler_01
+	    name = "PRESCRIPTED_ruler_name_TheHordes"
 	}
 }
 

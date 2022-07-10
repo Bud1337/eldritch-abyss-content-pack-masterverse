@@ -1412,18 +1412,19 @@ portrait_groups = {
 
         #species scope
         species = {
+#            add = {
+#                trigger = {
+#                    event_target:contact_empire = { has_country_flag = masterverse_hordes }
+#                    owner = { has_country_flag = masterverse_hordes }
+#                }
+#                portraits = {
+#                    masterverse_hordes_ruler_01
+#                }
+#            }
             add = {
-                trigger = {
-                    event_target:contact_empire = { has_country_flag = masterverse_hordes }
-                }
-                portraits = {
-                    masterverse_hordes_ruler_01
-                }
-            }
-            add = {
-                trigger = {
-                    event_target:contact_empire = { NOT = { has_country_flag = masterverse_hordes } }
-                }
+#                trigger = {
+#                    event_target:contact_empire = { NOT = { has_country_flag = masterverse_hordes } }
+#                }
                 portraits = {
                     masterverse_hordes_female_01
                     masterverse_hordes_female_02
