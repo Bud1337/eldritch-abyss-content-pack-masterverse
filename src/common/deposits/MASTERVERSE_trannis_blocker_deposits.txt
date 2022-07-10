@@ -72,7 +72,7 @@ d_trannis_plundors_factory = {
 	planet_modifier = {
 		pop_happiness = -0.5
 		planet_jobs_unity_produces_mult = -0.5
-		planet_max_districts_add = -1
+		planet_max_districts_add = -2
 	}
 
 	use_weights_for_blocker_swap_types = yes
