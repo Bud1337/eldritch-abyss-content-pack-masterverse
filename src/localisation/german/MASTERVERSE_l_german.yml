@@ -31,3 +31,8 @@ l_german:
  #####################################
  tech_eternia_photanium_alloys:0 "Photanium-Legierungen"
  tech_eternia_photanium_alloys_desc:0 "Die Verwendung von Photanium-Legierungen verbessert die Hüllen unserer Schiffe."
+  
+ #####################################
+ # Technology
+ #####################################
+ MASTERVERSE_ruler_trait_immortal:0 "$LEADER_IMMORTAL$"

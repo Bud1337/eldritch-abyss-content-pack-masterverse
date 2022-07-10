@@ -100,6 +100,7 @@ l_german:
  d_trannis_peaceful_animals_desc:0 "Die Tierwelt von Trannis ist weitgehend friedlich und freundlich und leistet einen Beitrag dazu, dass die Welt einem Paradies gleichen könnte."
  d_trannis_gleedils_atelier:0 "Gleedils Atelier"
  d_trannis_gleedils_atelier_desc:0 "Ein altes Atelier, benannt nach dessen Erbauerin, das alle Tierarten zeigt, die während einer Umwelt-Katastrophe ausgestorben sind, dass sie nicht vergessen werden."
+ # trannis blocker deposits
  d_trannis_dead_nature:0 "Tote Natur!"
  d_trannis_dead_nature_desc:0 "Hier hat die Industrialisierung zugeschlagen und nicht mehr viel von der üppigen Natur übrig gelassen. Eine Schande!"
  d_trannis_plundors_factory:0 "Plundor Inc."
