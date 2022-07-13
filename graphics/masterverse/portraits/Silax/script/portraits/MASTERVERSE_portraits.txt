@@ -1,0 +1,195 @@
+##############################################################
+###	PORTRAITS SETTINGS
+###
+### Which portraits are used is set in
+### common\species_classes\00_species_classes.txt
+###
+###	This file configures how portraits and planet backgrounds are built.
+###	Default position orientation is lower left.
+##############################################################
+
+portraits = {
+	# Silaxian
+	#female
+	masterverse_silaxian_female_01 = {	entity = "portrait_human_female_entity"	clothes_selector = "new_human_female_clothes_01" hair_selector = "masterverse_silaxian_female_hair_01"	greeting_sound = "human_female_greetings_03"
+        character_textures = {
+            "gfx/models/portraits/masterverse/silaxian_female_body_01_brown_eyes.dds"
+            "gfx/models/portraits/masterverse/silaxian_female_body_01_light_brown_eyes.dds"
+            "gfx/models/portraits/masterverse/silaxian_female_body_01_green_eyes.dds"
+            "gfx/models/portraits/masterverse/silaxian_female_body_01_blue_eyes.dds"
+            "gfx/models/portraits/masterverse/silaxian_female_body_01_hazel_eyes.dds"
+        }
+    }
+	masterverse_silaxian_female_02 = {	entity = "portrait_human_female_entity"	clothes_selector = "new_human_female_clothes_01" hair_selector = "masterverse_silaxian_female_hair_01"	greeting_sound = "human_female_greetings_04"
+        character_textures = {
+            "gfx/models/portraits/masterverse/silaxian_female_body_02_brown_eyes.dds"
+            "gfx/models/portraits/masterverse/silaxian_female_body_02_light_brown_eyes.dds"
+            "gfx/models/portraits/masterverse/silaxian_female_body_02_green_eyes.dds"
+            "gfx/models/portraits/masterverse/silaxian_female_body_02_blue_eyes.dds"
+            "gfx/models/portraits/masterverse/silaxian_female_body_02_hazel_eyes.dds"
+        }
+    }
+	#male
+	masterverse_silaxian_male_01 = {	entity = "portrait_human_male_entity"	clothes_selector = "new_human_male_clothes_01" hair_selector = "masterverse_silaxian_male_hair_01"	greeting_sound = "human_male_greetings_03"
+        character_textures = {
+            "gfx/models/portraits/masterverse/silaxian_male_body_01_brown_eyes.dds"
+            "gfx/models/portraits/masterverse/silaxian_male_body_01_light_brown_eyes.dds"
+            "gfx/models/portraits/masterverse/silaxian_male_body_01_green_eyes.dds"
+            "gfx/models/portraits/masterverse/silaxian_male_body_01_blue_eyes.dds"
+            "gfx/models/portraits/masterverse/silaxian_male_body_01_hazel_eyes.dds"
+        }
+    }
+	masterverse_silaxian_male_02 = {	entity = "portrait_human_male_entity"	clothes_selector = "new_human_male_clothes_01" hair_selector = "masterverse_silaxian_male_hair_01"	greeting_sound = "human_male_greetings_04"
+        character_textures = {
+            "gfx/models/portraits/masterverse/silaxian_male_body_02_brown_eyes.dds"
+            "gfx/models/portraits/masterverse/silaxian_male_body_02_light_brown_eyes.dds"
+            "gfx/models/portraits/masterverse/silaxian_male_body_02_green_eyes.dds"
+            "gfx/models/portraits/masterverse/silaxian_male_body_02_blue_eyes.dds"
+            "gfx/models/portraits/masterverse/silaxian_male_body_02_hazel_eyes.dds"
+        }
+    }
+}
+
+portrait_groups = {
+	masterverse_silaxian = {
+		default = masterverse_silaxian_male_01
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = male
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+					masterverse_silaxian_male_01
+					masterverse_silaxian_male_02
+				}
+			}
+			add = {
+				trigger = {
+					ruler = {
+						OR = {
+							gender = female
+							gender = indeterminable
+						}
+					}
+				}
+				portraits = {
+					masterverse_silaxian_female_01
+					masterverse_silaxian_female_02
+				}
+			}
+			#set = {
+			#	trigger = { ... }
+			#	portraits = { ... }
+			#	#using "set =" instead of "add" will first clear any portraits already added
+			#}
+		}
+
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+					masterverse_silaxian_female_01
+					masterverse_silaxian_female_02
+				}
+			}
+			add = {
+				trigger = {
+					exists = species
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+					masterverse_silaxian_male_01
+					masterverse_silaxian_male_02
+				}
+			}
+		}
+
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = male } }
+				}
+				portraits = {
+					masterverse_silaxian_female_01
+					masterverse_silaxian_female_02
+				}
+			}
+			add = {
+				trigger = {
+					NOT = { species = { species_gender = female } }
+				}
+				portraits = {
+					masterverse_silaxian_male_01
+					masterverse_silaxian_male_02
+				}
+			}
+		}
+
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+					masterverse_silaxian_female_01
+					masterverse_silaxian_female_02
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+					masterverse_silaxian_male_01
+					masterverse_silaxian_male_02
+				}
+			}
+		}
+
+
+		#leader scope
+		ruler = {
+			add = {
+				trigger = {
+					OR = {
+						gender = female
+						gender = indeterminable
+					}
+				}
+				portraits = {
+					masterverse_silaxian_female_01
+					masterverse_silaxian_female_02
+				}
+			}
+			add = {
+				trigger = {
+					OR = {
+						gender = male
+						gender = indeterminable
+					}
+				}
+				portraits = {
+					masterverse_silaxian_male_01
+					masterverse_silaxian_male_02
+				}
+			}
+		}
+	}
+}

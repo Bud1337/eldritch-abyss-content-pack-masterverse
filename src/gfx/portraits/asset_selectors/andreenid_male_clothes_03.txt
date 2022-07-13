@@ -1,39 +1,39 @@
 # This is a template which multiple species can use. 
 
 andreenid_male_clothes_03 = {
-	default = "gfx/models/portraits/masterverse/andreenid_slender_outfit_03.dds"
+	default = "gfx/models/portraits/masterverse/clothes/andreenid_slender_outfit_03.dds"
 	
 	game_setup = {
-		default = "gfx/models/portraits/masterverse/andreenid_slender_outfit_03.dds"
+		default = "gfx/models/portraits/masterverse/clothes/andreenid_slender_outfit_03.dds"
 		
 		random = {
 			trigger = { always = no }
 			list = {
-				"gfx/models/portraits/masterverse/andreenid_slender_outfit_03.dds"
+				"gfx/models/portraits/masterverse/clothes/andreenid_slender_outfit_03.dds"
 			}
 		}
 	}
 	
 	#species scope
 	species = { #generic portrait for a species
-		default = "gfx/models/portraits/masterverse/andreenid_slender_outfit_03.dds"
+		default = "gfx/models/portraits/masterverse/clothes/andreenid_slender_outfit_03.dds"
 	}
 	
 	#pop scope
 	pop = {
-		default = "gfx/models/portraits/masterverse/andreenid_slender_outfit_03.dds"
+		default = "gfx/models/portraits/masterverse/clothes/andreenid_slender_outfit_03.dds"
 	}
 	#leader scope
 	leader = { #scientists, generals, admirals, governor
-		"gfx/models/portraits/masterverse/andreenid_slender_outfit_03.dds" = { leader_class = scientist }
-		"gfx/models/portraits/masterverse/andreenid_slender_outfit_03.dds" = { leader_class = general }
-		"gfx/models/portraits/masterverse/andreenid_slender_outfit_03.dds" = { leader_class = admiral }
-		"gfx/models/portraits/masterverse/andreenid_slender_outfit_03.dds" = { leader_class = governor }
-		"gfx/models/portraits/masterverse/andreenid_slender_outfit_03.dds" = { leader_class = ruler }
+		"gfx/models/portraits/masterverse/clothes/andreenid_slender_outfit_03.dds" = { leader_class = scientist }
+		"gfx/models/portraits/masterverse/clothes/andreenid_slender_outfit_03.dds" = { leader_class = general }
+		"gfx/models/portraits/masterverse/clothes/andreenid_slender_outfit_03.dds" = { leader_class = admiral }
+		"gfx/models/portraits/masterverse/clothes/andreenid_slender_outfit_03.dds" = { leader_class = governor }
+		"gfx/models/portraits/masterverse/clothes/andreenid_slender_outfit_03.dds" = { leader_class = ruler }
 	}
 
 	#leader scope 
 	ruler = { #for rulers
-		default = "gfx/models/portraits/masterverse/andreenid_slender_outfit_03.dds"
+		default = "gfx/models/portraits/masterverse/clothes/andreenid_slender_outfit_03.dds"
 	}
 }

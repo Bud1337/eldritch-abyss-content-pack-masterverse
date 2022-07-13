@@ -1,39 +1,39 @@
 # This is a template which multiple species can use. 
 
 skelcon_clothes_skeletor = {
-	default = "gfx/models/portraits/masterverse/skelcon_outfit_skeletor.dds"
+	default = "gfx/models/portraits/masterverse/clothes/skelcon_outfit_skeletor.dds"
 	
 	game_setup = {
-		default = "gfx/models/portraits/masterverse/skelcon_outfit_skeletor.dds"
+		default = "gfx/models/portraits/masterverse/clothes/skelcon_outfit_skeletor.dds"
 		
 		random = {
 			trigger = { always = no }
 			list = {
-				"gfx/models/portraits/masterverse/skelcon_outfit_skeletor.dds"
+				"gfx/models/portraits/masterverse/clothes/skelcon_outfit_skeletor.dds"
 			}
 		}
 	}
 	
 	#species scope
 	species = { #generic portrait for a species
-		default = "gfx/models/portraits/masterverse/skelcon_outfit_skeletor.dds"
+		default = "gfx/models/portraits/masterverse/clothes/skelcon_outfit_skeletor.dds"
 	}
 	
 	#pop scope
 	pop = {
-		default = "gfx/models/portraits/masterverse/skelcon_outfit_skeletor.dds"
+		default = "gfx/models/portraits/masterverse/clothes/skelcon_outfit_skeletor.dds"
 	}
 	#leader scope
 	leader = { #scientists, generals, admirals, governor
-		"gfx/models/portraits/masterverse/skelcon_outfit_skeletor.dds" = { leader_class = scientist }
-		"gfx/models/portraits/masterverse/skelcon_outfit_skeletor.dds" = { leader_class = general }
-		"gfx/models/portraits/masterverse/skelcon_outfit_skeletor.dds" = { leader_class = admiral }
-		"gfx/models/portraits/masterverse/skelcon_outfit_skeletor.dds" = { leader_class = governor }
-		"gfx/models/portraits/masterverse/skelcon_outfit_skeletor.dds" = { leader_class = ruler }
+		"gfx/models/portraits/masterverse/clothes/skelcon_outfit_skeletor.dds" = { leader_class = scientist }
+		"gfx/models/portraits/masterverse/clothes/skelcon_outfit_skeletor.dds" = { leader_class = general }
+		"gfx/models/portraits/masterverse/clothes/skelcon_outfit_skeletor.dds" = { leader_class = admiral }
+		"gfx/models/portraits/masterverse/clothes/skelcon_outfit_skeletor.dds" = { leader_class = governor }
+		"gfx/models/portraits/masterverse/clothes/skelcon_outfit_skeletor.dds" = { leader_class = ruler }
 	}
 
 	#leader scope 
 	ruler = { #for rulers
-		default = "gfx/models/portraits/masterverse/skelcon_outfit_skeletor.dds"
+		default = "gfx/models/portraits/masterverse/clothes/skelcon_outfit_skeletor.dds"
 	}
 }
