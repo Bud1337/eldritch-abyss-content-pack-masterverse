@@ -79,3 +79,9 @@ l_german:
  ####################
  NAME_Etheria_Species_ZalKron:0 "Zal-Kron"
  NAME_Etheria_Species_ZalKron_plural:0 "Zal-Kron"
+  
+ ####################
+ # Silax Species 
+ ####################
+ NAME_Etheria_Species_Silaxian:0 "Silaxianer"
+ NAME_Etheria_Species_Silaxian_plural:0 "Silaxianer"
