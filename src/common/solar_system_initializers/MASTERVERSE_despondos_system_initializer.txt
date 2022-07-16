@@ -149,12 +149,12 @@ MASTERVERSE_despondos_system = {
 	}
 	
 	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = 3 }
+		hyperlane_jumps = { min = 1 max = 2 }
 		initializer = "MASTERVERSE_despondos_system_neighbor"
 	}
 	
 	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = 3 } 
+		hyperlane_jumps = { min = 1 max = 2 }
 		initializer = "MASTERVERSE_despondos_neighbor_gluubux_system"
 	}
 	
@@ -167,7 +167,7 @@ MASTERVERSE_despondos_system = {
 		hyperlane_jumps = { min = 1 max = 3 }
 		initializer = "MASTERVERSE_despondos_neighbor_phelibio_system"
 	}
-	
+
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = 3 }
 		initializer = "MASTERVERSE_despondos_system_neighbor"
@@ -182,7 +182,7 @@ MASTERVERSE_despondos_neighbor_krytan_system = {
 	name = "NAME_Krytan"
 
 	init_effect = {
-		every_neighbor_system = { set_star_flag = empire_cluster }
+		every_neighbor_system = { set_star_flag = fe_horde_cluster }
 	}
 
 	planet = {
@@ -255,9 +255,9 @@ MASTERVERSE_despondos_neighbor_jungaron_system = {
 
 	init_effect = {
 		every_neighbor_system = {
-			set_star_flag = empire_cluster
+			set_star_flag = fe_horde_cluster
 			every_neighbor_system = {
-				set_star_flag = empire_cluster
+				set_star_flag = fe_horde_cluster
 			}
 		}
 	}
@@ -386,9 +386,9 @@ MASTERVERSE_despondos_neighbor_gluubux_system = {
 
 	init_effect = {
 		every_neighbor_system = {
-			set_star_flag = empire_cluster
+			set_star_flag = fe_horde_cluster
 			every_neighbor_system = {
-				set_star_flag = empire_cluster
+				set_star_flag = fe_horde_cluster
 			}
 		}
 
@@ -495,9 +495,9 @@ MASTERVERSE_despondos_neighbor_phelibio_system = {
 
 	init_effect = {
 		every_neighbor_system = {
-			set_star_flag = empire_cluster
+			set_star_flag = fe_horde_cluster
 			every_neighbor_system = {
-				set_star_flag = empire_cluster
+				set_star_flag = fe_horde_cluster
 			}
 		}
 
@@ -630,15 +630,8 @@ MASTERVERSE_despondos_system_neighbor = {
 
 	init_effect = {
 		create_starbase = {
-			size = "starbase_citadel"
+			size = "starbase_outpost"
 			owner = event_target:fallen_empire_horde
-
-			module = "shipyard"
-			module = "shipyard"
-			module = "gun_battery"
-			module = "gun_battery"
-			module = "missile_battery"
-			module = "missile_battery"
 		}
 	}
 }
