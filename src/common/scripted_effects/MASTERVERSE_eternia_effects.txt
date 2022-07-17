@@ -239,7 +239,7 @@ MASTERVERSE_eternia_add_deposit_snake_mountain = {
     event_target:planet_eternia = {
         add_deposit = d_eternia_snake_mountain
         set_planet_flag = eternia_snake_mountain 
-		create_archaeological_site = MASTERVERSE_eternia_arc_site_3
+		# create_archaeological_site = MASTERVERSE_eternia_arc_site_3
     }
 }
 
