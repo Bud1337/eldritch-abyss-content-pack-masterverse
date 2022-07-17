@@ -1,0 +1,575 @@
+
+create_fallen_empire_platform = {
+	if = {
+		limit = {
+			owner = { has_authority = auth_machine_intelligence }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Sigma"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_materialist }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Cloaker"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_spiritualist }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Faith"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_xenophobe }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Devastator"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_xenophile }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Watcher"
+			graphical_culture = owner
+		}
+	}
+}
+
+create_fallen_empire_colossus = {
+	if = {
+		limit = {
+			owner = { has_authority = auth_machine_intelligence }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Omega"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_materialist }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Enforcer"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_spiritualist }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Cleanser"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_xenophobe }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Reaper"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_xenophile }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Adjuster"
+			graphical_culture = owner
+		}
+	}
+}
+
+create_fallen_empire_titan = {
+	if = {
+		limit = {
+			owner = { has_authority = auth_machine_intelligence }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Alpha"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_materialist }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Savant"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_spiritualist }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Eternal"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_xenophobe }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Imperium"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_xenophile }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Keeper"
+			graphical_culture = owner
+		}
+	}
+}
+
+create_fallen_empire_large_ship = {
+	if = {
+		limit = {
+			owner = { has_authority = auth_machine_intelligence }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Beta"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_materialist }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Scholar"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_spiritualist }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Avatar"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_xenophobe }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Supremacy"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_xenophile }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Custodian"
+			graphical_culture = owner
+		}
+	}
+}
+
+create_fallen_empire_small_ship = {
+	if = {
+		limit = {
+			owner = { has_authority = auth_machine_intelligence }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Gamma"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_materialist }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Sage"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_spiritualist }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Zealot"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_xenophobe }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Glory"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_xenophile }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Warden"
+			graphical_culture = owner
+		}
+	}
+}
+
+create_fallen_empire_construction_ship = {
+	if = {
+		limit = {
+			owner = { has_authority = auth_machine_intelligence }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Theta"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_materialist }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Librarian"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_spiritualist }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Penitent"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_xenophobe }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Servitor"
+			graphical_culture = owner
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_ethic = ethic_fanatic_xenophile }
+		}
+		create_ship = {
+			name = random
+			design = "NAME_Builder"
+			graphical_culture = owner
+		}
+	}
+}
+
+
+create_fallen_empire_reinforcements = {
+	create_fleet = {
+		effect = {
+			set_owner = prev.owner
+			while = {
+				count = 4
+				create_fallen_empire_large_ship = yes
+			}
+			while = {
+				count = 8
+				create_fallen_empire_small_ship = yes
+			}
+			random_list = {
+				25 = {
+					set_location = {
+						target = prev
+						distance = 30
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 45
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 60
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 75
+						angle = random
+					}
+				}
+			}
+		}
+	}
+}
+
+
+create_fallen_empire_fleet = {
+	owner = {
+		create_leader = {
+			class = admiral
+			species = owner_main_species
+			name = random
+			skill = 10
+			leader_age_min = 25
+			leader_age_max = 45
+			traits = {
+				trait = random_trait
+				trait = random_trait
+				trait = random_trait
+			}
+		}
+	}
+	create_fleet = {
+		effect = {
+			set_owner = prev.owner
+			while = {
+				count = 8
+				create_fallen_empire_large_ship = yes
+			}
+			while = {
+				count = 18
+				create_fallen_empire_small_ship = yes
+			}
+			random_list = {
+				25 = {
+					set_location = {
+						target = prev
+						distance = 30
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 45
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 60
+						angle = random
+					}
+				}
+				25 = {
+					set_location = {
+						target = prev
+						distance = 75
+						angle = random
+					}
+				}
+			}
+		}
+	}
+	last_created_fleet = { assign_leader = last_created_leader }
+}
+
+create_fallen_empire_starting_navy = {
+	create_fallen_empire_fleet = yes
+	create_fallen_empire_fleet = yes
+	random = {
+		chance = 33
+		create_fallen_empire_fleet = yes
+	}
+	if = {
+		limit = {
+			host_has_dlc = "Apocalypse"
+		}
+		random = {
+			chance = 10
+			create_fleet = {
+				effect = {
+					set_owner = prev.owner
+					create_fallen_empire_colossus = yes
+					set_location = {
+						target = prev
+						distance = 30
+						angle = random
+					}
+				}
+			}
+		}
+	}
+	random = {
+		chance = 25
+		create_fleet = {
+			effect = {
+				set_owner = prev.owner
+				create_fallen_empire_titan = yes
+				set_location = {
+					target = prev
+					distance = 20
+					angle = random
+				}
+			}
+		}
+	}
+	create_fleet = {
+		effect = {
+			set_owner = prev.owner
+			create_fallen_empire_construction_ship = yes
+			set_location = {
+				target = prev
+				distance = 60
+				angle = random
+			}
+		}
+	}
+	create_fleet = {
+		effect = {
+			set_owner = prev.owner
+			create_fallen_empire_construction_ship = yes
+			set_location = {
+				target = prev
+				distance = 80
+				angle = random
+			}
+		}
+	}
+	create_fleet = {
+		effect = {
+			set_owner = prev.owner
+			create_fallen_empire_construction_ship = yes
+			set_location = {
+				target = prev
+				distance = 100
+				angle = random
+			}
+		}
+	}
+}
+
+
+add_awakened_fallen_empire_fleet = {
+	country_event = { id = fallen_empires.13 }
+	if = {
+		limit = {
+			any_country = {
+				is_country_type = default
+				OR = {
+					fleet_power > 120000
+					AND = {
+						has_federation = yes
+						federation = {
+							fleet_power > 150000
+						}
+					}
+					AND = {
+						fleet_power > 75000
+						any_country = {
+							has_defensive_pact = prev
+							fleet_power > 75000
+						}
+					}
+				}
+			}
+		}
+		country_event = { id = fallen_empires.13 }
+	}
+	if = {
+		limit = {
+			any_country = {
+				is_country_type = default
+				OR = {
+					fleet_power > 200000
+					AND = {
+						has_federation = yes
+						federation = {
+							fleet_power > 200000
+						}
+					}
+					AND = {
+						fleet_power > 120000
+						any_country = {
+							has_defensive_pact = prev
+							fleet_power > 120000
+						}
+					}
+				}
+			}
+		}
+		country_event = { id = fallen_empires.13 }
+	}
+}
+
+add_awakened_fallen_empire_resources = {
+	# Changing country type resets resources, so give them full stores
+	add_resource = { minerals = 50000 }
+	add_resource = { energy = 50000 }
+	add_resource = { food = 10000 }
+	add_resource = { influence = 1000 }
+	add_resource = { alloys = 20000 }
+	add_resource = { consumer_goods = 20000 }
+	add_resource = { alloys = 20000 }
+	add_resource = { exotic_gases = 10000 }
+	add_resource = { volatile_motes = 10000 }
+	add_resource = { rare_crystals = 10000 }
+	add_resource = { sr_dark_matter = 10000 }
+	if = {
+		limit = { is_fallen_empire_spiritualist = yes }
+		add_resource = { sr_zro = 10000 }
+	}
+}
