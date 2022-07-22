@@ -124,7 +124,7 @@ MASTERVERSE_generate_horde_planet_horde_world = {
 			species = owner_main_species
 		}
 	}
-	create_fallen_empire_starting_navy = yes
+	create_horde_empire_starting_navy = yes
 	event_target:fallen_empire_horde = {
 		set_policy = {
 			policy = artificial_intelligence_policy
@@ -137,8 +137,8 @@ MASTERVERSE_generate_horde_planet_horde_world = {
 			cooldown = no
 		}
 	}
-	root = { create_fe_servant_robots = yes }
-	# create_fe_servant_robots = yes
+	# root = { create_fe_servant_robots = yes }
+	create_fe_servant_robots = yes
 	last_created_species = { save_event_target_as = fe_servants }
 	while = {
 		count = 94
