@@ -1,4 +1,4 @@
-name="Stellaris: Eldritch Abyss - Masterverse Content Pack"
+name="Stellaris: Eldritch Abyss - Galaxy Of Power Content Pack"
 tags={
 	"Species"
 	"Graphics"
