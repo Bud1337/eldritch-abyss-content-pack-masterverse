@@ -23,7 +23,7 @@ EtherianAlliance={
 		trait = "trait_wasteful"
 	}
 
-	room = "default_room"
+	room = "gilded_room"
 
 	authority = "auth_imperial"
 	civics = { "civic_aristocratic_elite" "civic_philosopher_king" }
@@ -42,7 +42,7 @@ EtherianAlliance={
 	system_name = "NAME_Ethor"
 
 	graphical_culture = "avian_01"
-	city_graphical_culture = "reptilian_01"
+	city_graphical_culture = "avian_01"
 
 	empire_flag = {
 		icon={

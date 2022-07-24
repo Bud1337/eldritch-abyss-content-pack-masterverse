@@ -23,7 +23,7 @@ EternianKingdoms = {
 	    trait = trait_unruly
     }
 
-	room = "personality_decadent_hierarchy_room"
+	room = "personality_democratic_crusaders_room"
 
 	authority = "auth_imperial"
 	civics = { "civic_aristocratic_elite" "civic_memorialist" }
