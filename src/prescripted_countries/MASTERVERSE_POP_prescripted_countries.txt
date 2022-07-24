@@ -51,13 +51,13 @@ EtherianAlliance={
 		}
 		background={
 			category="backgrounds"
-			file="circle.dds"
+			file="flag_BG_13.dds"
 		}
 		colors={
-			"yellow"
-			"beige"
-			"null"
-			"null"
+			"white"
+            "desert_yellow"
+            "null"
+            "null"
 		}
 	}
 
